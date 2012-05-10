@@ -1,0 +1,51 @@
+# Change rights of a directory {{{
+
+fctchmod ()
+{
+  sudo chmod -R 777 "$1"
+}
+
+# }}}
+# Eject disk {{{
+
+fcteject ()
+{
+  sudo eject /dev/cdrom
+}
+
+# }}}
+# Just to set the system variable to get gxine working {{{
+
+fctgxine ()
+{
+  # this hack is needed when you you have multiple instances of firefox installed and get the error:
+  # gxine: error while loading shared libraries: libmozjs.so
+  export LD_LIBRARY_PATH=/usr/lib/firefox-3.6.8/
+  cd $HOME/archiv/isos/movies
+}
+
+# }}}
+# Replace pdftex_t as pstex_t {{{
+
+fctpdftex_t2pstex_t ()
+{
+  sed -i "s/pdftex_t/pstex_t/g" "$1"
+}
+
+# }}}
+# Replace pstex_t as pdftex_t {{{
+
+fctpstex_t2pdftex_t ()
+{
+  sed -i "s/pstex_t/pdftex_t/g" "$1"
+}
+
+# }}}
+# Rotate jpg for ninty degrees {{{
+
+fctrotatejpg ()
+{
+  for i in *.jpg; do convert -rotate 90 "$i" "$i"; done
+}
+
+# }}}
