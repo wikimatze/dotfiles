@@ -1,0 +1,151 @@
+# Mneomic aliases {{{
+
+alias nbash='source ~/.bashrc'
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# }}}
+# Command aliases {{{
+
+alias ls='ls -la'
+
+# }}}
+# Symbol aliases {{{
+
+alias ~='cd ~'
+alias ..='cd ..'
+
+# }}}
+# Create the epub format of the tex file {{{
+
+fctcreateepubpdfoftex ()
+{
+  # add the style
+  sed -i 's/\\input{\\home\/documentclass_normal_oneside}/\\input{\\home\/documentclass_epub}\\input{\\home\/style_epub}/1' $1
+
+  # add the width, height and margin for the format
+  sed -i 's/\\begin{document}/\\textwidth=8.59877cm\\textheight=11.59834cm\\oddsidemargin=-2.33966cm\\begin{document}/1' $1
+
+  # don't use the coverpage
+  sed -i 's/\\input{\\home\/style_starting_document_complete}/\\input{\\home\/style_starting_document_without_cover}/1' $1
+
+  # create pdf
+  pdflatex $1
+  pdflatex $1
+  #pdflatex -jobname "${1%.tex}_epub_format" $1
+
+  # remove the style
+  sed -i 's/\\input{\\home\/documentclass_epub}\\input{\\home\/style_epub}/\\input{\\home\/documentclass_normal_oneside}/1' $1
+
+  # set to normal coverpage
+  sed -i 's/\\input{\\home\/style_starting_document_without_cover}/\\input{\\home\/style_starting_document_complete}/1' $1
+
+  # remove the width, height and margin of the format
+  sed -i 's/\\textwidth=8.59877cm\\textheight=11.59834cm\\oddsidemargin=-2.33966cm\\begin{document}/\\begin{document}/1' $1
+
+  # rename the pdf
+  mv "${1%.tex}.pdf" "${1%.tex}_epub_format.pdf"
+
+  # remove unsued files
+  rm *.log *.out *.toc
+}
+
+# }}}
+# Create print-version of the tex file {{{
+
+fctcreateprintversionoftex ()
+{
+
+  # change the document class
+  sed -i 's/documentclass_normal_oneside/documentclass_normal_twoside/1' $1
+
+  # change the header
+  sed -i 's/style_header_oneside/style_header_twoside/g' $1
+
+  # create pdf
+  pdflatex $1
+  pdflatex $1
+  # pdflatex -jobname "${1%.tex}_twoside_print" $1
+
+  # change the document class to the oneside
+  sed -i 's/documentclass_normal_twoside/documentclass_normal_oneside/g' $1
+
+  # change the header to normalsize
+  sed -i 's/style_header_twoside/style_header_oneside/g' $1
+
+  # rename the pdf
+  mv "${1%.tex}.pdf" "${1%.tex}_twoside_print.pdf"
+
+
+  # remove unused files
+  rm *.log *.out *.toc
+}
+
+# }}}
+# Create html-version of the tex file {{{
+
+fctcreatehtmloutoftex ()
+{
+  # need as an indicator for moving
+  filename="${1%.tex}"
+  html_directory="html_files"
+
+  # export all *.fig as eps
+  for FIG in *.fig; do fig2eps --nogv --bbox=dvips "$FIG"; done
+
+  # comment the cover-page
+  sed -i 's/\\input{\\home\/style_starting_document_complete}/%\\input{\\home\/style_starting_document_complete}/g' $1
+
+  # comment the cover pdf-file
+  sed -i 's/\\input{\\home\/style_cover}/%\\input{\\home\/style_cover}/g' $1
+
+  # replace input through includegraphics
+  sed -i 's/{\\input/{\\includegraphics/g' $1
+
+  # replace pstex_t through eps
+  sed -i 's/.pdftex_t}}/.eps}}/g' $1
+
+  # run htlatex
+  htlatex $1
+
+  # uncomment the cover pdf-file
+  sed -i 's/%\\input{\\home\/style\_cover}/\\input{\\home\/style_cover}/g' $1
+
+  # uncomment the cover pdf-file
+  sed -i 's/%\\input{\\home\/style_starting_document_complete}/\\input{\\home\/style_starting_document_complete}/g' $1
+
+  # replace eps through pstex_t
+  sed -i 's/.eps}}/.pdftex_t}}/g' $1
+
+  # replace includegraphics through input
+  sed -i 's/{\\includegraphics/{\\input/g' $1
+
+  # delete all eps
+  rm *.eps
+
+  # create directory for generated html_files
+  mkdir -p $html_directory
+
+  # move all pngs generated of htlatex in html_files
+  for i in `find . -name "$filename*.png"`; do mv $i $html_directory; done
+  for i in `find . -name "zptm*.png"`; do mv $i $html_directory; done
+
+  # move all the files for the html version of the script in the html_files directory
+  mv *.html *.css $html_directory/
+
+  # remove unused files of htlatex
+  rm *.4tc *.4ct *.tmp *.xref *.idv *.lg *.log *.aux *.dvi
+}
+
+# }}}
+# Count words and lines in tex-file and write them into the tex-file {{{
+
+fctscount ()
+{
+  lines=$(wc -l "$1"| awk 'BEGIN {FS=" "}{print $1}')
+  words=$(wc -w "$1"| awk 'BEGIN {FS=" "}{print $1}')
+  sed -i "s/\\documentlines}{[a-zA-Z0-9\_.:]*}/\\documentlines\}\{$lines\}/g" "tex/metatags.tex"
+  sed -i "s/\\documentwords}{[a-zA-Z0-9\_.:]*}/\\documentwords\}\{$words\}/g" "tex/metatags.tex"
+}
+
+# }}}
+
