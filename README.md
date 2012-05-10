@@ -1,4 +1,4 @@
-# Place
+# Dotfiles
 
-Don't expect much text here -> this is just a place to back everything up I'm actually using.
-
+Files are placed without the . prefix - if you want to use them, please create a symlink in your
+home folder.
