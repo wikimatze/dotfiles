@@ -1,0 +1,37 @@
+# Push dotfiles into git-repository {{{
+
+fctcopybashrcfiles()
+{
+  cp -f $HOME/.bashrc $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_convert $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_copy $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_directory_aliases $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_edit_aliases $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_functions $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_functions_linux $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_git_aliases $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_latex_convert_aliases $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_latexmanuals_aliases $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_miscellaneous $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_program_aliases_linux $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_program_aliases_mac $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_rvm_aliases $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.bashrc_unused_terms $HOME/git-repositories/dotfiles/.
+}
+
+# }}}
+# Miscellaneous copy {{{
+
+fctcopymiscellaneous()
+{
+  cp -f $HOME/.ackrc $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.gemrc $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.irbrc $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.profile $HOME/git-repositories/dotfiles/.
+  cp -f $HOME/.rspec $HOME/git-repositories/dotfiles/.
+}
+
+# }}}
+
+
+
