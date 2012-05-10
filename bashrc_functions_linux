@@ -1,0 +1,62 @@
+# to rip music of a internet radio via streamripper
+fctripp ()
+{
+  streamripper "$1" -d ~/Downloads/ripped_internet_music
+}
+
+fctrippsmoothbeats ()
+{
+  streamripper http://www.smoothbeats.com/listen.pls -d ~/Downloads/ripped_internet_music
+}
+
+fctrippstreamingsoundtracks ()
+{
+  streamripper http://loudcity.com/stations/streamingsoundtracks-com/files/show/aacPlus-hi.pls  -d ~/Downloads/ripped_internet_music
+}
+
+fctrippdreamfactoryambient ()
+{
+  streamripper http://ubuntu.hbr1.com:19800/ambient.ogg -d ~/Downloads/ripped_internet_music
+}
+
+fctrippjazzsmoothbeats ()
+{
+  streamripper http://www.smoothbeats.com/nujazz.pls -d ~/Downloads/ripped_internet_music
+}
+
+# rotate mov
+# $1 complete movie name
+# $2 outputname (instead of mpg, avi, mp4, ... and other are possible)
+fctrotatemovflip ()
+{
+	mencoder -ovc lavc -vf flip -oac pcm $1 -o $2.mpg
+}
+
+# $3 rotattion level (flip = 180, 0 = rotate 90 clockwise and flip, 1 = rotate 90 clockwise, 2 = rotate 90 counterclockwise, 3 = rotate 90 counterclockwise and flip
+fctrotatemovrotate ()
+{
+	mencoder -ovc lavc -vf rotate=$3 -oac pcm $1 -o $2.mpg
+}
+
+# find all zip in the current directory and unzip them
+fctfindzipandunzi ()
+{
+	find . -name "*.zip" | while read filename;
+	do unzip -o -d "`basename -s .zip "$filename"`" "$filename"; done;
+}
+
+
+# take .cue ($1) and .flac ($2) as input and create files out of them
+fctcreatefileoutofcueflac ()
+{
+	# sudo apt-get install cuetools shntool
+	shntool split -f $1 -o flac $2
+}
+
+# convert the cdrom into an iso
+fctcdromiso ()
+{
+	cd $HOME/archiv/isos
+	sudo dd if=/dev/cdrom of="$1".iso bs=10M
+}
+

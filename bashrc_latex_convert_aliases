@@ -1,0 +1,36 @@
+# Move different files in the folders {{{
+
+alias mmvin='for TEX in *.png; do mv "$TEX" "images"; done;
+            for TEX in *.pdf; do mv "$TEX" "script"; done;
+            for TEX in *.tex; do mv "$TEX" "tex"; done;
+            for TEX in *.fig; do mv "$TEX" "images"; done;
+            for TEX in *.bib; do mv "$TEX" "tex"; done;'
+
+# }}}
+# Move different files back in the tex folder {{{
+
+alias mmvbk='for TEX in tex/*.tex; do mv "$TEX" "."; done;
+            for TEX in tex/*.bib; do mv "$TEX" "."; done;
+            for TEX in images/*.fig; do mv "$TEX" "."; done;
+            for TEX in script/*.pdf; do mv "$TEX" "."; done;
+            for TEX in images/*.png; do mv "$TEX" "."; done;'
+
+# }}}
+# Convert figs into the different formats {{{
+
+alias mfigpdf='for FIG in *.fig; do fig2dev -L pdftex "$FIG" "${FIG%.*}.pdftex"; done;
+               for FIG in *.fig; do fig2dev -L pstex_t -p "${FIG%.*}.pdftex" "$FIG" "${FIG%.*}.pdftex_t"; done'
+alias mfig2ps='for FIG in *.fig; do fig2eps --nogv --bbox=dvips "$FIG"; done'
+
+alias mfigps='for FIG in *.fig; do fig2dev -L pdftex "$FIG" "${FIG%.*}.pstex"; done;
+            for FIG in *.fig; do fig2dev -L pstex_t -p "${FIG%.*}.pstex" "$FIG" "${FIG%.*}.pstex_t"; done'
+
+alias mconv='for IMG in *.png; do inkscape --export-eps="${IMG%%.png}.eps" "$IMG"; done'
+            #for IMG in *.svg; do inkscape -D -e $${IMG%%.svg}.png $$IMG; done
+
+# }}}
+# Cleanup functions for LaTeX junk which is created after the compilation process {{{
+
+alias mclean='rm -f *.ps *.log *.aux *.dvi *.toc *.idx *.blg *.bbl *.bak *.ilg *.ind *.out *.lof *.pstex_t *.pdftex_t  *pstex *pdftex *.loa *.lot *.lol *.log~ *.aux~ *.dvi~ *.toc~ *.idx~ *.blg~ *.bak~ *.ilg~ *.ind~ *.out~ *.lof~ *.pstex_t~ *.pdftex_t~  *pstex~ *pdftex~ *.loa~ *.lot~ *.swn *.swo *.swp *.lol~ *.brf *.lg;'
+
+# }}}
