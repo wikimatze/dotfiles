@@ -1,0 +1,152 @@
+=> dieser Text in deutscher Sprache:    Datei "liesmich" <=
+
+************************************************************
+*                                                          *
+*                     yfonts.sty v1.3                      *
+*                                                          *
+*    A package for using old german fonts with LaTeX2e     *
+*                                                          *
+************************************************************
+                                              Walter Schmidt
+                                      <w-a-schmidt@arcor.de>
+                                                  2003-01-08
+
+The macro package "yfonts" provides a LaTeX interface to the
+blackletter (old german) fonts designed by Yannis
+Haralambous:  Gotisch, Schwabacher, Fraktur and the baroque
+initials.
+
+Despite their non-standard encoding, these fonts are fully
+integrated into LaTeX's font management (NFSS), and the
+package can be used together with german.sty.  A macro is
+provided which starts a paragraph with an embedded initial.
+
+
+LaTeX files
+-----------
+yfonts.dtx      LaTeX source
+yfonts.ins      installation script
+frktest.tex     short example
+
+
+The fonts
+---------
+The package yfonts.sty supports the following fonts:
+
+ygoth    Gotisch            from <ctan>/fonts/gothic/ygoth
+yswab    Schwabacher             <ctan>/fonts/gothic/yswab
+yfrak    Fraktur                 <ctan>/fonts/gothic/yfrak
+ysmfrak  Fraktur (variant)       <ctan>/fonts/gothic/yfrak
+yinitas  initials                <ctan>/fonts/gothic/yinit
+
+It depends on your TeX system, how the above fonts are to be
+installed.  This topic is NOT discussed here.
+
+*** WARNING *** WARNING *** WARNING *** WARNING *** WARNING 
+
+The font "ygoth" is known to produce Metafont errors.  In
+rare cases such problems have been observed with the other
+fonts, too.  This has nothing to do with the package
+yfonts.sty, it is due to incorrect Metafont code of the
+fonts.  
+
+Questions and bug reports on this problem should be sent 
+to Yannis Haralambous <yannis@fluxus-virus.com>, who has
+designed the old german fonts.
+
+
+Installing the LaTeX package
+----------------------------
+Put the files yfonts.dtx and yfonts.ins into a common
+directory.  On a TDS-compliant TeX system, use:
+
+  texmf/source/latex/yfonts
+
+Run LaTeX on yfonts.ins to generate the macro package file
+yfonts.sty.  Move it to a directory where TeX searches for
+input files; in a TDS compliant system this should be:
+
+  texmf/tex/latex/yfonts
+
+If you have properly set up your docstrip program and the
+above directory exists already, this is done automagically!
+
+Run LaTeX on yfonts.dtx to typeset the documentation of the
+LaTeX package.  The documentation is written in german, so
+you will need german.sty and the german hyphenation
+patterns.
+
+Run LaTeX on the example frktest.tex to see an example using
+the blackletter fonts; again, german.sty is required.
+
+
+A short (and incomplete) english guide to yfonts.sty
+----------------------------------------------------
+The commands \gothfamily, \swabfamily, \frakfamily and
+\initfamily switch to Gotisch, Schwabacher, Fraktur or
+initials within the current group.
+
+\textgoth{...}, \textswab{...},  \textfrak{...} and 
+\textinit{...} typeset their argument using old german 
+fonts.
+
+Size changing command are honored; available sizes are 10pt, 
+10.95pt, 12pt ... 24.88pt.
+
+There are no further font series or shapes.  You may however
+use Schwabacher for emphasizing within a Fraktur
+environment, thus following historical practice.
+
+The regular \baselineskip is too large for the old german
+fonts; the command \fraklines selects a suitable
+\baselineskip for Fraktur or Schwabacher within the current
+group; you must repeat it after any size changing command.
+
+Some ASCII symbols are missing (there is e.g. no ";" in the 
+Schwabacher font, and none of the fonts has a "@")
+
+A paragraph in Fraktur which starts with an embedded
+initial:
+ 
+  {\frakfamily\fraklines
+   \yinipar{E}in Absatz ...
+   
+   \par
+  }
+
+\yinipar begins a new paragraph (like \par) and suppresses
+indentation (like \noindent).  The end of the paragraph
+(blank line or \par) must be within in the same group as the
+command \fraklines.
+
+Use the regular LaTeX commands for umlauts, accents and
+special symbols.  You may additionally load german.sty.
+
+Important ligatures:
+
+  *a *e *o *u produce a special version of the umlauts with 
+  a small e instead of the dots. Load the package with the
+  option [varumlaut] to get them with the regular commands,
+  like \"a or "a, too.
+
+  s: is the so-called final s
+
+  the sharp s may be produced by \ss, "s or the ligature sz
+
+The command \etc produces a once popular symbol for "etc.";
+it is available in the Fraktur font only.
+
+
+History
+-------
+v1.3 <2003-01-08> \AA and \aa fixed.
+
+v1.2 <1999-05-12> License agreement changed to LPPL.
+
+v1.2 <1998-09-10> New: \yinipar
+
+v1.1 <1997-09-11>
+
+
+% finis
+

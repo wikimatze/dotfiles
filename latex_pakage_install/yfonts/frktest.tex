@@ -1,0 +1,87 @@
+% frktest.tex v1.2 <1998-10-03>
+
+\documentclass[a4paper]{article}
+\oddsidemargin=-1cm
+\textwidth=15cm
+\usepackage{german}
+\usepackage{yfonts}[1998/10/03]
+
+\pagestyle{empty}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% a short nonsense text to show the gothic font; 
+% note the small \baselineskip of 10pt with a font size of 14.4pt:
+
+\begin{minipage}{10cm}
+\gothfamily\Large\baselineskip10pt
+Nonummy sid semper aliena auditorum lorem ipsum quod omnia sunt 
+peccatores:: Lorem ipsum dolor sit amet con sectetuer adipiscing elit:
+Sed diam tempor incidunt ut labore et dolor magna aliquam erat volupat
+ut wisi enim ad minim veniam quis: nostrud oblationem
+corporemque suscipit laboris:
+
+\end{minipage}
+\vspace{2.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% a paragraph in Fraktur, with Schwabacher used for emphasizing;
+% note the small e on the umlauts:
+
+\begin{minipage}{14cm}
+\parindent=1cm % watch it being ignored!
+\frakfamily\Large\fraklines
+\yinipar{D}ie \textswab{Orgel}, der \textswab{Fl*ugel},
+das: \textswab{Fortepiano} und das: \textswab{Clavicord} sind die
+gebr*auchlichsten Clavierinstrumente zum Accompagnement. Es: ist Schade,
+da"s die sch*one Erfindung des: \textswab{Holfeldischen Bogenclaviers:}
+noch nicht gemeinn*utzig geworden ist; man kann dahero dessen besondere
+Vorz*uge hierinnen noch nicht genau bestimmen. Es: ist gewi"s zu 
+glauben, da"s es: sich auch bey der Begleitung gut aus:nehmen werde.
+
+% Aus/from:
+% Bach, Carl Philipp Emanuel: Versuch "uber die wahre
+% Art das Clavier zu spielen. Zweyter Theil, in welchem die Lehre von
+% dem Accompagnement und der freyen Fantasie abgehandelt wird.
+% G. L. Winter, Berlin 1762.
+
+\end{minipage}
+\vspace{2.5cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% another paragraph in Fraktur, with a Schwabacher heading; 
+% we use regular umlauts here:
+
+\begin{minipage}{9.5cm}
+\large\fraklines
+\centerline{{\Large\swabfamily Der Orakelbrunnen bei St. Moritz}}%
+\vspace{.5cm}
+
+\frakfamily
+\yinipar{V}on dem stattlichen Orte Kirchehrenbach in der Fr"ankischen
+Schweiz f"uhrt ein einsames:  Str"a"schen, an der steil ab\-st"ur\-zen\-den
+Breitseite der Ehrenb"urg vor"uber, gen Leutenbach.  In einer halben
+Stunde ist das:  schmucke Pfarrdorf erreicht.  S"ud"ostlich des:selben,
+kaum eine Viertelstunde entfernt, treffen wir auf dem Wege nach 
+Ortspitz
+in einem Seitent"alchen von unber"uhrter Natursch"onheit das:  uralte,
+einsame Kirchlein "`Sankt Moritz"' mit seinem stillen Friedhofe.  In der
+N"ahe des:  Kirchleins:  steht ein niedriges:, "uber eine Quelle
+erbautes:  Feld\-kapellchen mit der Statue des:  hl.~Mauritius:,
+dargestellt als:  Ritter in voller Wehr.  
+\par
+\end{minipage} 
+
+% Aus/from:
+% Br"uckner, Karl:
+% Am Sagenborn der Fr"ankischen Schweiz.
+% Frankenverlg v. Gg. Kohler, Wunsiedel 1921.
+
+
+\end{document}
+
+% finis

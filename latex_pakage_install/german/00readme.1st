@@ -1,0 +1,160 @@
+%% 00readme.1st
+%%
+%% README for the `german' files, version 2.5e of 1998-07-08
+%%
+%% Copyright (C) 1998 by B.Raichle
+%%                         All rights reserved.
+%%
+
+Dieses Verzeichnis enthaelt Makropakete zum Schreiben
+deutschsprachiger Texte.  `german.sty' unterstuetzt die
+traditionelle, `ngerman.sty' die neue Rechtschreibung.
+
+Zur Nutzung der Makropakete werden zusaetzlich die deutschen
+Silbentrennmuster benoetigt; sie sind im CTAN zu finden als:
+
+   language/hyphenation/ghyph31.tex   (alte Rechtschreibung)
+   language/hyphenation/gnhyph01.tex  (neue Rechtschreibung)
+
+
+
+Uebersicht
+----------
+
+Die vorliegende Verteilung enthaelt folgende Dateien:
+
+   german.sty    --  das Makropaket fuer die alte Rechtschreibung
+   ngerman.sty   --  das Makropaket fuer die neue Rechtschreibung,
+   hyphxmpl.cfg  --  Beispiel fuer die Konfigurationsdatei
+                     `hyphen.cfg' zum Laden der Trennmuster
+                     in LaTeX2e (Naeheres siehe `gerdoc.dvi')
+                     
+   gerdoc.dvi    --  deutschsprachige Anleitung
+   gerdoc.tex    --  LaTeX-Quelltext
+   
+   german.dtx    --  Docstrip-Archiv, 
+                     enthaelt die Makropakete u. hyphxmpl.cfg 
+   german.ins    --  Installationsskript fuer Docstrip
+
+Falls Sie das Docstrip-Archiv selbst entpacken wollen, benoetigen Sie
+`docstrip.tex' v2.4 oder neuer, das in der LaTeX2e-Verteilung enthalten
+ist.  Das Installationsskript laesst sich sowohl mit LaTeX als auch mit
+Plain-TeX ausfuehren.
+
+
+
+Dokumentation
+-------------
+
+Eine Anleitung zur Installation und Verwendung der Makropakete und zur
+Installation der Trennmuster finden Sie in der Datei `gerdoc.dvi'.
+Der dazugehoerigen Quelltext `gerdoc.tex' laesst sich mit LaTeX2e oder
+LaTeX 2.09 uebersetzen.  Eine mit Plain-TeX uebersetzbare Version
+existiert leider nicht.
+
+
+
+Interna
+-------
+
+Die Dokumentation, die die Implementierung der Makropakete beschreibt,
+erhalten Sie durch Uebersetzen der Datei `german.dtx' mit LaTeX.  Als
+`normaler' (La)TeX-Nutzer benoetigen Sie diese Dokumentation _nicht_.
+Sie ist nur zur internen Dokumentation gedacht und es werden zum
+Verstaendnis tiefergehende TeX-Kenntnisse vorausgesetzt.
+
+
+
+Fehlermeldungen
+---------------
+
+Bitte senden Sie Fehlermeldungen an:
+
+        Bernd Raichle <raichle@Informatik.Uni-Stuttgart.DE>
+oder an
+        Koordinator German-Style <german@dante.de>
+        
+
+
+!!! AENDERUNGEN !!! Achtung !!! AENDERUNGEN !!! Achtung !!!
+-----------------------------------------------------------
+
+Unterschiede zwischen Version 2.5d und 2.5e:
+
+ * Fuer Texte in neuer Rechtschreibung wird zusaetzlich das Paket 
+   `ngerman' bereitgestellt.
+   
+ * In den then- und else-Zweigen des Befehls \iflanguage duerfen nun
+   Makros stehen, deren Argumente erst nach \iflanguage folgen.
+   
+ * Dokumentation `germdoc' verbessert; Name geaendert in `gerdoc'.
+
+
+Unterschiede zwischen Version 2.5c und 2.5d:
+
+ * Die Anfuehrungszeichen "` und "' sowie "> und "< wurden mit den
+   EC-Fonts v1.0 nicht korrekt plaziert, da {} in den Definitionen ein
+   meist notwendiges Kerning verhindert haben.
+
+ * \ss ergab mit einem mit Babel 3.5 erzeugten Format eine
+   Endlosschleife -- ausser mit LaTeX2e.  Dies wurde abgefangen,
+   jedoch sollte man besser Babel Version 3.6 installieren, in dem
+   dieser Fehler behoben wurde.
+
+ * "ff ergab fuer "f ohne folgendes `f' einen Fehler.
+
+ * Dokumentation `germdoc.tex' und dokumentierter Code wurden
+   verbessert und auf neuesten Stand gebracht.
+
+ * Im Entpack-Skript `german.ins' werden nun die Anweisungen von
+   `docstrip' Version 2.4 (oder neuer) verwendet, so dass die
+   Dateien gleichzeitig entpackt werden.
+
+
+Unterschiede zwischen Version 2.5a/b und 2.5c:
+
+ * Mit "ff erhaelt man nun eine ff-Ligatur.
+
+ * Die schliessenden Anfuehrungszeichen wurden mit den DC-Fonts
+   Version 1.2 zu nah an das Wort gerueckt.  Dies wurde verbessert.
+
+ * Fuer das Paket `bibgerm', das ein internes Makro aus German-Style
+   umdefiniert hat und deshalb mit neueren Versionen nicht mehr
+   funktionierte, wurde in German-Style ein Patch eingebaut.  Somit
+   kann man dieses Paket jetzt wieder zusammen mit German-Style
+   verwenden.  (Besser waere es aber, wenn man `bibgerm' aendern und
+   "sauber" implementieren wuerde.  Bitte nicht auf den Patch in
+   German-Style vertrauen, da dieser sicher in spaeteren Versionen
+   entfernt wird!)
+
+ * Verschiedene kleinere Fehler (u.a. bei Verwendung mit AMS-TeX)
+   wurden berichtigt.
+
+
+Wichtige Aenderungen im Vergleich zu Version 2.4:
+
+ * \language = 1 wird nicht mehr als Default fuer die deutschen
+   Trennmuster angenommen, falls die `control sequence' \l@german
+   nicht definiert wurde.
+   Fuer diesen Fall werden Sie beim Laden der Style-Option ``german''
+   durch eine entsprechende Warnung darauf hingewiesen.
+
+   Ist \l@german undefiniert, wird __nicht__ getrennt!!
+
+   Deshalb muessen Sie jetzt beim Installieren der deutschen
+   Trennmuster die `control sequence' \l@german definieren.
+   Dasselbe gilt auch fuer die (US-)englische Trennung.  Mehr
+   dazu erfahren Sie in der Dokumentation "germdoc.tex".
+
+
+ * Nach der Installation von "german.sty" kann der erste
+   Formatierlauf Fehler beim Lesen von *.aux-, *.toc-, *.lof-,
+   *.lot-, u.a. -Datei erzeugen, da sich ein kleines Detail
+   geaendert hat.
+
+   Sie koennen diese Fehler, die nur beim Lesen dieser Dateien
+   und beim ersten Formatierlauf auftreten sollten, ignorieren oder
+   Sie loeschen einfach diese Dateien nach dem Installieren der neuen
+   Version der Style-Option ``german''.
+
+%% finis

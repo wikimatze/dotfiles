@@ -1,0 +1,2331 @@
+% \iffalse meta-comment
+%<*!hyphcfg>
+%<*!driver>
+%    \begin{macrocode}
+%
+% Copyright (C) 1987-1990 by H.Partl
+% Copyright (C) 1991-1997 by B.Raichle and DANTE e.V.
+% Copyright (C) 1998      by B.Raichle
+%                         All rights reserved.
+%
+% Please read the documentation file `gerdoc.tex' for more
+% information of how to use this macro file and how to install
+% the pattern files necessary for german hyphenation.
+%
+%    \end{macrocode}
+%
+% INSTALLATION GUIDE:
+%
+% The distribution of the `german' package consists of a set of
+% files, which are packed and documented in _one_ `docstrip archive
+% file' called `german.dtx'.  This archive file can be unpacked to
+% create the necessary files containing the macros, implementation
+% documentation, and other files.
+%
+% To unpack this archive file you need:
+%
+%   * `german.ins' (containing docstrip installation instructions)
+%
+%   * `german.dtx' (it is the file you are currently reading)
+%
+%   * `docstrip.tex' version 2.4 or newer
+%     (You can find this file in the LaTeX2e release;
+%     `docstrip' can be used with plainTeX, too!)
+%
+% Then run `german.ins' through plainTeX or LaTeX to unpack the
+% archive file:
+%
+%     tex german.ins
+% or
+%     latex german.ins
+%
+% This will create a set of files which contain the macro code or
+% code to produce the implementation documentation of the `german'
+% bundle of files.
+%
+% --------------- start of docstrip archive file ------------------
+%
+% To get the formatted code documentation do the following steps
+%
+%   latex german.dtx
+%   latex german.dtx
+%   makeindex -s gind.ist german.idx
+%   makeindex -s gglo.ist -o german.gls german.glo
+%   latex german.dtx
+%
+%
+%</!driver>
+%<*driver>
+\ifx\documentclass\undefined % LaTeX2e or 2.09?
+ \documentstyle[newdoc,german]{article}
+ \ifx\LaTeXe\undefined
+  \newcommand{\LaTeXe}{%
+   \mbox{\LaTeX\kern.15em\(2_{\textstyle\varepsilon}\)}}\fi
+ \newcommand{\emph}[1]{{\em #1}}
+ \newcommand{\textit}[1]{{\it #1}}
+ \newcommand{\textbf}[1]{{\bf #1}}
+ \newcommand{\texttt}[1]{{\tt #1}}
+ \newcommand{\cs}[1]{{\tt\symbol{92}#1}}
+ \MakeShortverb{\|}\CodelineIndex
+\else
+ \documentclass[a4paper]{ltxdoc}
+ \usepackage{german}
+ \EnableCrossrefs
+ %\DisableCrossrefs % Say \DisableCrossrefs if index is ready
+ \CodelineIndex \RecordChanges
+\fi
+\begin{document}
+\setcounter{StandardModuleDepth}{0}
+\DocInput{german.dtx}
+\PrintIndex \PrintChanges
+\end{document}
+%</driver>
+%<*!driver>
+%
+% \fi
+% \CheckSum{2166}
+%
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+% \DoNotIndex{\',\(,\),\-,\.,\/,\{,\},\^,\`,\|,\ ,\@,\x,\Z}
+% \DoNotIndex{\@M,\@m,\m@ne,\z@,\z@skip,\@ne,\tw@,sixt@@n}
+% \DoNotIndex{\count@,\dimen@,\advance,\day,\month,year,\relax}
+% \DoNotIndex{\begin,\end,\bgroup,\egroup,\begingroup,\endgroup}
+% \DoNotIndex{\bf,\em,\it,\rm,\tt,\textbf,\textit,\texttt,\emph}
+% \DoNotIndex{\expandafter,\noexpand,\string,\the,\ifhmode,\ifmmode}
+% \DoNotIndex{\ifcase,\or,\else,\fi,\if,\ifdim,\ifnum,\ifx}
+% \DoNotIndex{\do,\afterassignment,\number,\escapechar,\space}
+% \DoNotIndex{\def,\edef,\let,\newcommand,\undefined,\active}
+% \DoNotIndex{\accent,\box,\dp,\ht,\wd,\char,\chardef,\discretionary}
+% \DoNotIndex{\catcode,\csname,\endcsname,\hbox,\hskip,\kern}
+% \DoNotIndex{\font,\fontdimen,\scriptscriptstyle,\textstyle}
+% \DoNotIndex{\lccode,\lowercase,\sfcode,\spacefactor,\penalty}
+% \DoNotIndex{\mathchar,\mathchardef,\mathaccent,\varepsilon,\m@th}
+% \DoNotIndex{\empty,\@empty,\leavevmode,\makeatletter,\mbox}
+% \DoNotIndex{\errhelp,\errmessage,\message,\wlog,\write,\immediate}
+% \DoNotIndex{\lower,\raise,\sfcode,\spacefactor,\setbox,\toks}
+% \DoNotIndex{\documentclass,\documentstyle,\LaTeX,\LaTeXe,\TeX}
+% \DoNotIndex{\ProvidesPackage,\usepackage,\CodelineIndex,\cs}
+% \DoNotIndex{\input,\endinput,\DocInput}
+%
+%
+% \title{Die Makropakete  "`german"' und "`ngerman"' f"ur \LaTeXe, \LaTeX~2.09,
+%         Plain-\TeX{} und andere darauf basierende Formate}
+% \date{8.~Juli 1998}
+% \author{Bernd Raichle \\
+%         E-mail: \texttt{raichle@Informatik.Uni-Stuttgart.DE}}
+% \maketitle
+%
+% Dieses Dokument beschreibt Interna, Einschr"ankungen und einige
+% Tricks und Kniffe, die bei der Implementierung der Makropakete
+% "`german"' und "`ngerman"' verwendet werden.  
+% Wie diese Pakete installiert
+% und verwendet werden, ist in der "`Kurzbeschreibung --
+% \texttt{german.sty} (Version~2.5)"' zu finden.  Diese ist in der
+% Datei \texttt{gerdoc.tex} zu finden, die mit der Datei
+% \texttt{german.dtx} bzw. den Makropaketen mitgeliefert wird
+% und ist f"ur den Endanwender gedacht.
+%
+% Das vorliegende Dokument ist \emph{nicht} f"ur den Endanwender
+% gedacht.  Es beschreibt die Implementierung und ist zum einen f"ur
+% den zuk"unftige Verwalter dieser Pakete gedacht, zum anderen
+% f"ur alle Makro-Schreiber, die Ideen und Verbesserungsvorschl"age
+% direkt am Code austesten wollen.
+%
+% Der Code der beiden Pakete "`german"' und "`ngerman"' ist weitgehend
+% identisch.  Wo im folgenden nur von "`german"' die Rede ist, sind 
+% \emph{beide} Pakete gemeint; auf Unterschiede wird stets explizit
+% hingewiesen.  Mit |<old>| gekennzeichnete Codezeilen geh"oren zu
+% "`german"', mit |<new>| gekennzeichnete zu "`ngerman"'.
+%
+% \changes{2.5e (beta 1)}{98/05/05}{Es kann wahlweise "`german"' oder "`ngerman"'
+% erzeugt werden, indem \textsc{DocStrip} mit den Optionen \texttt{old}
+% oder \texttt{new} aufgerufen wird.}
+% \StopEventually{}
+%
+% \tableofcontents
+%
+% \ifx\emergencystretch\undefined \else
+%    \setlength{\emergencystretch}{2em}
+% \fi
+% \hbadness=2000
+%
+% \section{Identifikation des Pakets}
+%
+%  Damit diese Datei problemlos mehrmals eingelesen werden kann, wird
+%  hier getestet, ob die Datei bereits geladen wurde.  Dadurch wird
+%  verhindert, da"s Makros, Z"ahler, etc.\ noch einmal und damit
+%  unn"otig definiert werden und in einigen F"allen auch
+%  zus"atzliche Ressourcen belegen.  Damit auch Nutzer mit
+%  vorgeladenen, alten "`german"'-Versionen in den Genu"s dieser
+%  neuen Version kommen, wird nicht wie in "alteren Versionen die
+%  Existenz der Anweisung Befehl |\mdqon| "uberpr"uft, sondern auf
+%  eine Versionsnummer abgetestet.  Diese Versionsnummer besteht aus
+%  der Jahreszahl und einer pro Jahr fortlaufenden Nummer.
+%
+%  Die \textit{control sequence} f"ur die Versionsnummer sollte mit
+%  keinem anderen Paket kollidieren.  Daher wird der Pr"afix
+%  \texttt{grmn@} bzw. \texttt{ngrm@} im Namen verwendet.  Da AMS-\TeX{} ein aktives
+%  At-Zeichen verwendet, wird dieses hier explizit mit |\string|
+%  deaktiviert, bis wir den |\catcode| "andern.
+%
+% \changes{2.5c}{96/02/26}{Total falsche Logik zur Verhinderung
+%    mehrmaligen Lesen des Styles korrigiert, \cs{ifdim} durch
+%    \cs{ifnum} ersetzt, \cs{grmn@VersionNo} mu"s mit \cs{csname}
+%    erzeugt werden, da \cs{catcode} des At-Zeichens noch unbekannt
+%    ist, Versionsnummer sollte in allen F"allen gesetzt werden.}
+% \changes{2.5c}{96/04/21}{Mit AMS-\TeX{} aktives At-Zeichen
+%    in \cs{grmn@VersionNo} explizit mit \cs{string} deaktivieren
+%    (found by \texttt{Michael.Schgraffer@uibk.ac.at}, 95/10/10).}
+% \changes{2.5e (beta 2)}{98/05/12}{Abgefragte Versionsnummer korrigiert;
+%                                   9805 statt 9701)}
+%    \begin{macrocode}
+%<old>\expandafter\ifx\csname grmn\string @VersionNo\endcsname\relax
+%<new>\expandafter\ifx\csname ngrm\string @VersionNo\endcsname\relax
+\else
+%<old>  \ifnum\number\csname grmn\string @VersionNo\endcsname<9806\relax
+%<new>  \ifnum\number\csname ngrm\string @VersionNo\endcsname<9806\relax
+%<old>  \else \germanTeX \expandafter\expandafter\expandafter\endinput
+%<new>  \else \ngermanTeX \expandafter\expandafter\expandafter\endinput
+  \fi\fi
+%    \end{macrocode}
+%
+%  Ist "`german"' noch nicht geladen oder wurde bisher eine "altere
+%  Version verwendet, so wird der Rest dieser Datei abgearbeitet.
+%  Zuerst wird die Versionsnummer gesetzt.  Da diese gr"o"ser als 255
+%  ist, wird dazu |\mathchardef| verwendet.
+%    \begin{macrocode}
+%<old>\expandafter\mathchardef\csname grmn\string @VersionNo\endcsname
+%<new>\expandafter\mathchardef\csname ngrm\string @VersionNo\endcsname
+=9806\relax % = v2.5e
+%    \end{macrocode}
+%
+%
+% Die Style-Option "`german"' soll sowohl von Plain-\TeX\ als auch
+% von den unterschiedlichen \LaTeX-Versionen verwendet werden
+% k"onnen.  Deshalb wird f"ur die Ausgabe das Primitiv |\message|
+% verwendet.
+% \changes{2.5e (beta 2)}{98/05/12}{Meldungen korrigiert und vereinfacht.}
+%
+%    \begin{macrocode}
+\message{v2.5e 1998-07-08}
+%    \end{macrocode}
+%
+% F"ur \LaTeXe\ wird die Style-Option als Paket deklariert.  Da
+% andere Style-Optionen den Befehl |\ProvidesPackage| meist nur auf
+% \texttt{undefined} abtesten, wird hier eine auf den ersten Blick
+% komisch anmutende Konstruktion mit einer Gruppe verwendet.  Sie
+% verhindert aber, da"s ein vorher undefiniertes |\ProvidesPackage|
+% danach die Bedeutung |\relax| hat.  Dieser Gruppierungstrick wird
+% noch einige Male verwendet.
+%
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname ProvidesPackage\endcsname\relax\else
+%<old>  \ProvidesPackage{german}[1998/07/08 v2.5e %
+%<new>  \ProvidesPackage{ngerman}[1998/07/08 v2.5e %
+     Support for writing german texts (br)]
+\fi
+%    \end{macrocode}
+%
+% Da diese Datei auch mit einem simplen |\input| geladen werden
+% kann, andererseits aber auf interne Befehle zugegriffen werden
+% mu"s, wird der \textit{category code} des Zeichens~\texttt{@}
+% gerettet, bevor er auf "`letter"' ge"andert wird.
+%
+%    \begin{macrocode}
+\chardef\atcode=\catcode`\@
+\catcode`\@=11 % \makeatletter
+%    \end{macrocode}
+%
+%
+% \section{Kompatibilit"atsmakros}
+%
+% \subsection{Low-Level-Makros}
+%
+% Einige Makros aus dem \LaTeX-Format sind sehr hilfreich und werden,
+% falls sie nicht definiert wurden, hier definiert.
+% \changes{2.5c}{95/01/24}{Im Makro \cs{@ifundefined} wurde in den
+%    Namen der beiden Hilfsmakros in v2.5a/b das \texttt{dq}
+%    vergessen.}
+%    \begin{macrocode}
+\expandafter\ifx\csname @ifundefined\endcsname\relax
+  \def\@ifundefined#1{%
+    \expandafter\ifx\csname #1\endcsname\relax
+      \expandafter\grmn@dqfirst\else\expandafter\grmn@dqsecond\fi}
+\fi
+%    \end{macrocode}
+% Die Makros |\grmn@dqfirst|\label{grmndqfirst} und |\grmn@dqsecond|
+% werden sp"ater nochmals verwendet.
+%    \begin{macrocode}
+\def\grmn@dqfirst#1#2{#1}
+\def\grmn@dqsecond#1#2{#2}
+%    \end{macrocode}
+%
+% \subsection{Kompatibilit"atsmakros f"ur NFSS, Version~2}
+%
+% Das neue Schriftauswahlschema~NFSS hat in Version~2 den neuen
+% Schriftparameter |\fontencoding|.  NFSS~2 wurde offiziell im
+% ersten \LaTeXe-Release vom 1.~Juni 1994 eingef"uhrt, jedoch im
+% n"achsten Release vom 1.~Dezember 1995 durch Fehlerberichtigungen,
+% Erweiterungen und neu eingef"uhrte Befehle verbessert.
+%
+% Im folgenden wird angenommen, da"s NFSS~2 vorhanden ist, wenn der
+% Befehl |\DeclareTextSymbol| definiert ist.
+%
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname DeclareTextSymbol\endcsname\relax
+%    \end{macrocode}
+%
+% \subsubsection{Makros f"ur Textzeichen -- ohne NFSS~2}
+%
+% Der symbolische Name |\SS| f"ur ein SS mu"s f"ur \LaTeX~2.09 und
+% Plain-\TeX{} definiert werden, falls er noch nicht bekannt ist.
+% \changes{2.5d}{97/04/13}{F"ur \texttt{\symbol{`\"}S} wird
+%    \cs{SS} verwendet, das in \LaTeXe{} bereits definiert ist.}
+%    \begin{macrocode}
+\@ifundefined{SS}{\def\SS{SS}}{}
+%    \end{macrocode}
+%
+%
+% Die nachfolgenden Abschnitte beschreiben die notwendigen
+% Deklarationen f"ur NFSS~2.
+%    \begin{macrocode}
+\else
+%    \end{macrocode}
+%
+% \subsubsection{Deklarationsmakros}
+%
+% Die neueren NFSS~2-Versionen haben einige Befehle, die f"ur Symbole
+% und Akzentmakros Defaultwerte f"ur diejenigen Schriften deklarieren,
+% f"ur die keine expliziten Symboldeklarationen angegeben wurden.
+% Diese Befehle werden f"ur "altere NFSS~2-Versionen in einer sehr
+% stark vereinfachten Realisierung nachfolgend definiert.
+% \emph{In diesen Definitionen werden einige Interna aus
+% \LaTeXe/NFSS~2 verwendet, so da"s dieser Teil der Style-Option
+% zuk"unftig m"oglicherweise zu Fehlern f"uhren kann!  Dieser Teil ist
+% als schlechtes Beispiel zu betrachten -- es zeigt, wie man solche
+% Dinge m"oglichst nicht realisieren sollte.  Jedoch sind diese
+% Definitionen notwendig, damit diese Style-Option auch mit diesen
+% "alteren Versionen laufen kann.}
+% \textbf{Es ist daher immer ratsam, eine alte \LaTeXe-Release durch
+% die neueste Version zu ersetzen.}
+% Aus diesem Grund wird hier ein Hinweis f"ur den Benutzer dieses
+% alten Release ausgegeben.  In der n"achsten Version wird
+% German-Style abbrechen oder den sehr viel einfacheren Code
+% f"ur \LaTeX~2.09 verwenden.
+%
+% \changes{2.5c}{96/04/28}{Warnung und Hinweis auf Update bei
+%    Benutzung der veralteten \LaTeXe-Release vom Juni~1994.}
+%    \begin{macrocode}
+% \changes{2.5e (beta 1) }{98/05/04}{Formulierung ge"andert.}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname ProvideTextCommandDefault\endcsname\relax
+  \immediate\write17{}
+  \immediate\write17{%
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
+  \immediate\write17{%
+!! Dies ist eine zu alte LaTeX2e-Version, die nicht}
+  \immediate\write17{%
+!! alle fuer german/ngerman notwendigen Deklarationen}
+  \immediate\write17{%
+!! zur Verfuegung stellt.  Dennoch koennen Sie diese}
+  \immediate\write17{%
+!! Pakete, eventuell mit kleinen Fehlern, verwenden.}
+  \immediate\write17{!!}
+  \immediate\write17{%
+!! Bitte installieren Sie eine neuere LaTeX2e-Version,}
+  \immediate\write17{%
+!! da zukuenftige Versionen der Pakete diese}
+  \immediate\write17{%
+!! LaTeX2e-Version nicht mehr unterstuetzen werden!}
+  \immediate\write17{%
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
+  \immediate\write17{}
+\fi
+%    \end{macrocode}
+%
+% Weiterhin wird angenommen, da"s der Befehl |\providecommand|
+% verf"ugbar ist.  Dieser Befehl k"onnte in einer zuk"unftigen
+% NFSS~2-Version, die f"ur Plain-\TeX\ angepa"st wurde, nicht mehr
+% verf"ugbar sein.
+%
+% |\UseTextSymbol{|\meta{encoding}|}{|\meta{symbol}|}| schaltet die
+% angegebene Schriftkodierung zur Ausgabe dieses Zeichens um.
+%    \begin{macrocode}
+\@ifundefined{UseTextSymbol}{%
+  \def\UseTextSymbol#1#2{{\fontencoding{#1}\selectfont #2}}
+}{}
+%    \end{macrocode}
+%
+% |\UseTextAccent{|\meta{encoding}|}{|\meta{accent}|}{|\meta{base}|}|
+% verwendet das Akzentzeichen aus der Schrift mit der angegebenen,
+% eventuell vom aktuellen Wert abweichenden Kodierung.
+%    \begin{macrocode}
+\@ifundefined{UseTextAccent}{%
+  \def\UseTextAccent#1#2#3{%
+    {\let\@curr@enc\f@encoding
+     \fontencoding{#1}\selectfont
+     #2{\fontencoding\@curr@enc\selectfont #3}}}%
+}{}
+%    \end{macrocode}
+%
+% |\ProvideTextCommand{|\meta{csname}|}{|\meta{encoding}|}[|^^A
+% \meta{number}|][|\meta{default}|]{|\meta{definition}|}| definiert
+% einen Befehl, der nur f"ur die angegebene Kodierung verwendet wird,
+% falls dieser Befehl noch nicht f"ur diese Kodierung definiert
+% wurde.
+%    \begin{macrocode}
+\@ifundefined{ProvideTextCommand}{%
+  \def\ProvideTextCommand#1#2{%
+    %%% misses \RobustTextCommand{#1}{...etc.etc...}!!
+    \expandafter\providecommand\csname #2\string#1\endcsname}%
+}{}
+%    \end{macrocode}
+%
+% |\ProvideTextCommandDefault{|\meta{command}|}{|\meta{definition}|}|
+% definiert nun eine Defaultdefinition f"ur alle Kodierungen, f"ur
+% die keine explizite Definition angegeben wurde.  Leider w"urde eine
+% einigerma"sen komplette Realisierung einer Re-Implementierung der
+% neueren NFSS~2-Versionen entsprechen, so da"s hier einfach nur eine
+% Definition f"ur die Kodierung~\glq U\grq{} get"atigt wird, die f"ur
+% unbekannte Kodierungen verwendet wird.
+%    \begin{macrocode}
+\@ifundefined{ProvideTextCommandDefault}{%
+  \def\ProvideTextCommandDefault#1{%
+    \ProvideTextCommand{#1}{U}}%
+}{}
+%    \end{macrocode}
+%
+% Mit |\DeclareTextCompositeCommand{|\meta{command}|}{|^^A
+% \meta{encoding}|}{|\meta{char}|}{|\meta{definition}|}| kann f"ur die
+% Umlaut- und Trema-Kombinationen sehr bequem eine Definition
+% angegeben werden.  Bevor hier f"ur die "alteren NFSS~2-Versionen
+% eine eigene L"osung "`gestrickt"' wird, verl"a"st sich die
+% nachfolgende Definition auf einige \LaTeXe/NFSS~2-Interna!
+%    \begin{macrocode}
+\@ifundefined{DeclareTextCompositeCommand}{%
+  \def\DeclareTextCompositeCommand#1#2#3#4{%
+    % define a `dummy' text composite
+    \DeclareTextComposite{#1}{#2}{#3}{`\Z}%
+    % then redefine this command including the new command
+    \expandafter\def\csname\expandafter\string\csname
+         #2\endcsname\string#1-\string#3\endcsname##1##2{#4}}%
+}{}
+%    \end{macrocode}
+%
+% Damit ist gesichert, da"s bei Vorliegen von \LaTeXe/NFSS~2 die
+% wichtigsten Deklarationen unabh"angig von der \LaTeXe-Version
+% verf"ugbar sind.  Dies vereinfacht die nachfolgenden Deklarationen.
+%
+% \subsubsection{Makros f"ur Textzeichen}
+%
+% Neben den zuvor aufgezeigten Makros definieren die neueren
+% NFSS~2-Versionen noch symbolische Namen f"ur viele der in den
+% Schriften vorhandenen Lettern.  Im folgenden werden zum einen f"ur
+% die "alteren Versionen die anschlie"send verwendeten symbolischen
+% Namen nachdefiniert und zum anderen werden Definitionen, die in
+% "alteren \LaTeXe/NFSS~2-Versionen fehlen, f"ur die
+% Kodierung~\texttt{OT1} und Defaults f"ur einige Lettern
+% nachgereicht.
+%
+% \paragraph{Spezielle Behandlung von Babel~v3.5:}
+%
+% Babel Version~3.5 definiert f"ur Nicht-\LaTeXe-Formate die
+% wichtigsten NFSS~2-Anweisung zur Deklaration der symbolischen Namen.
+% Dadurch meint der Code des German-Style, da"s selbst f"ur diese
+% Formate ein vollst"andiges \LaTeXe{} mit NFSS~2 vorl"age.  Leider
+% fehlten in "alteren Babel-Versionen wichtige Standarddeklarationen,
+% was zur Folge hat, da"s es bei deren Verwendung zu Fehlern wie
+% z.\,B.\ Endlosschleifen kommen kann.  Eine Endlosschleife wird dabei
+% durch Deklaration eines Defaults mit
+% \cs{Provide\-Text\-Command\-Default} verursacht, wenn das Symbol
+% bisher noch nicht deklariert wurde.  In Babel Version~3.6
+% werden daher jetzt die Symbole \cs{ss}, \cs{i},
+% \cs{textquotedblright} und \cs{textquoteright} deklariert, die in
+% Version~3.5 fehlten.
+%
+% In den folgenden Deklarationen werden NFSS~2-Interna verwendet:
+% Es wird beispielsweise angenommen, da"s die Existenz des Makros
+% \texttt{\symbol{`\\}OT1\symbol{`\\}ss} -- ein Makro! -- anzeigt,
+% da"s \cs{ss} f"ur NFSS~2 deklariert wurde.  Ist dies f"ur die vier
+% Symbole \cs{ss}, \cs{i}, \cs{textquotedblright} und
+% \cs{textquoteright} der Fall, werden sie hier nachdeklariert.
+% Dabei wird dies in der Protokolldatei vermerkt, um eventuell
+% diese Ursache f"ur auftretende Fehler leichter erkennen zu k"onnen.
+% \cs{textquotedblright} und \cs{textquoteright} werden sp"ater noch
+% deklariert, so da"s dies hier noch nicht notwendig ist.
+%
+% \changes{2.5d}{97/04/13}{Die fehlenden Deklarationen f"ur \cs{ss} und
+%    \cs{i}, werden f"ur Babel~v3.5, falls ben"otigt, nachdeklariert.
+%    F"ur \cs{textquotedblright} und \cs{textquoteright} hier nicht
+%    notwendig, da dies hier ein paar Zeilen sp"ater gemacht wird.}
+%    \begin{macrocode}
+\@ifundefined{OT1\string\ss}{%
+%<old>  \wlog{german: Re-declaration of \string\ss\space for OT1!}%
+%<new>  \wlog{ngerman: Re-declaration of \string\ss\space for OT1!}%
+  \DeclareTextSymbol{\ss}{OT1}{25}}{}
+\@ifundefined{OT1\string\i}{%
+%<old>  \wlog{german: Re-declaration of \string\i\space for OT1!}%
+%<new>  \wlog{ngerman: Re-declaration of \string\i\space for OT1!}%
+  \DeclareTextSymbol{\i}{OT1}{16}}{}
+%    \end{macrocode}
+%
+% \paragraph{Defaults f"ur Symbole:}
+%
+% F"ur die Makros |\"|, |\ss|, |\i| und |\SS| sollte ein Default
+% definiert sein.
+% \changes{2.5d}{97/04/13}{F"ur \texttt{\symbol{`\"}S} wird
+%    \cs{SS} verwendet, das in \LaTeXe{} bereits definiert ist.}
+%    \begin{macrocode}
+\ProvideTextCommandDefault{\"}{\UseTextAccent{OT1}{\"}}
+\ProvideTextCommandDefault{\ss}{\UseTextSymbol{OT1}\ss}
+\ProvideTextCommandDefault{\i}{\UseTextSymbol{OT1}\i}
+\ProvideTextCommandDefault{\SS}{SS}
+%    \end{macrocode}
+%
+% Dann sollte auch sichergestellt sein, da"s symbolische Namen f"ur
+% die Zeichen definiert sind, die in den Makros f"ur die
+% Anf"uhrungszeichen verwendet werden.  Die Defaults werden jeweils
+% aus den Schriften in Kodierung~\texttt{OT1} genommen.
+%
+% Zuerst die Zeichen f"ur die Anf"uhrungszeichen "`\ldots"' und
+% \glq\ldots\grq:
+%    \begin{macrocode}
+\@ifundefined{textquotedblleft}{%
+  \ProvideTextCommandDefault{\textquotedblleft}{%
+    \UseTextSymbol{OT1}\textquotedblleft}%
+  \DeclareTextSymbol{\textquotedblleft}{OT1}{92}%
+%    \end{macrocode}
+% (oder |\DeclareTextCommand{\textquotedblleft}{OT1}{``}|)
+%    \begin{macrocode}
+  \DeclareTextSymbol{\textquotedblleft}{T1}{16}%
+}{}
+\@ifundefined{textquotedblright}{%
+  \ProvideTextCommandDefault{\textquotedblright}{%
+    \UseTextSymbol{OT1}\textquotedblright}%
+  \DeclareTextSymbol{\textquotedblright}{OT1}{`\"}%
+%    \end{macrocode}
+% (oder |\DeclareTextCommand{\textquotedblright}{OT1}{''}|)
+%    \begin{macrocode}
+  \DeclareTextSymbol{\textquotedblright}{T1}{17}%
+  %% \DeclareTextSymbol{\textquotedbl}{T1}{`\"}%
+}{}
+\@ifundefined{textquoteleft}{%
+  \ProvideTextCommandDefault{\textquoteleft}{%
+    \UseTextSymbol{OT1}\textquoteleft}%
+  \DeclareTextSymbol{\textquoteleft}{OT1}{`\`}%
+  \DeclareTextSymbol{\textquoteleft}{T1}{`\`}%
+}{}
+\@ifundefined{textquoteright}{%
+  \ProvideTextCommandDefault{\textquoteright}{%
+    \UseTextSymbol{OT1}\textquoteright}%
+  \DeclareTextSymbol{\textquoteright}{OT1}{`\'}%
+  \DeclareTextSymbol{\textquoteright}{T1}{`\'}%
+}{}
+\@ifundefined{quotesinglbase}{%
+  \DeclareTextSymbol{\quotesinglbase}{T1}{13}}{}
+\@ifundefined{quotedblbase}{%
+  \DeclareTextSymbol{\quotedblbase}{T1}{18}}{}
+%    \end{macrocode}
+% Danach die Anf"uhrungszeichen in franz"osischer Form ">\ldots"< und
+% \frq\ldots\flq:
+%    \begin{macrocode}
+\@ifundefined{guillemotleft}{%
+  \DeclareTextSymbol{\guillemotleft}{T1}{19}}{}
+\@ifundefined{guillemotright}{%
+  \DeclareTextSymbol{\guillemotright}{T1}{20}}{}
+\@ifundefined{guilsinglleft}{%
+  \DeclareTextSymbol{\guilsinglleft}{T1}{14}}{}
+\@ifundefined{guilsinglright}{%
+  \DeclareTextSymbol{\guilsinglright}{T1}{15}}{}
+%    \end{macrocode}
+%
+% Damit sind die wichtigsten Makros so definiert, da"s die
+% nachfolgenden Definitionen nur noch wenige F"alle unterscheiden
+% m"ussen und damit "ubersichtlicher definiert werden k"onnen.
+%
+% Die nun folgenden Definitionen sind nicht nur f"ur NFSS~2
+% verwendbar, so da"s das \texttt{if}-NFSS~2 vorl"aufig beendet werden
+% kann.
+%    \begin{macrocode}
+\fi
+%    \end{macrocode}
+%
+% \section{Low-Level-Befehle f"ur die Style-Option}
+%
+% Die Style-Option verwendet Low-Level-Befehle zur Implementierung
+% von An"-f"uhrungs"-zeichen, der Umlaute u.\,a.  Einige dieser
+% Befehle sind auch f"ur Benutzer verf"ugbar.
+%
+% \subsection{Verschiedenes}
+%
+% \LaTeX\ verwendet den Befehl |\protect|, um \emph{fragile}
+% Kommandos zu sch"utzen.  Dieser Befehl mu"s f"ur Plain-\TeX\
+% nachdefiniert werden.  Folgendes Code-St"uck definiert diesen
+% Befehl als |\relax|, falls er noch undefiniert ist,
+% andernfalls wird |\protect| nicht ge"andert.
+%    \begin{macrocode}
+\expandafter\let\expandafter\protect\csname protect\endcsname
+%    \end{macrocode}
+%
+% Mit |\allowhyphens| kann man \TeX\ signalisieren, da"s ein
+% trennbarer Wortteil endet (durch den |\penalty1000|- oder
+% |\nobreak|-Befehl) und ein neuer beginnt (durch den |\hskip|-Befehl,
+% der \textit{glue} ein"-f"ugt).  Dieser Trick ist in Anhang~D des
+% \TeX{}book beschrieben, die Interna dazu in Anhang~H.
+%\begin{verbatim}
+%\def\allowhyphens{\nobreak \hskip 0pt plus 0pt\relax}
+%\end{verbatim}
+% entspricht der nachfolgenden Definition:
+%    \begin{macrocode}
+\def\allowhyphens{\penalty\@M \hskip\z@skip}
+%    \end{macrocode}
+%
+% Neben den Umlauten mu"s auch daf"ur gesorgt werden, da"s am und nach
+% dem Buchstaben~{\ss} getrennt werden kann, \TeX{} also diesen Letter
+% als Wortbestandteil erkennt.  Dazu mu"s dem Letter ein
+% Lowercase-Code |\lccode| gr"o"ser als Null zugewiesen sein.
+% |\ss|~entspricht f"ur Schriften in Kodierung~\texttt{OT1} dem
+% Letter auf Position~|^^Y|.  Um W"orter mit diesem Letter komplett
+% trennbar zu machen, reicht es daher aus, wenn man den |\lccode|
+% dieser Letter auf einen Wert ungleich Null setzt.  F"ur ein |\ss|
+% aus anderen Schriften mu"s dies in der entsprechenden Makrodatei
+% getan werden, in dem die Schrift und der Befehl~|\ss| redefiniert
+% wird. 
+%    \begin{macrocode}
+\lccode`\^^Y=`\^^Y
+%    \end{macrocode}
+%
+% \subsection{Anf"uhrungszeichen}
+%
+% Die deutschen Anf"uhrungszeichen werden f"ur Schriften, die keine
+% geeigneten Lettern besitzen, durch Box-Manipulationen aus den im
+% englischsprachigen Raum gebr"auchlichen Anf"uhrungszeichen erzeugt.
+%
+% |\set@low@box| verschiebt das Zeichen im Argument, normalerweise ``
+% bzw.\ '', auf die H"ohe des Kommas in dieser Schrift.  Achtung: Da
+% das Makro den Inhalt der Box 0, 2 und ein L"angenregister "andert,
+% sollte dieses Makro nur innerhalb einer Gruppe aufgerufen werden.
+%    \begin{macrocode}
+\def\set@low@box#1{\setbox\tw@\hbox{,}\setbox\z@\hbox{#1}%
+  \setbox\z@\hbox{\dimen@\ht\z@ \advance\dimen@ -\ht\tw@
+      \lower\dimen@\box\z@}%
+  \ht\z@\ht\tw@ \dp\z@\dp\tw@}
+%    \end{macrocode}
+%
+% Normalerweise wird der aktuelle |\spacefactor| nicht durch
+% An"-f"uhrungs"-zeichen ge"-"andert, so da"s bei aktiviertem
+% |\nonfrenchspacing| nach einem Satzzeichen und direkt nachfolgenden
+% Anf"uhrungszeichen ein gr"o"serer Wortzwischenraum gelassen wird.
+% Da \TeX\ den |\spacefactor| nach einem Box-Befehl auf~1000 setzt,
+% mu"s man diesen Wert von Hand vorher retten und danach wieder
+% setzen, um dieses Verhalten nicht zu "andern. 
+%    \begin{macrocode}
+\def\save@sf@q#1{{\ifhmode
+  \edef\@SF{\spacefactor\the\spacefactor}\else
+  \let\@SF\empty \fi \leavevmode #1\@SF}}
+%    \end{macrocode}
+%
+% \subsection{Umlaute}
+%
+% Wird ein Umlaut mit Hilfe des |\accent|-Primitivs erzeugt, werden
+% bei den meisten Schriften die Umlautpunkte zu hoch gesetzt.  Die
+% Umlautpunkte entsprechen dadurch eher einem Trema.   Das Makro
+% |\umlaut| ersetzt das \TeX-Primitiv, um Umlaute mit etwas tieferen
+% Umlautpunkten zu erzeugen.   Die Funktionsweise beruht auf dem
+% folgenden kleinen Trick: Das |\accent|-Primitiv hat die Eigenschaft,
+% die aktuelle \textit{x-height} und die Gr"o"se des Buchstabens zu 
+% verwenden, um die vertikale Positionierung und in Abh"angigkeit
+% des \textit{slant} der Schrift die horizontale Verschiebung der
+% Punkte zu bestimmen.   Um die Punkte etwas tiefer zu setzen, kann
+% nun entweder die H"ohe des Buchstabens verkleinert oder die
+% \textit{x-height} der Schrift tempor"ar vergr"o"sert werden.  Da das
+% |\accent|-Primitiv keine Box als Argument erlaubt, wird der zweite
+% Weg gew"-"ahlt.  Dabei mu"s beachtet werden, da"s "Anderungen der
+% |\fontdimen| immer global ausgef"uhrt werden, so da"s man den
+% urspr"unglichen Wert retten und danach wieder explizit
+% zur"uckschreiben mu"s! 
+% \changes{2.5c}{95/01/24}{Abfrage auf L"angenregister \cs{grmnU@D}
+%    hatte wegen eines At-Zeichens zuviel auf \cs{grmn@U@D} getestet.}
+%    \begin{macrocode}
+\expandafter\ifx\csname grmnU@D\endcsname\relax
+  \csname newdimen\endcsname\grmnU@D
+\fi
+\def\newumlaut#1{{\grmnU@D 1ex%
+  {\setbox\z@\hbox{\char127}\dimen@-.45ex\advance\dimen@\ht\z@
+  \ifdim 1ex<\dimen@ \fontdimen5\font\dimen@ \fi}%
+  \accent127\fontdimen5\font\grmnU@D #1}\allowhyphens}
+%    \end{macrocode}
+%
+% F"ur Tremata wird das urspr"ungliche |\accent|-Primitive verwendet.
+% Da die Style-Option das |\"|-Makro "andert, mu"s hier die originale
+% Definition selbst verwendet werden, wobei durch das |\allowhyphens|
+% nach dem Akzentprimitiv die Trennung im Rest des Wortes wieder
+% erlaubt ist.   F"ur \LaTeXe\ kann durch die ge"anderten Interna das
+% |\"|-Makro direkt verwendet werden, wobei auch hier ein
+% |\allowhyphens| die Trennung im nachfolgenden Wortteil wieder
+% erlaubt.
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname DeclareTextSymbol\endcsname\relax
+  \def\highumlaut#1{{\accent127 #1}\allowhyphens}
+\else
+  \def\highumlaut#1{\"{#1}\allowhyphens}
+\fi
+%    \end{macrocode}
+%
+% \subsection{Aktivierter Double\-quote}
+%
+% Die Style-Option "`german"' verwendet ein aktiviertes
+% Doublequote-Zeichen.  Mit den Makros |\mdqon| und |\mdqoff| werden
+% hierzu Befehle zum Hin- und Herschalten definiert.
+%    \begin{macrocode}
+\def\mdqon{\catcode`\"\active}
+\def\mdqoff{\catcode`\"12\relax}
+%    \end{macrocode}
+%
+% Der Mechanismus der die Double\-quote-Eingabe\-notation realisiert,
+% verwendet folgende weitere symbolische Namen f"ur Makros und
+% spezielle Zeichen.
+% \changes{2.5d}{97/04/12}{"Uberbleibsel \cs{@UMLAUT}-Definition
+%    als \cs{\protect\dq} aus Vor-NFSS2-Zeiten entfernt.}
+% \changes{2.5d}{97/04/13}{\cs{@SS} in \cs{@MATHss} umbenannt.}
+% \changes{2.5d}{97/05/01}{In \cs{@MATHss} ein eigentlich
+%    "uberfl"ussiges \cs{mathord} eingef"ugt, das aber daf"ur sorgt,
+%    da"s Leerzeichen danach nicht ignoriert werden.}
+%    \begin{macrocode}
+\begingroup \mdqoff
+\def\x{\endgroup
+  \def\@MATHUMLAUT{\ddot}% = \mathaccent"707F
+  \def\@MATHss{\mathord{\mathchar"7019}}% TODO: correct?
+  \def\dq{"}}% TODO: or \textquotedbl?
+\x
+%    \end{macrocode}
+%
+% Da das Zeichen aktiviert wird, mu"s es f"ur bestimmte Kontexte
+% explizit wieder deaktiviert werden.  Plain-\TeX\ und \LaTeX\
+% verwenden f"ur Umgebungen, wie \texttt{verbatim}, die Befehle
+% |\dospecials| und |\@sanitize|, die Listen mit diesen speziellen
+% Zeichen darstellen.  Der Double\-quote wird an diese Listen
+% angeh"angt.
+%    \begin{macrocode}
+\begingroup
+  \def\do{\noexpand\do\noexpand}%
+  \edef\x{\endgroup
+    \def\noexpand\dospecials{\dospecials\do\"}}%
+\x
+%    \end{macrocode}
+% |\@sanitize| ist nur f"ur \LaTeX\ definiert, so da"s dessen
+% Existenz explizit abgefragt wird.
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname @sanitize\endcsname\relax \else
+  \begingroup
+    \def\@makeother{\noexpand\@makeother\noexpand}%
+    \edef\x{\endgroup
+      \def\noexpand\@sanitize{\@sanitize\@makeother\"}}%
+  \x
+\fi
+%    \end{macrocode}
+%
+% \subsection{Kompatibilit"at mit "alteren Versionen}
+%
+% "Altere Versionen der Style-Option "`german"' definieren die
+% Befehle |\3| und |\ck|, die nicht mehr verwendet werden sollten.
+% Damit alte Dokumente mit diesen Kommandos nicht ge"andert werden
+% m"ussen, existieren diese Befehle auch noch f"ur Version~2.x.
+% In "`ngerman"' wird |\ck| so definiert, da"s ein "`ck"' mit Trennstelle
+% davor erzeugt wird; au"erdem wird eine Warnung ausgegeben.
+% \changes{2.5e (beta 1)}{98/05/04}{ge"anderte Definition von \cs{ck} 
+%   in "`ngerman"'}
+%    \begin{macrocode}
+\let\grmn@original@three=\3 % \3 may be defined or undefined.
+%<*old>
+\def\ck{\penalty\@M\discretionary{k-}{}{c}k\allowhyphens}
+%</old>
+%<*new>
+\def\ck{%
+  \ifnum\grmn@dqwarninglevel>\@ne
+    \grmn@dq@warning@obsolete{\string\ck}{ck}%
+  \fi
+  \penalty\@M\-\allowhyphens ck}
+%</new>  
+%    \end{macrocode}
+%
+%
+% \section{Anf"uhrungszeichen}
+%
+% Die Makros |\glqq|, |\grqq|, |\glq|, |\grq|, |\flqq|, |\frqq|,
+% |\flq| und |\frq| f"ur die Anf"uhrungzeichen k"onnen mit NFSS
+% Version~2 (also mit \LaTeXe) abh"angig von der Kodierung der
+% Schrift definiert werden.
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname DeclareTextSymbol\endcsname\relax
+%    \end{macrocode}
+%
+% \subsection{\ldots~ohne NFSS Version~2}
+%
+% Ohne NFSS Version~2 werden die Makros aus den "`alten"' Versionen
+% dieser Style-Option verwendet.  Da diese Makros auf alle Zeichen
+% "uber symbolische Befehle oder Ligaturen zugreifen, sollten die
+% Ergebnisse f"ur die meisten Schriften korrekt sein, jedoch wird
+% wegen der nicht expandierbaren Tokens in den Makros kein Kerning
+% zwischen dem Anf"uhrungszeichen und umgebenden Text durchgef"uhrt
+% (und keine Ligaturen gebildet, auch wenn diese in bisher keiner
+% mir bekannten und f"ur \TeX{} verf"ugbaren Schrift vorhanden sind).
+%
+% Zuerst einmal die Makros f"ur die Anf"uhrungszeichen "`\ldots"' und
+% \glq\ldots\grq.  Die Namen |\@glqq|, |\@grqq|, etc.\ der zu
+% sch"utzenden internen Makros aus "alteren Version des German-Style
+% werden eigentlich nicht mehr ben"otigt, werden hier aber zur
+% Kompatibilit"at dennoch definiert.
+% \changes{2.5d}{97/04/13}{Verwende Trick von \LaTeXe{} mit
+%    dem Leerzeichen im Namen des zu sch"utzenden Makros.}
+%    \begin{macrocode}
+\expandafter\def\csname glqq \endcsname{%
+  \save@sf@q{\set@low@box{''\/}\box\z@\kern-.04em\allowhyphens}}
+\edef\glqq{\noexpand\protect
+  \expandafter\noexpand\csname glqq \endcsname}
+\let\@glqq=\glqq
+\expandafter\def\csname grqq \endcsname{%
+  \save@sf@q{\kern-.07em``\kern.07em}}% ('')
+\edef\grqq{\noexpand\protect
+  \expandafter\noexpand\csname grqq \endcsname}
+\let\@grqq=\grqq
+\expandafter\def\csname glq \endcsname{%
+  \save@sf@q{\set@low@box{'\/}\box\z@\kern-.04em\allowhyphens}}
+\edef\glq{\noexpand\protect
+  \expandafter\noexpand\csname glq \endcsname}
+\let\@glq=\glq
+\expandafter\def\csname grq\endcsname{%
+  \save@sf@q{\kern-.0125em`\kern.07em}}
+\edef\grq{\noexpand\protect
+  \expandafter\noexpand\csname grq \endcsname}
+\let\@grq=\grq
+%    \end{macrocode}
+% Danach folgen die Definitionen f"ur die franz"osische Form der
+% Anf"uhrungszeichen "<\ldots"> und {\flq}\ldots{\frq}.  Da die
+% Definition auch f"ur Plain-\TeX\ verwendbar sein soll, k"onnte man
+% das Aussehen durch eine etwas andere Definition noch verbessern.
+% Auch hier werden die Namen der zu sch"utzenden internen Makros aus
+% "alteren Version obwohl nicht notwendig zur Kompatibilit"at
+% definiert.
+% \changes{2.5c}{96/02/26}{Im Code f"ur die franz"osischen
+%    Anf"uhrungszeichen \cs{m@th} eingef"ugt.} 
+% \changes{2.5c}{96/04/28}{Die Boxen  f"ur \cs{flqq}, \cs{frqq},
+%    \cs{flq} und \cs{frq} werden mit \cs{raise.2ex} etwas zu tief
+%    gesetzt, deshalb wird jetzt \cs{raise.27ex} aus
+%    \texttt{french.sty} verwendet.} 
+% \changes{2.5d}{97/04/13}{Verwende Trick von \LaTeXe{} mit
+%    dem Leerzeichen im Namen des zu sch"utzenden Makros.}
+% \changes{2.5d}{97/05/01}{In \cs{flqq} und \cs{frqq} um \cs{ll}
+%     bzw.\ \cs{gg} ein \cs{mathrel} eingef"ugt (klammern oder ein
+%     ein leeres Klammerpaar danach w"urde Abst"ande "andern).
+%     Damit kann das leere Klammerpaar in dern entsprechenden
+%     Doublequote-Notation f"ur die franz"osischen Anf"uhrungszeichen
+%     entfernt werden.}
+%    \begin{macrocode}
+\expandafter\def\csname flqq \endcsname{%
+  \relax\ifmmode \mathrel{\ll}\else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle \ll $}%
+    \allowhyphens}\fi}
+\edef\flqq{\noexpand\protect
+  \expandafter\noexpand\csname flqq \endcsname}
+\let\@flqq=\flqq
+\expandafter\def\csname frqq \endcsname{%
+  \relax\ifmmode \mathrel{\gg}\else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle \gg $}%
+    \allowhyphens}\fi}
+\edef\frqq{\noexpand\protect
+  \expandafter\noexpand\csname frqq \endcsname}
+\let\@frqq=\frqq
+\expandafter\def\csname flq \endcsname{%
+  \relax\ifmmode <\else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle <$}\allowhyphens}\fi}
+\edef\flq{\noexpand\protect
+  \expandafter\noexpand\csname flq \endcsname}
+\let\@flq=\flq
+\expandafter\def\csname frq \endcsname{%
+  \relax\ifmmode >\else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle >$}\allowhyphens}\fi}
+\edef\frq{\noexpand\protect
+  \expandafter\noexpand\csname frq \endcsname}
+\let\@frq=\frq
+%    \end{macrocode}
+% Leider verhindert das |\nobreak| in |\allowhyphens| eine Trennung
+% an einem Wortzwischenraum, der nach dem Anf"uhrungszeichen folgen
+% kann.  Da die obige Definition sowohl f"ur ">\ldots"< als auch f"ur
+% "<\ldots"> verwendbar sein mu"s, kann man ohne weitere Tricks
+% nichts an dieser Einschr"ankung "andern.
+%
+%
+% Die nachfolgenden Abschnitte beschreiben die notwendigen
+% Definitionen f"ur NFSS~2.
+%    \begin{macrocode}
+\else
+%    \end{macrocode}
+%
+% \subsection{\ldots~mit NFSS Version~2}
+%
+% Das Makro |\glqq| entspricht dem in neueren \LaTeXe-Releases
+% definiertem Symbol |\quotedblbase|.  Die Definitionen dieses
+% Symbols werden auch f"ur die \texttt{OT1}-kodierten Schriften
+% erweitert, so da"s man eine relativ einfache Definition erh"alt.
+%    \begin{macrocode}
+\DeclareRobustCommand{\glqq}{%
+  \ifmmode\hbox{\quotedblbase}\else\quotedblbase\fi}
+\ProvideTextCommandDefault{\quotedblbase}{%
+  \UseTextSymbol{OT1}\quotedblbase}
+\ProvideTextCommand{\quotedblbase}{OT1}{%
+  \save@sf@q{\set@low@box{\textquotedblright\/}\box\z@
+    \kern-.04em\allowhyphens}}
+%    \end{macrocode}
+%
+% Leider existiert f"ur |\grqq| kein entsprechendes Pendant, so da"s
+% man hier auf die "`alte"' Version zur"uckgreifen mu"s.  Jedoch wird
+% f"ur \texttt{T1}-kodierte Schriften keine \cs{kern}-Anweisungen
+% eingef"ugt, da diese insbesondere bei den EC-Fonts und dessen
+% Testversionen ab DC-Fonts Version~1.2 das Anf"uhrungszeichen zu
+% weit nach links plazieren und dieses dadurch den davorstehenden
+% Letter "uber"-schreiben k"onnte.
+% \changes{2.5c}{96/02/26}{F"ur \texttt{T1}-kodierte Schriften,
+%    insbesondere den DC-Fonts~v1.2 d"urfen bei \cs{grqq} keine
+%    expliziten \cs{kern} eingef"ugt werden.  Deshalb separate
+%    Deklarationen f"ur T1- und OT1-kodierte Schriften.} 
+%    \begin{macrocode}
+\ProvideTextCommand{\grqq}{T1}{\textquotedblleft}
+\ProvideTextCommand{\grqq}{OT1}{%
+  \save@sf@q{\kern-.07em%
+  \ifmmode\hbox{\textquotedblleft}\else\textquotedblleft\fi
+  \kern.07em\relax}}
+\ProvideTextCommandDefault{\grqq}{\UseTextSymbol{OT1}\grqq}
+%    \end{macrocode}
+% Entsprechend werden die Symbole |\glq| und |\grq| definiert\,\ldots
+%    \begin{macrocode}
+\DeclareRobustCommand{\glq}{%
+  \ifmmode\hbox{\quotesinglbase}\else\quotesinglbase\fi}
+\ProvideTextCommandDefault{\quotesinglbase}{%
+  \UseTextSymbol{OT1}\quotesinglbase}
+\ProvideTextCommand{\quotesinglbase}{OT1}{%
+  \save@sf@q{\set@low@box{\textquoteright\/}\box\z@
+    \kern-.04em\allowhyphens}}
+%    \end{macrocode}
+% \changes{2.5c}{96/04/27}{F"ur \texttt{T1}-kodierte Schriften
+%    bin ich mir momentan nicht sicher, ob f"ur \cs{grq} explizite
+%    \cs{kern} eingef"ugt werden sollten; die DC-Fonts~v1.2 haben
+%    Kerning f"ur ein als schlie"sendes Quote verwendetes Backquote,
+%    deshalb kein \cs{kern}.} 
+%    \begin{macrocode}
+\ProvideTextCommand{\grq}{T1}{\textquoteleft}
+\ProvideTextCommand{\grq}{OT1}{%
+  \save@sf@q{\kern-.0125em%
+  \ifmmode\hbox{\textquoteleft}\else\textquoteleft\fi
+  \kern.07em\relax}}
+\ProvideTextCommandDefault{\grq}{\UseTextSymbol{OT1}\grq}
+%    \end{macrocode}
+% \ldots\,und auch die franz"osische Form der Anf"uhrungszeichen.
+% \changes{2.5c}{96/02/26}{Im Code f"ur die franz"osischen
+%    Anf"uhrungszeichen \cs{m@th} eingef"ugt.}
+% \changes{2.5c}{96/04/28}{Die Boxen f"ur \cs{flqq}, \cs{frqq},
+%    \cs{flq} und \cs{frq} werden mit \cs{raise.2ex} etwas zu tief
+%    gesetzt, deshalb wird jetzt \cs{raise.27ex} aus
+%    \texttt{french.sty} verwendet.}
+% \changes{2.5d}{97/05/01}{\cs{mathrel} bzw.\ \cs{mathbin} in
+%    \cs{flqq}, \cs{frqq}, \cs{flq} und \cs{frq} eingef"ugt.}
+%    \begin{macrocode}
+\DeclareRobustCommand{\flqq}{%
+  \ifmmode\mathrel{\hbox{\guillemotleft}}\else\guillemotleft\fi}
+\ProvideTextCommandDefault{\guillemotleft}{%
+  \UseTextSymbol{OT1}\guillemotleft}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \ifmmode \ll \else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle \ll $}%
+    \allowhyphens}\fi} 
+\DeclareRobustCommand{\frqq}{%
+  \ifmmode\mathrel{\hbox{\guillemotright}}\else\guillemotright\fi}
+\ProvideTextCommandDefault{\guillemotright}{%
+  \UseTextSymbol{OT1}\guillemotright}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \ifmmode \gg \else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle \gg $}%
+    \allowhyphens}\fi}
+%    \end{macrocode}
+%    \begin{macrocode}
+\DeclareRobustCommand{\flq}{%
+  \ifmmode\mathbin{\hbox{\guilsinglleft}}\else\guilsinglleft\fi}
+\ProvideTextCommandDefault{\guilsinglleft}{%
+  \UseTextSymbol{OT1}\guilsinglleft}
+\ProvideTextCommand{\guilsinglleft}{OT1}{%
+  \ifmmode <\else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle <$}\allowhyphens}\fi}
+\DeclareRobustCommand{\frq}{%
+  \ifmmode\mathbin{\hbox{\guilsinglright}}\else\guilsinglright\fi}
+\ProvideTextCommandDefault{\guilsinglright}{%
+  \UseTextSymbol{OT1}\guilsinglright}
+\ProvideTextCommand{\guilsinglright}{OT1}{%
+  \ifmmode >\else \save@sf@q{\penalty\@M
+    \raise .27ex\hbox{$\m@th\scriptscriptstyle >$}\allowhyphens}\fi}
+%    \end{macrocode}
+%
+% Damit w"aren die Makros f"ur die Anf"uhrungszeichen definiert
+% und die Unterscheidung mit/ohne NFSS Version~2 wird f"ur's erste
+% nicht mehr ben"otigt.
+%    \begin{macrocode}
+\fi
+%    \end{macrocode}
+%
+%
+% \section{Anpassung der Umlautmakros}
+%
+% Wie schon bei der Definition des Befehls |\umlaut| erw"ahnt,
+% mu"s das Akzentmakro f"ur die Umlaute angepa"st werden.
+%
+% Um sp"ater zwischen der Original- und der neuen Definition
+% umschalten zu k"onnen, werden die internen Umschaltbefehle
+% |\umlauthigh| und |\umlautlow| definiert.  Da NFSS Version~2
+% schon wieder eine Sonderrolle -- im positiven Sinne -- spielen
+% mu"s, ist wieder eine Unterscheidung der Versionen n"otig.
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname DeclareTextSymbol\endcsname\relax
+%    \end{macrocode}
+%
+% F"ur Versionen ohne NFSS Version~2 wird relativ einfach zwischen
+% den beiden Versionen gewechselt.  Wenn man Schriften mit ge"anderten
+% Kodierungen verwenden will, mu"s dieses Makro ebenso angepa"st
+% werden.
+%    \begin{macrocode}
+\def\umlauthigh{\def\"##1{{\accent127 ##1}}}
+\def\umlautlow{\def\"{\protect\newumlaut}}
+%    \end{macrocode}
+%    \begin{macrocode}
+\else
+%    \end{macrocode}
+%
+% F"ur NFSS Version~2 ist das ganze etwas komplizierter.
+% Da die Befehle |\DeclareText...| nicht mehr nach der Pr"aambel
+% verwendet werden d"urfen, wird der neue symbolische Name
+% |\grmn@OTumlaut| f"ur das Umlautmakro f"ur Schriften in
+% Kodierung~\texttt{OT1} definiert.  Beim Umschalten wird dann die
+% Definition dieses Makro ver"andert.
+%    \begin{macrocode}
+\def\umlauthigh{\def\grmn@OTumlaut##1{{\accent 127 ##1}}}
+\def\umlautlow{\def\grmn@OTumlaut{\protect\newumlaut}}
+\umlauthigh
+%    \end{macrocode}
+% F"ur Schriften in Kodierung \texttt{OT1} und~\texttt{T1} werden hier
+% Standarddefinitionen angegeben, in der das neue Makro verwendet
+% wird.
+%    \begin{macrocode}
+\DeclareTextAccent{\"}{T1}{4}
+\DeclareTextAccent{\"}{OT1}{127}
+\DeclareTextCompositeCommand{\"}{OT1}{a}{\grmn@OTumlaut{a}}%
+\DeclareTextCompositeCommand{\"}{OT1}{o}{\grmn@OTumlaut{o}}%
+\DeclareTextCompositeCommand{\"}{OT1}{u}{\grmn@OTumlaut{u}}%
+\DeclareTextCompositeCommand{\"}{OT1}{A}{\grmn@OTumlaut{A}}%
+\DeclareTextCompositeCommand{\"}{OT1}{O}{\grmn@OTumlaut{O}}%
+\DeclareTextCompositeCommand{\"}{OT1}{U}{\grmn@OTumlaut{U}}%
+\DeclareTextComposite{\"}{T1}{a}{228}
+%    \end{macrocode}
+%
+% Da diese Definitionen in einer "alteren Patch-Datei am Beginn eines
+% Dokuments ge"andert werden, werden diese "Anderungen einfach
+% nochmals mit den oben angegebenen Anweisungen "uberschrieben,
+% obwohl dies eigentlich nur f"ur diese veraltete \LaTeXe-Version
+% mit dieser  Patch-Datei notwendig w"are.  Dies sollte in einer
+% der n"achsten Version des German-Style entfernt werden!
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname AtBeginDocument\endcsname\relax \else
+  \AtBeginDocument{%
+    \DeclareTextAccent{\"}{T1}{4}%          % from `ltpatch.tex' 
+    \DeclareTextAccent{\"}{OT1}{127}%       % from `ltpatch.tex'
+    % \DeclareTextCommand{\"}{OT1}{\newumlaut}% from `ltpatch.tex'
+    % % has to be removed
+    \DeclareTextCompositeCommand{\"}{OT1}{a}{\grmn@OTumlaut{a}}%
+    \DeclareTextCompositeCommand{\"}{OT1}{o}{\grmn@OTumlaut{o}}%
+    \DeclareTextCompositeCommand{\"}{OT1}{u}{\grmn@OTumlaut{u}}%
+    \DeclareTextCompositeCommand{\"}{OT1}{A}{\grmn@OTumlaut{A}}%
+    \DeclareTextCompositeCommand{\"}{OT1}{O}{\grmn@OTumlaut{O}}%
+    \DeclareTextCompositeCommand{\"}{OT1}{U}{\grmn@OTumlaut{U}}%
+    \DeclareTextComposite{\"}{T1}{a}{228}%  % from `ltpatch.tex'
+  }
+\fi
+%    \end{macrocode}
+%    \begin{macrocode}
+\fi
+%    \end{macrocode}
+%
+%
+% \section{Mechanismus f"ur Doublequote-Notation}
+%
+% Die Eingabenotation |"x| f"ur Umlaute, spezielle Trennungen
+% u.\,a., die die Style-Option "`german"' anbietet, wird durch den
+% \textit{active character} Double\-quote realisiert.  Dieses aktive
+% Zeichen liest das folgende Token als sein Argument und entscheidet
+% abh"angig von diesem Argument, welche Kommandos zur Realisierung
+% verwendet werden sollen.
+%
+% Nach dieser Beschreibung scheint die Makrodefinition, die diesem
+% aktiven Zeichen zugewiesen wird, relativ einfach zu realisieren zu
+% sein:
+%\begin{verbatim}
+%\catcode`\"=\active
+%\def "#1{\ifx#1a\newumlaut{a}\else ...etc.etc... \fi}
+%\end{verbatim}
+% Leider gibt es bei dieser einfachen Implementierung einige
+% Fehlerm"oglichkeiten: Zum einen "uberliest \TeX\ vor jedem nicht
+% begrenztem Argument eines Makros alle Leerzeichen, so da"s die
+% beiden Eingaben |" a| und~|"a| nicht unterscheidbar sind.
+% Zum zweiten erzeugen die Gruppenklammern |{| und~|}|
+% als Argument Fehler, da bei einer "offnenden Klammer eine komplette
+% Liste gelesen wird und eine schlie"sende Klammer zu einem Fehler
+% f"uhrt.
+%
+% Will man diese Probleme mit der etwas "`schlaueren"' L"osung
+%\begin{verbatim}
+%\catcode`\"=\active
+%\def "{\afterassignment\do@activedq \let\next= }
+%\def\do@activedq{\ifx\next\bgroup \def\next{\dq\bgroup}\else
+%   \ifx\next\egroup \def\next{\dq\egroup}\else
+%   \expandafter\ifx\space\next \def\next{\dq\space}\else
+%   \ifx a\next \def\next{\newumlaut{a}}\else
+%   ...etc.etc... \fi\fi\fi...\fi \next}
+%\end{verbatim}
+% vermeiden, handelt man sich ein anderes, schwerwiegenderes Problem
+% ein:  In \TeX\ kann man ganzzahlige Konstanten auch in hexadezimaler
+% Notation eingeben.  Dazu wird einfach der hexadezimalen Zahl ein
+% normales Double\-quote-Zeichen vorangestellt (Bsp.: |"FF| f"ur die
+% Konstante~255).  Mit der "`schlaueren"' L"osung meldet \TeX\ jedoch
+% beim Einlesen aller hexadezimalen Konstanten bei aktiviertem
+% Double\-quote eine fehlende Zahl.  Der Grund ist einfach:
+% Primitive, wie |\afterassignment| oder |\futurelet|, sind
+% nicht expandierbar und nichtexpandierbare Token beenden das
+% Scan\-nen einer Zahl.
+%
+% Um diesen schwerwiegenden Nachteil der "`schlaueren"' L"osung
+% zu vermeiden (die "ahnlich in Version~2.3c/d verwendet wurde, wobei
+% schon in den Versionen 2.2--2.3b ein |\protect| mit Bedeutung
+% |\relax| diesen Fehler erzeugt hat), mu"s man wohl oder "ubel die
+% erste L"osung verwenden und deren Nachteile in Kauf nehmen.
+%
+% Auf einen anderen Punkt mu"s auch geachtet werden: Damit \TeX\ f"ur
+% die resultierenden Umlaute und An"-f"uhrungs"-zeichen ein Kerning
+% durch"-f"uhrt und Ligaturen bildet, d"urfen vor und nach diesen
+% Zeichen keine nichtexpandierbaren Token, wie Gruppenklammern,
+% |\relax|, etc., in der Eingabe "`stehenbleiben"'.  Dies mu"s
+% insbesondere auch f"ur die F"alle gelten, in denen der
+% Double\-quote eine hexadezimale Konstante einleitet!
+%
+%
+% \subsection{Fehler bei undefinierten
+%             \protect\texttt{\char34x}-Kombinationen}
+%
+% F"ur Argumente des Double\-quote-Makros, f"ur die keine Bedeutung
+% definiert wurde, sollte eine Fehlermeldung an den Benutzer
+% ausgegeben werden.  Dies verhindert zum einen, da"s einfache
+% Tippfehler "uber"-sehen werden, zum anderen gibt es in sp"ateren
+% Versionen, in denen f"ur weitere Argumente Bedeutungen definiert
+% werden, weniger Fehler in alten Dokumenten.
+%
+% Mit dem (undokumentierten) Befehl |\dqwarninglevel| kann festgelegt
+% werden, bei welchen Befehlen Warnungen ausgegeben werden:
+% 0~bedeutet momentan keine Warnung, 1~nur f"ur undefinierte
+% Kombinationen (Default) und 2~auch Warnungen f"ur die Befehle f"ur
+% drei gleiche Konsonanten.
+%
+% Es  bietet sich an, den Level~2 daf"ur zu verwenden, vor
+% durch die Rechtschreibreform obsolet gewordenen Befehlen zu
+% warnen, n"amlich Dreier"=Kombinationen und zus"atzlich die
+% Befehle zur |ck|"~Trennung: |"ck| und |\ck|.
+% \changes{2.5e (beta 1)}{98/05/04}{Level~2 f"ur neue Rechtschreibung.}
+%    \begin{macrocode}
+\def\dqwarninglevel#1{\chardef\grmn@dqwarninglevel=#1\relax}
+%<old> \dqwarninglevel{1}
+%<new> \dqwarninglevel{2}
+%    \end{macrocode}
+%
+% Neuere \LaTeX-Versionen verwenden den in \TeX~3 vorhandenen
+% Parameter |\inputlineno|, um mit jeder Fehlermeldung auch die
+% Zeilennummer auszugeben.  Da dies allgemein sinnvoll ist, wird das
+% dazu benutzte \LaTeX-Makro definiert, falls es bei Verwendung von
+% Plain-\TeX\ oder einer alten \LaTeX-Version noch nicht definiert
+% ist und \TeX~3 verwendet wird (|\inputlineno| mu"s existieren
+% und einen positiven Wert haben).
+% \changes{2.5d}{97/05/01}{\cs{@empty} ist in Plain-\TeX{} nicht
+%    definiert, daher \cs{on@line} besser direkt definieren.}
+%    \begin{macrocode}
+\expandafter\ifx\csname on@line\endcsname\relax
+  \ifx\inputlineno\undefined \def\on@line{}%
+  \else
+    \ifnum\inputlineno<\z@ \def\on@line{}%
+    \else \def\on@line{ on input line \the\inputlineno}%
+\fi\fi\fi
+%    \end{macrocode}
+%
+% F"ur die Ausgabe von Warnungen und Fehlermeldungen werden
+% weitere Makros definiert.
+% \changes{2.5e (beta 1)}{98/05/04}{Neue Warnbefehle nur f"ur "`ngerman"'.}
+%    \begin{macrocode}
+\def\grmn@dq@error#1{%
+  \errhelp{Use `` for a simple double quote character.}%
+%<old>  \errmessage{german: The command \dq\string#1 is undefined}}
+%<new>  \errmessage{ngerman: The command \dq\string#1 is undefined}}
+\def\grmn@dq@warning#1{%
+  \immediate\write\sixt@@n
+%<old>    {german: \dq\string#1 is possibly wrong\on@line.}}
+%<new>    {ngerman: \dq\string#1 is possibly wrong\on@line.}}
+%    \end{macrocode}
+% Der  Befehl |\grmn@dq@warning@obsolete| l"ot den
+% |\grmn@dq@warning|"~Befehl nur in den F"allen ab, bei denen
+% der "`Warning"=Level"' auf zwei steht, also bei denen der Anwender 
+% auf den veralteten Befehl hingewiesen werden soll.
+% Da der erste Parameter sowohl ein Befehlsname |\ck| als auch eine
+% |"|"~Kombination sein kann, mu"s der Aufrufer daf"ur Sorge tragen,
+% da"s die Parameter richtig geschrieben werden k"onnen. Als
+% Beispiel sollte |"f| als |\dq f| und |\ck| als |\string\ck| 
+% "ubergeben werden).
+%    \begin{macrocode}
+%<*new>
+\def\grmn@dq@warning@obsolete#1#2{%
+  \immediate\write\sixt@@n
+  {ngerman: #1 is now obsolete, please use #2 instead\on@line.}}
+%</new>  
+%    \end{macrocode}
+% F"ur die Dreier"=Kombinationen sind die |"|"~Befehle
+% "uberfl"ussig geworden. Das Makro, abgeleitet aus
+% |\grmn@dqdisc|, gibt daher eine Warnung aus und
+% setzt die Buchstaben. Da drei gleiche Buchstaben nach dem
+% zweiten getrennt werden d"urfen, wird die entsprechende
+% Trennhilfe eingef"ugt (|"-|).
+%    \begin{macrocode}
+%<*new>
+\def\grmn@dqobsolete@three#1{#1#1%
+  \ifnum\grmn@dqwarninglevel>\@ne
+    \grmn@dq@warning@obsolete{\dq#1#1}{#1#1#1}%
+  \fi
+  \penalty\@M\-\allowhyphens}
+%</new>  
+%    \end{macrocode}
+% Dasselbe wird nun f"ur die Kombination |"ck| gemacht,
+% wobei hier die Trennhilfe vor den Buchstaben |ck| wie
+% im |\ck|"~Befehl gesetzt wird.
+%    \begin{macrocode}
+%<*new>
+\def\grmn@dqobsolete@ck#1#2{%
+   \ifnum\grmn@dqwarninglevel>\@ne
+     \grmn@dq@warning@obsolete{\dq#1#2}{#1#2}%
+   \fi
+   \penalty\@M\-\allowhyphens#1}
+%</new>
+%    \end{macrocode}
+%
+%
+% \subsection{Definition der Double\-quote-Befehle}
+%
+% Jeder definierte Double\-quote-Befehl wird in einem eigenen Makro
+% abgelegt, in dessen Name das Argument, also das einzelne Zeichen
+% nach dem Double\-quote, als Schl"ussel verwendet wird.
+%
+% Das Makro |\grmn@dq@macro| hat zwei Argumente und erzeugt unter
+% Verwendung des zweiten Arguments diesen Makronamen.  Das erste
+% Argument, ein einzelnes Token, wird vor diesen Makronamen gesetzt.
+% Diese zuerst etwas komisch anmutende Kombination von Argumenten
+% verhindert, da"s bei der Verwendung dieses Makros Unmengen von
+% \cs{expandafter}-Anweisungen notwendig werden.  Der Befehl
+% \cs{string} verhindert, da"s aktive Zeichen als Argumente
+% (z.\,B.\ eine Tilde) Fehler erzeugen.
+%    \begin{macrocode}
+\def\grmn@dq@macro#1#2{%
+  \expandafter#1\csname @grmn@@\string #2dq\endcsname}
+%    \end{macrocode}
+%
+% Neue Befehlskombinationen k"onnen mit dem Befehl |\def@dqmacro|
+% definiert werden.  Argument~1 ist dabei das Zeichen im Befehl,
+% Argument 2 und~3 die Expansionen, die jeweils f"ur Text- und
+% Mathematik"-modus verwendet werden sollen.
+%    \begin{macrocode}
+\def\def@dqmacro#1#2#3{%
+  \grmn@dqredefcheck{#1}%
+  \grmn@dq@macro\def{#1}{{#2}{#3}}}
+%    \end{macrocode}
+%
+% Ein Synonym f"ur einen schon zuvor definierten Befehl kann man mit
+% |\let@dqmacro| definieren.
+%    \begin{macrocode}
+\def\let@dqmacro#1#2{\begingroup
+  \grmn@dqredefcheck{#1}%
+  \edef\x{\endgroup \let
+    \grmn@dq@macro\noexpand{#1}\grmn@dq@macro\noexpand{#2}}%
+  \x}
+%    \end{macrocode}
+%
+% Wird ein zuvor definierter Befehl erneut definiert oder
+% umdefiniert, sollte dies zumindest in der Protokolldatei erscheinen,
+% um gemeldete Fehler, die darauf zur"uckzuf"uhren sind, einfacher
+% erkennen zu k"onnen.  Hier wird f"ur das Makro |\grmn@dqredefcheck|,
+% das diese Zeile in die Protokolldatei schreibt, ein Dummy definiert,
+% die sp"ater durch die end"-g"ultige Makrodefinition ersetzt wird.
+%    \begin{macrocode}
+\def\grmn@dqredefcheck#1{}
+%    \end{macrocode}
+%
+%
+% \subsection{Makros f"ur den aktiven Double\-quote}
+%
+% Das Makro |\@active@dq| wird sp"ater an das aktive
+% Double\-quote-Zeichen gebunden.  Dieses liest das n"achste Zeichen
+% (mit den zuvor schon genannten Einschr"ankungen), pr"uft ab, ob
+% hier"-f"ur eine Bedeutung definiert wurde und gibt in diesem Falle
+% einen Fehler aus.
+%    \begin{macrocode}
+\def\@active@dq#1{%
+  \grmn@dq@macro\ifx{#1}\relax
+    \ifnum\grmn@dqwarninglevel>\z@ \grmn@dq@error{#1}\fi
+    \expandafter\grmn@@normal@dq
+  \else
+    \expandafter\grmn@@active@dq
+  \fi {#1}}
+%    \end{macrocode}
+%
+% Leitet der Double\-quote eine hexadezimale Konstante ein, folgt
+% also eine Ziffer oder ein Gro"sbuchstabe im Bereich~\mbox{A--F}, so
+% soll "`nichts"' unternommen werden.  Um diese speziellen Befehle zu
+% erkennen, werden den zugeordneten \emph{control sequences} sp"ater
+% die Bedeutung eines |\noexpand| zugeordnet.
+% \changes{2.5b}{95/01/20}{Einziger Bugfix f"ur v2.5a: In
+%    \cs{grmn@@active@dq} wurde \cs{grmn@@normal@dq} (expandiert zu
+%    zwei einfachen Quotes) statt \cs{grmn@normal@dq} (expandiert zu
+%    einem Double\-quote) aufgerufen, so da"s es zu Fehlern bei
+%    Hexzahlen kam.}
+%    \begin{macrocode}
+\def\grmn@@active@dq#1{%
+  \grmn@dq@macro\ifx{#1}\noexpand
+    \expandafter\grmn@normal@dq
+  \else
+    \expandafter\grmn@@@active@dq
+  \fi {#1}}
+%    \end{macrocode}
+%
+% F"ur die F"alle, in denen Anf"uhrungszeichen erzeugt werden sollen,
+% werden zwei weitere Befehle aufgerufen: |\grmn@normal@dq| wird f"ur
+% die hexadezimalen Konstanten verwendet, in denen ein Double\-quote
+% ben"otigt wird.  |\grmn@@normal@dq| wird dagegen im Fehlerfalle
+% verwendet und gibt zwei einzelne Quotes aus, um Endlosschleifen bei
+% der Expansion zu vermeiden.
+%    \begin{macrocode}
+\def\grmn@@normal@dq#1{``#1}
+\def\grmn@normal@dq#1{\dq #1}
+%    \end{macrocode}
+%
+%
+% \subsection{Sch"utzen von zerbrechlichen Bedeutungen}
+%
+% Da die Double\-quote-Befehle auch zu zerbrechlichen Bedeutungen
+% expandieren k"onnen, mu"s ein |\protect| o.\,"a.\ so
+% eingef"ugt werden, da"s einerseits keine nicht expandierbaren Token
+% eingef"ugt werden.  Andererseits kann, wie im Falle einer Tilde,
+% auch das Argument selbst expandierbar sein und mu"s zum mehrfachem
+% Lesen und Schreiben entsprechend gesch"utzt werden.  (Beispielsweise
+% wird der Inhalt von \LaTeX{}s \texttt{aux}-Datei wieder in die
+% \texttt{toc}-Datei geschrieben, bevor diese end"-g"ultig eingelesen
+% wird.)
+%
+% Aufgrund letzterem folgt jetzt ein Hack mit \textit{category codes},
+% um beim Schreiben auf eine Datei keine zus"atzlichen Zeichen
+% ein"-f"ugen zu m"ussen, wie dies noch in Version~2.4a gemacht
+% wurde.
+%
+% Im folgenden ben"otigt dieser Hack geschweifte Klammern mit
+% \textit{category code} "`other"'.  Als tempor"arer Ersatz f"ur
+% die \TeX-Klammern werden die runden Klammern verwendet.  Au"serdem
+% wird der in \LaTeXe\ verwendete Trick mit einem Leerzeichen im
+% Makronamen verwendet, um diese speziellen Klammern f"ur "`interne"'
+% Expansionen, wie beim Primitiv |\marks|, wieder korrekt
+% einlesen zu k"onnen. 
+%    \begin{macrocode}
+\begingroup
+  \catcode`\(=1\lccode`\(=`\{\catcode`\{=12
+  \catcode`\)=2\lccode`\)=`\}\catcode`\}=12
+  \catcode`\ =11\relax% <= do not delete this and the
+\lowercase(\endgroup% <=== following percent characters!
+%    \end{macrocode}
+%
+% Zuerst wird das m"oglicherweise expandierbare Argument durch den
+% Befehl |\string| vor Expansion beim Schreiben auf eine Datei
+% oder Erzeugen eines Mark gesch"utzt.  Ist das Argument leer, so
+% wird die nachfolgende geschweifte Klammer zu einer Klammer mit
+% \textit{category code} "`other"'.  Hierin liegt der Grund, wieso
+% f"ur diese Definitionen die \textit{category codes} der
+% geschweiften Klammern ge"-"andert wurden.
+%    \begin{macrocode}
+\def\grmn@@@active@dq#1(%
+\expandafter\grmn@@@@active@dq\expandafter{\string#1})%
+%    \end{macrocode}
+%
+% Nachdem das Argument gesch"utzt wurde, wird f"ur die F"alle, in
+% denen |\protect| eine besondere Bedeutung hat, dieses
+% eingef"ugt.  Hat das |\protect| "`nur"' die Bedeutung eines
+% |\relax| oder eines leeren Makros, so wird es nicht
+% eingef"ugt, um Kerning und Ligaturbildung nicht zu verhindern.
+%
+% Die Makros \verb*:\active@dq : und \verb*:\dq@prtct :, die ein
+% Leerzeichen im Namen haben, sind die "`internen"' Versionen des
+% aktiven Double\-quote-Makros und eines Makros, das das Argument
+% sch"utzt.  Werden diese auf eine Datei geschrieben und wieder
+% eingelesen, so werden beim Lesen die entsprechenden Makros ohne
+% diese Leerzeichen am Ende des Namens expandiert.
+%    \begin{macrocode}
+\def\grmn@@@@active@dq(%
+\ifx\protect\relax\else\ifx\protect\empty\else%
+\expandafter\expandafter\expandafter\protect%
+\fi\fi%
+\active@dq \dq@prtct )%
+%    \end{macrocode}
+%
+% Zuerst zum einfacheren Makropaar \verb*:\dq@prtct : und
+% |\dq@prtct|, das das nachfolgende Argument beim wiederholten
+% Einlesen von und Schreiben auf eine Datei sch"utzen soll.  Beim
+% Wiedereinlesen, bei dem das Makro |\dq@prtct| verwendet wird, sollen
+% alle Zeichen (normalerweise nur Leerzeichen, in seltenen F"allen
+% aber auch die Zeichen des Makros |\dq@prtct|) bis zur "offnenden
+% Klammer ignoriert werden.  Anschlie"send soll dieses Argument wieder
+% gesch"utzt werden, wobei gleich noch ein |\dq@prtct| vorangestellt
+% wird, um das Argument bei einem erneuten Schreiben wiederum zu
+% sch"utzen.
+%    \begin{macrocode}
+\def\dq@prtct#1#(\@dq@prtct)%
+\def\@dq@prtct#1(\string\dq@prtct{\string#1})%
+%    \end{macrocode}
+% Das Makro \verb*:\dq@prtct : k"onnte auf den ersten Blick einfacher
+% definiert werden, da das Argument schon zuvor in
+% |\grmn@@@active@dq| gesch"utzt wurde.  Jedoch kann der Fall
+% auftreten, da"s zuerst (mit |\protect|\(=\)|\relax|) expandiert und
+% dann erst auf eine Datei geschrieben wird.  Da auch in diesen
+% F"allen zumindest die Zeichenkette |\dq@prtct| in diese Datei
+% geschrieben werden mu"s, wird dies hier einfach getan\ldots
+%    \begin{macrocode}
+\def\dq@prtct #1{#2}(\string\dq@prtct{\string#2})%
+%    \end{macrocode}
+%
+% Jetzt folgt noch das Makropaar \verb*:\active@dq : und
+% |\active@dq|.  F"ur die interne Variante \verb*:\active@dq : dieses
+% Paars mu"s die zuvor eingef"ugte Zeichenkette |\dq@prtct| "uberlesen
+% und die geschweiften Klammern mit \textit{category code} "`other"'
+% durch "`richtige"' Klammern ersetzt werden.
+%    \begin{macrocode}
+\def\active@dq #1{#2}(\grmn@active@@dq(#2))%
+%    \end{macrocode}
+%
+% Da die ge"anderten \textit{category codes} nicht mehr ben"otigt
+% werden, wird das Argument des |\lowercase|-Befehl beendet und
+% die Gruppe mit diesen "Anderungen geschlossen.
+%    \begin{macrocode}
+)%
+%    \end{macrocode}
+%
+% Wird |\active@dq| von einer Datei eingelesen, m"ussen alle Token
+% bis zur "offnenden Klammer (z.\,B.\ die Zeichenkette |\dq@prtct|)
+% "uber"-lesen werden.  Anschlie"send kann der Doublequote-Mechanismus
+% "`angeschmissen"' werden, als ob ein normales Double\-quote gelesen
+% worden w"are.  Wir k"onnten auch |\grm@active@@dq| aufrufen, was
+% jedoch den Nachteil h"atte, da"s nicht erneut Tokens gesch"utzt
+% werden, falls dies notwendig sein m"u"ste.
+% \changes{2.5c}{96/04/21}{In \cs{active@dq}, das nur in einer
+%    wiedereingelesen Datei auftauchen sollte, das urspr"ungliche
+%    \cs{grmn@active@@dq} durch \cs{@active@dq} ersetzt, um
+%    Protection-Mechanismus erneut zu durchlaufen.}
+%    \begin{macrocode}
+\def\active@dq#1#{\@active@dq}%
+%    \end{macrocode}
+%
+% Zum Schlu"s bleibt nur noch die Auswahl der f"ur diese
+% Double\-quote-Kombination abgelegte Definition abh"angig vom
+% momentanen Modus.
+%    \begin{macrocode}
+\def\grmn@active@@dq#1{%
+  \csname grmn@dq\ifmmode second\else first\fi
+    \expandafter\expandafter\expandafter\expandafter
+  \grmn@dq@macro\endcsname{#1}}
+%    \end{macrocode}
+% Die Makros |\grmn@dqfirst| und |\grmn@dqsecond|, die hier verwendet
+% werden, sind schon zuvor in Abschnitt~\ref{grmndqfirst} definiert
+% worden.
+%
+%
+% \subsection{Liste der Standard-Doublequote-Befehle}
+%
+% Bisher melden alle |"x|-Befehle einen Fehler, da noch kein
+% einziger Double\-quote-Befehl definiert wurde.  Da zumindest die
+% Double\-quote-Kombinationen, die eine hexadezimale Konstante
+% darstellen k"onnten, "`durchgelassen"' werden sollten, werden diese
+% als erste definiert.   Wie schon in den zuvor beschriebenen Makros
+% erl"autert, wird den zugeordneten \textit{control sequences} die
+% Bedeutung eines |\noexpand| zugeordnet, um diese spezielle
+% Bedeutung zu markieren.
+%    \begin{macrocode}
+\grmn@dq@macro\let{0}=\noexpand
+\let@dqmacro{1}{0}\let@dqmacro{2}{0}\let@dqmacro{3}{0}
+\let@dqmacro{4}{0}\let@dqmacro{5}{0}\let@dqmacro{6}{0}
+\let@dqmacro{7}{0}\let@dqmacro{8}{0}\let@dqmacro{9}{0}
+\let@dqmacro{A}{0}\let@dqmacro{B}{0}\let@dqmacro{C}{0}
+\let@dqmacro{D}{0}\let@dqmacro{E}{0}\let@dqmacro{F}{0}
+%    \end{macrocode}
+% Einige der gerade definierten Kombinationen werden sp"ater
+% redefiniert.  Darunter fallen die folgenden Gro"sbuchstaben: A, C,
+% E und~F, denen dann die Bedeutungen Umlaut-A,
+% \mbox{CK/K-K}-Trennung, Trema-E und \mbox{FF/FF-F}-Trennung
+% zugewiesen wird.  Deshalb kann es zu Problemen mit hexadezimalen
+% Konstanten im Bereich |"A0|--|"FF| kommen.
+%
+% In "alteren Versionen der Style-Option "`german"' konnte man mit
+% |"{}| ein normales Double\-quote erzeugen.  Dies sollte aus
+% Kompatibilit"at zu "alteren Texten, die dies ausnutzen, auch
+% weiterhin m"oglich sein, auch wenn dies der Grund f"ur die zuvor
+% beschriebenen Tricks mit den "Anderungen der \textit{category
+% codes} ist.
+% \changes{2.5d}{97/05/01}{Leeres Klammerpaar nach \cs{dq} f"ur
+%    \texttt{\protect\dq\symbol{`\{}\symbol{`\}}} entfernt.}
+% \changes{2.5d}{97/05/01}{Leeres Klammerpaar nach \cs{dq} f"ur
+%    \texttt{\protect\dq\symbol{`\{}\symbol{`\}}} wieder eingef"ugt,
+%    da es dadurch mehrfach gelesen und geschrieben werden kann.}
+%    \begin{macrocode}
+\def@dqmacro{}{\dq{}}{\dq{}}
+%    \end{macrocode}
+%
+% Die Definition der Kombinationen, die Umlaute erzeugen, ist
+% entsprechend einfach,
+% \changes{2.5d}{97/04/12}{"Uberbleibsel \cs{@UMLAUT} aus
+%    Vor-NFSS2-Zeiten durch \cs{\protect\dq} ersetzt.}
+%    \begin{macrocode}
+\def@dqmacro{a}{\"a}{\@MATHUMLAUT a}
+\def@dqmacro{o}{\"o}{\@MATHUMLAUT o}
+\def@dqmacro{u}{\"u}{\@MATHUMLAUT u}
+\def@dqmacro{A}{\"A}{\@MATHUMLAUT A}
+\def@dqmacro{O}{\"O}{\@MATHUMLAUT O}
+\def@dqmacro{U}{\"U}{\@MATHUMLAUT U}
+%    \end{macrocode}
+% genauso wie diejenige f"ur den Buchstaben~\ss.  Leider verhindert
+% das leere Klammerpaar nach dem Token |\ss| in dieser Definition, die
+% f"ur Plain-\TeX\ notwendig ist, da"s nach dem~\ss\ Ligaturen
+% gebildet werden oder Kerning eingef"ugt werden kann.  Dies soll in
+% der n"achsten Version verbessert werden. 
+% \changes{2.5d}{97/04/13}{\cs{@SS} in \cs{@MATHss} umbenannt.}
+% \changes{2.5d}{97/04/13}{F"ur \LaTeXe{} werden die leeren
+%    Klammerpaare nach \cs{ss} und \cs{@MATHss} entfernt.}
+% \changes{2.5d}{97/04/13}{F"ur \texttt{\symbol{`\"}S} wird
+%    \cs{SS} verwendet, das in \LaTeXe{} bereits definiert ist
+%    (Hinweis von Jaakob Kind
+%    \texttt{j.kind@stochastik.rwth-aachen.de}, August 1996).}
+% \changes{2.5d}{97/05/01}{Expansion von \cs{@MATHss} ist nach
+%    Einf"ugung eines \cs{mathord} ok, daher leeres Klammerpaar
+%    auch f"ur \LaTeX~2.09 und Plain-\TeX{} entfernt.}
+%    \begin{macrocode}
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname DeclareTextSymbol\endcsname\relax
+  \def@dqmacro{s}{\ss{}}{\@MATHss}
+\else
+  \def@dqmacro{s}{\ss}{\@MATHss}
+\fi
+\def@dqmacro{S}{\SS}{\SS}
+\let@dqmacro{z}{s}
+\def@dqmacro{Z}{SZ}{SZ}
+%    \end{macrocode}
+% Spezielle Kombinationen f"ur Tremata sind, bis auf die Ausnahme
+% des~"`i"' ohne \mbox{I-Punkt}, ebenso einfach\ldots
+%    \begin{macrocode}
+\def@dqmacro{e}{\highumlaut e}{\@MATHUMLAUT e}
+\def@dqmacro{E}{\highumlaut E}{\@MATHUMLAUT E}
+\def@dqmacro{i}{\highumlaut{\i}}{\@MATHUMLAUT\imath}
+\def@dqmacro{I}{\highumlaut I}{\@MATHUMLAUT I}
+%    \end{macrocode}
+% \ldots\,wie die Definitionen f"ur die Anf"uhrungszeichen.  Die hier
+% eigentlich f"ur Plain-\TeX\ notwendigen leeren Klammerpaare, die
+% Kerning und Ligaturbildung verhindern, konnten entfernt werden,
+% nachdem sichergestellt ist, da"s nach vollst"andiger Expansion der
+% Makros am Ende keine \textit{control sequence} verbleibt.
+% \changes{2.5d}{97/04/13}{F"ur \LaTeXe{} werden die leeren
+%    Klammerpaare nach \cs{glqq}, \cs{grqq}, \cs{flqq} und
+%    \cs{frqq} entfernt.}
+% \changes{2.5d}{97/05/01}{Leere Klammernpaare ebenso f"ur
+%    \LaTeX~2.09 und Plain-\TeX{} entfernen, nachdem daf"ur gesorgt
+%    wurde, da"s bei vollst"andiger Expansion am Ende keine cs
+%    verbleibt.}
+%    \begin{macrocode}
+\def@dqmacro{`}{\glqq}{\glqq}
+\def@dqmacro{'}{\grqq}{\grqq}
+\def@dqmacro{<}{\flqq}{\flqq}
+\def@dqmacro{>}{\frqq}{\frqq}
+%    \end{macrocode}
+%
+% Bei den Definitionen der Trennhilfen mu"s nur auf die
+% Einschr"ankungen des Mathematik"-modus geachtet werden.
+%    \begin{macrocode}
+\def@dqmacro{-}{\penalty\@M\-\allowhyphens}%
+               {\penalty\@M\-\allowhyphens}
+\def@dqmacro{|}{\penalty\@M\discretionary{-}{}{\kern.03em}%
+                \allowhyphens}{}
+\def@dqmacro{"}{\hskip\z@skip}{\hskip\z@skip}
+%    \end{macrocode}
+%    \begin{macrocode}
+\def@dqmacro{~}{\leavevmode\hbox{-}}{-}
+\def@dqmacro{=}{\penalty\@M-\hskip\z@skip}%
+               {\penalty\@M-\hskip\z@skip}
+%    \end{macrocode}
+%
+% Die restlichen Standard-Doublequote-Befehle werden je nach alter und
+% neuer Rechtschreibung verschieden definiert.  
+%
+% Mit "`german"' sollen
+% Dreifachkonsonanten nur im Fall der Silbentrennung erzeugt werden:
+% Um die Definitionen f"ur die Ausnahmen der Silbentrennung zu
+% vereinfachen, wird das Makro |\grmn@dqdisc| verwendet, das die
+% gemeinsamen Code-Teile enth"alt.
+%    \begin{macrocode}
+%<*old>
+\def\grmn@dqdisc#1#2{\penalty\@M
+  \ifnum\grmn@dqwarninglevel>\@ne \grmn@dq@warning{#1}\fi
+  \discretionary{#2-}{}{#1}\allowhyphens}
+%    \end{macrocode}
+% Auch bei diesen Definitionen mu"s der Mathematikmodus separat
+% gehandhabt werden.  Wie man hier bemerken sollte, liest das
+% Double\-quote-Makro nur das n"achste Zeichen und pr"uft nicht nach,
+% ob nach der Kombination~|"c| auch ein~\texttt{k} folgt.  Dies
+% ist bis auf die Kombination~|"f| f"ur die meisten Schriften
+% nicht notwendig, da in diesen keine Ligaturen definiert sind.
+%    \begin{macrocode}
+\def@dqmacro{c}{\grmn@dqdisc ck}{c}
+\def@dqmacro{C}{\grmn@dqdisc CK}{C}
+%    \end{macrocode}
+%    \begin{macrocode}
+\def@dqmacro{l}{\grmn@dqdisc l{ll}}{l}
+\def@dqmacro{L}{\grmn@dqdisc L{LL}}{L}
+\def@dqmacro{m}{\grmn@dqdisc m{mm}}{m}
+\def@dqmacro{M}{\grmn@dqdisc M{MM}}{M}
+\def@dqmacro{n}{\grmn@dqdisc n{nn}}{n}
+\def@dqmacro{N}{\grmn@dqdisc N{NN}}{N}
+\def@dqmacro{p}{\grmn@dqdisc p{pp}}{p}
+\def@dqmacro{P}{\grmn@dqdisc P{PP}}{P}
+\def@dqmacro{r}{\grmn@dqdisc r{rr}}{r}
+\def@dqmacro{R}{\grmn@dqdisc R{RR}}{R}
+\def@dqmacro{t}{\grmn@dqdisc t{tt}}{t}
+\def@dqmacro{T}{\grmn@dqdisc T{TT}}{T}
+\def@dqmacro{F}{\grmn@dqdisc F{FF}}{F}
+%    \end{macrocode}
+%
+% \changes{2.5c}{96/04/21}{Bei \texttt{{\protect\dq}ff} sollte
+%    ff-Ligatur nicht unterdr"uckt werden (Bugfix von Joachim Schrod,
+%    ehemals f"ur Version 2.4, jedoch hier mit dem Trick des
+%    initialisierten \cs{grmn@dqnextff} erg"anzt).}
+% \changes{2.5d}{97/04/13}{Fehler f"ur \texttt{{\protect\dq}f}, falls
+%    danach kein weiteres~f folgt, beseitigt (Hinweis von Carsten
+%    J"ager \texttt{jaeger@Physiology.RWTH-Aachen.DE}, M"arz 1997).}
+%
+% In den meisten Schriften ist f"ur \texttt{ff} eine Ligatur
+% definiert, die auch in Wortfugen bei Ausfall des
+% dritten~\glq f\grq{} verwendet werden sollte.  Die hier verwendeten
+% Makros sind zerbrechlich (\emph{fragile}, jedoch mit einer nicht
+% ganz sauberen Abhilfe, siehe unten), was aber nur in
+% nicht-\LaTeX-basierten Formaten zu Problemen f"uhren wird.  F"ur
+% diese Formate mu"s |\protect| in Primitiven wie |\edef|, |\write|,
+% |\mark|, etc.\  entsprechend definiert werden! 
+%    \begin{macrocode}
+\def@dqmacro{f}{\grmn@dqdiscff}{f}
+\def\grmn@dqdiscff{\penalty\@M
+  \ifnum\grmn@dqwarninglevel>\@ne \grmn@dq@warning f\fi
+  \afterassignment\grmn@dqinsertff \let\grmn@dqnextff= }
+\def\grmn@dqinsertff{%
+  \if f\grmn@dqnextff
+    \expandafter\grmn@dqfirst\else\expandafter\grmn@dqsecond\fi
+  {\relax\discretionary{ff-}{f}{ff}\allowhyphens}{f\grmn@dqnextff}}
+%    \end{macrocode}
+%
+% F"ur die zuvor schon erw"ahnten F"alle, in denen |\protect| nicht
+% entsprechend definiert wird, initialisieren wir |\grmn@dqnextff| auf
+% den typischen Wert~\glq f\grq.  Da die Makros f"ur die ff-Ligatur
+% entsprechend definiert sind, vermeiden wir, wenn auch etwas
+% kryptisch, in den Nur-Expansions"-f"allen eine Fehlermeldung und
+% erhalten meist auch eine ff-Ligatur.  Dazu haben wir au"serdem noch
+% im Makro |\grmn@dqinsertff| ein |\relax| f"ur |\afterassignment| in
+% den nur-expandierten Makrotext vor das |\discretionary| eingef"ugt.
+%    \begin{macrocode}
+\let\grmn@dqnextff=f
+%</old>
+%    \end{macrocode}
+%
+% Mit "`ngerman"' sollen die Makros dasjenige Ergebnis erzugen,
+% das offenbar gemeint ist, aber es soll gleichzeitig eine Warnung ins
+% Protokoll geschrieben werden:
+% \changes{2.5e (beta 1)}{98/05/04}{Die Befehle f"ur Dreifachkonsonanten
+%   werden in "`ngerman"' sinnvoll definiert.}
+%    \begin{macrocode}
+%<*new>
+\def@dqmacro{c}{\grmn@dqobsolete@ck ck}{c}
+\def@dqmacro{C}{\grmn@dqobsolete@ck CK}{C}
+\def@dqmacro{l}{\grmn@dqobsolete@three l}{l}
+\def@dqmacro{L}{\grmn@dqobsolete@three L}{L}
+\def@dqmacro{m}{\grmn@dqobsolete@three m}{m}
+\def@dqmacro{M}{\grmn@dqobsolete@three M}{M}
+\def@dqmacro{n}{\grmn@dqobsolete@three n}{n}
+\def@dqmacro{N}{\grmn@dqobsolete@three N}{N}
+\def@dqmacro{p}{\grmn@dqobsolete@three p}{p}
+\def@dqmacro{P}{\grmn@dqobsolete@three P}{P}
+\def@dqmacro{r}{\grmn@dqobsolete@three r}{r}
+\def@dqmacro{R}{\grmn@dqobsolete@three R}{R}
+\def@dqmacro{t}{\grmn@dqobsolete@three t}{t}
+\def@dqmacro{T}{\grmn@dqobsolete@three T}{T}
+\def@dqmacro{F}{\grmn@dqobsolete@three F}{F}
+\def@dqmacro{f}{\grmn@dqobsolete@three f}{f}
+%</new>
+%    \end{macrocode}
+%
+%
+% \subsection{Definition der Double\-quote-Befehle (cont.)}
+%
+% Wie schon bei der vorl"aufigen Definition des Makros
+% |\grmn@dqredefcheck| er"-w"ahnt, sollten alle weiteren
+% Definitionen von Double\-quote-Befehlen zumindest in der
+% Protokolldatei erscheinen.  Dann k"onnen von Benutzer gemeldete
+% Fehler, wenn auch die Protokolldatei mitgeschickt wird, schneller
+% eingegrenzt werden.  Deshalb wird dieses Makro hier so definiert,
+% da"s es bei jeder Verwendung von |\def@dqmacro| und |\let@dqmacro|
+% eine Zeile in die Protokolldatei schreibt -- mit Informationen,
+% welche Kombination definiert wird und ob eine alte Definition
+% "uber"-schrieben wird.
+% \changes{2.5d}{97/05/01}{\cs{immediate}\cs{write}\cs{m@ne} durch
+%    \cs{wlog} ersetzt.}
+%    \begin{macrocode}
+\def\grmn@dqredefcheck#1{%
+%<old>  \wlog{german: \grmn@dq@macro\ifx{#1}\relax \else re\fi
+%<new>  \wlog{ngerman: \grmn@dq@macro\ifx{#1}\relax \else re\fi
+    defining dq-command for `\string#1'\on@line.}}%
+%    \end{macrocode}
+%
+%
+% \section{Unterst"utzung f"ur Dokumente in verschiedenen Sprachen}
+%
+% Die Style-Option "`german"' unterst"utzt die Einbindung von
+% Textteilen in deutscher Sprache in Dokumente, die auch in englisch
+% oder franz"osisch geschrieben sind.  Die folgenden Befehle sind
+% dagegen nur bedingt f"ur "`mehrsprachige"' Texte geeignet, in denen
+% zwei oder mehr Sprachen gleichrangig gesetzt werden.  
+%
+%
+% \subsection{Datumsangaben}
+%    \begin{macrocode}
+%<old>\def\month@german{\ifcase\month \or
+%<new>\def\month@ngerman{\ifcase\month \or
+  Januar\or Februar\or M\"arz\or April\or Mai\or Juni\or
+  Juli\or August\or September\or Oktober\or November\or Dezember\fi}
+%<old>\def\dategerman{\def\today{\number\day.~\month@german
+%<new>\def\datengerman{\def\today{\number\day.~\month@ngerman
+  \space\number\year}}
+%<old>\def\dateaustrian{\def\today{\number\day.~\ifnum 1=\month
+%<new>\def\datenaustrian{\def\today{\number\day.~\ifnum 1=\month
+%<old>  J\"anner\else \month@german\fi \space\number\year}}
+%<new>  J\"anner\else \month@ngerman\fi \space\number\year}}
+%    \end{macrocode}
+%    \begin{macrocode}
+\def\month@english{\ifcase\month \or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi}
+\def\dateUSenglish{\def\today{\month@english
+  \space\number\day, \number\year}}
+\def\dateenglish{\def\today{\number\day \ifcase\day \or
+  st\or nd\or rd\or th\or th\or th\or th\or th\or th\or th\or%  1..10
+  th\or th\or th\or th\or th\or th\or th\or th\or th\or th\or% 11..20
+  st\or nd\or rd\or th\or th\or th\or th\or th\or th\or th\or% 21..30
+  st\fi
+  ~\month@english \space\number\year}}
+%    \end{macrocode}
+%    \begin{macrocode}
+\def\datefrench{\def\today{\number\day \ifnum1=\day \/$^{\rm er}$\fi
+  \space\ifcase\month \or
+  janvier\or f\'evrier\or mars\or avril\or mai\or juin\or
+  juillet\or ao\^ut\or septembre\or
+  octobre\or novembre\or d\'ecembre\fi
+  \space\number\year}}
+%    \end{macrocode}
+%
+% \subsection{Textteile in "Uberschriften, etc.}
+%
+% Ab der \LaTeX~2.09-Release vom Dezember~1991 sind alle konstanten
+% Textteile in den Standard-Styles und Style-Optionen durch Makros
+% |\...name| ersetzt, so da"s man mit einigen Einschr"ankungen
+% durch Redefinition dieser Makros eine Sprachanpassung erreichen
+% kann.  Will man diese Anpassung auch bei eigenen Styles und
+% Style-Optionen erreichen, so sollte man die entsprechenden
+% Textteile durch die entsprechenden Makros ersetzen, wobei man
+% eine Default-Definition dieser Makros mitliefern sollte.
+%
+% Als Beispiel mu"s die Definition
+%\begin{verbatim}
+%\def\tableofcontents{\section*{Contents%
+%         \@mkboth{CONTENTS}{CONTENTS}}%
+%  \@starttoc{toc}}
+%\end{verbatim}
+% die in den alten \LaTeX-Releases vor Dezember~1991 in
+% \texttt{article.sty} zu finden ist, durch
+%\begin{verbatim}
+%\def\contentsname{Contents}
+%\def\tableofcontents{\section*{\contentsname
+%        \@mkboth{\uppercase{\contentsname}}%
+%                {\uppercase{\contentsname}}}%
+%  \@starttoc{toc}}
+%\end{verbatim}
+% ersetzt werden, um die englische "Uberschrift "`Contents"' f"ur
+% das Inhaltsverzeichnis entsprechend anpassen zu k"onnen.
+%
+% F"ur die Standard-Klassen und Pakete von \LaTeXe\ wurde dies von
+% Anfang an gemacht, so da"s hier keine "Anderungen notwendig sind.
+%
+% Die folgenden Makros |\captions|\meta{Sprache} definieren alle in
+% den \LaTeX-Standard-Klassen und \mbox{-Paketen} verwendeten
+% Textteile.
+%    \begin{macrocode}
+%<old>\def\captionsgerman{%
+%<new>\def\captionsngerman{%
+  \def\prefacename{Vorwort}%
+  \def\refname{Literatur}%
+  \def\abstractname{Zusammenfassung}%
+  \def\bibname{Literaturverzeichnis}%
+  \def\chaptername{Kapitel}%
+  \def\appendixname{Anhang}%
+  \def\contentsname{Inhaltsverzeichnis}% % oder nur: Inhalt
+  \def\listfigurename{Abbildungsverzeichnis}%
+  \def\listtablename{Tabellenverzeichnis}%
+  \def\indexname{Index}%
+  \def\figurename{Abbildung}%
+  \def\tablename{Tabelle}%  % oder: Tafel
+  \def\partname{Teil}%
+  \def\enclname{Anlage(n)}% % oder: Beilage(n)
+  \def\ccname{Verteiler}%   % oder: Kopien an
+  \def\headtoname{An}%
+  \def\pagename{Seite}%
+  \def\seename{siehe}%
+  \def\alsoname{siehe auch}}
+%<old>\let\captionsaustrian=\captionsgerman
+%<new>\let\captionsnaustrian=\captionsngerman
+%    \end{macrocode}
+%    \begin{macrocode}
+\def\captionsenglish{%
+  \def\prefacename{Preface}%
+  \def\refname{References}%
+  \def\abstractname{Abstract}%
+  \def\bibname{Bibliography}%
+  \def\chaptername{Chapter}%
+  \def\appendixname{Appendix}%
+  \def\contentsname{Contents}%
+  \def\listfigurename{List of Figures}%
+  \def\listtablename{List of Tables}%
+  \def\indexname{Index}%
+  \def\figurename{Figure}%
+  \def\tablename{Table}%
+  \def\partname{Part}%
+  \def\enclname{encl}%
+  \def\ccname{cc}%
+  \def\headtoname{To}%
+  \def\pagename{Page}%
+  \def\seename{see}%
+  \def\alsoname{see also}}
+\let\captionsUSenglish=\captionsenglish
+%    \end{macrocode}
+%    \begin{macrocode}
+\def\captionsfrench{%
+  \def\prefacename{Pr\'eface}%
+  \def\refname{R\'ef\'erences}%
+  \def\abstractname{R\'esum\'e}%
+  \def\bibname{Bibliographie}%
+  \def\chaptername{Chapitre}%
+  \def\appendixname{Annexe}%
+  \def\contentsname{Table des mati\`eres}%
+  \def\listfigurename{Liste des figures}%
+  \def\listtablename{Liste des tableaux}%
+  \def\indexname{Index}%
+  \def\figurename{Figure}%
+  \def\tablename{Tableau}%
+  \def\partname{Partie}%
+  \def\enclname{P.~J.}%
+  \def\ccname{Copie \`a}%
+  \def\headtoname{A}%
+  \def\pagename{Page}%
+  \def\seename{voir}%
+  \def\alsoname{voir aussi}}%
+%    \end{macrocode}
+%
+% \subsection{Weitere sprachabh"angige Parameter}
+%
+% Die Sprache eines Dokuments bestimmt neben den Datumsangaben und
+% den Textteilen in "Uberschriften auch noch weitere Parameter, wie
+% z.\,B.\ ob nach einem Satzzeichen, wie Punkten und Kommas, ein
+% gr"o"serer Wortzwischenraum eingef"ugt werden soll.  Au"serdem
+% sollten auch die den Trennmustern zugeordneten Parameter
+% \texttt{\string\left\-hyphen\-min} und
+% \texttt{\string\right\-hyphen\-min} auf entsprechende Werte gesetzt
+% werden. 
+%
+% Nach der neuen Rechtschreibung w"are |\lefthyphenmin=1| zul"assig.
+% Dies wird allerdings von den Trennmustern \texttt{gnhyph01.tex}
+% nicht unterst"utzt.
+%
+% \changes{2.5c}{96/04/28}{\cs{(no)extras(US)english} als
+%    expandierbare Makros statt als \cs{relax} definiert, damit
+%    k"onnen diese Makros einfacher erg"anzt werden.}
+%    \begin{macrocode}
+\def\extrasUSenglish{}
+\let\noextrasUSenglish=\extrasUSenglish
+\let\extrasenglish=\extrasUSenglish
+\let\noextrasenglish=\extrasenglish
+%    \end{macrocode}
+% \changes{2.5c}{96/02/26}{Explizite Zuweisung an \cs{uchyph}
+%    hinzugef"ugt (found by R. Wonneberger, David M. Jones,
+%    93/02/11).}
+%    \begin{macrocode}
+%<old>\def\extrasgerman{\frenchspacing \uchyph\@ne
+%<new>\def\extrasngerman{\frenchspacing \uchyph\@ne
+  \lefthyphenmin\tw@ \righthyphenmin\tw@}
+%<old>\def\noextrasgerman{%
+%<new>\def\noextrasngerman{%
+  \ifnum\sfcode`\.=\@m \else \noexpand\nonfrenchspacing \fi
+  \uchyph\the\uchyph\relax
+  \lefthyphenmin\the\lefthyphenmin
+  \righthyphenmin\the\righthyphenmin}
+%<old>\let\extrasaustrian=\extrasgerman
+%<new>\let\extrasnaustrian=\extrasngerman
+%<old>\let\noextrasaustrian=\noextrasgerman
+%<new>\let\noextrasnaustrian=\noextrasngerman
+%    \end{macrocode}
+%    \begin{macrocode}
+\def\extrasfrench{\frenchspacing}
+\def\noextrasfrench{%
+  \ifnum\sfcode`\.=\@m \else \noexpand\nonfrenchspacing \fi}
+%    \end{macrocode}
+%
+%
+% \subsection{Default-Werte f"ur Trennmusterwerte deklarieren}
+%
+% Jeder Sprache und deren zugeordnetem Satz von Trennmustern sollte
+% eine Nummer f"ur den \TeX-Parameter |\language| beim Erzeugen
+% der Formatdatei zugewiesen worden sein.  Diese Nummer ist f"ur
+% jede Sprache in der \textit{control sequence}
+% |\l@|\(\langle\)Sprache\(\rangle\) abgespeichert.
+%
+% Die Style-Option "`german"' verwendet die Sprachen
+% \texttt{USenglish}, \texttt{english}, \texttt{german},
+% \texttt{austrian} und \texttt{french}.  Sind f"ur diese Sprachen
+% keine Nummern abgespeichert worden, werden diese hier als Dialekt
+% einer schon definierten Sprache oder als~\(255\) definiert, so da"s
+% nicht getrennt wird. 
+%
+% Ist f"ur \texttt{german} bzw.\ dessen "`Dialekt"' \texttt{austrian}
+% kein Wert definiert, wird eine entsprechende Meldung auf dem
+% Benutzerterminal ausgegeben.  F"ur die anderen Sprache erscheint
+% diese Meldung nur in der Protokolldatei.
+%
+% "`german"' und "`ngerman"' unterscheiden sich 
+% durch die Bezeichner f"ur die jeweils unterst"utzten die Sprachen:  
+% F"ur die neue Rechtschreibung
+% werden \texttt{ngerman} und \texttt{naustrian} an Stelle von
+% \texttt{german} und \texttt{austrian} verwendet.
+%
+% 
+%    \begin{macrocode}
+\@ifundefined{l@USenglish}{%
+  \@ifundefined{l@english}{\chardef\l@USenglish=255 }%
+                          {\chardef\l@USenglish=\l@english}%
+%<old>  \wlog{german -- \string\language\space number for USenglish %
+%<new>  \wlog{ngerman -- \string\language\space number for USenglish %
+        undefined, default \number\l@USenglish\space used.}%
+}{}
+%    \end{macrocode}
+%    \begin{macrocode}
+\@ifundefined{l@english}{%
+  \chardef\l@english=\l@USenglish
+%<old>  \wlog{german -- \string\language\space number for UKenglish %
+%<new>  \wlog{ngerman -- \string\language\space number for UKenglish %
+        undefined, default \number\l@english\space used.}%
+}{}
+%    \end{macrocode}
+%    \begin{macrocode}
+%<*old>
+\@ifundefined{l@german}{%
+  \@ifundefined{l@austrian}{%
+    \chardef\l@german=255 %
+    \message{german -- \string\language\space number for German %
+             undefined, default \number\l@german\space used,}%
+    \message{german -- Please read \string"gerdoc.tex\string" how %
+             to install hyphenation patterns.}%
+  }{%
+    \chardef\l@german=\l@austrian
+    \wlog{german -- \string\language\space number for German %
+          undefined, default \number\l@german\space used.}%
+  }%
+}{}
+%</old>
+%<*new>
+\@ifundefined{l@ngerman}{%
+  \@ifundefined{l@naustrian}{%
+    \chardef\l@ngerman=255 %
+    \message{ngerman -- \string\language\space number for ngerman %
+             undefined, default \number\l@ngerman\space used,}%
+    \message{ngerman -- Please read \string"gerdoc.tex\string" how %
+             to install hyphenation patterns.}%
+  }{%
+    \chardef\l@ngerman=\l@naustrian
+    \wlog{ngerman -- \string\language\space number for ngerman %
+          undefined, default \number\l@ngerman\space used.}%
+  }%
+}{}
+%</new>
+%    \end{macrocode}
+%    \begin{macrocode}
+%<*old>
+\@ifundefined{l@austrian}{%
+  \chardef\l@austrian=\l@german
+  \wlog{german -- \string\language\space number for Austrian %
+        undefined, default \number\l@austrian\space used.}%
+}{}
+%</old>
+%<*new>
+\@ifundefined{l@naustrian}{%
+  \chardef\l@naustrian=\l@ngerman
+  \wlog{ngerman -- \string\language\space number for naustrian %
+        undefined, default \number\l@naustrian\space used.}%
+}{}
+%</new>
+%    \end{macrocode}
+%    \begin{macrocode}
+\@ifundefined{l@french}{%
+  \chardef\l@french=255
+%<old>  \wlog{german -- \string\language\space number for French %
+%<new>  \wlog{ngerman -- \string\language\space number for French %
+        undefined, default \number\l@french\space used.}%
+}{}
+%    \end{macrocode}
+%
+%
+% \subsection{Wechsel der Trennmuster, Datumsangabe und
+%             "Uberschriften}
+%
+% Ein Wechsel der Sprache mit |\selectlanguage{|\meta{Sprache}|}|
+% schaltet einfach die Datumsangabe, Textteile, Trennmuster und
+% andere Parameter f"ur die angegebene \meta{Sprache} um.
+%
+% F"ur die n"achste Version ist endlich eine Anpassung an das
+% Babel-System geplant.  Au"serdem fehlen momentan noch
+% Standard-Makros, um die aktuelle Sprache abzufragen und abh"angig
+% von dieser entsprechend reagieren zu k"onnen.
+%
+% Das Makro |\originalTeX| enth"alt alle Anweisungen, um die
+% Parameter"-anpassungen r"uck"-g"angig machen zu k"onnen, die man
+% beim Umschalten auf die momentane Sprache ge"-"andert hat.  Dieses
+% Makro mu"s immer expandierbar sein; darf also nicht als |\relax|
+% definiert werden.  Zu Beginn sind keine Anweisungen notwendig.
+% (Anmerkung: Wegen Problemen mit dem Paket \texttt{bibgerm}, das
+% einige der internen Makros von "`german"' umdefiniert, wurde der
+% Name des Makros ge"andert -- dies sollte in einer endg"ultigen
+% L"osung wieder verbessert werden, um beispielsweise kompatibel zu
+% Babel zu werden.)
+% \changes{2.5c}{96/02/26}{\cs{grmn@originalTeX} mu"s
+%   \cs{original@TeX} hei"sen, damit einige andere Pakete, wie
+%   `bibgerm' kompatibel bleiben.  `bibgerm' sollte endlich verbessert
+%   und "`sauberer"' programmiert werden (die zus"atzlichen Strings
+%   kann man auch in die Makros \cs{extras\ldots} einf"ugen).}
+% \changes{2.5c}{96/04/21}{\cs{original@TeX} hei"st in Babel
+%   \cs{originalTeX}, das in `german.sty' eine andere Bedeutung
+%   hat (TODO).
+%   Da ich in \cs{selectlanguage} den Leerzeichen-Trick verwende
+%   (um `bibgerman' zu "`hintergehen"'), hei"st \cs{original@TeX}
+%   bis zur endg"ultigen L"osung wieder \cs{grmn@originalTeX}.}
+%    \begin{macrocode}
+\def\grmn@originalTeX{}
+%    \end{macrocode}
+%
+% \changes{2.5c}{96/04/21}{\cs{languagename} neu mit Babels
+%    Funktionalit"at eingef"uhrt, Hinweis auf m"ogliche other-Tokens.}
+%
+% Das Makro |\languagename| enth"alt den Namen der momentan
+% eingeschalteten Sprache.  Der Name ist eine Folge von
+% Character-Tokens, die entweder einen |\catcode| von 11 (letter) oder
+% 12 (other) besitzen k"onnen.  Die Ursache f"ur Other-Tokens ist das
+% Primitiv |\string|, das in |\selectlanguage| verwendet wird, um aus
+% einer als Argument angegebenen \textit{control sequence} das
+% Escape-Zeichen abzuspalten.  (Die Dokumentation von Babel~3.5 gibt
+% einen Test der aktuellen Sprache mit |\languagename| an, der wegen
+% der Other-Tokens nicht immer funktionieren wird!)
+%
+%    \begin{macrocode}
+\def\languagename{}
+%    \end{macrocode}
+%
+% Mit dem Makro |\selectlanguage| wird auf die Sprache umgeschaltet.
+% Dabei werden, nachdem abgefragt wurde, ob die Sprache definiert
+% wurde, zuerst mit |\originalTeX| alle "Anderungen r"uck"-g"angig
+% gemacht, bevor das Datum, die "Uberschriften, sonstige Parameter
+% und die Trennmuster umgeschalten werden.
+% (Anmerkung: |\originalTeX| hei"st im Moment noch
+% |\grmn@originalTeX|, dies mu"s aber noch in der n"achsten Version
+% ge"andert werden, um kompatibler zu Babel zu sein.)
+%
+% \changes{2.5c}{96/04/21}{Der Trick aus \LaTeXe{} mit dem
+%   abschlie"senden Leerzeichen im Namen des zu sch"utzenden Makros
+%   wird auch f"ur \cs{selectlanguage } verwendet.  Da damit die
+%   Neudefinition im Paket `bibgerm' wirkungslos wird, verwende ich
+%   hier einen tempor"aren Patch (in Form des \cs{bibs\ldots}) f"ur
+%   dieses Paket.  Besser w"are es aber, wenn `bibgerm' die
+%   zus"atzlichen Definitionen an \cs{extras\ldots} anh"angen w"urde.}
+%    \begin{macrocode}
+\expandafter\def\csname selectlanguage \endcsname#1{\relax
+  \expandafter\ifx\csname l@#1\endcsname\relax
+    \errhelp{Your command will be ignored, type <return> to proceed}%
+    \errmessage{You haven't defined the language #1 yet}%
+  \else
+    \grmn@originalTeX
+    \edef\languagename{#1}%
+    \edef\grmn@originalTeX{\csname noextras#1\endcsname
+                      \def\noexpand\grmn@originalTeX{}}%
+    \csname date#1\endcsname
+    \csname captions#1\endcsname
+    \csname extras#1\endcsname\relax
+    % Diese Zeile ist fuer `bibgerm' ...
+    \csname bibs#1\endcsname
+    % ... sie wird in spaeteren `german.sty'-Versionen nicht
+    % mehr vorhanden sein.  Also nicht darauf verlassen!
+    \language \csname l@#1\endcsname\relax
+  \fi}
+%    \end{macrocode}
+%
+% Das Makro |\selectlanguage| ist \emph{fragile}.  Deshalb wird es
+% implizit mit einem |\protect| gesch"utzt.  Da dadurch so oder so
+% zwei Makros notwendig sind, k"onnen wir in dieses zweite Makro
+% gleich noch weitere Funktionalit"at stecken (die aber vollst"andig
+% expandierbar sein mu"s!):
+% In "alteren Versionen dieser Style-Option mu"ste man die Sprache als
+% \textit{control sequence}, z.\,B.\ |\german|, eingeben, w"ahrend man
+% in den aktuellen Versionen nur noch den Namen, also |german|,
+% verwenden sollte.  Damit beides aus Kompatibilit"ats"-gr"unden
+% m"oglich ist, wird hier einfach die \textit{control sequence}
+% umgewandelt und das Escape-Zeichen, normalerweise ein Back\-slash,
+% mit einem kleinen Kniff entfernt.
+% \changes{2.5c}{96/04/21}{Der Trick aus \LaTeXe{} mit dem
+%   abschlie"senden Leerzeichen im Namen des zu sch"utzenden Makros
+%   wird auch f"ur \cs{selectlanguage} verwendet.}
+%    \begin{macrocode}
+\begingroup\catcode`\ =11\relax% <= do not delete this and the
+\toks0={\endgroup% <=== following percent characters!
+\def\selectlanguage#1{\protect\selectlanguage {%
+\ifnum\escapechar=\expandafter`\string#1\empty%
+\else\string#1\empty\fi}}}%
+\the\toks0\relax%
+%    \end{macrocode}
+%
+%
+% In "alteren \texttt{.aux}-Dateien kann immer noch die alte interne
+% Form \cs{p@select\-language} auftauchen.  Daher wird diese hier
+% nochmals definiert, um diese eigentlich unn"otigen Fehlermeldungen
+% zu vermeiden.  Au"serdem fr"agt \texttt{bibgerm.sty} die Existenz
+% dieses Makros ab und, falls es nicht existiert, definiert
+% \texttt{bibgerm.sty} ein eigenes Makro \cs{select\-language} mit der
+% alten Definition aus \texttt{german.sty} Version~2.3.  Dies mu"s
+% auf alle F"alle vermieden werden! 
+%
+% \changes{2.5c}{96/04/23}{\cs{p@selectlanguage} aus Kompatibilit"at
+%   mit v2.5b und noch "alteren Versionen wieder eingef"uhrt.}
+%
+%    \begin{macrocode}
+\def\p@selectlanguage{\selectlanguage}
+%    \end{macrocode}
+%
+%
+% \changes{2.5c}{96/04/21}{\cs{iflanguage} neu eingef"uhrt.}
+% \changes{2.5e (beta 1)}{98/05/04}{\cs{iflanguage} ge"andert.}
+%
+% Das Makro |\iflanguage| kann dazu benutzt werden, abh"angig von
+% der aktuellen Sprache Aktionen auszuf"uhren.  Das Makro hat drei
+% Argumente.  Das erste Argument ist die Sprache in Form einer
+% Folge von Character-Tokens, das zweite und dritte Argument enth"alt
+% die Aktionen, falls dies die aktuelle Sprache ist bzw.\ falls nicht.
+%
+% Mit dem folgenden |\iflanguage| kann man in den "`then"'- und
+% "`else"'"~Argumenten auch Makros verwenden, deren Parameter
+% hinter dem |\iflanguage|-Befehl folgen. Diese Implementation,
+% abgeschaut von |\@ifundefined|, erm"oglicht
+% Konstrukte wie |Sto\iflanguage{german}{"}{f}ffetzen|.
+%
+% |\iflanguage| kann sich in sp"ateren Version noch geringf"ugig
+% "andern, falls dies im Babel-Paket geschehen sollte.
+%
+%    \begin{macrocode}
+\def\iflanguage#1{%
+  \ifx\csname l@#1\endcsname\relax
+    \expandafter\grmn@dqsecond
+  \else \ifnum\csname l@#1\endcsname=\language
+    \expandafter\expandafter\expandafter\grmn@dqfirst
+  \else
+    \expandafter\expandafter\expandafter\grmn@dqsecond
+  \fi\fi
+}
+%    \end{macrocode}
+%
+%
+% \subsection{Kompatibilit"at mit \protect\TeX~2}
+%
+% In \TeX\ Version 2.x konnte man Trennmuster f"ur nur eine einzige
+% Sprache in einer Format"-datei laden und verwenden.  Deshalb fehlen
+% in dieser alten \TeX-Version, die von einigen, wenn auch wenigen
+% Personen immer noch verwendet wird/werden mu"s, die Parameter
+% |\language|, \texttt{\string\left\-hyphen\-min},
+% \texttt{\string\right\-hyphen\-min}  und das Primitiv
+% \texttt{\string\set\-language}.  Um diese Style-Option mit dieser
+% alten Version verwenden zu k"onnen, werden diese f"ur \TeX\
+% Version~2 einfach ohne Funktionalit"at nachimplementiert.
+%
+% Die Parameter sind einfache Z"ahler, die mit |\newcount| allokiert
+% werden k"onnen und mit sinnvollen, wenn auch nie von \TeX\ selbst
+% verwendete Werten initialisiert werden.  Da |\newcount| in
+% Plain-\TeX\ als "`outer"' deklariert ist, mu"s hier der Trick mit
+% |\csname| verwendet werden.
+%    \begin{macrocode}
+\expandafter\ifx\csname language\endcsname\relax
+  \csname newcount\endcsname\language
+  \language=0 \fi
+\expandafter\ifx\csname lefthyphenmin\endcsname\relax
+  \csname newcount\endcsname\lefthyphenmin
+  \lefthyphenmin=2 \fi
+\expandafter\ifx\csname righthyphenmin\endcsname\relax
+  \csname newcount\endcsname\righthyphenmin
+  \righthyphenmin=3 \fi
+%    \end{macrocode}
+%
+% F"ur das in \TeX~3 neu hinzugekommene Primitiv
+% \texttt{\string\set\-language} k"onnte man eine relativ einfache
+% Definition verwenden.  Da jedoch Makros die Existenz dieses Befehls
+% abpr"ufen und es dann mit der Bedeutung, die es in \TeX~3 besitzt,
+% verwenden k"onnten, sollte es das Verhalten, insbesondere dessen
+% Einschr"ankungen, dieses neuen Primitivs nachbilden.
+% Da |\setlanguage| in "alteren Versionen dieser Style-Option zu
+% Wechseln der Sprache verwendet wurde, kann man gleich in der
+% Fehlermeldung auf das neue Makro |\selectlanguage| hinweisen.
+%    \begin{macrocode}
+\expandafter\ifx\csname setlanguage\endcsname\relax
+  \def\setlanguage{\relax
+    \ifhmode \else
+      \errhelp{Use \selectlanguage to switch languages.}%
+      \errmessage{\setlanguage allowed only in horizontal mode}%
+    \fi
+    \begingroup\afterassignment\endgroup\count@=}
+\fi
+%    \end{macrocode}
+%
+% \subsection{Ein-/Ausschalten der deutschen Befehle}
+% \changes{2.5e (beta 3)}{98/05/28}{In {\tt ngerman.sty} wird nun 
+%   \cs{ngermanTeX} definiert.}
+%
+%    \begin{macrocode}
+\begingroup \mdqon
+\def\x{\endgroup
+  \def\originalTeX{\mdqoff \let"\dq \umlauthigh
+    \let\3\grmn@original@three
+    \selectlanguage{USenglish}}%
+%<old>  \def\germanTeX{\mdqon \let"\@active@dq \umlautlow
+%<new>  \def\ngermanTeX{\mdqon \let"\@active@dq \umlautlow
+    \let\grmn@original@three\3\let\3\ss
+%<old>    \selectlanguage{german}}}%
+%<new>    \selectlanguage{ngerman}}}%
+\x
+%    \end{macrocode}
+%
+% Zum Schlu"s bleibt nur noch das R"ucksetzen des \textit{category
+% codes} des Zeichens~\texttt{@} und das Einschalten der deutschen
+% Befehle, das gleichzeitig die deutschen Trennmuster aktiviert,
+% falls sie geladen wurden.
+%    \begin{macrocode}
+\catcode`\@=\atcode % return to previous catcode
+%<old>\germanTeX
+%<new>\ngermanTeX
+%    \end{macrocode}
+%
+%\iffalse
+%</!driver>
+%</!hyphcfg>
+%\fi
+%
+% \section{Beispieldatei \texttt{hyphen.cfg} zum Laden der
+%          Trennmuster}
+%
+% In \texttt{gerdoc.tex}, der Dokumentation zum German-Style, sind
+% die Schritte zur Installation der Trennmuster genauer erl"autert.
+% Zur Vereinfachung f"ur den Benutzer wird die Beispieldatei
+% \texttt{hyphxmpl.cfg} zur Verf"ugung gestellt, die entweder direkt
+% oder mit wenigen "Anderungen als Datei \texttt{hyphen.cfg}
+% f"ur \LaTeXe{} verwendet werden kann.
+%
+%    \begin{macrocode}
+%<+hyphcfg>%% ----------------------------------------------
+%<+hyphcfg>%% Beispielkonfigurationsdatei fuer: `hyphen.cfg'
+%<+hyphcfg>%% Naeheres siehe Dokumentation `gerdoc.tex'.
+%<+hyphcfg>%% Copyleft 1995-1998 by Bernd Raichle.
+%<+hyphcfg>
+%<+hyphcfg>%% Konfigurationsdatei -- Trennmuster: `hyphen.cfg'
+%<+hyphcfg>\message{== Loading hyphenation patterns:}
+%<+hyphcfg>
+%<+hyphcfg>%% american english
+%<+hyphcfg>\chardef\l@USenglish=\language
+%<+hyphcfg>%% british english als "Dialekt"
+%<+hyphcfg>\chardef\l@english=\l@USenglish
+%<+hyphcfg>\input hyphen
+%<+hyphcfg>
+%<+hyphcfg>%% german
+%<+hyphcfg>\newlanguage\l@german \language=\l@german
+%<+hyphcfg>%% oesterreichisch als "Dialekt"
+%<+hyphcfg>\chardef\l@austrian=\l@german
+%<+hyphcfg>\input ghyph31
+%<+hyphcfg> 
+%<+hyphcfg>%% new german
+%<+hyphcfg>\newlanguage\l@ngerman \language=\l@ngerman
+%<+hyphcfg>%% oesterreichisch (neu) als "Dialekt"
+%<+hyphcfg>\chardef\l@naustrian=\l@ngerman
+%<+hyphcfg>\input gnhyph01
+%<+hyphcfg> 
+%<+hyphcfg>%% weitere Sprachen nach folgendem Schema:
+%<+hyphcfg>% \newlanguage\l@SPRACHE \language=\l@SPRACHE
+%<+hyphcfg>% \chardef\l@DIALEKT=\l@SPRACHE
+%<+hyphcfg>% \input SPRACHhyphen
+%<+hyphcfg> 
+%<+hyphcfg>%% Default-Trennmuster: USenglish
+%<+hyphcfg>\language=\l@USenglish \lefthyphenmin=2 \righthyphenmin=3
+%<+hyphcfg>\message{done.}
+%    \end{macrocode}
+%
+% Ich hoffe, das Lesen dieses dokumentierten Quellcodes hat einige
+% Einblicke in die Implementierung der Style-Option "`german"'
+% gegeben.  Da ich sie haupt"-s"achlich als eigene Ged"achtnisst"utze
+% geschrieben habe, kaum Korrekturen vorgenommen habe, ist sie
+% unvoll"-st"andig, ent"-h"alt viele \mbox{Tipp-}, Ausdrucks- und
+% sonstige Fehler.  Man m"oge "uber diese hinwegsehen oder mir
+% entsprechende Korrekturen zukommen lassen.  Wichtiger ist mir
+% jedoch, da"s der Makro-Code m"oglichst wenig Fehler enth"alt, soda"s
+% jede Meldung eines Fehlers und jeder Verbesserungsvorschlag immer
+% willkommen ist.   Daf"ur schon jetzt meinen Dank!
+% \pagebreak
+%
+% \Finale
+\endinput
+%% End of german.dtx

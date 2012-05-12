@@ -1,0 +1,84 @@
+%% german.ins
+%%
+%% Docstrip installation instruction file
+%% for the `german' collection, Version 2.5e of 1998-07-08
+%%
+%% Copyright (C) 1991-1997 by B.Raichle and DANTE e.V.
+%% Copyright (C) 1998,1999 by B.Raichle
+%%
+
+\def\batchfile{german.ins}
+\input docstrip.tex
+
+\expandafter\ifx\csname declarepreamble\endcsname\relax
+  \Msg{==> This file requires docstrip version 2.4}
+  \Msg{==> available from CTAN (e.g. ftp.dante.de) in}
+  \Msg{==> tex-archive/macros/latex/unpacked/docstrip.tex}
+  \Msg{}\expandafter\endinput\fi
+
+\keepsilent
+
+\preamble
+
+This file is part of the `german' collection,
+providing German language support for
+plain TeX or LaTeX version 2e/2.09.
+
+----------- Copyright (C) 1998, 1999 by B.Raichle ----------
+------------------- All rights reserved. -------------------
+Maintained by Bernd Raichle (Uni Stuttgart),
+using ideas by H.Partl (TU Wien, Uni.f.Bodenkultur Wien)
+and many other people.
+
+
+IMPORTANT NOTICE:
+
+This program can be redistributed and/or modified under the terms
+of the LaTeX Project Public License Distributed from CTAN
+archives in directory macros/latex/base/lppl.txt; either
+version 1 of the License, or any later version.
+
+
+Error Reports (in case of UNCHANGED versions) should be sent to:
+
+  Bernd Raichle <raichle@Informatik.Uni-Stuttgart.DE>
+
+\endpreamble
+
+\declarepreamble\emptypreamble
+\endpreamble
+
+\Msg{*** Generating files ***}
+\generate{%
+  \file{german.sty}{\from{german.dtx}{old}}
+  \file{ngerman.sty}{\from{german.dtx}{new}}
+%  \file{german.drv}{\from{german.dtx}{driver}}
+  \usepreamble\emptypreamble
+  \file{hyphxmpl.cfg}{\from{german.dtx}{hyphcfg}}%
+}
+\Msg{************************************************************}
+\Msg{*}
+\Msg{* To finish the installation you have to move the following}
+\Msg{* files into a directory searched by TeX:}
+\Msg{*}
+\Msg{* \space\space german.sty ngerman.sty}
+\Msg{*}
+\Msg{* There exists a separate file `gerdoc.tex' containing}
+\Msg{* the user documentation.  Please get this file, run it}
+\Msg{* through LaTeX (LaTeX2e or LaTeX 2.09):}
+\Msg{*}
+\Msg{* \space\space latex gerdoc.tex}
+\Msg{*}
+\Msg{* and follow the instructions how to install the hyphenation}
+\Msg{* patterns when creating format files.  The file `hyphxmpl.cfg'}
+\Msg{* can be used as an example for LaTeX2e's `hyphen.cfg' file.}
+\Msg{*}
+\Msg{* (Gurus only!) To produce the implementation documentation you}
+\Msg{* can run the file `german.dtx' through LaTeX:}
+\Msg{* \space\space latex german.dtx}
+\Msg{*}
+\Msg{* Happy TeXing}
+\Msg{************************************************************}
+\endbatchfile
+%% 
+%% End of file `german.ins'.

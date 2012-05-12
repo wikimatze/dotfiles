@@ -1,0 +1,99 @@
+=> see  "readme"  for an  english  version of  this file <=
+
+************************************************************
+*                                                          *
+*                     yfonts.sty v1.3                      *
+*                                                          *
+*     Ein Makropaket fuer den Fraktursatz mit LaTeX2e      *
+*                                                          *
+************************************************************
+                                              Walter Schmidt
+                                      <w-a-schmidt@arcor.de>
+                                                  2003-01-08
+
+Das Makropaket yfonts.sty ermoeglicht die Benutzung der von
+Yannis Haralambous entworfenen altdeutschen Schriften
+Gotisch, Schwabacher, Fraktur und der barocken Initialen mit
+LaTeX2e.
+
+Das Paket kann zusammen mit german.sty benutzt werden und
+integriert die o.g.  Fonts trotz ihres unkonventionellen
+Zeichenvorrats in LaTeX und das NFSS.  Ein Makro ermoeglicht
+es, einen Absatz mit einer eingezogenen Initiale zu
+beginnen.
+
+
+LaTeX-Dateien
+-------------
+yfonts.dtx      LaTeX-Quelle
+yfonts.ins      Installations-Skript
+frktest.tex     kurzes Beispiel
+
+
+Unterstuetzte Schriften
+-----------------------
+Das Paket yfonts.sty unterstuetzt folgende Fonts:
+
+ygoth    Gotisch            aus  <ctan>/fonts/gothic/ygoth
+yswab    Schwabacher             <ctan>/fonts/gothic/yswab
+yfrak    Fraktur                 <ctan>/fonts/gothic/yfrak
+ysmfrak  Fraktur (Variante)      <ctan>/fonts/gothic/yfrak
+yinitas  Initialen               <ctan>/fonts/gothic/yinit
+
+Wie obige Fonts installiert werden mussen, haengt vom
+benutzten TeX-System ab und wird hier NICHT beschrieben,
+
+*** WARNUNG *** WARNUNG *** WARNUNG *** WARNUNG *** WARNUNG
+
+Bei der METAFONT-Bearbeitung der gotischen Schrift kann es
+zu Fehlern kommen.  In wenigen Faellen wurden Probleme auch
+mit den anderen Schriften beobachtet, offenbar abhaengig vom
+"mode" und der Vergroesserung.  Das ist kein Problem des
+Pakets yfonts.sty, sondern es wird durch fehlerhaften
+Metafont-Code der Schriften verursacht.  
+
+Bitte, senden Sie Fragen oder Fehlermeldungen zu diesem
+Problem an Yannis Haralambous <yannis@fluxus-virus.com>, der
+diese Schriften entworfen hat.
+
+
+Installation des LaTeX-Pakets
+-----------------------------
+Legen Sie die Dateien yfonts.dtx und yfonts.ins in ein
+gemeinsames Verzeichnis.  In einem TDS-kompatiblen
+TeX-System sollte es das Verzeichnis
+
+  texmf/source/latex/yfonts
+
+sein.  Bearbeiten Sie das Installations-Skript yfonts.ins
+mit LaTeX, um das Makropaket zu entpacken.  Falls das
+Verzeichnis
+
+  texmf/tex/latex/yfonts
+             
+existiert, und wenn docstrip richtig konfiguriert ist, wird 
+das Paket automagisch in diesem Verzeichnis erzeugt.
+Ansonsten versetzen Sie es manuell dorthin -- oder in ein
+anderes Verzeichnis, wo LaTeX es findet.
+
+Bearbeiten Sie yfonts.dtx mit LaTeX, um die Beschreibung des
+Pakets zu erzeugen.
+
+Bearbeiten Sie das File frktest.tex mit LaTeX, um ein 
+Beispiel zu sehen.
+
+
+Geschichte
+----------
+v1.3 <2сс3-01-08>  Makros \AA und \aa funktionieren wieder.
+
+v1.2 <1999-05-12>  Geaenderte Lizenzbedingung: LPPL
+
+v1.2 <1998-10-03>  Neu: \yinipar (Dank an Bernd Raichle fuer
+                   seinen Verbesserungsvorschlag!)
+                   
+v1.1 <1997-09-11>
+
+
+% finis
+
