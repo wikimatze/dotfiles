@@ -1,15 +1,74 @@
 # Removing links {{{
+# Directory links {{{
 
-rm $HOME/.bashrc # is predefined under linux, so delete it
-rm $HOME/.profile
+rm $HOME/.zsnes
 rm $HOME/bin
+rm $HOME/zsnes-games
+rm $HOME/.vim
 rm $HOME/git-repositories
 rm $HOME/latex
-rm $HOME/.vim
-rm $HOME/zsnes-games
-rm $HOME/.zsnes
 rm $HOME/blog-wikimatze
 
+# }}}
+# Bash files {{{
+
+rm $HOME/.bash_profile
+rm $HOME/.bashrc
+rm $HOME/.bashrc_convert
+rm $HOME/.bashrc_copy
+rm $HOME/.bashrc_directory_aliases
+rm $HOME/.bashrc_edit_aliases
+rm $HOME/.bashrc_functions
+rm $HOME/.bashrc_latex_convert_aliases
+rm $HOME/.bashrc_latexmanuals_aliases
+rm $HOME/.bashrc_miscellaneous
+rm $HOME/.bashrc_program_aliases_linux
+rm $HOME/.bashrc_program_aliases_mac
+rm $HOME/.bashrc_unused_terms
+
+# }}}
+# Miscellaneous {{{
+
+rm $HOME/.ackrc
+rm $HOME/.gemrc
+rm $HOME/.gitconfig
+rm $HOME/.gitignore
+rm $HOME/.gitk
+rm $HOME/.irbc
+rm $HOME/.rspec
+rm $HOME/.tmux.conf
+rm $HOME/.profile
+rm $HOME/.vimrc
+
+# }}}
+# Bin files {{{
+
+rm $HOME/bin/Markdown.pl
+rm $HOME/bin/cjpgpdf.sh
+rm $HOME/bin/cpngpdf.sh
+rm $HOME/bin/crushjpg.sh
+rm $HOME/bin/crushpng.sh
+rm $HOME/bin/giffnaming.sh
+rm $HOME/bin/jnaming.sh
+rm $HOME/bin/jsmall.sh
+rm $HOME/bin/pnaming.sh
+rm $HOME/bin/psmall.sh
+rm $HOME/bin/waterproof.sh
+
+# }}}
+# Bash scripts {{{
+
+rm $HOME/bin/brew_install.sh
+rm $HOME/bin/ctags_install.sh
+rm $HOME/bin/gem_install.sh
+rm $HOME/bin/mac_backup.sh
+rm $HOME/bin/rbenv_install.sh
+rm $HOME/bin/rbenv_install_setup.sh
+rm $HOME/bin/tmux_install.sh
+rm $HOME/bin/ubuntu_install.sh
+rm $HOME/bin/xamp_install.sh
+
+# }}}
 # }}}
 # Directories links {{{
 
@@ -33,7 +92,6 @@ elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
 fi
-
 
 ln -sf $HOME/Dropbox/dotfiles/bashrc_convert $HOME/.bashrc_convert
 ln -sf $HOME/Dropbox/dotfiles/bashrc_copy $HOME/.bashrc_copy
@@ -64,6 +122,7 @@ ln -sf $HOME/Dropbox/vim-settings/.vimrc $HOME/.vimrc
 # }}}
 # Bin files {{{
 
+ln -sf $HOME/Dropbox/dotfiles/bin/Markdown.pl $HOME/bin/Markdown.pl
 ln -sf $HOME/Dropbox/dotfiles/bin/cjpgpdf.sh $HOME/bin/cjpgpdf.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/cpngpdf.sh $HOME/bin/cpngpdf.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/crushjpg.sh $HOME/bin/crushjpg.sh
@@ -71,7 +130,6 @@ ln -sf $HOME/Dropbox/dotfiles/bin/crushpng.sh $HOME/bin/crushpng.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/giffnaming.sh $HOME/bin/giffnaming.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/jnaming.sh $HOME/bin/jnaming.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/jsmall.sh $HOME/bin/jsmall.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/Markdown.pl $HOME/bin/Markdown.pl
 ln -sf $HOME/Dropbox/dotfiles/bin/pnaming.sh $HOME/bin/pnaming.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/psmall.sh $HOME/bin/psmall.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/waterproof.sh $HOME/bin/waterproof.sh
@@ -86,7 +144,6 @@ ln -sf $HOME/Dropbox/dotfiles/bash_scripts/mac_backup.sh $HOME/bin/mac_backup.sh
 ln -sf $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install.sh $HOME/bin/rbenv_install.sh
 ln -sf $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install_setup.sh $HOME/bin/rbenv_install_setup.sh
 ln -sf $HOME/Dropbox/dotfiles/bash_scripts/tmux_install.sh $HOME/bin/tmux_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/ubuntu_install.sh $HOME/bin/ubuntu_install.sh
 ln -sf $HOME/Dropbox/dotfiles/bash_scripts/ubuntu_install.sh $HOME/bin/ubuntu_install.sh
 ln -sf $HOME/Dropbox/dotfiles/bash_scripts/xamp_install.sh $HOME/bin/xamp_install.sh
 
