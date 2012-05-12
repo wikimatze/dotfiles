@@ -10,7 +10,6 @@ alias epass='vim $HOME/Dropbox/documents/passwords.txt'
 # }}}
 # Bash-Dotfiles editing {{{
 
-alias ebasharchive='vim $HOME/.bashrc_archive'
 alias ebashconvert='vim $HOME/.bashrc_convert'
 alias ebashcopy='vim $HOME/.bashrc_copy'
 alias ebashdirectoriesaliases='vim $HOME/.bashrc_directory_aliases'
@@ -62,16 +61,16 @@ alias emarkdownsnippets='vim $HOME/.vim/snippets/markdown.snippets'
 # }}}
 # Bash scripts {{{
 
-alias ebrewinstall='vim $HOME/Dropbox/bash_scripte/brew_install.sh'
-alias ectagsinstall='vim $HOME/Dropbox/bash_scripte/ctags_install.sh'
-alias egeminstall='vim $HOME/Dropbox/bash_scripte/gem_install.sh'
-alias emacbackup='vim $HOME/Dropbox/bash_scripte/mac_backup.sh'
-alias erbenvinstallsetup='vim $HOME/Dropbox/bash_scripte/rbenv_install_setup.sh'
-alias erbenvinstallsetup='vim $HOME/Dropbox/bash_scripte/rbenv_install.sh'
-alias esymlinkinstall='vim $HOME/Dropbox/bash_scripte/symlink_install.sh'
-alias eubuntuinstall='vim $HOME/Dropbox/bash_scripte/ubuntu_install.sh'
-alias exampinstall='vim $HOME/Dropbox/bash_scripte/xamp_install.sh'
-alias etmuxnstall='vim $HOME/Dropbox/bash_scripte/tmux_install.sh'
+alias ebrewinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/brew_install.sh'
+alias ectagsinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/ctags_install.sh'
+alias egeminstall='vim $HOME/Dropbox/dotfiles/bash_scripts/gem_install.sh'
+alias emacbackup='vim $HOME/Dropbox/dotfiles/bash_scripts/mac_backup.sh'
+alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install.sh'
+alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install_setup.sh'
+alias esymlinkinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/symlink_install.sh'
+alias etmuxnstall='vim $HOME/Dropbox/dotfiles/bash_scripts/tmux_install.sh'
+alias eubuntuinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/ubuntu_install.sh'
+alias exampinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/xamp_install.sh'
 
 # }}}
 # Misc {{{
@@ -83,6 +82,7 @@ alias egitignore='vim $HOME/.gitignore'
 alias eirbc='vim $HOME/.irbc'
 alias egitk='vim $HOME/.gitk'
 alias erspec='vim $HOME/.rspec'
+alias etmuxconf='vim $HOME/.tmux.conf'
 
 # }}}
 
