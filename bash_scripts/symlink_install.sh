@@ -1,72 +1,72 @@
 # Removing links {{{
 # Directory links {{{
 
-rm $HOME/.zsnes
-rm $HOME/bin
-rm $HOME/zsnes-games
-rm $HOME/.vim
-rm $HOME/git-repositories
-rm $HOME/latex
-rm $HOME/blog-wikimatze
+rm -f $HOME/.zsnes
+rm -f $HOME/bin
+rm -f $HOME/zsnes-games
+rm -f $HOME/.vim
+rm -f $HOME/git-repositories
+rm -f $HOME/latex
+rm -f $HOME/blog-wikimatze
 
 # }}}
 # Bash files {{{
 
-rm $HOME/.bash_profile
-rm $HOME/.bashrc
-rm $HOME/.bashrc_convert
-rm $HOME/.bashrc_copy
-rm $HOME/.bashrc_directory_aliases
-rm $HOME/.bashrc_edit_aliases
-rm $HOME/.bashrc_functions
-rm $HOME/.bashrc_latex_convert_aliases
-rm $HOME/.bashrc_latexmanuals_aliases
-rm $HOME/.bashrc_miscellaneous
-rm $HOME/.bashrc_program_aliases_linux
-rm $HOME/.bashrc_program_aliases_mac
-rm $HOME/.bashrc_unused_terms
+rm -f $HOME/.bash_profile
+rm -f $HOME/.bashrc
+rm -f $HOME/.bashrc_convert
+rm -f $HOME/.bashrc_copy
+rm -f $HOME/.bashrc_directory_aliases
+rm -f $HOME/.bashrc_edit_aliases
+rm -f $HOME/.bashrc_functions
+rm -f $HOME/.bashrc_latex_convert_aliases
+rm -f $HOME/.bashrc_latexmanuals_aliases
+rm -f $HOME/.bashrc_miscellaneous
+rm -f $HOME/.bashrc_program_aliases_linux
+rm -f $HOME/.bashrc_program_aliases_mac
+rm -f $HOME/.bashrc_unused_terms
 
 # }}}
 # Miscellaneous {{{
 
-rm $HOME/.ackrc
-rm $HOME/.gemrc
-rm $HOME/.gitconfig
-rm $HOME/.gitignore
-rm $HOME/.gitk
-rm $HOME/.irbc
-rm $HOME/.rspec
-rm $HOME/.tmux.conf
-rm $HOME/.profile
-rm $HOME/.vimrc
+rm -f $HOME/.ackrc
+rm -f $HOME/.gemrc
+rm -f $HOME/.gitconfig
+rm -f $HOME/.gitignore
+rm -f $HOME/.gitk
+rm -f $HOME/.irbc
+rm -f $HOME/.rspec
+rm -f $HOME/.tmux.conf
+rm -f $HOME/.profile
+rm -f $HOME/.vimrc
 
 # }}}
 # Bin files {{{
 
-rm $HOME/bin/Markdown.pl
-rm $HOME/bin/cjpgpdf.sh
-rm $HOME/bin/cpngpdf.sh
-rm $HOME/bin/crushjpg.sh
-rm $HOME/bin/crushpng.sh
-rm $HOME/bin/giffnaming.sh
-rm $HOME/bin/jnaming.sh
-rm $HOME/bin/jsmall.sh
-rm $HOME/bin/pnaming.sh
-rm $HOME/bin/psmall.sh
-rm $HOME/bin/waterproof.sh
+rm -f $HOME/bin/Markdown.pl
+rm -f $HOME/bin/cjpgpdf.sh
+rm -f $HOME/bin/cpngpdf.sh
+rm -f $HOME/bin/crushjpg.sh
+rm -f $HOME/bin/crushpng.sh
+rm -f $HOME/bin/giffnaming.sh
+rm -f $HOME/bin/jnaming.sh
+rm -f $HOME/bin/jsmall.sh
+rm -f $HOME/bin/pnaming.sh
+rm -f $HOME/bin/psmall.sh
+rm -f $HOME/bin/waterproof.sh
 
 # }}}
 # Bash scripts {{{
 
-rm $HOME/bin/brew_install.sh
-rm $HOME/bin/ctags_install.sh
-rm $HOME/bin/gem_install.sh
-rm $HOME/bin/mac_backup.sh
-rm $HOME/bin/rbenv_install.sh
-rm $HOME/bin/rbenv_install_setup.sh
-rm $HOME/bin/tmux_install.sh
-rm $HOME/bin/ubuntu_install.sh
-rm $HOME/bin/xamp_install.sh
+rm -f $HOME/bin/brew_install.sh
+rm -f $HOME/bin/ctags_install.sh
+rm -f $HOME/bin/gem_install.sh
+rm -f $HOME/bin/mac_backup.sh
+rm -f $HOME/bin/rbenv_install.sh
+rm -f $HOME/bin/rbenv_install_setup.sh
+rm -f $HOME/bin/tmux_install.sh
+rm -f $HOME/bin/ubuntu_install.sh
+rm -f $HOME/bin/xamp_install.sh
 
 # }}}
 # }}}
@@ -82,8 +82,6 @@ ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
 
 # }}}
 # Bash files {{{
-
-ln -sf $HOME/Dropbox/.bash_history $HOME/.bash_history
 
 if [ "$OSTYPE" == "linux-gnu" ]
 then
