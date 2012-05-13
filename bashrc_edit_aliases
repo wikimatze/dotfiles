@@ -22,7 +22,14 @@ alias ebashmiscellaneous='vim $HOME/.bashrc_miscellaneous'
 alias ebashprofile='vim $HOME/.bash_profile'
 alias ebashprogramaliaseslinux='vim $HOME/.bashrc_program_aliases_linux'
 alias ebashprogramaliasesmac='vim $HOME/.bashrc_program_aliases_mac'
-alias ebashrc='vim $HOME/.bashrc'
+
+if [ "$OSTYPE" == "linux-gnu" ]
+then
+  alias ebashrc='vim $HOME/.bashrc'
+elif [ "$OSTYPE" == "darwin10.0" ]
+then
+  alias ebashrc='vim $HOME/.bash_profile'
+fi
 
 # }}}
 # Tex-projects {{{
