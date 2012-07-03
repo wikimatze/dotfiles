@@ -148,8 +148,52 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-
 # --------------------------------------------------------------------------------}}}
 
 export EDITOR='vim'
+export PERL_LOCAL_LIB_ROOT="/home/helex/perl5";
+export PERL_MB_OPT="--install_base /home/helex/perl5";
+export PERL_MM_OPT="INSTALL_BASE=/home/helex/perl5";
+export PERL5LIB="/home/helex/perl5/lib/perl5/i686-linux-gnu-thread-multi-64int:/home/helex/perl5/lib/perl5";
+export PATH="/home/helex/perl5/bin:$PATH";
+
+
+# color bash settings for different environments
+# http://blog.sanctum.geek.nz/terminal-colour-tolerance/?utm_source=rss&utm_medium=rss&utm_campaign=terminal-colour-tolerance
+
+# Uncolored bits of my prompt, we'll color them if appropriate shortly.
+PS1='[\u@mg:\w]'
+
+# Save some color codes based on our colour space.
+
+COLORS=$(tput colors)
+
+# Terminal supports 256 colours
+if [[ $COLORS -ge 256 ]]; then
+    COLOR_ROOT='\[\e[38;5;9m\]'
+    COLOR_USER='\[\e[38;5;10m\]'
+    COLOR_UNDO='\[\e[0m\]'
+
+# Terminal supports only eight colours
+elif [[ $COLORS -ge 8 ]]; then
+    COLOR_ROOT='\[\e[1;31m\]'
+    COLOR_USER='\[\e[1;32m\]'
+    COLOR_UNDO='\[\e[0m\]'
+
+# Terminal may not support colour at all
+else
+    COLOR_ROOT=
+    COLOR_USER=
+    COLOR_UNDO=
+fi
+
+# Change prompt color depending on whether I'm root or not.
+if [[ $EUID -eq 0 ]]; then
+  PS1=${COLOR_ROOT}${PS1}${COLOR_UNDO}
+else
+  PS1=${COLOR_USER}${PS1}${COLOR_UNDO}
+fi
+
+# Add space separator to end of prompt.
+PS1="${PS1} "
 
