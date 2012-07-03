@@ -1,6 +1,5 @@
 # Directories {{{
 
-alias dbashscripte='cd ~/Dropbox/bash_scripte'
 alias dblog='cd ~/blog-wikimatze'
 alias dcheck='cd ~/Desktop/check'
 alias ddesktop='cd ~/Desktop'
@@ -15,6 +14,7 @@ alias dstudium='cd ~/studium'
 alias dvim='cd ~/.vim/'
 alias dnotes='cd ~/Dropbox/notes'
 alias ddotfiles='cd ~/Dropbox/dotfiles'
+alias dbashscripts='cd ~/Dropbox/dotfiles/bash_scripts'
 
 # }}}
 # LaTeX project {{{
