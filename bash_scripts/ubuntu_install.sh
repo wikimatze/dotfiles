@@ -82,6 +82,7 @@ sudo apt-get install -y libmysqlclient-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libxml2-dev
 sudo apt-get install -y libxslt-dev
+sudo apt-get install -y libreoffice
 sudo apt-get install -y libpq-dev
 sudo apt-get install -y dropbox
 sudo apt-get install -y mailutils
