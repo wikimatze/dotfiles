@@ -1,11 +1,12 @@
 # Common documents {{{
 
-alias earchivepass='vim $HOME/Dropbox/documents/archivepasswords.txt'
-alias econtacts='vim $HOME/Dropbox/documents/contacts.txt'
+alias earchivepass='g $HOME/Dropbox/documents/archivepasswords.txt'
+alias econtacts='g $HOME/Dropbox/documents/contacts.txt'
 alias ecvmarkdown='vim $HOME/blog-wikimatze/cv.mkd'
 alias ecvtex='vim $HOME/latex/vorlagen/cv/cv.tex'
 alias egitignore='vim $HOME/Dropbox/.gitignore'
-alias epass='vim $HOME/Dropbox/documents/passwords.txt'
+alias epass='g $HOME/Dropbox/documents/passwords.txt'
+alias ebank='g $HOME/Dropbox/documents/bank.txt'
 
 # }}}
 # Bash-Dotfiles editing {{{
@@ -25,10 +26,10 @@ alias ebashprogramaliasesmac='vim $HOME/.bashrc_program_aliases_mac'
 
 if [ "$OSTYPE" == "linux-gnu" ]
 then
-  alias ebashrc='vim $HOME/.bashrc'
+  alias ebashrc='g $HOME/.bashrc'
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
-  alias ebashrc='vim $HOME/.bash_profile'
+  alias ebashrc='g $HOME/.bash_profile'
 fi
 
 # }}}
