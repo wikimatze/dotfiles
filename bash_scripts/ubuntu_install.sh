@@ -25,6 +25,19 @@ sudo apt-get remove -y mahjongg
 # }}}
 
 # }}}
+# Install packages for gvim {{{
+
+sudo apt-get remove -y libncurses-dev
+sudo apt-get remove -y libgnome2-dev
+sudo apt-get remove -y libgtk2.0-dev
+sudo apt-get remove -y libatk1.0-dev
+sudo apt-get remove -y libbonoboui2-dev
+sudo apt-get remove -y libcairo2-dev
+sudo apt-get remove -y libx11-dev
+sudo apt-get remove -y libxpm-dev
+sudo apt-get remove -y libxt-dev
+
+# }}}
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
