@@ -1,14 +1,39 @@
 # Remove files {{{
 
+sudo apt-get remove -y catfish
+sudo apt-get remove -y gigolo
+sudo apt-get remove -y gnumeric
+sudo apt-get remove -y gnumusicbrowser
+sudo apt-get remove -y gthumb
+sudo apt-get remove -y gucharmap
+sudo apt-get remove -y leafpad
+sudo apt-get remove -y orage
+sudo apt-get remove -y parole
+sudo apt-get remove -y ristretto
+sudo apt-get remove -y simplescan
+sudo apt-get remove -y transmission-common
+sudo apt-get remove -y xfce4-notes
+
+# Remove games {{{
 sudo apt-get remove -y gnome-games-common checkbox evolution tomboy empathy libsane
+sudo apt-get remove -y gigolo
+sudo apt-get remove -y gnomine
+sudo apt-get remove -y gnome-sudoku
+sudo apt-get remove -y aisleriot
+sudo apt-get remove -y mahjongg
+
+# }}}
 
 # }}}
 # Install of packages {{{
+
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
+sudo apt-get install -y python-software-properties
 sudo apt-get install -y cuetools
+sudo apt-get install -y chromium-browser
 sudo apt-get install -y libncurses-dev
 sudo apt-get install -y libgnome2-dev
 sudo apt-get install -y libgtk2.0-dev
