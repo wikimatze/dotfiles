@@ -39,6 +39,8 @@ rm -f $HOME/.rspec
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.profile
 rm -f $HOME/.vimrc
+rm -f $HOME/.thunderbird
+rm -f $HOME/Library/Thunderbird
 
 # }}}
 # Bin files {{{
@@ -115,7 +117,9 @@ ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/profile $HOME/.profile
 ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
-ln -sf $HOME/Dropbox/vim-settings/.vimrc $HOME/.vimrc
+ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
+ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
+ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 
 # }}}
 # Bin files {{{
