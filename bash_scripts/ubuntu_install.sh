@@ -61,7 +61,6 @@ sudo apt-get install -y flac
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
 sudo apt-get install -y gimp
-sudo apt-get install -y python2.6-dev
 sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
