@@ -8,6 +8,9 @@ mkdir $HOME/lib
 curl -OL https://github.com/downloads/libevent/libevent/libevent-2.0.19-stable.tar.gz
 curl -OL http://downloads.sourceforge.net/tmux/tmux-1.6.tar.gz
 
+tar -xvzf libevent-2.0.19-stable.tar.gz
+tar -xvzf tmux-1.6.tar.gz
+
 # }}}
 # Compiling libevent {{{
 
@@ -23,9 +26,17 @@ LDFLAGS="-L/opt/lib" CPPFLAGS="-I/opt/include" LIBS="-lresolv" ./configure --pre
 make
 sudo make install
 
-}}}
+# }}}
 # Move the tmux-bin file in the right directory where it can be executed {{{
 
-mv /opt/bin/tmux $HOME/bin/
+sudo mv -f /opt/bin/tmux $HOME/bin/
 
 # }}}
+# Cleanup {{{
+
+rm -rf libevent-2.0.19*
+rm -rf tmux-1.6*
+
+# }}}
+
+
