@@ -1,12 +1,21 @@
---type-add
-html=.html.erb,.html.haml,.haml
---type-add
-css=.sass,.less,.scss
---type-set
-ignorables=.log,.tmp,.pdf
+# lexical sort files
+--sort-files
+
+# add templates to html type
+--type-add=html=.html.erb,.html.haml,.haml
+
+# add new css type
+--type-add=css=.sass,.less,.scss
+
+# ignore certain file types
+--type-set=ignorables=.log,.tmp,.pdf
+
+# ignore whole directories
 --ignore-dir=vendor
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=doc
 --ignore-dir=coverage
 
+# Markdown
+--type-set=markdown=.markdown,.md,.mkd
