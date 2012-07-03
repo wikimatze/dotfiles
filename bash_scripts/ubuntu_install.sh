@@ -101,6 +101,7 @@ sudo apt-get install -y phpunit
 sudo apt-get install -y php-codesniffer
 sudo apt-get install -y powertop
 sudo apt-get install -y python-gtkspell
+sudo apt-get install -y pv
 sudo apt-get install -y tig
 sudo apt-get install -y rar
 sudo apt-get install -y ack-grep
@@ -110,6 +111,8 @@ sudo apt-get install -y sqlite3
 sudo apt-get install -y scrot
 sudo apt-get install -y shntool
 sudo apt-get install -y skype
+sudo apt-get install -y smartmontools
+sudo apt-get install -y gsmartcontrol
 sudo apt-get install -y soundconverter
 sudo apt-get install -y sox
 sudo apt-get install -y subversion
