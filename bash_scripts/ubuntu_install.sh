@@ -123,6 +123,7 @@ sudo apt-get install -y tetex-extra
 sudo apt-get install -y tex-common
 sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
+sudo apt-get install -y virtualbox-ose
 sudo apt-get install -y texlive-base
 sudo apt-get install -y gstreamer0.10-plugins-good
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -155,11 +156,17 @@ sudo apt-get upgrade -y
 # Unimportant stuff {{{
 
 #sudo apt-get install -y virtualbox-guest-additions
-#sudo apt-get install -y virtualbox-ose
 #sudo apt-get install -y vorbis-tools
 #sudo apt-get install -y sun-java6-jdk  # not available in > 11.10
 #sudo apt-get install -y sun-java6-jre
 #sudo apt-get install -y phpmyadmin
 #sudo apt-get install -y mysql-server
 
+# Puppet stuff {{{
+
+#sudo apt-get install -y puppet
+#sudo apt-get install -y puppetmaster
+#sudo apt-get install -y facter
+
+# }}}
 # }}}
