@@ -43,6 +43,7 @@ sudo apt-get install -y libcairo2-dev
 sudo apt-get install -y libx11-dev
 sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxt-dev
+sudo apt-get install -y exuberant-ctags
 sudo apt-get install -y curl
 sudo apt-get install -y clojure
 sudo apt-get install -y curlftpfs
