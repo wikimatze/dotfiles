@@ -138,10 +138,12 @@ sudo apt-get install -y zsnes
 sudo apt-get install -y mercurial # enables hb command
 
 # }}}
+
 # Remove fancy stuff {{{
 
 sudo apt-get remove -y ruby1.8-dev
 sudo apt-get remove -y libruby1.8
+sudo apt-get remove -y abiword
 
 # }}}
 # Update and upgrade {{{
