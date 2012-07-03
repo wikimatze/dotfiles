@@ -6,7 +6,8 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # }}}
 # Command aliases {{{
 
-alias ls='ls -la'
+alias la='ls -la'
+
 
 # }}}
 # Symbol aliases {{{
