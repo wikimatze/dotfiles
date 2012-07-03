@@ -51,6 +51,7 @@ sudo apt-get install -y cvs
 sudo apt-get install -y exfalso
 sudo apt-get install -y exuberant-tags
 sudo apt-get install -y ffmpeg
+sudo apt-get install -y gedit
 sudo apt-get install -y fig2ps
 sudo apt-get install -y htop
 sudo apt-get install -y postgresql
