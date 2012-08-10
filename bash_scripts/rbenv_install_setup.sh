@@ -1,7 +1,7 @@
 # Install rbenv {{{
 
 cd $HOME
-sudo rm -rf .rben/
+sudo rm -rf .rbenv/
 cd $HOME
 git clone git://github.com/sstephenson/rbenv.git .rbenv
 # echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
