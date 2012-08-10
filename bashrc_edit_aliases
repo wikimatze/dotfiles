@@ -85,6 +85,7 @@ alias exampinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/xamp_install.sh'
 
 alias egemrc='vim $HOME/.gemrc'
 alias eackrc='vim $HOME/.ackrc'
+alias etigrc='g $HOME/.tigrc'
 alias egitconfig='vim $HOME/.gitconfig'
 alias egitignore='vim $HOME/.gitignore'
 alias eirbc='vim $HOME/.irbc'
