@@ -35,11 +35,13 @@ rm -f $HOME/.gitconfig
 rm -f $HOME/.gitignore
 rm -f $HOME/.gitk
 rm -f $HOME/.irbc
-rm -f $HOME/.rspec
-rm -f $HOME/.tmux.conf
+rm -f $HOME/.oh-my-zsh
 rm -f $HOME/.profile
-rm -f $HOME/.vimrc
+rm -f $HOME/.rspec
 rm -f $HOME/.thunderbird
+rm -f $HOME/.tigrc
+rm -f $HOME/.tmux.conf
+rm -f $HOME/.vimrc
 rm -f $HOME/Library/Thunderbird
 
 # }}}
@@ -108,7 +110,9 @@ ln -sf $HOME/Dropbox/dotfiles/bashrc_unused_terms $HOME/.bashrc_unused_terms
 # }}}
 # Miscellaneous {{{
 
+ln -sf $HOME/Dropbox/git-repositories/oh-my-zsh $HOME/.oh-my-zsh
 ln -sf $HOME/Dropbox/.gitconfig $HOME/.gitconfig
+ln -sf $HOME/Dropbox/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/ackrc $HOME/.ackrc
 ln -sf $HOME/Dropbox/dotfiles/gemrc $HOME/.gemrc
 ln -sf $HOME/Dropbox/dotfiles/gitignore $HOME/.gitignore
@@ -116,6 +120,7 @@ ln -sf $HOME/Dropbox/dotfiles/gitk $HOME/.gitk
 ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/profile $HOME/.profile
 ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
+ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
 ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
