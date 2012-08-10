@@ -35,7 +35,6 @@ then
   export TEXEDIT='mvim'
   export PATH=$PATH:/usr/local/texlive/2010/bin/universal-darwin
   source .bashrc_program_aliases_mac
-  source $HOME/Dropbox/dotfiles/bash_scripts/git-completion.bash
   g () {
     servername="`mvim --serverlist`"
     if [ "$servername" == "VIM" ]
