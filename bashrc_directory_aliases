@@ -66,16 +66,4 @@ alias dvocabularly_latex='cd $HOME/latex/projekte/vocabularly'
 alias dbewerbungen_latex='cd $HOME/latex/projekte/bewerbungen'
 
 # }}}
-# git {{{
-alias dbrokenlift='cd $HOME/git-repositories/brokenlift'
-alias dcsshacks='cd $HOME/git-repositories/css-hacks'
-alias dfeedback='cd $HOME/git-repositories/feedback'
-alias dgitdotfiles='cd $HOME/git-repositories/dotfiles'
-alias dgitsweetie='cd $HOME/git-repositories/sweetie'
-alias dgitzimki='cd $HOME/git-repositories/zimki'
-alias dhammer='cd $HOME/git-repositories/hammer.vim'
-alias dpresentations='cd $HOME/git-repositories/presentations'
-alias drubyscripts='cd $HOME/git-repositories/ruby-scripts'
-alias dtocdown='cd $HOME/git-repositories/tocdown'
 
-# }}}
