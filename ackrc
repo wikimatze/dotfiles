@@ -4,8 +4,11 @@
 # add templates to html type
 --type-add=html=.html.erb,.html.haml,.haml
 
-# add new css type
+# css type
 --type-add=css=.sass,.less,.scss
+
+# puppet type
+--type-set=puppet=.pp
 
 # ignore certain file types
 --type-set=ignorables=.log,.tmp,.pdf
