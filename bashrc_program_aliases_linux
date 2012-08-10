@@ -4,6 +4,7 @@ alias gitk='gitk &'                                     # git
 alias irb='irb -rubygems'                               # better when loading irb to test gems
 alias showcpu='cat /proc/cpuinfo'                       # what processor type you have
 alias vim='vim'                                         # another alias for vim
+alias gitg='gitg &'                                     # another alias for vim
 alias watchcpu='watch -n1 grep MHz /proc/cpuinfo'       # cpu usage
 alias xfig='xfig -startgridmode 2 -startposnmode 3 -specialtext &' # tart xfig in math mode
 
