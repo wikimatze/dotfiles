@@ -43,6 +43,7 @@ sudo apt-get remove -y libxt-dev
 sudo apt-get install -y ack-grep
 sudo apt-get install -y zsh
 sudo apt-get install -y gthumb
+sudo apt-get install -y calibre
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
