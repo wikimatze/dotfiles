@@ -2,7 +2,7 @@ cd $HOME/Downloads
 git clone https://github.com/b4winckler/vim
 cd vim
 git tag -l
-git co v7-3-584
+git co v7-3-645
 
 ./configure --prefix=/usr/local \
   --enable-gui=no \
