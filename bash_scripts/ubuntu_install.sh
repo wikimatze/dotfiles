@@ -1,14 +1,17 @@
-# Remove files {{{
+# Remove packages {{{
 
+sudo apt-get remove -y abiword
 sudo apt-get remove -y catfish
 sudo apt-get remove -y gigolo
 sudo apt-get remove -y gnumeric
 sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
 sudo apt-get remove -y leafpad
+sudo apt-get remove -y libruby1.8
 sudo apt-get remove -y orage
 sudo apt-get remove -y parole
 sudo apt-get remove -y ristretto
+sudo apt-get remove -y ruby1.8-dev
 sudo apt-get remove -y simplescan
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-notes
@@ -47,7 +50,6 @@ sudo apt-get install -y calibre
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
-sudo apt-get install -y chromium-browser
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clojure
 sudo apt-get install -y cuetools
@@ -77,6 +79,7 @@ sudo apt-get install -y gstreamer0.10-plugins-bad
 sudo apt-get install -y gstreamer0.10-plugins-good
 sudo apt-get install -y gstreamer0.10-plugins-ugly
 sudo apt-get install -y guake
+sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y guvcview
 sudo apt-get install -y gxine
 sudo apt-get install -y hpijs
@@ -156,14 +159,6 @@ sudo apt-get install -y xfig
 sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y zsnes
-
-# }}}
-
-# Remove fancy stuff {{{
-
-sudo apt-get remove -y abiword
-sudo apt-get remove -y libruby1.8
-sudo apt-get remove -y ruby1.8-dev
 
 # }}}
 # Update and upgrade {{{
