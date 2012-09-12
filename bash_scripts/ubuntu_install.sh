@@ -155,6 +155,7 @@ sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y virtualbox-ose
 sudo apt-get install -y wmctrl
+sudo apt-get install -y xclip
 sudo apt-get install -y xfig
 sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
