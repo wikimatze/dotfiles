@@ -160,6 +160,8 @@ export PERL_MM_OPT="INSTALL_BASE=/home/helex/perl5";
 export PERL5LIB="/home/helex/perl5/lib/perl5/i686-linux-gnu-thread-multi-64int:/home/helex/perl5/lib/perl5";
 export PATH="/home/helex/perl5/bin:$PATH";
 
+# enable 256 only for tmux
+[ -z "$TMUX" ] && export TERM=xterm-256color
 
 # color bash settings for different environments
 # http://blog.sanctum.geek.nz/terminal-colour-tolerance/?utm_source=rss&utm_medium=rss&utm_campaign=terminal-colour-tolerance
