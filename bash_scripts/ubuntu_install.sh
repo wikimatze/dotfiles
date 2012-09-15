@@ -107,6 +107,7 @@ sudo apt-get install -y libxml2-dev
 sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
+sudo apt-get install -y lynx
 sudo apt-get install -y make
 sudo apt-get install -y mailutils
 sudo apt-get install -y mencoder
@@ -116,6 +117,7 @@ sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
+sudo apt-get install -y preload
 sudo apt-get install -y pdfchain
 sudo apt-get install -y pdftk
 sudo apt-get install -y php-codesniffer
