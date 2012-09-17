@@ -15,7 +15,6 @@ rm -f $HOME/blog-wikimatze
 rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
 rm -f $HOME/.bashrc_convert
-rm -f $HOME/.bashrc_copy
 rm -f $HOME/.bashrc_directory_aliases
 rm -f $HOME/.bashrc_edit_aliases
 rm -f $HOME/.bashrc_functions
@@ -98,7 +97,6 @@ then
 fi
 
 ln -sf $HOME/Dropbox/dotfiles/bashrc_convert $HOME/.bashrc_convert
-ln -sf $HOME/Dropbox/dotfiles/bashrc_copy $HOME/.bashrc_copy
 ln -sf $HOME/Dropbox/dotfiles/bashrc_directory_aliases $HOME/.bashrc_directory_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_edit_aliases $HOME/.bashrc_edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_functions $HOME/.bashrc_functions
