@@ -48,7 +48,6 @@ rm -f $HOME/Library/Thunderbird
 # Bin files {{{
 
 rm -f $HOME/bin/Markdown.pl
-rm -f $HOME/bin/battery
 rm -f $HOME/bin/cjpgpdf.sh
 rm -f $HOME/bin/cpngpdf.sh
 rm -f $HOME/bin/crushjpg.sh
@@ -130,7 +129,6 @@ ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 # }}}
 # Bin files {{{
 
-ln -sf $HOME/Dropbox/dotfiles/bin/battery $HOME/bin/battery
 ln -sf $HOME/Dropbox/dotfiles/bin/Markdown.pl $HOME/bin/Markdown.pl
 ln -sf $HOME/Dropbox/dotfiles/bin/cjpgpdf.sh $HOME/bin/cjpgpdf.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/cpngpdf.sh $HOME/bin/cpngpdf.sh
