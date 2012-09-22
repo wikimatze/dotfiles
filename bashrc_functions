@@ -14,17 +14,6 @@ fcteject ()
 }
 
 # }}}
-# Just to set the system variable to get gxine working {{{
-
-fctgxine ()
-{
-  # this hack is needed when you you have multiple instances of firefox installed and get the error:
-  # gxine: error while loading shared libraries: libmozjs.so
-  export LD_LIBRARY_PATH=/usr/lib/firefox-3.6.8/
-  cd $HOME/archiv/isos/movies
-}
-
-# }}}
 # Replace pdftex_t as pstex_t {{{
 
 fctpdftex_t2pstex_t ()

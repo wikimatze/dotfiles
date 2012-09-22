@@ -81,7 +81,6 @@ sudo apt-get install -y gstreamer0.10-plugins-ugly
 sudo apt-get install -y guake
 sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y guvcview
-sudo apt-get install -y gxine
 sudo apt-get install -y hpijs
 sudo apt-get install -y htop
 sudo apt-get install -y imagemagick
@@ -156,6 +155,7 @@ sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y virtualbox-ose
+sudo apt-get install -y vlc
 sudo apt-get install -y wmctrl
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
