@@ -23,6 +23,7 @@ rm -f $HOME/.bashrc_miscellaneous
 rm -f $HOME/.bashrc_program_aliases_linux
 rm -f $HOME/.bashrc_program_aliases_mac
 rm -f $HOME/.bashrc_unused_terms
+rm -f $HOME/.zshrc
 
 # }}}
 # Miscellaneous {{{
@@ -104,6 +105,7 @@ ln -sf $HOME/Dropbox/dotfiles/bashrc_miscellaneous $HOME/.bashrc_miscellaneous
 ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_linux $HOME/.bashrc_program_aliases_linux
 ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_mac $HOME/.bashrc_program_aliases_mac
 ln -sf $HOME/Dropbox/dotfiles/bashrc_unused_terms $HOME/.bashrc_unused_terms
+ln -sf $HOME/Dropbox/dotfiles/zshrc $HOME/.zshrc
 
 # }}}
 # Miscellaneous {{{
