@@ -12,7 +12,7 @@ alias la='ls -la'
 # }}}
 # Symbol aliases {{{
 
-alias ~='cd ~'
+alias ~='cd $HOME'
 alias ..='cd ..'
 
 # }}}
