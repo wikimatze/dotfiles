@@ -44,12 +44,10 @@ sudo apt-get remove -y libxt-dev
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
-sudo apt-get install -y zsh
-sudo apt-get install -y gthumb
-sudo apt-get install -y calibre
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
+sudo apt-get install -y calibre
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clojure
 sudo apt-get install -y cuetools
@@ -73,13 +71,14 @@ sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
+sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y gsmartcontrol
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
 sudo apt-get install -y gstreamer0.10-plugins-good
 sudo apt-get install -y gstreamer0.10-plugins-ugly
+sudo apt-get install -y gthumb
 sudo apt-get install -y guake
-sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y guvcview
 sudo apt-get install -y hpijs
 sudo apt-get install -y htop
@@ -107,8 +106,8 @@ sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
 sudo apt-get install -y lynx
-sudo apt-get install -y make
 sudo apt-get install -y mailutils
+sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
@@ -116,7 +115,6 @@ sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
-sudo apt-get install -y preload
 sudo apt-get install -y pdfchain
 sudo apt-get install -y pdftk
 sudo apt-get install -y php-codesniffer
@@ -125,6 +123,7 @@ sudo apt-get install -y pngcrush
 sudo apt-get install -y postgresql
 sudo apt-get install -y powertop
 sudo apt-get install -y powertop
+sudo apt-get install -y preload
 sudo apt-get install -y pv
 sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
@@ -161,6 +160,7 @@ sudo apt-get install -y xclip
 sudo apt-get install -y xfig
 sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
+sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
 # }}}
