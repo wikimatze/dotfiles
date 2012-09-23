@@ -24,10 +24,10 @@ alias ebashprofile='vim $HOME/.bash_profile'
 alias ebashprogramaliaseslinux='vim $HOME/.bashrc_program_aliases_linux'
 alias ebashprogramaliasesmac='vim $HOME/.bashrc_program_aliases_mac'
 
-if [ "$OSTYPE" == "linux-gnu" ]
+if [[ "$OSTYPE" -eq "linux-gnu" ]]
 then
   alias ebashrc='g $HOME/.bashrc'
-elif [ "$OSTYPE" == "darwin10.0" ]
+elif [[ "$OSTYPE" -eq "darwin10.0" ]]
 then
   alias ebashrc='g $HOME/.bash_profile'
 fi
