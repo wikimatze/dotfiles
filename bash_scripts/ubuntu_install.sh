@@ -63,11 +63,11 @@ sudo apt-get install -y exuberant-tags
 sudo apt-get install -y ffmpeg
 sudo apt-get install -y fig2ps
 sudo apt-get install -y fig2sty
-sudo apt-get install -y filezilla
 sudo apt-get install -y flac
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
 sudo apt-get install -y gedit
+sudo apt-get install -y gftp
 sudo apt-get install -y gimp
 sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
