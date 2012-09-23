@@ -1,0 +1,17 @@
+project_name: book
+project_root: ~/Dropbox/padrino/manuscript
+tabs:
+  - main:
+      layout: ac5b,157x57,0,0[157x43,0,0,157x13,0,44]
+      panes:
+        - vim 02-job-board-application.md
+        - vim 01-introduction.md
+  - notes: vim ~/Dropbox/notes/padrino.txt
+  - todo: vim ~/Dropbox/notes/padrino-todo.txt
+  - vcs:
+      panes:
+        - git status
+        - tig
+  - guides: lynx http://www.padrinorb.com/guides
+  - irc: irssi
+  - shell: #empty

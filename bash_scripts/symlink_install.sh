@@ -1,13 +1,14 @@
 # Removing links {{{
 # Directory links {{{
 
+rm -f $HOME/.tmuxinator
+rm -f $HOME/.vim
 rm -f $HOME/.zsnes
 rm -f $HOME/bin
-rm -f $HOME/zsnes-games
-rm -f $HOME/.vim
+rm -f $HOME/blog-wikimatze
 rm -f $HOME/git-repositories
 rm -f $HOME/latex
-rm -f $HOME/blog-wikimatze
+rm -f $HOME/zsnes-games
 
 # }}}
 # Bash files {{{
@@ -83,6 +84,7 @@ ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
 ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
+ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 
 # }}}
 # Bash files {{{
