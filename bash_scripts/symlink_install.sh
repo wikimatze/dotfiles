@@ -19,7 +19,6 @@ rm -f $HOME/.bashrc_directory_aliases
 rm -f $HOME/.bashrc_edit_aliases
 rm -f $HOME/.bashrc_functions
 rm -f $HOME/.bashrc_latex_convert_aliases
-rm -f $HOME/.bashrc_latexmanuals_aliases
 rm -f $HOME/.bashrc_miscellaneous
 rm -f $HOME/.bashrc_program_aliases_linux
 rm -f $HOME/.bashrc_program_aliases_mac
@@ -90,6 +89,7 @@ ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
 if [ "$OSTYPE" == "linux-gnu" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bashrc
+  ln -sf $HOME/Dropbox/dotfiles/bashrc_functions_linux $HOME/.bashrc_functions_linux
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
@@ -100,7 +100,6 @@ ln -sf $HOME/Dropbox/dotfiles/bashrc_directory_aliases $HOME/.bashrc_directory_a
 ln -sf $HOME/Dropbox/dotfiles/bashrc_edit_aliases $HOME/.bashrc_edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_functions $HOME/.bashrc_functions
 ln -sf $HOME/Dropbox/dotfiles/bashrc_latex_convert_aliases $HOME/.bashrc_latex_convert_aliases
-ln -sf $HOME/Dropbox/dotfiles/bashrc_latexmanuals_aliases $HOME/.bashrc_latexmanuals_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_miscellaneous $HOME/.bashrc_miscellaneous
 ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_linux $HOME/.bashrc_program_aliases_linux
 ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_mac $HOME/.bashrc_program_aliases_mac
@@ -121,6 +120,7 @@ ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/profile $HOME/.profile
 ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
+ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
 ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
