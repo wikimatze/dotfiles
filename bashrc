@@ -7,12 +7,10 @@ LC_ALL=en_US.UTF-8
 # Sourcing -----------------------------------------------------------------------{{{
 
 source $HOME/.bashrc_convert
-source $HOME/.bashrc_copy
 source $HOME/.bashrc_directory_aliases
 source $HOME/.bashrc_edit_aliases
 source $HOME/.bashrc_functions
 source $HOME/.bashrc_latex_convert_aliases
-source $HOME/.bashrc_latexmanuals_aliases
 source $HOME/.bashrc_miscellaneous
 
 # --------------------------------------------------------------------------------}}}
@@ -21,6 +19,7 @@ source $HOME/.bashrc_miscellaneous
 if [ "$OSTYPE" == "linux-gnu" ]
 then
   source .bashrc_program_aliases_linux
+  source .bashrc_functions_linux
   g () {
     servername="`gvim --serverlist`"
     if [ "$servername" == "GVIM" ]
