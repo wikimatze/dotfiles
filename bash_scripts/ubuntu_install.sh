@@ -129,6 +129,7 @@ sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y rake
 sudo apt-get install -y rar
+sudo apt-get install -y roxterm
 sudo apt-get install -y rhythmbox
 sudo apt-get install -y scala
 sudo apt-get install -y scrot
