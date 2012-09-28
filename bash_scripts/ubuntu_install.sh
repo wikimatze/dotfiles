@@ -71,7 +71,6 @@ sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
-sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y gsmartcontrol
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -85,6 +84,7 @@ sudo apt-get install -y htop
 sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
+sudo apt-get install -y irssi
 sudo apt-get install -y jfstils
 sudo apt-get install -y lame
 sudo apt-get install -y libatk1.0-dev
@@ -148,6 +148,7 @@ sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
 sudo apt-get install -y tig
+sudo apt-get install -y tree
 sudo apt-get install -y tmux
 sudo apt-get install -y ubuntu-restricted-extra
 sudo apt-get install -y vim
