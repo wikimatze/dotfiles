@@ -77,7 +77,6 @@ sudo apt-get install -y gstreamer0.10-plugins-bad
 sudo apt-get install -y gstreamer0.10-plugins-good
 sudo apt-get install -y gstreamer0.10-plugins-ugly
 sudo apt-get install -y gthumb
-sudo apt-get install -y guake
 sudo apt-get install -y guvcview
 sudo apt-get install -y hpijs
 sudo apt-get install -y htop
