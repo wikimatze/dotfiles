@@ -5,5 +5,4 @@ set show-refs = true            # show tags, branches
 set show-rev-graph = true       # show revision graph
 set show-line-numbers = false   # no line numbers in commit message per default
 set line-number-interval = 5    # interval between line numbers when the toggling information is turned on
-set ignore-space = true         # ingnore space changes in diff view
 
