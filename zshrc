@@ -13,7 +13,10 @@ ZSH_THEME="simple"
 source $ZSH/oh-my-zsh.sh
 plugin=(bundler cap gem git rails rbenv ssh-agent svn thor vagrant vundle)
 
+
 # Custom ZSH -----------------------------------------------------------------------{{{
+fpath=($HOME/.tmuxinator/completion ${fpath})
+
 # custom stuff
 # Set the auto completion on
 autoload -U compinit
@@ -25,8 +28,7 @@ setopt autocd       # instead of cd /etc you can just type /etc to change direct
 setopt extendedglob # enables the negation operator ^ for displaying files
 unsetopt beep extendedglob # turn of noisy beep sounds
 
-zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent id_rsa id_rsa2 id_github
+
 # --------------------------------------------------------------------------------}}}
 # Sourcing -----------------------------------------------------------------------{{{
 
