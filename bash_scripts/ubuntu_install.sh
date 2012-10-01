@@ -71,6 +71,7 @@ sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
+sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gsmartcontrol
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -128,8 +129,8 @@ sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y rake
 sudo apt-get install -y rar
-sudo apt-get install -y roxterm
 sudo apt-get install -y rhythmbox
+sudo apt-get install -y roxterm
 sudo apt-get install -y scala
 sudo apt-get install -y scrot
 sudo apt-get install -y shntool
@@ -148,8 +149,8 @@ sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
 sudo apt-get install -y tig
-sudo apt-get install -y tree
 sudo apt-get install -y tmux
+sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
@@ -161,6 +162,7 @@ sudo apt-get install -y xclip
 sudo apt-get install -y xfig
 sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
+sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
