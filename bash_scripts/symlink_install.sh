@@ -1,6 +1,7 @@
 # Removing links {{{
 # Directory links {{{
 
+rm -f $HOME/.ssh
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f $HOME/.zsnes
@@ -86,6 +87,7 @@ ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
 ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
+ln -sf $HOME/Dropbox/ssh $HOME/.ssh
 
 # }}}
 # Bash files {{{
