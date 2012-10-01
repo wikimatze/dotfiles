@@ -1,3 +1,6 @@
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -37,27 +40,27 @@ source $HOME/.bashrc_miscellaneous
 # --------------------------------------------------------------------------------}}}
 # Differentiation between OS -----------------------------------------------------{{{
 
-if [[ "$OSTYPE" -eq "linux-gnu" ]]
+if [ "$OSTYPE" = "linux-gnu" ]
 then
   source $HOME/.bashrc_program_aliases_linux
   source $HOME/.bashrc_functions_linux
   g () {
     servername="`gvim --serverlist`"
-    if [ "$servername" -eq "GVIM" ]
+    if [ "$servername" = "GVIM" ]
     then
       gvim --remote $*
     else
       gvim $*
     fi
   }
-elif [ "$OSTYPE" -eq "darwin10.0" ]
+elif [ "$OSTYPE" = "darwin10.0" ]
 then
   export TEXEDIT='mvim'
   export PATH=$PATH:/usr/local/texlive/2010/bin/universal-darwin
   source .bashrc_program_aliases_mac
   g () {
     servername="`mvim --serverlist`"
-    if [ "$servername" -eq "VIM" ]
+    if [ "$servername" = "VIM" ]
     then
       mvim --remote $*
     else
@@ -70,10 +73,8 @@ fi
 # History Settings ---------------------------------------------------------------{{{
 
 # don't put duplicate lines in the history
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
-export HISTCONTROL=ignoreboth
 
 # --------------------------------------------------------------------------------}}}
 # Paths settings -----------------------------------------------------------------{{{
@@ -117,3 +118,5 @@ export EDITOR='vim'
 # Uncomment following line if you want to disable autosetting terminal title.
 # solution for tmux problems
 export DISABLE_AUTO_TITLE="true"
+
+alias ewlan="sudo wpa_supplicant -Dwext -iwlan0 -c/etc/wpa_supplicant.conf"
