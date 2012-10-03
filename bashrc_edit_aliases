@@ -21,7 +21,7 @@ alias elatexconvertaliases='vim $HOME/.latex_convert_aliases'
 alias emiscellaneous='vim $HOME/.miscellaneous'
 alias ebashprofile='vim $HOME/.bash_profile'
 alias eprogramaliaseslinux='vim $HOME/.program_aliases_linux'
-alias ebashprogramaliasesmac='vim $HOME/.bashrc_program_aliases_mac'
+alias eprogramaliasesmac='vim $HOME/.program_aliases_mac'
 
 if [[ "$OSTYPE" -eq "linux-gnu" ]]
 then
