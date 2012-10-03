@@ -14,7 +14,8 @@ alias dnotes='cd $HOME/Dropbox/notes'
 alias dprojects='cd $HOME/latex/projekte'
 alias dscripts='cd $HOME/Dropbox/dotfiles/scripts'
 alias dstudium='cd $HOME/studium'
-alias dvim='cd $HOME/.vim/'
+alias dvim='cd $HOME/.vim'
+alias dtmuxinator='cd $HOME/.tmuxinator'
 
 # }}}
 # Git directories {{{
