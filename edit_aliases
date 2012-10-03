@@ -23,7 +23,7 @@ alias emiscellaneous='vim $HOME/.miscellaneous'
 alias ebashprofile='vim $HOME/.bash_profile'
 alias eprogramaliaseslinux='vim $HOME/.program_aliases_linux'
 alias eprogramaliasesmac='vim $HOME/.program_aliases_mac'
-alias eunusedterms='vim $HOME/.unusedterms'
+alias eunusedterms='vim $HOME/.unused_terms'
 
 if [[ "$OSTYPE" -eq "linux-gnu" ]]
 then
@@ -41,18 +41,24 @@ alias erubysnippets='vim $HOME/.vim/snippets/ruby.snippets'
 alias emarkdownsnippets='vim $HOME/.vim/snippets/markdown.snippets'
 
 # }}}
-# Bash scripts {{{
+# Scripts {{{
 
 alias ebrewinstall='vim $HOME/Dropbox/dotfiles/scripts/brew_install.sh'
 alias ectagsinstall='vim $HOME/Dropbox/dotfiles/scripts/ctags_install.sh'
 alias egeminstall='vim $HOME/Dropbox/dotfiles/scripts/gem_install.sh'
+alias ehandbrakeinstall='vim $HOME/Dropbox/dotfiles/scripts/handbrake_install.sh'
+alias elatexpackagesinstall='vim $HOME/Dropbox/dotfiles/scripts/latex_packages_install.sh'
 alias emacbackup='vim $HOME/Dropbox/dotfiles/scripts/mac_backup.sh'
-alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh'
+alias epythoninstall='vim $HOME/Dropbox/dotfiles/scripts/python_install.sh'
+alias erbenvinstall='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh'
 alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install_setup.sh'
 alias esymlinkinstall='vim $HOME/Dropbox/dotfiles/scripts/symlink_install.sh'
 alias etmuxnstall='vim $HOME/Dropbox/dotfiles/scripts/tmux_install.sh'
+alias eubuntubackup='vim $HOME/Dropbox/dotfiles/scripts/ubuntu_backup.sh'
 alias eubuntuinstall='vim $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh'
+alias eviminstalllinux='vim $HOME/Dropbox/dotfiles/scripts/vim_install_linux.sh'
 alias exampinstall='vim $HOME/Dropbox/dotfiles/scripts/xamp_install.sh'
+alias ezraminstall='vim $HOME/Dropbox/dotfiles/scripts/zram_install.sh'
 
 # }}}
 # Misc {{{
