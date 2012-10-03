@@ -1,32 +1,35 @@
 # Directories {{{
 
-alias dbashscripts='cd $HOME/Dropbox/dotfiles/bash_scripts'
 alias dblog='cd $HOME/blog-wikimatze'
-alias dbrokenliftsvm='cd $HOME/git-repositories/brokenlifts-vm'
 alias dcheck='cd $HOME/Desktop/check'
-alias dcsshacks='cd $HOME/git-repositories/css-hacks'
-alias dcsshacks='cd $HOME/git-repositories/css-hacks'
 alias ddesktop='cd $HOME/Desktop'
 alias ddloads='cd $HOME/Downloads'
 alias ddotfiles='cd $HOME/Dropbox/dotfiles'
-alias dgit='cd $HOME/git-repositories'
-alias dhammervim='cd $HOME/git-repositories/hammer-vim'
 alias diso25='cd $HOME/Dropbox/share/iso25'
-alias djobapp='cd $HOME/padrino_projects/job_app'
 alias dlatexmanuals='cd $HOME/latex/manuals'
 alias dlatexstyles='cd $HOME/latex/styles'
 alias dmanuscript='cd $HOME/Dropbox/padrino/manuscript'
 alias dnotes='cd $HOME/Dropbox/notes'
-alias dpadrino='cd $HOME/Dropbox/padrino/manuscript'
+alias dprojects='cd $HOME/latex/projekte'
+alias dscripts='cd $HOME/Dropbox/dotfiles/scripts'
+alias dstudium='cd $HOME/studium'
+alias dvim='cd $HOME/.vim/'
+
+# }}}
+# Git directories {{{
+
+alias dbrokenliftsvm='cd $HOME/git-repositories/brokenlifts-vm'
+alias dcsshacks='cd $HOME/git-repositories/css-hacks'
+alias dgitrepositories='cd $HOME/git-repositories'
+alias dhammervim='cd $HOME/git-repositories/hammer-vim'
+alias djobvacancy='cd $HOME/git-repositories/job_vacancy'
+alias dpadrinodocs='cd $HOME/git-repositories/padrino-doc'
 alias dpadrinoframework='cd $HOME/git-repositories/padrino-framework'
 alias dpresentations='cd $HOME/git-repositories/presentations'
-alias dprojects='cd $HOME/latex/projekte'
 alias drubyscripts='cd $HOME/git-repositories/ruby-scripts'
-alias dstudium='cd $HOME/studium'
 alias dsweetie='cd $HOME/git-repositories/sweetie'
 alias dtocdown='cd $HOME/git-repositories/tocdown'
-alias dvim='cd $HOME/.vim/'
-alias dvimberlinde='cd $HOME/git-repositories/vimberlin.de'
+alias dvimberlin='cd $HOME/git-repositories/vimberlin.de'
 alias dzimki='cd $HOME/git-repositories/zimki'
 
 # }}}
