@@ -45,7 +45,7 @@ source $HOME/.bashrc_miscellaneous
 if [ "$OSTYPE" = "linux-gnu" ]
 then
   source $HOME/.bashrc_program_aliases_linux
-  source $HOME/.bashrc_functions_linux
+  source $HOME/.functions_linux
   g () {
     servername="`gvim --serverlist`"
     if [ "$servername" = "GVIM" ]
@@ -58,7 +58,6 @@ then
 elif [ "$OSTYPE" = "darwin10.0" ]
 then
   export TEXEDIT='mvim'
-  export PATH=$PATH:/usr/local/texlive/2010/bin/universal-darwin
   source .bashrc_program_aliases_mac
   g () {
     servername="`mvim --serverlist`"

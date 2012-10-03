@@ -93,7 +93,7 @@ ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 if [ "$OSTYPE" == "linux-gnu" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bashrc
-  ln -sf $HOME/Dropbox/dotfiles/bashrc_functions_linux $HOME/.bashrc_functions_linux
+  ln -sf $HOME/Dropbox/dotfiles/functions_linux $HOME/.functions_linux
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
