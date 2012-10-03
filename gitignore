@@ -1,4 +1,5 @@
-# latex stuff
+# LaTeX {{{
+
 *.aux
 *.bbl
 *.blg
@@ -15,8 +16,9 @@ books/
 *.bak
 *.tex~
 
+# }}}
+# Rails {{{
 
-# Rails stuff
 .bundle
 .sass-cache/
 bin/*
@@ -27,23 +29,29 @@ schema.rb
 tmp/
 webrat.log
 
+# }}}
+# Own script stuff {{{
 
-# Own script stuff
 html_files/*
 *~
 
+# }}}
+# Mac {{{
 
-# Mac stuff
 .DS_Store
 
+# }}}
+# Vim {{{
 
-# Vim stuff
 *.swp
 
+# }}}
+# blog-wikimatze {{{
 
-# blog-wikimatze
 _code_cache
 _gist_cache
 _site
 *html.pdf
 *x.png
+
+# }}}
