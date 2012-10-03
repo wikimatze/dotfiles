@@ -14,7 +14,7 @@ alias ebank='g $HOME/Dropbox/documents/bank.txt'
 alias econvert='vim $HOME/.convert'
 alias ebashcopy='vim $HOME/.bashrc_copy'
 alias edirectoriesaliases='vim $HOME/.directory_aliases'
-alias ebasheditaliases='vim $HOME/.bashrc_edit_aliases'
+alias eeditaliases='vim $HOME/.edit_aliases'
 alias efunctions='vim $HOME/.functions'
 alias efunctionslinux='vim $HOME/.functions_linux'
 alias elatexconvertaliases='vim $HOME/.latex_convert_aliases'
@@ -22,6 +22,7 @@ alias emiscellaneous='vim $HOME/.miscellaneous'
 alias ebashprofile='vim $HOME/.bash_profile'
 alias eprogramaliaseslinux='vim $HOME/.program_aliases_linux'
 alias eprogramaliasesmac='vim $HOME/.program_aliases_mac'
+alias eunusedterms='vim $HOME/.unusedterms'
 
 if [[ "$OSTYPE" -eq "linux-gnu" ]]
 then

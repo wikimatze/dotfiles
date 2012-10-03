@@ -17,13 +17,13 @@ rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
 rm -f $HOME/.convert
 rm -f $HOME/.directory_aliases
-rm -f $HOME/.bashrc_edit_aliases
+rm -f $HOME/.edit_aliases
 rm -f $HOME/.functions
-rm -f $HOME/.bashrc_latex_convert_aliases
-rm -f $HOME/.bashrc_miscellaneous
-rm -f $HOME/.bashrc_program_aliases_linux
-rm -f $HOME/.bashrc_program_aliases_mac
-rm -f $HOME/.bashrc_unused_terms
+rm -f $HOME/.latex_convert_aliases
+rm -f $HOME/.miscellaneous
+rm -f $HOME/.program_aliases_linux
+rm -f $HOME/.program_aliases_mac
+rm -f $HOME/.unused_terms
 rm -f $HOME/.zshrc
 
 # }}}
@@ -101,13 +101,13 @@ fi
 
 ln -sf $HOME/Dropbox/dotfiles/convert $HOME/.convert
 ln -sf $HOME/Dropbox/dotfiles/directory_aliases $HOME/.directory_aliases
-ln -sf $HOME/Dropbox/dotfiles/bashrc_edit_aliases $HOME/.bashrc_edit_aliases
+ln -sf $HOME/Dropbox/dotfiles/edit_aliases $HOME/.edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/functions $HOME/.functions
 ln -sf $HOME/Dropbox/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
 ln -sf $HOME/Dropbox/dotfiles/miscellaneous $HOME/.miscellaneous
 ln -sf $HOME/Dropbox/dotfiles/program_aliases_linux $HOME/.program_aliases_linux
-ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_mac $HOME/.bashrc_program_aliases_mac
-ln -sf $HOME/Dropbox/dotfiles/bashrc_unused_terms $HOME/.bashrc_unused_terms
+ln -sf $HOME/Dropbox/dotfiles/program_aliases_mac $HOME/.program_aliases_mac
+ln -sf $HOME/Dropbox/dotfiles/unused_terms $HOME/.unused_terms
 ln -sf $HOME/Dropbox/dotfiles/zshrc $HOME/.zshrc
 
 # }}}
