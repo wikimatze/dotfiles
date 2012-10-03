@@ -1,13 +1,11 @@
 # Mneomic aliases {{{
 
-alias nbash='source ~/.bashrc'
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # }}}
 # Command aliases {{{
 
 alias la='ls -la'
-
 
 # }}}
 # Symbol aliases {{{
@@ -149,4 +147,3 @@ fctscount ()
 }
 
 # }}}
-

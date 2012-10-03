@@ -59,4 +59,3 @@ fctcdromiso ()
   cd $HOME/archiv/isos
   sudo dd if=/dev/cdrom of="$1".iso bs=10M
 }
-
