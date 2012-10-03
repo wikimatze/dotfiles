@@ -104,7 +104,7 @@ ln -sf $HOME/Dropbox/dotfiles/directory_aliases $HOME/.directory_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_edit_aliases $HOME/.bashrc_edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/functions $HOME/.functions
 ln -sf $HOME/Dropbox/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
-ln -sf $HOME/Dropbox/dotfiles/bashrc_miscellaneous $HOME/.bashrc_miscellaneous
+ln -sf $HOME/Dropbox/dotfiles/miscellaneous $HOME/.miscellaneous
 ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_linux $HOME/.bashrc_program_aliases_linux
 ln -sf $HOME/Dropbox/dotfiles/bashrc_program_aliases_mac $HOME/.bashrc_program_aliases_mac
 ln -sf $HOME/Dropbox/dotfiles/bashrc_unused_terms $HOME/.bashrc_unused_terms
