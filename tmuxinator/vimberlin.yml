@@ -11,6 +11,5 @@ tabs:
   - layout: vim _layouts/layout.html
   - layout-post: vim _layouts/post.html
   - config: vim _config.yml
-  - base-css: vim css/base.css
   - style-css: vim css/styles.css
   - irc: irssi
