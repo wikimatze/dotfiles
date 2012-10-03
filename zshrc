@@ -28,6 +28,15 @@ setopt autocd       # instead of cd /etc you can just type /etc to change direct
 setopt extendedglob # enables the negation operator ^ for displaying files
 unsetopt beep extendedglob # turn of noisy beep sounds
 
+export EDITOR='vim'
+
+# enable 256 only for tmux
+[ -z "$TMUX" ] && export TERM=xterm-256color
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# solution for tmux problems
+export DISABLE_AUTO_TITLE="true"
+
 
 # ----------------------------------------------------------------------------------}}}
 # Sourcing -------------------------------------------------------------------------{{{
@@ -104,14 +113,3 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
 # ----------------------------------------------------------------------------------}}}
-
-export EDITOR='vim'
-
-# enable 256 only for tmux
-[ -z "$TMUX" ] && export TERM=xterm-256color
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# solution for tmux problems
-export DISABLE_AUTO_TITLE="true"
-
-alias ewlan="sudo wpa_supplicant -Dwext -iwlan0 -c/etc/wpa_supplicant.conf"

@@ -6,6 +6,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Command aliases {{{
 
 alias la='ls -la'
+alias vup="vagrant up"
+alias vdestroy="vagrant destroy -f"
+alias ewlan="sudo wpa_supplicant -Dwext -iwlan0 -c/etc/wpa_supplicant.conf"
 
 # }}}
 # Symbol aliases {{{
