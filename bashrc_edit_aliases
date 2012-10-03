@@ -33,33 +33,6 @@ then
 fi
 
 # }}}
-# Tex-projects {{{
-
-alias eagdml='vim $HOME/latex/projekte/agdml/agdml_ss_09.tex'
-alias ealggeo1='vim $HOME/latex/projekte/algorithmische_geometrie_1/alggeoI_ws_08_09.tex'
-alias eclojure='vim $HOME/latex/projekte/clojure/clojure.tex'
-alias eentwicklwebsys='vim $HOME/latex/projekte/entwicklung_webbasierter_systeme/entwicklung_webbasierter_systeme_ws_2009_2010.tex'
-alias eerlang='vim $HOME/latex/projekte/erlang/erlang.tex'
-alias egit='vim $HOME/latex/projekte/git/git.tex'
-alias ehannitext='soffice $HOME/latex/projekte/hanna_texte/mail_mit_hanni.odt'
-alias ehtml='vim $HOME/latex/projekte/html/html.tex'
-alias ejava='vim $HOME/latex/projekte/java/java.tex'
-alias ejavacodeconventions='vim $HOME/latex/projekte/java/java_codeconventions.tex'
-alias emailmithanni='vim $HOME/latex/projekte/mail_mit_hanni/mail_mit_hanni.tex'
-alias eoopcpp='vim $HOME/latex/projekte/oop_cpp/oop_cpp_ss_09.tex'
-alias eperl='vim $HOME/latex/projekte/perl/perl.tex'
-alias ephp='vim $HOME/latex/projekte/php/php.tex'
-alias erails='vim $HOME/latex/projekte/rails/rails.tex'
-alias eruby='vim $HOME/latex/projekte/ruby/ruby.tex'
-alias erspec='vim $HOME/latex/projekte/bdd/bdd.tex'
-alias escala='vim $HOME/latex/projekte/scala/scala.tex'
-alias eshell='vim $HOME/latex/projekte/shell/shell.tex'
-alias esql='vim $HOME/latex/projekte/sql/sql.tex'
-alias estochastik='vim $HOME/latex/projekte/stochastik/stochastik.tex'
-alias esvn='vim $HOME/latex/projekte/svn/svn.tex'
-alias escrum='vim $HOME/latex/projekte/scrum/scrum.tex'
-
-# }}}
 # Snippet editing {{{
 
 alias etexsnippets='vim $HOME/.vim/snippets/tex.snippets'
