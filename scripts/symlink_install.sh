@@ -44,7 +44,6 @@ rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimrc
 rm -f $HOME/Library/Thunderbird
-sudo rm -f /etc/wpa_supplicant.conf
 
 # }}}
 # Bin files {{{
@@ -94,6 +93,8 @@ if [ "$OSTYPE" == "linux-gnu" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bashrc
   ln -sf $HOME/Dropbox/dotfiles/functions_linux $HOME/.functions_linux
+  sudo rm -f /etc/wpa_supplicant.conf
+  sudo ln -sf $HOME/Dropbox/dotfiles/wpa_supplicant.conf /etc/wpa_supplicant.conf
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
@@ -122,7 +123,6 @@ ln -sf $HOME/Dropbox/dotfiles/gitignore $HOME/.gitignore
 ln -sf $HOME/Dropbox/dotfiles/gitk $HOME/.gitk
 ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
-sudo ln -sf $HOME/Dropbox/dotfiles/wpa_supplicant.conf /etc/wpa_supplicant.conf
 ln -sf $HOME/Dropbox/dotfiles/profile $HOME/.profile
 ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
@@ -161,4 +161,3 @@ ln -sf $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh $HOME/bin/ubuntu_install
 ln -sf $HOME/Dropbox/dotfiles/scripts/xamp_install.sh $HOME/bin/xamp_install.sh
 
 # }}}
-
