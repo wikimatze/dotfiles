@@ -9,9 +9,10 @@ alias epass='g $HOME/Dropbox/documents/passwords.txt'
 alias ebank='g $HOME/Dropbox/documents/bank.txt'
 
 # }}}
-# Bash-Dotfiles editing {{{
+# Dotfiles editing {{{
 
 alias econvert='vim $HOME/.convert'
+alias ezshrc='vim $HOME/.zshrc'
 alias ebashcopy='vim $HOME/.bashrc_copy'
 alias edirectoriesaliases='vim $HOME/.directory_aliases'
 alias eeditaliases='vim $HOME/.edit_aliases'
@@ -56,15 +57,15 @@ alias exampinstall='vim $HOME/Dropbox/dotfiles/scripts/xamp_install.sh'
 # }}}
 # Misc {{{
 
-alias egemrc='vim $HOME/.gemrc'
 alias eackrc='vim $HOME/.ackrc'
-alias etigrc='g $HOME/.tigrc'
+alias egemrc='vim $HOME/.gemrc'
 alias egitconfig='vim $HOME/.gitconfig'
 alias egitignore='vim $HOME/.gitignore'
-alias eirbc='vim $HOME/.irbc'
 alias egitk='vim $HOME/.gitk'
+alias eirbc='vim $HOME/.irbc'
 alias erspec='vim $HOME/.rspec'
+alias etigrc='g $HOME/.tigrc'
 alias etmuxconf='vim $HOME/.tmux.conf'
+alias elatexinstall:='vim $HOME/.latex_convert_aliases'
 
 # }}}
-
