@@ -62,7 +62,7 @@ rm -f $HOME/bin/psmall.sh
 rm -f $HOME/bin/waterproof.sh
 
 # }}}
-# Bash scripts {{{
+# Bin scripts {{{
 
 rm -f $HOME/bin/brew_install.sh
 rm -f $HOME/bin/ctags_install.sh
@@ -150,15 +150,15 @@ ln -sf $HOME/Dropbox/dotfiles/bin/waterproof.sh $HOME/bin/waterproof.sh
 # }}}
 # Bash scripts {{{
 
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/brew_install.sh $HOME/bin/brew_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/ctags_install.sh $HOME/bin/ctags_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/gem_install.sh $HOME/bin/gem_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/mac_backup.sh $HOME/bin/mac_backup.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install.sh $HOME/bin/rbenv_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install_setup.sh $HOME/bin/rbenv_install_setup.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/tmux_install.sh $HOME/bin/tmux_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/ubuntu_install.sh $HOME/bin/ubuntu_install.sh
-ln -sf $HOME/Dropbox/dotfiles/bash_scripts/xamp_install.sh $HOME/bin/xamp_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/brew_install.sh $HOME/bin/brew_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/ctags_install.sh $HOME/bin/ctags_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/gem_install.sh $HOME/bin/gem_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/mac_backup.sh $HOME/bin/mac_backup.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh $HOME/bin/rbenv_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/rbenv_install_setup.sh $HOME/bin/rbenv_install_setup.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/tmux_install.sh $HOME/bin/tmux_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh $HOME/bin/ubuntu_install.sh
+ln -sf $HOME/Dropbox/dotfiles/scripts/xamp_install.sh $HOME/bin/xamp_install.sh
 
 # }}}
 

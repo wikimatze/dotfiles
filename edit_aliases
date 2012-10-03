@@ -42,16 +42,16 @@ alias emarkdownsnippets='vim $HOME/.vim/snippets/markdown.snippets'
 # }}}
 # Bash scripts {{{
 
-alias ebrewinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/brew_install.sh'
-alias ectagsinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/ctags_install.sh'
-alias egeminstall='vim $HOME/Dropbox/dotfiles/bash_scripts/gem_install.sh'
-alias emacbackup='vim $HOME/Dropbox/dotfiles/bash_scripts/mac_backup.sh'
-alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install.sh'
-alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/bash_scripts/rbenv_install_setup.sh'
-alias esymlinkinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/symlink_install.sh'
-alias etmuxnstall='vim $HOME/Dropbox/dotfiles/bash_scripts/tmux_install.sh'
-alias eubuntuinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/ubuntu_install.sh'
-alias exampinstall='vim $HOME/Dropbox/dotfiles/bash_scripts/xamp_install.sh'
+alias ebrewinstall='vim $HOME/Dropbox/dotfiles/scripts/brew_install.sh'
+alias ectagsinstall='vim $HOME/Dropbox/dotfiles/scripts/ctags_install.sh'
+alias egeminstall='vim $HOME/Dropbox/dotfiles/scripts/gem_install.sh'
+alias emacbackup='vim $HOME/Dropbox/dotfiles/scripts/mac_backup.sh'
+alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh'
+alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install_setup.sh'
+alias esymlinkinstall='vim $HOME/Dropbox/dotfiles/scripts/symlink_install.sh'
+alias etmuxnstall='vim $HOME/Dropbox/dotfiles/scripts/tmux_install.sh'
+alias eubuntuinstall='vim $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh'
+alias exampinstall='vim $HOME/Dropbox/dotfiles/scripts/xamp_install.sh'
 
 # }}}
 # Misc {{{
