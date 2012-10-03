@@ -11,7 +11,7 @@ alias ebank='g $HOME/Dropbox/documents/bank.txt'
 # }}}
 # Bash-Dotfiles editing {{{
 
-alias ebashconvert='vim $HOME/.bashrc_convert'
+alias econvert='vim $HOME/.convert'
 alias ebashcopy='vim $HOME/.bashrc_copy'
 alias ebashdirectoriesaliases='vim $HOME/.bashrc_directory_aliases'
 alias ebasheditaliases='vim $HOME/.bashrc_edit_aliases'

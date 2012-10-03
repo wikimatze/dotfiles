@@ -1,7 +1,6 @@
 # Removing links {{{
 # Directory links {{{
 
-rm -f $HOME/.ssh
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f $HOME/.zsnes
@@ -16,7 +15,7 @@ rm -f $HOME/zsnes-games
 
 rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
-rm -f $HOME/.bashrc_convert
+rm -f $HOME/.convert
 rm -f $HOME/.bashrc_directory_aliases
 rm -f $HOME/.bashrc_edit_aliases
 rm -f $HOME/.bashrc_functions
@@ -87,7 +86,6 @@ ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
 ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
-ln -sf $HOME/Dropbox/ssh $HOME/.ssh
 
 # }}}
 # Bash files {{{
@@ -101,7 +99,7 @@ then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
 fi
 
-ln -sf $HOME/Dropbox/dotfiles/bashrc_convert $HOME/.bashrc_convert
+ln -sf $HOME/Dropbox/dotfiles/convert $HOME/.convert
 ln -sf $HOME/Dropbox/dotfiles/bashrc_directory_aliases $HOME/.bashrc_directory_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_edit_aliases $HOME/.bashrc_edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_functions $HOME/.bashrc_functions
