@@ -15,14 +15,13 @@ plugin=(bundler cap gem git rails rbenv ssh-agent svn thor vagrant vundle)
 
 
 # Custom ZSH -----------------------------------------------------------------------{{{
-fpath=($HOME/.tmuxinator/completion ${fpath})
+fpath=($HOME/.tmuxinator/completion ${fpath}) # tmuxinator autocompletion
 
 # custom stuff
 # Set the auto completion on
 autoload -U compinit
 compinit
 
-setopt correctall   # prompt for correcting wrongly typed commands
 setopt autocd       # instead of cd /etc you can just type /etc to change directories
 # setopt auto_resume
 setopt extendedglob # enables the negation operator ^ for displaying files
@@ -34,17 +33,17 @@ unsetopt beep extendedglob # turn of noisy beep sounds
 
 source $HOME/.convert
 source $HOME/.directory_aliases
-source $HOME/.bashrc_edit_aliases
+source $HOME/.edit_aliases
 source $HOME/.functions
-source $HOME/.bashrc_latex_convert_aliases
-source $HOME/.bashrc_miscellaneous
+source $HOME/.latex_convert_aliases
+source $HOME/.miscellaneous
 
 # --------------------------------------------------------------------------------}}}
 # Differentiation between OS -----------------------------------------------------{{{
 
 if [ "$OSTYPE" = "linux-gnu" ]
 then
-  source $HOME/.bashrc_program_aliases_linux
+  source $HOME/.program_aliases_linux
   source $HOME/.functions_linux
   g () {
     servername="`gvim --serverlist`"
@@ -58,7 +57,7 @@ then
 elif [ "$OSTYPE" = "darwin10.0" ]
 then
   export TEXEDIT='mvim'
-  source .bashrc_program_aliases_mac
+  source $HOME.program_aliases_mac
   g () {
     servername="`mvim --serverlist`"
     if [ "$servername" = "VIM" ]
