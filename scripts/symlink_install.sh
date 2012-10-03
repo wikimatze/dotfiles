@@ -39,11 +39,9 @@ rm -f $HOME/.irssi
 rm -f $HOME/.oh-my-zsh
 rm -f $HOME/.profile
 rm -f $HOME/.rspec
-rm -f $HOME/.thunderbird
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimrc
-rm -f $HOME/Library/Thunderbird
 
 # }}}
 # Bin files {{{
@@ -95,9 +93,13 @@ then
   ln -sf $HOME/Dropbox/dotfiles/functions_linux $HOME/.functions_linux
   sudo rm -f /etc/wpa_supplicant.conf
   sudo ln -sf $HOME/Dropbox/dotfiles/wpa_supplicant.conf /etc/wpa_supplicant.conf
+  rm -f $HOME/.thunderbird
+  ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
+  rm -f $HOME/Library/Thunderbird
+  ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
 fi
 
 ln -sf $HOME/Dropbox/dotfiles/convert $HOME/.convert
@@ -128,8 +130,6 @@ ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
-ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
-ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 
 # }}}
