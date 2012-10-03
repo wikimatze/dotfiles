@@ -13,7 +13,7 @@ alias ebank='g $HOME/Dropbox/documents/bank.txt'
 
 alias econvert='vim $HOME/.convert'
 alias ebashcopy='vim $HOME/.bashrc_copy'
-alias ebashdirectoriesaliases='vim $HOME/.bashrc_directory_aliases'
+alias edirectoriesaliases='vim $HOME/.directory_aliases'
 alias ebasheditaliases='vim $HOME/.bashrc_edit_aliases'
 alias ebashfunctions='vim $HOME/.bashrc_functions'
 alias ebashfunctionslinux='vim $HOME/.bashrc_functions_linux'

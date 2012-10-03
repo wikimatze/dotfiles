@@ -16,7 +16,7 @@ rm -f $HOME/zsnes-games
 rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
 rm -f $HOME/.convert
-rm -f $HOME/.bashrc_directory_aliases
+rm -f $HOME/.directory_aliases
 rm -f $HOME/.bashrc_edit_aliases
 rm -f $HOME/.bashrc_functions
 rm -f $HOME/.bashrc_latex_convert_aliases
@@ -100,7 +100,7 @@ then
 fi
 
 ln -sf $HOME/Dropbox/dotfiles/convert $HOME/.convert
-ln -sf $HOME/Dropbox/dotfiles/bashrc_directory_aliases $HOME/.bashrc_directory_aliases
+ln -sf $HOME/Dropbox/dotfiles/directory_aliases $HOME/.directory_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_edit_aliases $HOME/.bashrc_edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/bashrc_functions $HOME/.bashrc_functions
 ln -sf $HOME/Dropbox/dotfiles/bashrc_latex_convert_aliases $HOME/.bashrc_latex_convert_aliases

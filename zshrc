@@ -33,7 +33,7 @@ unsetopt beep extendedglob # turn of noisy beep sounds
 # Sourcing -----------------------------------------------------------------------{{{
 
 source $HOME/.convert
-source $HOME/.bashrc_directory_aliases
+source $HOME/.directory_aliases
 source $HOME/.bashrc_edit_aliases
 source $HOME/.bashrc_functions
 source $HOME/.bashrc_latex_convert_aliases
