@@ -1,21 +1,26 @@
 # Directories {{{
 
+alias dbitbucket='cd $HOME/Dropbox/bitbucket'
 alias dblog='cd $HOME/blog-wikimatze'
-alias dcheck='cd $HOME/Desktop/check'
+alias dpadrino='cd $HOME/Dropbox/padrino'
+alias dtalks='cd $HOME/Dropbox/talks'
+alias drubyexperiments='cd $HOME/Dropbox/ruby_experiments'
 alias ddesktop='cd $HOME/Desktop'
 alias ddloads='cd $HOME/Downloads'
+alias ddocuments='cd $HOME/Dropbox/documents'
 alias ddotfiles='cd $HOME/Dropbox/dotfiles'
+alias ddropbox='cd $HOME/Dropbox'
 alias dirssi='cd $HOME/Dropbox/dotfiles/irssi'
 alias diso25='cd $HOME/Dropbox/share/iso25'
-alias dlatexmanuals='cd $HOME/latex/manuals'
+alias dlatex='cd $HOME/Dropbox/latex'
 alias dlatexstyles='cd $HOME/latex/styles'
 alias dmanuscript='cd $HOME/Dropbox/padrino/manuscript'
 alias dnotes='cd $HOME/Dropbox/notes'
 alias dprojects='cd $HOME/latex/projekte'
 alias dscripts='cd $HOME/Dropbox/dotfiles/scripts'
-alias dstudium='cd $HOME/studium'
-alias dvim='cd $HOME/.vim'
+alias dssh='cd $HOME/.ssh'
 alias dtmuxinator='cd $HOME/.tmuxinator'
+alias dvim='cd $HOME/.vim'
 
 # }}}
 # Git directories {{{
