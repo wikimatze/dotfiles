@@ -9,6 +9,7 @@ rm -f $HOME/blog-wikimatze
 rm -f $HOME/git-repositories
 rm -f $HOME/latex
 rm -f $HOME/zsnes-games
+rm -f $HOME/presentations
 
 # }}}
 # Bash files {{{
@@ -81,6 +82,7 @@ ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
 ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
+ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 
 # }}}
@@ -126,7 +128,6 @@ ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
-ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 
