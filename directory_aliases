@@ -3,7 +3,6 @@
 alias dbitbucket='cd $HOME/Dropbox/bitbucket'
 alias dblog='cd $HOME/blog-wikimatze'
 alias dpadrino='cd $HOME/Dropbox/padrino'
-alias dtalks='cd $HOME/Dropbox/talks'
 alias drubyexperiments='cd $HOME/Dropbox/ruby_experiments'
 alias ddesktop='cd $HOME/Desktop'
 alias ddloads='cd $HOME/Downloads'

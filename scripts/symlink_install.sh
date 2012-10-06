@@ -5,6 +5,7 @@ rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f $HOME/.zsnes
 rm -f $HOME/bin
+rm -f $HOME/bitbucket
 rm -f $HOME/blog-wikimatze
 rm -f $HOME/git-repositories
 rm -f $HOME/latex
@@ -77,13 +78,14 @@ rm -f $HOME/bin/xamp_install.sh
 
 ln -sf $HOME/Dropbox/.zsnes $HOME/.zsnes
 ln -sf $HOME/Dropbox/bin $HOME/bin
+ln -sf $HOME/Dropbox/bitbucket $HOME/bitbucket
+ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
 ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
+ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
 ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
-ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
-ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 
 # }}}
 # Bash files {{{
