@@ -47,6 +47,7 @@ source $HOME/.edit_aliases
 source $HOME/.functions
 source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
+source $HOME/.gibo-completion
 
 # ----------------------------------------------------------------------------------}}}
 # Differentiation between OS -------------------------------------------------------{{{

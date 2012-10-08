@@ -25,6 +25,7 @@ rm -f $HOME/.latex_convert_aliases
 rm -f $HOME/.miscellaneous
 rm -f $HOME/.program_aliases_linux
 rm -f $HOME/.program_aliases_mac
+rm -f $HOME/.gibo-completion
 rm -f $HOME/.unused_terms
 rm -f $HOME/.zshrc
 
@@ -130,9 +131,9 @@ ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
+ln -sf $HOME/Dropbox/dotfiles/gibo-completion $HOME/.gibo-completion
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
-
 # }}}
 # Bin files {{{
 
