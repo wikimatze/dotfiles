@@ -1,0 +1,28 @@
+# Bookmarks file for gFTP. Copyright (C) 1998-2007 Brian Masney
+# <masneyb@gftp.org>. Warning: Any comments that you add to this file WILL be
+# overwritten
+# Note: The passwords contained inside this file are scrambled. This algorithm
+# is not secure. This is to avoid your password being easily remembered by
+# someone standing over your shoulder while you're editing this file. Prior to
+# this, all passwords were stored in plaintext.
+
+[iso25]
+hostname=mis13.de
+port=0
+protocol=FTP
+remote directory=/html
+local directory=/home/helex/Dropbox/share/iso25/_site
+username=web27
+password=$YY]MUUMaYeY}YaYm
+account=
+
+[wikimatze]
+hostname=itmbs.com
+port=0
+protocol=FTP
+remote directory=/
+local directory=/home/helex
+username=hostalos
+password=$YuQqUMMQ]IY]M]YQ
+account=
+
