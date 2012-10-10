@@ -35,7 +35,6 @@ rm -f $HOME/.zshrc
 rm -f $HOME/.ackrc
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
-rm -f $HOME/.gitignore
 rm -f $HOME/.gitk
 rm -f $HOME/.irbc
 rm -f $HOME/.irssi
@@ -125,7 +124,6 @@ ln -sf $HOME/Dropbox/.gitconfig $HOME/.gitconfig
 ln -sf $HOME/Dropbox/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/ackrc $HOME/.ackrc
 ln -sf $HOME/Dropbox/dotfiles/gemrc $HOME/.gemrc
-ln -sf $HOME/Dropbox/dotfiles/gitignore $HOME/.gitignore
 ln -sf $HOME/Dropbox/dotfiles/gitk $HOME/.gitk
 ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
