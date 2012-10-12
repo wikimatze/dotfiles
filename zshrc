@@ -5,12 +5,6 @@ LC_ALL=en_US.UTF-8
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="simple"
-
 source $ZSH/oh-my-zsh.sh
 plugin=(bundler cap gem git rails rbenv ssh-agent svn thor vagrant vundle)
 
@@ -113,4 +107,12 @@ fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
+# ----------------------------------------------------------------------------------}}}
+# Prompt tuning  -------------------------------------------------------------------{{{
+PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: ${PWD/#$HOME/~} $(git_prompt_info)%{$reset_color%} '
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[magenta]%}("
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[magenta]%})"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%} ✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔"
 # ----------------------------------------------------------------------------------}}}
