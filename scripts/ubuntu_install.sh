@@ -138,6 +138,7 @@ sudo apt-get install -y skype
 sudo apt-get install -y smartmontools
 sudo apt-get install -y soundconverter
 sudo apt-get install -y sox
+sudo apt-get install -y synapse
 sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
