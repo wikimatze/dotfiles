@@ -10,7 +10,7 @@ plugin=(bundler cap gem git rails rbenv ssh-agent svn thor vagrant vundle)
 
 # ----------------------------------------------------------------------------------}}}
 # Custom ZSH -----------------------------------------------------------------------{{{
-fpath=($HOME/.tmuxinator/completion ${fpath}) # tmuxinator autocompletion
+fpath=($HOME/.zsh-completions/src $fpath) # showoff, tmuxinator, ... autocompletion
 
 # custom stuff
 # Set the auto completion on
@@ -119,6 +119,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔"
 # Suffix aliases -------------------------------------------------------------------{{{
 alias -s tex=vim
 alias -s txt=vim
-
 # ----------------------------------------------------------------------------------}}}
-

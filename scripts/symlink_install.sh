@@ -4,6 +4,7 @@
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f $HOME/.zsnes
+rm -f $HOME/.zsh-completions
 rm -f $HOME/bin
 rm -f $HOME/bitbucket
 rm -f $HOME/blog-wikimatze
@@ -85,6 +86,7 @@ ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/gftp $HOME/.gftp
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
+ln -sf $HOME/Dropbox/git-repositories/zsh-completions $HOME/.zsh-completions
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
 ln -sf $HOME/Dropbox/zsnes-games $HOME/zsnes-games
