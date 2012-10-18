@@ -124,7 +124,7 @@ ln -sf $HOME/Dropbox/dotfiles/zshrc $HOME/.zshrc
 # Miscellaneous {{{
 
 ln -sf $HOME/Dropbox/git-repositories/oh-my-zsh $HOME/.oh-my-zsh
-ln -sf $HOME/Dropbox/.gitconfig $HOME/.gitconfig
+ln -sf $HOME/Dropbox/dotfiles/gitconfig $HOME/.gitconfig
 ln -sf $HOME/Dropbox/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/ackrc $HOME/.ackrc
 ln -sf $HOME/Dropbox/dotfiles/gemrc $HOME/.gemrc
