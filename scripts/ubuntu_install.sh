@@ -50,6 +50,7 @@ sudo apt-get install -y banshee
 sudo apt-get install -y calibre
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clojure
+sudo apt-get install -y clementine
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
@@ -97,7 +98,7 @@ sudo apt-get install -y libmysqlclient-dev
 sudo apt-get install -y libncurses-dev
 sudo apt-get install -y libpq-dev
 sudo apt-get install -y libreadline5-dev
-sudo apt-get install -y libreoffice
+sudo apt-get install -y libreoffice-gtk
 sudo apt-get install -y libsqlite3-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libx11-dev
@@ -167,6 +168,10 @@ sudo apt-get install -y xpdf
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
+
+# add thumbnail-generator for music
+sudo add-apt-repository ppa:flozz/flozz -y
+sudo apt-get update && sudo apt-get install cover-thumbnailer -y
 
 # }}}
 # Update and upgrade {{{
