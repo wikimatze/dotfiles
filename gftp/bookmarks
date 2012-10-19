@@ -20,7 +20,17 @@ account=
 hostname=itmbs.com
 port=0
 protocol=FTP
-remote directory=/
+remote directory=/public_html/wikimatze.de
+local directory=/home/helex
+username=hostalos
+password=$YuQqUMMQ]IY]M]YQ
+account=
+
+[pmwiki]
+hostname=itmbs.com
+port=0
+protocol=FTP
+remote directory=/public_html/pmwiki_wikimatze/pmwiki-2.2.5
 local directory=/home/helex
 username=hostalos
 password=$YuQqUMMQ]IY]M]YQ
