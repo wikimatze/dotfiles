@@ -49,8 +49,8 @@ sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
-sudo apt-get install -y clojure
 sudo apt-get install -y clementine
+sudo apt-get install -y clojure
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
@@ -113,6 +113,7 @@ sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
 sudo apt-get install -y nfs-kernel-server
+sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
@@ -139,10 +140,10 @@ sudo apt-get install -y skype
 sudo apt-get install -y smartmontools
 sudo apt-get install -y soundconverter
 sudo apt-get install -y sox
-sudo apt-get install -y synapse
 sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
+sudo apt-get install -y synapse
 sudo apt-get install -y tetex-base
 sudo apt-get install -y tetex-bin
 sudo apt-get install -y tetex-extra
