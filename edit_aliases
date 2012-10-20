@@ -58,6 +58,7 @@ alias eubuntuinstall='vim $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh'
 alias eviminstalllinux='vim $HOME/Dropbox/dotfiles/scripts/vim_install_linux.sh'
 alias exampinstall='vim $HOME/Dropbox/dotfiles/scripts/xamp_install.sh'
 alias ezraminstall='vim $HOME/Dropbox/dotfiles/scripts/zram_install.sh'
+alias enpminstall='vim $HOME/Dropbox/dotfiles/scripts/npm_install.sh'
 
 # }}}
 # Misc {{{
