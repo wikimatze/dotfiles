@@ -112,6 +112,7 @@ sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
+sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
@@ -122,8 +123,6 @@ sudo apt-get install -y pdftk
 sudo apt-get install -y php-codesniffer
 sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
-sudo apt-get install -y postgresql
-sudo apt-get install -y powertop
 sudo apt-get install -y powertop
 sudo apt-get install -y preload
 sudo apt-get install -y pv
