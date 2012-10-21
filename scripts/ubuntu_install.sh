@@ -3,6 +3,7 @@
 sudo apt-get remove -y abiword
 sudo apt-get remove -y catfish
 sudo apt-get remove -y gigolo
+sudo apt-get remove -y gmusicbrowser
 sudo apt-get remove -y gnumeric
 sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
@@ -12,9 +13,12 @@ sudo apt-get remove -y orage
 sudo apt-get remove -y parole
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y ruby1.8-dev
+sudo apt-get remove -y simple-scan
 sudo apt-get remove -y simplescan
 sudo apt-get remove -y transmission-common
+sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
+sudo apt-get remove -y xfce4-taskmanager
 
 # Remove games {{{
 
@@ -73,7 +77,6 @@ sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
-sudo apt-get install -y gsmartcontrol
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
 sudo apt-get install -y gstreamer0.10-plugins-good
@@ -112,7 +115,6 @@ sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
-sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
@@ -163,7 +165,6 @@ sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
-sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
