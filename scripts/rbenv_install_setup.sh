@@ -9,8 +9,8 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 # }}}
 # Install rbenv-install {{{
 
-cd $HOME/Downloads
-sudo rm -rf ruby-build
+mkdir -p $HOME/.rbenv/plugins
+cd $HOME/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
 cd ruby-build
 sudo bash install.sh
