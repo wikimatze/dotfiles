@@ -68,9 +68,10 @@ alias egemrc='vim $HOME/.gemrc'
 alias egitconfig='vim $HOME/.gitconfig'
 alias egitk='vim $HOME/.gitk'
 alias eirbc='vim $HOME/.irbc'
+alias elatexinstall:='vim $HOME/.latex_convert_aliases'
 alias erspec='vim $HOME/.rspec'
 alias etigrc='g $HOME/.tigrc'
 alias etmuxconf='vim $HOME/.tmux.conf'
-alias elatexinstall:='vim $HOME/.latex_convert_aliases'
+alias evimrc='vim $HOME/.vimrc'
 
 # }}}
