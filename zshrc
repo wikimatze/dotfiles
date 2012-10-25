@@ -118,5 +118,8 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔"
 # ----------------------------------------------------------------------------------}}}
 # Suffix aliases -------------------------------------------------------------------{{{
 alias -s tex=vim
+alias -s yaml=vim
 alias -s txt=vim
 # ----------------------------------------------------------------------------------}}}
+# grepping running webrick services
+alias vwebrick="lsof | grep IPv4"
