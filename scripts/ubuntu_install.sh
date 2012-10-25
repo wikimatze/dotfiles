@@ -109,6 +109,7 @@ sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
 sudo apt-get install -y lynx
+sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y mailutils
 sudo apt-get install -y make
 sudo apt-get install -y mencoder
