@@ -14,7 +14,6 @@ sudo apt-get remove -y parole
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y ruby1.8-dev
 sudo apt-get remove -y simple-scan
-sudo apt-get remove -y simplescan
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
@@ -136,6 +135,7 @@ sudo apt-get install -y rhythmbox
 sudo apt-get install -y roxterm
 sudo apt-get install -y scala
 sudo apt-get install -y scrot
+sudo apt-get install -y seahorse
 sudo apt-get install -y shntool
 sudo apt-get install -y skype
 sudo apt-get install -y smartmontools
