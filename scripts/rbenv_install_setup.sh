@@ -16,3 +16,5 @@ cd ruby-build
 sudo bash install.sh
 
 # }}}
+
+exec $SHELL
