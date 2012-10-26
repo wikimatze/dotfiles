@@ -51,6 +51,7 @@ sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
+sudo apt-get install -y chromium-browser
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clementine
 sudo apt-get install -y clojure
@@ -109,7 +110,6 @@ sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
 sudo apt-get install -y lynx
-sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y mailutils
 sudo apt-get install -y make
 sudo apt-get install -y mencoder
@@ -157,6 +157,7 @@ sudo apt-get install -y tig
 sudo apt-get install -y tmux
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra
+sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
