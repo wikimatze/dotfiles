@@ -46,6 +46,8 @@ gem install abstract \
   net-ssh \
   nokogiri \
   padrino \
+  puppet \
+  puppetlabs_spec_helper \
   puppet-lint \
   pygmentize \
   rack \
