@@ -10,9 +10,12 @@ plugin=(bundler cap gem git rails rbenv ssh-agent svn thor vagrant vundle)
 
 # ----------------------------------------------------------------------------------}}}
 # Custom ZSH -----------------------------------------------------------------------{{{
-fpath=($HOME/.zsh-completions/src $fpath) # showoff, tmuxinator, ... autocompletion
+fpath=($HOME/.zsh-completions/src ${fpath}) # showoff, tmuxinator, ... autocompletion
 
 # custom stuff
+# Need these two lines for autocompletion
+autoload -U compinit
+compinit
 
 setopt autocd       # instead of cd /etc you can just type /etc to change directories
 # setopt auto_resume
