@@ -9,11 +9,14 @@ sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
 sudo apt-get remove -y leafpad
 sudo apt-get remove -y libruby1.8
+sudo apt-get remove -y onboard
 sudo apt-get remove -y orage
 sudo apt-get remove -y parole
+sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y ruby1.8-dev
 sudo apt-get remove -y simple-scan
+sudo apt-get remove -y thunar
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
@@ -115,6 +118,7 @@ sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
+sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
