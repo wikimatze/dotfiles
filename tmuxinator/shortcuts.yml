@@ -4,6 +4,6 @@ tabs:
   - bash: vim bash-shortcuts.txt
   - chrome: vim chrome-shortcuts.txt
   - git: vim git.txt
+  - tig: vim tig-shortcuts.txt
   - thunderbird: vim thunderbird-shortcuts.txt
   - zsh: vim zsh.txt
-  - chrome: vim chrome-shortcuts.txt
