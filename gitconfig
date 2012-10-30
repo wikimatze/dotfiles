@@ -1,0 +1,44 @@
+[user]
+  name = Matthias Guenther
+  email = matthias.guenther@wikimatze.de
+[apply]
+  whitespace = nowarn
+[core]
+  editor = vim
+[alias]
+  ammend = commit --amend
+  ck = checkout
+  co = commit
+  df = diff
+  dw = diff --word-diff=color
+  h = help
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  st = status -s
+  wc = whatchanged --oneline
+[color]
+    ui = auto
+  [color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+  [color "diff"]
+    meta = black bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+  [color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[github]
+  user = matthias-guenther
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[web]
+  browser = google-chrome
+[credential]
+  helper = cache --timeout=3600

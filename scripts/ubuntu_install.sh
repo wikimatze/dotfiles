@@ -3,18 +3,24 @@
 sudo apt-get remove -y abiword
 sudo apt-get remove -y catfish
 sudo apt-get remove -y gigolo
+sudo apt-get remove -y gmusicbrowser
 sudo apt-get remove -y gnumeric
 sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
 sudo apt-get remove -y leafpad
 sudo apt-get remove -y libruby1.8
+sudo apt-get remove -y onboard
 sudo apt-get remove -y orage
 sudo apt-get remove -y parole
+sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y ruby1.8-dev
-sudo apt-get remove -y simplescan
+sudo apt-get remove -y simple-scan
+sudo apt-get remove -y thunar
 sudo apt-get remove -y transmission-common
+sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
+sudo apt-get remove -y xfce4-taskmanager
 
 # Remove games {{{
 
@@ -48,7 +54,9 @@ sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
+sudo apt-get install -y chromium-browser
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
+sudo apt-get install -y clementine
 sudo apt-get install -y clojure
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
@@ -72,7 +80,6 @@ sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
-sudo apt-get install -y gsmartcontrol
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
 sudo apt-get install -y gstreamer0.10-plugins-good
@@ -97,7 +104,7 @@ sudo apt-get install -y libmysqlclient-dev
 sudo apt-get install -y libncurses-dev
 sudo apt-get install -y libpq-dev
 sudo apt-get install -y libreadline5-dev
-sudo apt-get install -y libreoffice
+sudo apt-get install -y libreoffice-gtk
 sudo apt-get install -y libsqlite3-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libx11-dev
@@ -111,7 +118,9 @@ sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
+sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
+sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
@@ -120,8 +129,6 @@ sudo apt-get install -y pdftk
 sudo apt-get install -y php-codesniffer
 sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
-sudo apt-get install -y postgresql
-sudo apt-get install -y powertop
 sudo apt-get install -y powertop
 sudo apt-get install -y preload
 sudo apt-get install -y pv
@@ -133,6 +140,7 @@ sudo apt-get install -y rhythmbox
 sudo apt-get install -y roxterm
 sudo apt-get install -y scala
 sudo apt-get install -y scrot
+sudo apt-get install -y seahorse
 sudo apt-get install -y shntool
 sudo apt-get install -y skype
 sudo apt-get install -y smartmontools
@@ -141,6 +149,7 @@ sudo apt-get install -y sox
 sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
+sudo apt-get install -y synapse
 sudo apt-get install -y tetex-base
 sudo apt-get install -y tetex-bin
 sudo apt-get install -y tetex-extra
@@ -152,19 +161,28 @@ sudo apt-get install -y tig
 sudo apt-get install -y tmux
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra
+sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y virtualbox-ose
 sudo apt-get install -y vlc
+sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
-sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
+
+# add thumbnail-generator for music
+sudo add-apt-repository ppa:flozz/flozz -y
+sudo apt-get update && sudo apt-get install cover-thumbnailer -y
+
+# add for davmail program
+sudo apt-get install libswt-cairo-gtk-3-jni -y
+
 
 # }}}
 # Update and upgrade {{{

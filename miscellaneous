@@ -1,13 +1,14 @@
 # Mneomic aliases {{{
 
-alias nbash='source ~/.bashrc'
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # }}}
 # Command aliases {{{
 
 alias la='ls -la'
-
+alias vup="vagrant up"
+alias vdestroy="vagrant destroy -f"
+alias ewlan="sudo wpa_supplicant -Dwext -iwlan0 -c/etc/wpa_supplicant.conf"
 
 # }}}
 # Symbol aliases {{{
@@ -149,4 +150,3 @@ fctscount ()
 }
 
 # }}}
-

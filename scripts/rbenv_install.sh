@@ -1,4 +1,4 @@
-rbenv install 1.9.3-p194
+rbenv install 1.9.3-p286
 rbenv rehash
 
 rbenv install 1.9.2-p320

@@ -1,15 +1,6 @@
 ## text-Ersetzung (Labels [] aus den Listings entfernen)
 sed -i 's/\\lstinputlisting\[[a-zA-Z0-9\_.:]*\]/\/lstinputlisting/g' *.tex # removing code-labels
 
-## mysql neustarten
-/etc/init.d/mysql start
-
-#============== needed for master-thesis
-# for the actual version of scala which has to be installed manually
-export SCALA_HOME=$HOME/scala/scala-2.8.1.final
-PATH=$PATH:$SCALA_HOME/bin
-export PATH
-
 # convert notes of zim to pmwiki format
 fctconvertzim2pmwiki()
 {

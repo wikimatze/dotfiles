@@ -1,0 +1,44 @@
+# Directories {{{
+
+alias dbitbucket='cd $HOME/Dropbox/bitbucket'
+alias dblog='cd $HOME/blog-wikimatze'
+alias ddesktop='cd $HOME/Desktop'
+alias ddocuments='cd $HOME/Dropbox/documents'
+alias ddotfiles='cd $HOME/Dropbox/dotfiles'
+alias ddropbox='cd $HOME/Dropbox'
+alias dirssi='cd $HOME/Dropbox/dotfiles/irssi'
+alias diso25='cd $HOME/Dropbox/share/iso25'
+alias dlatex='cd $HOME/Dropbox/latex'
+alias dlatexstyles='cd $HOME/latex/styles'
+alias dloads='cd $HOME/Downloads'
+alias dmanuscript='cd $HOME/Dropbox/padrino/manuscript'
+alias dnotes='cd $HOME/Dropbox/notes'
+alias drbenv='cd $HOME/.rbenv'
+alias dpadrino='cd $HOME/Dropbox/padrino'
+alias dpmwiki='cd $HOME/Dropbox/bitbucket/bitbucket'
+alias dpresentations='cd $HOME/presentations'
+alias dprojects='cd $HOME/latex/projekte'
+alias drubyexperiments='cd $HOME/Dropbox/ruby_experiments'
+alias dscripts='cd $HOME/Dropbox/dotfiles/scripts'
+alias dssh='cd $HOME/.ssh'
+alias dtmuxinator='cd $HOME/.tmuxinator'
+alias dvim='cd $HOME/.vim'
+
+# }}}
+# Git directories {{{
+
+alias dbrokenliftsvm='cd $HOME/git-repositories/brokenlifts-vm'
+alias dcsshacks='cd $HOME/git-repositories/css-hacks'
+alias dgitrepositories='cd $HOME/git-repositories'
+alias dhammervim='cd $HOME/git-repositories/hammer-vim'
+alias djobvacancy='cd $HOME/git-repositories/job_vacancy'
+alias dpadrinodocs='cd $HOME/git-repositories/padrino-doc'
+alias dpadrinoframework='cd $HOME/git-repositories/padrino-framework'
+alias dpresentations='cd $HOME/git-repositories/presentations'
+alias drubyscripts='cd $HOME/git-repositories/ruby-scripts'
+alias dsweetie='cd $HOME/git-repositories/sweetie'
+alias dtocdown='cd $HOME/git-repositories/tocdown'
+alias dvimberlin='cd $HOME/git-repositories/vimberlin.de'
+alias dzimki='cd $HOME/git-repositories/zimki'
+
+# }}}

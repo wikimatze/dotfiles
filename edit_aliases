@@ -1,0 +1,77 @@
+# Common documents {{{
+
+alias earchivepass='g $HOME/Dropbox/documents/archivepasswords.txt'
+alias econtacts='g $HOME/Dropbox/documents/contacts.txt'
+alias ecvmarkdown='vim $HOME/blog-wikimatze/cv.mkd'
+alias ecvtex='vim $HOME/latex/vorlagen/cv/cv.tex'
+alias epass='g $HOME/Dropbox/documents/passwords.txt'
+alias ebank='g $HOME/Dropbox/documents/bank.txt'
+
+# }}}
+# Dotfiles editing {{{
+
+alias econvert='vim $HOME/.convert'
+alias ezshrc='vim $HOME/.zshrc'
+alias ebashcopy='vim $HOME/.bashrc_copy'
+alias edirectoriesaliases='vim $HOME/.directory_aliases'
+alias eeditaliases='vim $HOME/.edit_aliases'
+alias efunctions='vim $HOME/.functions'
+alias efunctionslinux='vim $HOME/.functions_linux'
+alias elatexconvertaliases='vim $HOME/.latex_convert_aliases'
+alias emiscellaneous='vim $HOME/.miscellaneous'
+alias ebashprofile='vim $HOME/.bash_profile'
+alias eprogramaliaseslinux='vim $HOME/.program_aliases_linux'
+alias eprogramaliasesmac='vim $HOME/.program_aliases_mac'
+alias eunusedterms='vim $HOME/.unused_terms'
+
+if [[ "$OSTYPE" -eq "linux-gnu" ]]
+then
+  alias ebashrc='g $HOME/.bashrc'
+elif [[ "$OSTYPE" -eq "darwin10.0" ]]
+then
+  alias ebashrc='g $HOME/.bash_profile'
+fi
+
+# }}}
+# Snippet editing {{{
+
+alias etexsnippets='vim $HOME/.vim/snippets/tex.snippets'
+alias erubysnippets='vim $HOME/.vim/snippets/ruby.snippets'
+alias emarkdownsnippets='vim $HOME/.vim/snippets/markdown.snippets'
+
+# }}}
+# Scripts {{{
+
+alias ebrewinstall='vim $HOME/Dropbox/dotfiles/scripts/brew_install.sh'
+alias ectagsinstall='vim $HOME/Dropbox/dotfiles/scripts/ctags_install.sh'
+alias egeminstall='vim $HOME/Dropbox/dotfiles/scripts/gem_install.sh'
+alias ehandbrakeinstall='vim $HOME/Dropbox/dotfiles/scripts/handbrake_install.sh'
+alias elatexpackagesinstall='vim $HOME/Dropbox/dotfiles/scripts/latex_packages_install.sh'
+alias emacbackup='vim $HOME/Dropbox/dotfiles/scripts/mac_backup.sh'
+alias epythoninstall='vim $HOME/Dropbox/dotfiles/scripts/python_install.sh'
+alias erbenvinstall='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh'
+alias erbenvinstallsetup='vim $HOME/Dropbox/dotfiles/scripts/rbenv_install_setup.sh'
+alias esymlinkinstall='vim $HOME/Dropbox/dotfiles/scripts/symlink_install.sh'
+alias etmuxnstall='vim $HOME/Dropbox/dotfiles/scripts/tmux_install.sh'
+alias eubuntubackup='vim $HOME/Dropbox/dotfiles/scripts/ubuntu_backup.sh'
+alias eubuntuinstall='vim $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh'
+alias eviminstalllinux='vim $HOME/Dropbox/dotfiles/scripts/vim_install_linux.sh'
+alias exampinstall='vim $HOME/Dropbox/dotfiles/scripts/xamp_install.sh'
+alias ezraminstall='vim $HOME/Dropbox/dotfiles/scripts/zram_install.sh'
+alias enpminstall='vim $HOME/Dropbox/dotfiles/scripts/npm_install.sh'
+
+# }}}
+# Misc {{{
+
+alias eackrc='vim $HOME/.ackrc'
+alias egemrc='vim $HOME/.gemrc'
+alias egitconfig='vim $HOME/.gitconfig'
+alias egitk='vim $HOME/.gitk'
+alias eirbc='vim $HOME/.irbc'
+alias elatexinstall:='vim $HOME/.latex_convert_aliases'
+alias erspec='vim $HOME/.rspec'
+alias etigrc='g $HOME/.tigrc'
+alias etmuxconf='vim $HOME/.tmux.conf'
+alias evimrc='vim $HOME/.vimrc'
+
+# }}}
