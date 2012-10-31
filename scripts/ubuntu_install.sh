@@ -16,7 +16,6 @@ sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y ruby1.8-dev
 sudo apt-get remove -y simple-scan
-sudo apt-get remove -y thunar
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
