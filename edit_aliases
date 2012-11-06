@@ -6,6 +6,7 @@ alias ecvmarkdown='vim $HOME/blog-wikimatze/cv.mkd'
 alias ecvtex='vim $HOME/latex/vorlagen/cv/cv.tex'
 alias epass='g $HOME/Dropbox/documents/passwords.txt'
 alias ebank='g $HOME/Dropbox/documents/bank.txt'
+alias evorlagebank='g $HOME/Dropbox/documents/vorlagebank.txt'
 
 # }}}
 # Dotfiles editing {{{
