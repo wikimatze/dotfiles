@@ -20,3 +20,5 @@ git co v7-3-645
 sudo make
 sudo make install
 sudo make clean
+rm -rf vim
+
