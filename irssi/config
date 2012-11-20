@@ -282,4 +282,5 @@ settings = {
     timestamp_format = "%h:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
+  "fe-common/core" = { theme = "fear2"; };
 };
