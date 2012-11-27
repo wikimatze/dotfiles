@@ -11,6 +11,8 @@ rm -f $HOME/git-repositories
 rm -f $HOME/.gftp
 rm -f $HOME/latex
 rm -f $HOME/presentations
+rm -f $HOME/presentations
+rm -f R $HOME/.config/Terminal
 
 # }}}
 # Bash files {{{
@@ -86,6 +88,7 @@ ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/git-repositories/zsh-completions $HOME/.zsh-completions
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
+ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
 
 # }}}
 # Bash files {{{
