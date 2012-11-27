@@ -107,6 +107,7 @@ sudo apt-get install -y libreoffice-calc
 sudo apt-get install -y libreoffice-gtk
 sudo apt-get install -y libreoffice-impress
 sudo apt-get install -y libreoffice-writer
+sudo apt-get install -y xcfa
 sudo apt-get install -y libsqlite3-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libx11-dev
