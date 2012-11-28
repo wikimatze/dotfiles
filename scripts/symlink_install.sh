@@ -12,7 +12,7 @@ rm -f $HOME/.gftp
 rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/presentations
-rm -f R $HOME/.config/Terminal
+rm -f -R $HOME/.config/Terminal
 
 # }}}
 # Bash files {{{
