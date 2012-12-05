@@ -8,7 +8,6 @@ alias ddotfiles='cd $HOME/Dropbox/dotfiles'
 alias ddropbox='cd $HOME/Dropbox'
 alias dgitrepositories='cd $HOME/git-repositories'
 alias dirssi='cd $HOME/Dropbox/dotfiles/irssi'
-alias diso25='cd $HOME/Dropbox/share/iso25'
 alias dlatex='cd $HOME/Dropbox/latex'
 alias dlatexstyles='cd $HOME/latex/styles'
 alias dloads='cd $HOME/Downloads'
@@ -46,6 +45,11 @@ alias dtocdown='cd $HOME/git-repositories/tocdown'
 alias dvimberlin='cd $HOME/git-repositories/vimberlin.de'
 alias dzimki='cd $HOME/git-repositories/zimki'
 alias dzshcompletions='cd $HOME/git-repositories/zsh-completions'
+
+# }}}
+# bitbucket repositories {{{
+
+alias diso25='cd $HOME/bitbucket/iso25'
 
 # }}}
 
