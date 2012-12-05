@@ -15,7 +15,6 @@ alias dmanuscript='cd $HOME/Dropbox/padrino/manuscript'
 alias dnotes='cd $HOME/Dropbox/notes'
 alias dpadrino='cd $HOME/Dropbox/padrino'
 alias dpmwiki='cd $HOME/Dropbox/bitbucket/bitbucket'
-alias dpresentations='cd $HOME/presentations'
 alias dprojects='cd $HOME/latex/projekte'
 alias drbenv='cd $HOME/.rbenv'
 alias drubyexperiments='cd $HOME/Dropbox/ruby_experiments'
@@ -49,7 +48,13 @@ alias dzshcompletions='cd $HOME/git-repositories/zsh-completions'
 # }}}
 # bitbucket repositories {{{
 
-alias diso25='cd $HOME/bitbucket/iso25'
-
+alias diso25='cd $HOME/bitbucket/'
+alias dpmwikidropcapsrecipe='cd $HOME/bitbucket/pmwiki-dropcaps-recipe'
+alias dpmwikiheadlineimagerecipe='cd $HOME/bitbucket/pmwiki-headlineimage-recipe'
+alias dpmwikilinkiconsrecipe='cd $HOME/bitbucket/pmwiki-linkicons-recipe'
+alias dpmwikisyntaxloverecipe='cd $HOME/bitbucket/pmwiki-syntaxlove-recipe'
+alias dpmwikitwitterrecipe='cd $HOME/bitbucket/pmwiki-twitter-recipe'
+alias dpresentations='cd $HOME/bitbucket/presentations'
+alias dwindowssetup='cd $HOME/bitbucket/windows-setup'
 # }}}
 
