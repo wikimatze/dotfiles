@@ -1,4 +1,4 @@
-project_name: book
+project_name: padrino-book
 project_root: ~/Dropbox/padrino/manuscript
 tabs:
   - main:
@@ -12,6 +12,8 @@ tabs:
       panes:
         - git status
         - tig
+  - padrino-code: cd ~/git-repositories/padrino/padrino-framework; vim
   - guides: lynx http://www.padrinorb.com/guides
   - irc: irssi
   - shell: #empty
+
