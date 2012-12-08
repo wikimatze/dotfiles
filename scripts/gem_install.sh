@@ -83,6 +83,7 @@ gem install abstract \
   vagrant \
   vagrant-vbguest \
   vimgolf \
+  vimrunner \
   will_paginate \
   wirble \
   xml-simple \
