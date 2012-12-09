@@ -1,15 +1,16 @@
-# Common documents {{{
+# documents {{{
 
-alias earchivepass='g $HOME/Dropbox/documents/archivepasswords.txt'
-alias econtacts='g $HOME/Dropbox/documents/contacts.txt'
+alias earchivepass='g $HOME/Dropbox/documents/archivepasswords.txt.asc'
+alias ebank='g $HOME/Dropbox/documents/bank.txt.asc'
+alias econtacts='g $HOME/Dropbox/documents/contacts.txt.asc'
+alias efreistellungsauftrag='g $HOME/Dropbox/documents/freistellungsauftrag.txt.asc'
 alias ecvmarkdown='vim $HOME/blog-wikimatze/cv.mkd'
 alias ecvtex='vim $HOME/latex/vorlagen/cv/cv.tex'
-alias epass='g $HOME/Dropbox/documents/passwords.txt'
-alias ebank='g $HOME/Dropbox/documents/bank.txt'
-alias evorlagebank='g $HOME/Dropbox/documents/vorlagebank.txt'
+alias epasswords='g $HOME/Dropbox/documents/passwords.txt.asc'
+alias evorlagenbank='g $HOME/Dropbox/documents/vorlagenbank.txt.asc'
 
 # }}}
-# Dotfiles editing {{{
+# dotfiles {{{
 
 alias econvert='vim $HOME/.convert'
 alias ezshrc='vim $HOME/.zshrc'
@@ -34,14 +35,14 @@ then
 fi
 
 # }}}
-# Snippet editing {{{
+# snippet {{{
 
 alias etexsnippets='vim $HOME/.vim/snippets/tex.snippets'
 alias erubysnippets='vim $HOME/.vim/snippets/ruby.snippets'
 alias emarkdownsnippets='vim $HOME/.vim/snippets/markdown.snippets'
 
 # }}}
-# Scripts {{{
+# scripts {{{
 
 alias ebrewinstall='vim $HOME/Dropbox/dotfiles/scripts/brew_install.sh'
 alias ectagsinstall='vim $HOME/Dropbox/dotfiles/scripts/ctags_install.sh'
@@ -62,7 +63,7 @@ alias ezraminstall='vim $HOME/Dropbox/dotfiles/scripts/zram_install.sh'
 alias enpminstall='vim $HOME/Dropbox/dotfiles/scripts/npm_install.sh'
 
 # }}}
-# Misc {{{
+# misc {{{
 
 alias eackrc='vim $HOME/.ackrc'
 alias egemrc='vim $HOME/.gemrc'
