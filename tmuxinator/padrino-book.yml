@@ -8,11 +8,11 @@ tabs:
         - vim 01-introduction.md
   - notes: vim ~/Dropbox/notes/padrino.txt
   - todo: vim ~/Dropbox/notes/padrino-todo.txt
-  - vcs:
+  - git:
       panes:
         - git status
         - tig
-  - padrino-code: cd ~/git-repositories/padrino/padrino-framework; vim
+  - padrino-code: cd ~/git-repositories/padrino-framework; vim
   - guides: lynx http://www.padrinorb.com/guides
   - irc: irssi
   - shell: #empty
