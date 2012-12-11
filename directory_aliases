@@ -1,4 +1,4 @@
-# Directories {{{
+# directories {{{
 
 alias dbitbucket='cd $HOME/Dropbox/bitbucket'
 alias dblog='cd $HOME/blog-wikimatze'
@@ -24,12 +24,13 @@ alias dtmuxinator='cd $HOME/.tmuxinator'
 alias dvim='cd $HOME/.vim'
 
 # }}}
-# Git directories {{{
+# git repos {{{
 
 alias dappsterdamwebsite='cd $HOME/git-repositories/appsterdam-website'
 alias dbootstrap='cd $HOME/git-repositories/bootstrap'
 alias dbrokenliftsvm='cd $HOME/git-repositories/brokenlifts-vm'
 alias dcsshacks='cd $HOME/git-repositories/css-hacks'
+alias deasel='cd $HOME/git-repositories/easel'
 alias dgitignoreboilerplates='cd $HOME/git-repositories/gitignore-boilerplates'
 alias dhammervim='cd $HOME/git-repositories/hammer-vim'
 alias djquerycountdown='cd $HOME/git-repositories/jquery-countdown'
@@ -47,7 +48,7 @@ alias dzimki='cd $HOME/git-repositories/zimki'
 alias dzshcompletions='cd $HOME/git-repositories/zsh-completions'
 
 # }}}
-# bitbucket repositories {{{
+# bitbucket repos {{{
 
 alias diso25='cd $HOME/bitbucket/'
 alias dpmwikidropcapsrecipe='cd $HOME/bitbucket/pmwiki-dropcaps-recipe'

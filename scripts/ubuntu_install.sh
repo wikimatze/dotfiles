@@ -91,6 +91,7 @@ sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
 sudo apt-get install -y irssi
+sudo apt-get install -y libmagickwand-dev # needed for rmagick ruby gem
 sudo apt-get install -y jfstils
 sudo apt-get install -y lame
 sudo apt-get install -y libatk1.0-dev
