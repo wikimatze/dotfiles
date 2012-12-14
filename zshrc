@@ -31,6 +31,7 @@ export EDITOR='vim'
 # solution for tmux problems
 export DISABLE_AUTO_TITLE="true"
 
+unsetopt correct_all
 
 # ----------------------------------------------------------------------------------}}}
 # Sourcing -------------------------------------------------------------------------{{{
