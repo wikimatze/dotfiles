@@ -41,7 +41,6 @@ rm -f $HOME/.gitk
 rm -f $HOME/.irbc
 rm -f $HOME/.irssi
 rm -f $HOME/.oh-my-zsh
-rm -f $HOME/.rspec
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimrc
@@ -131,7 +130,6 @@ ln -sf $HOME/Dropbox/dotfiles/gemrc $HOME/.gemrc
 ln -sf $HOME/Dropbox/dotfiles/gitk $HOME/.gitk
 ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
-ln -sf $HOME/Dropbox/dotfiles/rspec $HOME/.rspec
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/gibo-completion $HOME/.gibo-completion
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
