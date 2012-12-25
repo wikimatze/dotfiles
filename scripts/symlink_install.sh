@@ -3,7 +3,6 @@
 
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
-rm -f $HOME/.zsh-completions
 rm -f $HOME/bin
 rm -f $HOME/bitbucket
 rm -f $HOME/blog-wikimatze
@@ -11,8 +10,9 @@ rm -f $HOME/git-repositories
 rm -f $HOME/.gftp
 rm -f $HOME/latex
 rm -f $HOME/presentations
-rm -f $HOME/presentations
 rm -f -R $HOME/.config/Terminal
+rm -f -R $HOME/zsh-lib
+rm -f -R $HOME/zsh-completions
 
 # }}}
 # Bash files {{{
@@ -82,13 +82,14 @@ ln -sf $HOME/Dropbox/bin $HOME/bin
 ln -sf $HOME/Dropbox/bitbucket $HOME/bitbucket
 ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
 ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
-ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
+ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
 ln -sf $HOME/Dropbox/dotfiles/gftp $HOME/.gftp
+ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
+ln -sf $HOME/Dropbox/dotfiles/zsh-completions $HOME/zsh-completions
+ln -sf $HOME/Dropbox/dotfiles/zsh-lib $HOME/zsh-lib
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
-ln -sf $HOME/Dropbox/git-repositories/zsh-completions $HOME/.zsh-completions
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
-ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
 
 # }}}
 # Bash files {{{
