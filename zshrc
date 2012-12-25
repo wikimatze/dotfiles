@@ -5,12 +5,16 @@ LC_ALL=en_US.UTF-8
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-source $ZSH/oh-my-zsh.sh
-plugin=(bundler cap gem git rails rbenv ssh-agent svn thor vagrant vundle)
+#source $ZSH/oh-my-zsh.sh
+
+# Sourcing only the most important things of zsh plugins
+source $HOME/zsh-lib/git.zsh
+
+plugin=(bundler gem git rails rbenv ssh-agent svn gpg-agent rsync)
 
 # ----------------------------------------------------------------------------------}}}
 # Custom ZSH -----------------------------------------------------------------------{{{
-fpath=($HOME/.zsh-completions/src ${fpath}) # showoff, tmuxinator, ... autocompletion
+#fpath=($HOME/.zsh-completions/src ${fpath}) # showoff, tmuxinator, ... autocompletion
 
 # custom stuff
 # Need these two lines for autocompletion
@@ -90,7 +94,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # set PATH so it includes user's private bin if it exists
 if [[ -d "$HOME/bin" ]] ; then
-    PATH="$HOME/bin:$PATH"
+  PATH="$HOME/bin:$PATH"
 fi
 
 # ----------------------------------------------------------------------------------}}}
@@ -98,8 +102,8 @@ fi
 
 # enable color support of ls and also add handy aliases
 if [[ -x /usr/bin/dircolors ]]; then
-    eval "`dircolors -b`"
-    alias ls='ls --color=auto'
+  eval "`dircolors -b`"
+  alias ls='ls --color=auto'
 fi
 
 # ----------------------------------------------------------------------------------}}}
@@ -110,12 +114,16 @@ eval "$(rbenv init - zsh)"
 
 # ----------------------------------------------------------------------------------}}}
 # Prompt tuning  -------------------------------------------------------------------{{{
-PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: ${PWD/#$HOME/~} $(git_prompt_info)%{$reset_color%} '
+#
+setopt promptsubst # enable changing of prompt
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[magenta]%}("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[magenta]%})"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%} ✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔"
+PROMPT='%n@%m: ${PWD/#$HOME/~} $(git_prompt_info) '
+
+ZSH_THEME_GIT_PROMPT_PREFIX="("
+ZSH_THEME_GIT_PROMPT_SUFFIX=")"
+ZSH_THEME_GIT_PROMPT_DIRTY=" ✗"
+ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
+
 # ----------------------------------------------------------------------------------}}}
 # Suffix aliases -------------------------------------------------------------------{{{
 alias -s tex=vim
@@ -124,3 +132,4 @@ alias -s txt=vim
 # ----------------------------------------------------------------------------------}}}
 # grepping running webrick services
 alias vwebrick="lsof | grep IPv4"
+
