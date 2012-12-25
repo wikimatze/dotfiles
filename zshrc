@@ -9,6 +9,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # Sourcing only the most important things of zsh plugins
 source $HOME/zsh-lib/git.zsh
+source $HOME/zsh-lib/completion.zsh
 
 plugin=(bundler gem git rails rbenv ssh-agent svn gpg-agent rsync)
 
