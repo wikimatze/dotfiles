@@ -13,6 +13,7 @@ rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/presentations
 rm -f -R $HOME/.config/Terminal
+rm -f -R $HOME/zsh-lib
 
 # }}}
 # Bash files {{{
@@ -84,6 +85,7 @@ ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
 ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/gftp $HOME/.gftp
+ln -sf $HOME/Dropbox/dotfiles/zsh-lib $HOME/zsh-lib
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/git-repositories/zsh-completions $HOME/.zsh-completions
 ln -sf $HOME/Dropbox/latex $HOME/latex
