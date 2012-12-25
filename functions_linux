@@ -56,6 +56,6 @@ fctcreatefileoutofcueflac ()
 # convert the cdrom into an iso
 fctcdromiso ()
 {
-  cd $HOME/archiv/isos
+  cd $HOME/Desktop
   sudo dd if=/dev/cdrom of="$1".iso bs=10M
 }
