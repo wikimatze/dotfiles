@@ -3,19 +3,20 @@ LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+#ZSH=$HOME/.oh-my-zsh
 
-#source $ZSH/oh-my-zsh.sh
+# sourcing zsh-lib file
+for lib_file ($HOME/zsh-lib/*.zsh); do
+  source $lib_file
+done
 
-# Sourcing only the most important things of zsh plugins
-source $HOME/zsh-lib/git.zsh
-source $HOME/zsh-lib/completion.zsh
-
-plugin=(bundler gem git rails rbenv ssh-agent svn gpg-agent rsync)
+# adding files for command-line
+# fpath=($HOME/.zsh-completions/src $fpath)
+ fpath=($HOME/zsh-completions $fpath)
+# plugin=(bundler gem git rails rbenv ssh-agent svn gpg-agent rsync)
 
 # ----------------------------------------------------------------------------------}}}
 # Custom ZSH -----------------------------------------------------------------------{{{
-#fpath=($HOME/.zsh-completions/src ${fpath}) # showoff, tmuxinator, ... autocompletion
 
 # custom stuff
 # Need these two lines for autocompletion
@@ -83,9 +84,18 @@ fi
 # ----------------------------------------------------------------------------------}}}
 # History Settings -----------------------------------------------------------------{{{
 
-# don't put duplicate lines in the history
-export HISTSIZE=100000
-export HISTFILESIZE=100000
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt append_history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history
 
 # ----------------------------------------------------------------------------------}}}
 # Paths settings -------------------------------------------------------------------{{{
@@ -133,4 +143,3 @@ alias -s txt=vim
 # ----------------------------------------------------------------------------------}}}
 # grepping running webrick services
 alias vwebrick="lsof | grep IPv4"
-
