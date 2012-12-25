@@ -91,7 +91,6 @@ sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
 sudo apt-get install -y irssi
-sudo apt-get install -y libmagickwand-dev # needed for rmagick ruby gem
 sudo apt-get install -y jfstils
 sudo apt-get install -y lame
 sudo apt-get install -y libatk1.0-dev
@@ -100,15 +99,16 @@ sudo apt-get install -y libcairo2-dev
 sudo apt-get install -y libgnome2-dev
 sudo apt-get install -y libgraph-writer-graphviz-perl
 sudo apt-get install -y libgtk2.0-dev
+sudo apt-get install -y libmagickwand-dev # needed for rmagick ruby gem
 sudo apt-get install -y libmysqlclient-dev
 sudo apt-get install -y libncurses-dev
 sudo apt-get install -y libpq-dev
+sudo apt-get install -y libreadline-dev # needed to start the rails console
 sudo apt-get install -y libreadline5-dev
 sudo apt-get install -y libreoffice-calc
 sudo apt-get install -y libreoffice-gtk
 sudo apt-get install -y libreoffice-impress
 sudo apt-get install -y libreoffice-writer
-sudo apt-get install -y xcfa
 sudo apt-get install -y libsqlite3-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libx11-dev
@@ -173,6 +173,7 @@ sudo apt-get install -y virtualbox-ose
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
+sudo apt-get install -y xcfa
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
 sudo apt-get install -y xpdf
