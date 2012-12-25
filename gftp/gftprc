@@ -304,6 +304,7 @@ ext=.8:man.xpm:B:xman
 ext=.tar:tar.xpm:B:
 ext=.tgz:tar.xpm:B:
 
+localhistory=/home/helex/
 localhistory=/home/helex/Downloads
 localhistory=/home/helex/Dropbox/share
 localhistory=/home/helex/Dropbox
