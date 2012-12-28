@@ -10,8 +10,9 @@ done
 # Sourcing the script for z completion (https://github.com/rupa/z)
 . $HOME/zsh-lib/z.sh
 
-
 fpath=($HOME/zsh-completions $fpath)
+# make `cd` easier to search after project
+cdpath=(~ ~/bitbucket ~/git-repositories)
 
 # ----------------------------------------------------------------------------------}}}
 # Custom ZSH -----------------------------------------------------------------------{{{
@@ -46,7 +47,6 @@ source $HOME/.edit_aliases
 source $HOME/.functions
 source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
-source $HOME/.gibo-completion
 
 # ----------------------------------------------------------------------------------}}}
 # Differentiation between OS -------------------------------------------------------{{{
@@ -143,7 +143,6 @@ alias -s txt=vim
 # grepping running webrick services
 alias vwebrick="lsof | grep IPv4"
 
-
+# bundle aliases
 alias be="bundle exec"
 alias b="bundle"
-
