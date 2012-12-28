@@ -2,9 +2,6 @@
 LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
-# Path to your oh-my-zsh configuration.
-#ZSH=$HOME/.oh-my-zsh
-
 # sourcing zsh-lib file
 for lib_file ($HOME/zsh-lib/*.zsh); do
   source $lib_file
@@ -137,9 +134,15 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
 
 # ----------------------------------------------------------------------------------}}}
 # Suffix aliases -------------------------------------------------------------------{{{
+# define file ending which should be open with appropriate programs
 alias -s tex=vim
 alias -s yaml=vim
 alias -s txt=vim
 # ----------------------------------------------------------------------------------}}}
 # grepping running webrick services
 alias vwebrick="lsof | grep IPv4"
+
+
+alias be="bundle exec"
+alias b="bundle"
+
