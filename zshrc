@@ -1,4 +1,4 @@
-# Setup for oh-my-zsh ---------------------------------------------------------------{{{
+# Setup -----------------------------------------------------------------------------{{{
 LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
@@ -7,10 +7,11 @@ for lib_file ($HOME/zsh-lib/*.zsh); do
   source $lib_file
 done
 
-# adding files for command-line
-# fpath=($HOME/.zsh-completions/src $fpath)
- fpath=($HOME/zsh-completions $fpath)
-# plugin=(bundler gem git rails rbenv ssh-agent svn gpg-agent rsync)
+# Sourcing the script for z completion (https://github.com/rupa/z)
+. $HOME/zsh-lib/z.sh
+
+
+fpath=($HOME/zsh-completions $fpath)
 
 # ----------------------------------------------------------------------------------}}}
 # Custom ZSH -----------------------------------------------------------------------{{{
