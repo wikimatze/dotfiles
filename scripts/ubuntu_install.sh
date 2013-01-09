@@ -48,6 +48,7 @@ sudo apt-get remove -y libxt-dev
 # }}}
 # Install of packages {{{
 
+sudo apt-get install -y arandr
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
