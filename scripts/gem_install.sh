@@ -25,6 +25,7 @@ gem install abstract \
   erubis \
   faker \
   fast-stemmer \
+  fileutils \
   fuubar \
   github-markup \
   gli \
