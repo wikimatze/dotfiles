@@ -2,9 +2,7 @@
 require("awful")
 require("awful.autofocus")
 require("awful.rules")
--- Theme handling library
 require("beautiful")
--- Notification library
 require("naughty")
 
 -- Load Debian menu entries
@@ -23,32 +21,25 @@ editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
--- Table of layouts to cover with awful.layout.inc, order matters.
+
+-- Layout table can be used fo default layout settings of tags
 layouts =
 {
-    awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
 }
--- }}}
 
--- {{{ Tags
--- Define a tag table which hold all screen tags.
-tags = {}
+
+-- Tags/workspaces
+tags = {
+  names  = { "vim", "www", "terminal", "im", 5, 6 },
+  layout = { layouts[2], layouts[2], layouts[1], layouts[2], layouts[2],
+            layouts[2] }
+}
 for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+  -- Each screen has its own tag table.
+  tags[s] = awful.tag(tags.names, s, tags.layout)
 end
--- }}}
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
@@ -59,11 +50,12 @@ myawesomemenu = {
    { "quit", awesome.quit }
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "Debian", debian.menu.Debian_menu.Debian },
-                                    { "open terminal", terminal }
-                                  }
-                        })
+mymainmenu = awful.menu({ items =
+  { { "awesome", myawesomemenu, beautiful.awesome_icon },
+    { "Debian", debian.menu.Debian_menu.Debian },
+    { "open terminal", terminal }
+  }
+})
 
 mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
                                      menu = mymainmenu })
