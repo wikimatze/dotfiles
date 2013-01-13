@@ -125,8 +125,6 @@ mytasklist.buttons = awful.util.table.join(
 end))
 
 for s = 1, screen.count() do
-  -- Create a promptbox for each screen
-  mypromptbox[s] = awful.widget.prompt({ layout = awful.widget.layout.horizontal.leftright })
   -- Create an imagebox widget which will contains an icon indicating which layout we're using.
   -- We need one layoutbox per screen.
   mylayoutbox[s] = awful.widget.layoutbox(s)
@@ -150,7 +148,6 @@ for s = 1, screen.count() do
     {
       mylauncher,
       mytaglist[s],
-      mypromptbox[s],
       layout = awful.widget.layout.horizontal.leftright
     },
     mylayoutbox[s],
@@ -255,15 +252,7 @@ globalkeys = awful.util.table.join(
 
   -- Prompt for opening a program
   awful.key({ modkey },  "r", function () awful.util.spawn("gmrun")   end),
-  awful.key({ modkey },  "s", function () awful.util.spawn("synapse") end),
-
-  awful.key({ modkey }, "x",
-    function ()
-      awful.prompt.run({ prompt = "Run Lua code: " },
-      mypromptbox[mouse.screen].widget,
-      awful.util.eval, nil,
-      awful.util.getdir("cache") .. "/history_eval")
-    end)
+  awful.key({ modkey },  "s", function () awful.util.spawn("synapse") end)
 )
 
 clientkeys = awful.util.table.join(
