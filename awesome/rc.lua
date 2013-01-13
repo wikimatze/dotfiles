@@ -66,12 +66,15 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
                                      menu = mymainmenu })
 -- }}}
 
--- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
 
--- Create a systray
+-- Create a systray widget
 mysystray = widget({ type = "systray" })
+
+-- Separator widget
+separator = widget { type = "textbox" }
+separator.text = '<span color="#ee1111"> :: </span>'
 
 -- Create a wibox for each screen and add it
 mywibox     = {}
@@ -149,7 +152,9 @@ for s = 1, screen.count() do
     },
     mylayoutbox[s],
     mytextclock,
+    separator,
     obvious.battery(),
+    separator,
     s == 1 and mysystray or nil,
     mytasklist[s],
     layout = awful.widget.layout.horizontal.rightleft
