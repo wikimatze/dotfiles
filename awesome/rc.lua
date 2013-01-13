@@ -2,10 +2,14 @@
 require("awful")
 require("awful.autofocus")
 require("awful.rules")
+
+require("obvious.battery")
+require("vicious")
+
 require("beautiful")
 require("naughty")
 
-require("obvious.volume_alsa")
+
 -- Load Debian menu entries
 require("debian.menu")
 
@@ -145,6 +149,7 @@ for s = 1, screen.count() do
     },
     mylayoutbox[s],
     mytextclock,
+    obvious.battery(),
     s == 1 and mysystray or nil,
     mytasklist[s],
     layout = awful.widget.layout.horizontal.rightleft
