@@ -5,6 +5,7 @@ require("awful.rules")
 
 require("obvious.battery")
 require("obvious.volume_alsa")
+require("obvious.temp_info")
 require("vicious")
 
 require("beautiful")
@@ -152,11 +153,14 @@ for s = 1, screen.count() do
         layout = awful.widget.layout.horizontal.leftright
     },
     mylayoutbox[s],
+    separator,
     mytextclock,
     separator,
     obvious.battery(),
+    separator,
     s == 1 and mysystray or nil,
     obvious.volume_alsa(),
+    obvious.temp_info(),
     mytasklist[s],
     layout = awful.widget.layout.horizontal.rightleft
   }
