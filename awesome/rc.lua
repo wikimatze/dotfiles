@@ -178,9 +178,18 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
 
+  awful.key({ modkey, "Shift" }, "r", awesome.restart),
+
   awful.key({ modkey, }, "Left",   awful.tag.viewprev       ),
   awful.key({ modkey, }, "Right",  awful.tag.viewnext       ),
   awful.key({ modkey, }, "Escape", awful.tag.history.restore),
+
+  -- Shortcuts to start most used programs
+  awful.key({ modkey, "Shift" }, "b", function () awful.util.spawn("banshee") end),
+  awful.key({ modkey, "Shift" }, "c", function () awful.util.spawn("chromium-browser") end),
+  awful.key({ modkey, "Shift" }, "f", function () awful.util.spawn("firefox") end),
+  awful.key({ modkey, "Shift" }, "n", function () awful.util.spawn("nautilus") end),
+  awful.key({ modkey, "Shift" }, "s", function () awful.util.spawn("skype") end),
 
   -- sound & brightness
   awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
@@ -214,7 +223,6 @@ globalkeys = awful.util.table.join(
 
   -- Standard program
   awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
-  awful.key({ modkey, "Control" }, "r", awesome.restart),
   awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
   awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
