@@ -284,42 +284,36 @@ for s = 1, screen.count() do
 end
 
 -- Bind all key numbers to tags.
--- Be careful: we use keycodes to make it works on any keyboard layout.
--- This should map on the top row of your keyboard, usually 1 to 9.
 for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
-    awful.key({ modkey }, "#" .. i + 9,
-      function ()
-        local screen = mouse.screen
-        if tags[screen][i] then
-          awful.tag.viewonly(tags[screen][i])
-        end
-      end),
-    awful.key({ modkey, "Control" }, "#" .. i + 9,
-      function ()
-        local screen = mouse.screen
-        if tags[screen][i] then
-          awful.tag.viewtoggle(tags[screen][i])
-        end
-      end),
-    awful.key({ modkey, "Shift" }, "#" .. i + 9,
-      function ()
-        if client.focus and tags[client.focus.screen][i] then
-          awful.client.movetotag(tags[client.focus.screen][i])
-        end
-      end),
-    awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
-      function ()
-        if client.focus and tags[client.focus.screen][i] then
-          awful.client.toggletag(tags[client.focus.screen][i])
-        end
-      end))
+    awful.key({ modkey }, "#" .. i + 9, function ()
+      local screen = mouse.screen
+      if tags[screen][i] then
+        awful.tag.viewonly(tags[screen][i])
+      end
+    end),
+    awful.key({ modkey, "Control" }, "#" .. i + 9, function ()
+      local screen = mouse.screen
+      if tags[screen][i] then
+        awful.tag.viewtoggle(tags[screen][i])
+      end
+    end),
+    awful.key({ modkey, "Shift" }, "#" .. i + 9, function ()
+      if client.focus and tags[client.focus.screen][i] then
+        awful.client.movetotag(tags[client.focus.screen][i])
+      end
+    end),
+    awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9, function ()
+      if client.focus and tags[client.focus.screen][i] then
+        awful.client.toggletag(tags[client.focus.screen][i])
+      end
+    end))
 end
 
 clientbuttons = awful.util.table.join(
-  awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
-  awful.button({ modkey }, 1, awful.mouse.client.move),
-  awful.button({ modkey }, 3, awful.mouse.client.resize))
+  awful.button({ }        , 1 , function (c) client.focus = c; c:raise() end),
+  awful.button({ modkey } , 1 , awful.mouse.client.move),
+  awful.button({ modkey } , 3 , awful.mouse.client.resize))
 
 -- Set keys
 root.keys(globalkeys)
@@ -327,11 +321,15 @@ root.keys(globalkeys)
 -- Rules
 awful.rules.rules = {
   -- All clients will match this rule.
-  { rule = { }, properties = { border_width = beautiful.border_width,
-    border_color = beautiful.border_normal,
-    focus = true,
-    keys = clientkeys,
-    buttons = clientbuttons } },
+  { rule        = { },
+     properties = {
+       border_width = beautiful.border_width,
+       border_color = beautiful.border_normal,
+       focus = true,
+       keys = clientkeys,
+       buttons = clientbuttons
+     }
+  },
   { rule = { class = "MPlayer" },
     properties = { floating = true } },
   { rule = { class = "pinentry" },
