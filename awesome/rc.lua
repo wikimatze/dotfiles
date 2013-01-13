@@ -191,7 +191,7 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Shift" }, "f", function () awful.util.spawn("firefox") end),
   awful.key({ modkey, "Shift" }, "n", function () awful.util.spawn("nautilus") end),
   awful.key({ modkey, "Shift" }, "s", function () awful.util.spawn("skype") end),
-  awful.key({ modkey, "Shift" }, "t", function () awful.util.spawn("thunderbird") end),
+  awful.key({ modkey, "Shift" }, "m", function () awful.util.spawn("thunderbird") end),
 
   -- sound & brightness
   awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
@@ -256,20 +256,22 @@ globalkeys = awful.util.table.join(
 )
 
 clientkeys = awful.util.table.join(
-    awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
-    awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
-    awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
+    -- Fullscreen but the upper window is visible
+    awful.key({ modkey,           }, "f", function (c) c.fullscreen = not c.fullscreen  end),
+    -- Fullscreen no upper window is visible
+    awful.key({ modkey,           }, "t", awful.client.floating.toggle                     ),
+    -- Quit the window
+    awful.key({ modkey, "Shift"   }, "q", function (c) c:kill()                         end),
+    -- ???
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
+    -- ???
     awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
-    awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
-    awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end),
-    awful.key({ modkey,           }, "n",
-      function (c) -- The client currently has the input focus, so it cannot be
-        -- minimized, since minimized clients can't have the focus.
-        c.minimized = true
-      end),
-    awful.key({ modkey,           }, "m",
-      function (c)
+
+    -- Minimize all
+    awful.key({ modkey,           }, "n", function (c) c.minimized = true end),
+
+    -- ???
+    awful.key({ modkey,           }, "m", function (c)
         c.maximized_horizontal = not c.maximized_horizontal
         c.maximized_vertical   = not c.maximized_vertical
       end)
