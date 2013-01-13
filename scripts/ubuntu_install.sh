@@ -48,10 +48,11 @@ sudo apt-get remove -y libxt-dev
 # }}}
 # Install of packages {{{
 
-sudo apt-get install -y arandr
 sudo apt-get install -y ack-grep
+sudo apt-get install -y acpi # for awesome wm battery widget
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
+sudo apt-get install -y arandr
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
 sudo apt-get install -y chromium-browser
