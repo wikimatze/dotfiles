@@ -346,4 +346,24 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
+
+
+-- Mod4 + Shift + <Number> ... move the current window on a different tag
+awful.key({ modkey, "Shift"   }, ",",
+  function (c)
+    local curidx = awful.tag.getidx(c:tags()[1])
+    if curidx == 1 then
+      c:tags({screen[mouse.screen]:tags()[9]})
+    else
+      c:tags({screen[mouse.screen]:tags()[curidx - 1]})
+    end
+  end)
+awful.key({ modkey, "Shift"   }, ".",
+  function (c)
+    local curidx = awful.tag.getidx(c:tags()[1])
+    if curidx == 9 then
+      c:tags({screen[mouse.screen]:tags()[1]})
+    else
+      c:tags({screen[mouse.screen]:tags()[curidx + 1]})
+    end
+  end)
