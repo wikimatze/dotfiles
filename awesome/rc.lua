@@ -178,11 +178,15 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
 
+  -- Reload awesome
   awful.key({ modkey, "Shift" }, "r", awesome.restart),
 
-  awful.key({ modkey, }, "Left",   awful.tag.viewprev       ),
-  awful.key({ modkey, }, "Right",  awful.tag.viewnext       ),
-  awful.key({ modkey, }, "Escape", awful.tag.history.restore),
+  -- Go through all different
+  awful.key({ modkey, }, "Left",   awful.tag.viewprev ),
+  awful.key({ modkey, }, "Right",  awful.tag.viewnext ),
+
+  -- Switch between previous and active tag
+  awful.key({ modkey, }, "Tab", awful.tag.history.restore),
 
   -- Shortcuts to start most used programs
   awful.key({ modkey, "Shift" }, "b", function () awful.util.spawn("banshee") end),
@@ -190,30 +194,26 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Shift" }, "f", function () awful.util.spawn("firefox") end),
   awful.key({ modkey, "Shift" }, "n", function () awful.util.spawn("nautilus") end),
   awful.key({ modkey, "Shift" }, "s", function () awful.util.spawn("skype") end),
+  awful.key({ modkey, "Shift" }, "t", function () awful.util.spawn("thunderbird") end),
 
   -- sound & brightness
   awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
   awful.key({ modkey }, "Up",   function () obvious.volume_alsa.raise(0, "Master", 5) end),
 
+  -- Using Modkey + j|k to move down|up the open tabs
   awful.key({ modkey, }, "j",
     function ()
       awful.client.focus.byidx( 1)
       if client.focus then client.focus:raise() end
     end),
-  awful.key({ modkey,           }, "k",
+  awful.key({ modkey, }, "k",
     function ()
       awful.client.focus.byidx(-1)
       if client.focus then client.focus:raise() end
     end),
-  awful.key({ modkey,           }, "w", function () mymainmenu:show({keygrabber=true}) end),
 
-  -- Layout manipulation
-  awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
-  awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end),
-  awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end),
-  awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end),
-  awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
-  awful.key({ modkey,           }, "Tab",
+  -- Change between previous and active window
+  awful.key({ modkey, }, "Tab",
     function ()
       awful.client.focus.history.previous()
       if client.focus then
@@ -221,23 +221,41 @@ globalkeys = awful.util.table.join(
       end
     end),
 
+  -- Open main program menu
+  awful.key({ modkey, }, "w", function () mymainmenu:show({keygrabber=true}) end),
+
+  -- Move tabs around
+  awful.key({ modkey, "Shift" }, "j", function () awful.client.swap.byidx(  1) end),
+  awful.key({ modkey, "Shift" }, "k", function () awful.client.swap.byidx( -1) end),
+
   -- Standard program
-  awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
-  awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+  awful.key({ modkey, }, "Return", function () awful.util.spawn(terminal) end),
 
-  awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
-  awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
-  awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1)      end),
-  awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1)      end),
-  awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1)         end),
-  awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1)         end),
-  awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
-  awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
+  -- Increase and decrease windows size vertically
+  awful.key({ modkey,  }, "l",     function () awful.tag.incmwfact( 0.05) end),
+  awful.key({ modkey,  }, "h",     function () awful.tag.incmwfact(-0.05) end),
 
+  -- Increase|decrease windows size horizontally?
+  awful.key({ modkey, "Shift" }, "h",     function () awful.tag.incnmaster( 1) end),
+  awful.key({ modkey, "Shift" }, "l",     function () awful.tag.incnmaster(-1) end),
+
+  -- Change layouts of tag
+  awful.key({ modkey,         }, "space", function () awful.layout.inc(layouts,  1) end),
+  awful.key({ modkey, "Shift" }, "space", function () awful.layout.inc(layouts, -1) end),
+
+  -- ???
+  awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1) end),
+  awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1) end),
+
+  -- ???
   awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
-  -- Prompt
-  awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+  -- ???
+  awful.key({ modkey, }, "u", awful.client.urgent.jumpto),
+
+  -- Prompt for opening a program
+  awful.key({ modkey },  "r", function () awful.util.spawn("gmrun")   end),
+  awful.key({ modkey },  "s", function () awful.util.spawn("synapse") end),
 
   awful.key({ modkey }, "x",
     function ()
