@@ -4,6 +4,7 @@ require("awful.autofocus")
 require("awful.rules")
 
 require("obvious.battery")
+require("obvious.volume_alsa")
 require("vicious")
 
 require("beautiful")
@@ -154,8 +155,8 @@ for s = 1, screen.count() do
     mytextclock,
     separator,
     obvious.battery(),
-    separator,
     s == 1 and mysystray or nil,
+    obvious.volume_alsa(),
     mytasklist[s],
     layout = awful.widget.layout.horizontal.rightleft
   }
@@ -171,18 +172,24 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
+
   awful.key({ modkey, }, "Left",   awful.tag.viewprev       ),
   awful.key({ modkey, }, "Right",  awful.tag.viewnext       ),
   awful.key({ modkey, }, "Escape", awful.tag.history.restore),
+
+  -- sound & brightness
+  awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
+  awful.key({ modkey }, "Up",   function () obvious.volume_alsa.raise(0, "Master", 5) end),
+
   awful.key({ modkey, }, "j",
     function ()
-        awful.client.focus.byidx( 1)
-        if client.focus then client.focus:raise() end
+      awful.client.focus.byidx( 1)
+      if client.focus then client.focus:raise() end
     end),
   awful.key({ modkey,           }, "k",
     function ()
-        awful.client.focus.byidx(-1)
-        if client.focus then client.focus:raise() end
+      awful.client.focus.byidx(-1)
+      if client.focus then client.focus:raise() end
     end),
   awful.key({ modkey,           }, "w", function () mymainmenu:show({keygrabber=true}) end),
 
