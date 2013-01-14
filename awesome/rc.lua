@@ -195,8 +195,10 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Shift" }, "s", function () awful.util.spawn("skype") end),
   awful.key({ modkey, "Shift" }, "m", function () awful.util.spawn("thunderbird") end),
 
-  -- Lock screen
+  -- Shortcuts for lock screen, restart, shutdown
   awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
+  awful.key({ modkey, "Control" }, "r", function () awful.util.spawn("dbus-send --system --print-reply --dest=\"org.freedesktop.ConsoleKit\" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart") end),
+  awful.key({ modkey, "Control" }, "s", function () awful.util.spawn("dbus-send --system --print-reply --dest=\"org.freedesktop.ConsoleKit\" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop") end),
 
   -- Sound & brightness
   awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
