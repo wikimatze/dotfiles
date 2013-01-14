@@ -33,8 +33,8 @@ modkey = "Mod4"
 -- Layout table can be used fo default layout settings of tags
 layouts =
 {
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.max,
+  awful.layout.suit.tile.bottom,
+  awful.layout.suit.max,
 }
 
 
@@ -49,7 +49,6 @@ for s = 1, screen.count() do
   tags[s] = awful.tag(tags.names, s, tags.layout)
 end
 
--- {{{ Menu
 -- Create a laucher widget and a main menu
 myawesomemenu = {
   { "manual", terminal .. " -e man awesome" },
@@ -193,7 +192,7 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Shift" }, "s", function () awful.util.spawn("skype") end),
   awful.key({ modkey, "Shift" }, "m", function () awful.util.spawn("thunderbird") end),
 
-  -- sound & brightness
+  -- Sound & brightness
   awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
   awful.key({ modkey }, "Up",   function () obvious.volume_alsa.raise(0, "Master", 5) end),
 
@@ -265,7 +264,7 @@ clientkeys = awful.util.table.join(
     -- ???
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
     -- ???
-    awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
+    awful.key({ modkey,           }, "o",  awful.client.movetoscreen                       ),
 
     -- Minimize all
     awful.key({ modkey,           }, "n", function (c) c.minimized = true end),
@@ -276,6 +275,26 @@ clientkeys = awful.util.table.join(
         c.maximized_vertical   = not c.maximized_vertical
       end)
 )
+
+-- Mod4 + Shift + <Number> ... move the current window on a different tag
+awful.key({ modkey, "Shift"   }, ",",
+  function (c)
+    local curidx = awful.tag.getidx(c:tags()[1])
+    if curidx == 1 then
+      c:tags({screen[mouse.screen]:tags()[9]})
+    else
+      c:tags({screen[mouse.screen]:tags()[curidx - 1]})
+    end
+  end)
+awful.key({ modkey, "Shift"   }, ".",
+  function (c)
+    local curidx = awful.tag.getidx(c:tags()[1])
+    if curidx == 9 then
+      c:tags({screen[mouse.screen]:tags()[1]})
+    else
+      c:tags({screen[mouse.screen]:tags()[curidx + 1]})
+    end
+  end)
 
 -- Compute the maximum number of digit we need, limited to 9
 keynumber = 0
@@ -352,24 +371,3 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
-
-
--- Mod4 + Shift + <Number> ... move the current window on a different tag
-awful.key({ modkey, "Shift"   }, ",",
-  function (c)
-    local curidx = awful.tag.getidx(c:tags()[1])
-    if curidx == 1 then
-      c:tags({screen[mouse.screen]:tags()[9]})
-    else
-      c:tags({screen[mouse.screen]:tags()[curidx - 1]})
-    end
-  end)
-awful.key({ modkey, "Shift"   }, ".",
-  function (c)
-    local curidx = awful.tag.getidx(c:tags()[1])
-    if curidx == 9 then
-      c:tags({screen[mouse.screen]:tags()[1]})
-    else
-      c:tags({screen[mouse.screen]:tags()[curidx + 1]})
-    end
-  end)
