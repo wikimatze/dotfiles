@@ -53,6 +53,7 @@ sudo apt-get install -y acpi # for awesome wm battery widget
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
+sudo apt-get install -y anki # friendly, intelligent flashcards
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
 sudo apt-get install -y chromium-browser
@@ -80,6 +81,7 @@ sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
+sudo apt-get install -y gmrun # Small window-prompt for running programs
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
