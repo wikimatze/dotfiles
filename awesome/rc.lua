@@ -12,12 +12,15 @@ require("vicious")
 require("beautiful")
 require("naughty")
 
+-- Own custom modules
+require("lib.util")
 
 -- Load Debian menu entries
 require("debian.menu")
 
 -- local variables which are used in the whole configuration file
 local home = os.getenv("HOME")
+local util = lib.util
 
 -- Themes define colours, icons, and wallpapers
 beautiful.init(home .. "/.config/awesome/theme.lua")
@@ -192,6 +195,9 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey, "Shift" }, "s", function () awful.util.spawn("skype") end),
   awful.key({ modkey, "Shift" }, "m", function () awful.util.spawn("thunderbird") end),
 
+  -- Lock screen
+  awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
+
   -- Sound & brightness
   awful.key({ modkey }, "Down", function () obvious.volume_alsa.lower(0, "Master", 5) end),
   awful.key({ modkey }, "Up",   function () obvious.volume_alsa.raise(0, "Master", 5) end),
@@ -354,6 +360,12 @@ awful.rules.rules = {
   --   properties = { tag = tags[1][2] } },
 }
 
+-- Autostart commands
+util.run_once("xscreensaver -no-splash")
+util.run_once("nm-applet")
+util.run_once("dropbox start")
+
+
 -- Signal function to execute when a new client appears.
 client.add_signal("manage", function (c, startup)
   if not startup then
@@ -371,3 +383,4 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
