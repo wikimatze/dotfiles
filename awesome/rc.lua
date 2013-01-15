@@ -264,8 +264,6 @@ globalkeys = awful.util.table.join(
 clientkeys = awful.util.table.join(
     -- Fullscreen but the upper window is visible
     awful.key({ modkey,           }, "f", function (c) c.fullscreen = not c.fullscreen  end),
-    -- Fullscreen no upper window is visible
-    awful.key({ modkey,           }, "t", awful.client.floating.toggle                     ),
     -- Quit the window
     awful.key({ modkey, "Shift"   }, "q", function (c) c:kill()                         end),
     -- ???
