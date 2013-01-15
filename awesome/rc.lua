@@ -43,13 +43,12 @@ layouts =
 
 -- Tags/workspaces
 tags = {
-  names  = { "vim", "www", "terminal", "im", 5, 6 },
-  layout = { layouts[2], layouts[2], layouts[1], layouts[2], layouts[2],
-            layouts[2] }
+  names  = { "vim", "terminal", "www", "im", 5 }
 }
+
 for s = 1, screen.count() do
   -- Each screen has its own tag table.
-  tags[s] = awful.tag(tags.names, s, tags.layout)
+  tags[s] = awful.tag(tags.names, s, layouts[1])
 end
 
 -- Create a laucher widget and a main menu
