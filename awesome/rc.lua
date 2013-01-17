@@ -26,10 +26,10 @@ beautiful.init(home .. "/.config/awesome/theme.lua")
 
 
 -- default settings
-terminal = "xfce4-terminal"
-editor = os.getenv("EDITOR") or "vim"
+terminal   = "xfce4-terminal"
+editor     = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
-modkey = "Mod4"
+modkey     = "Mod4"
 
 
 -- Layout table can be used fo default layout settings of tags
