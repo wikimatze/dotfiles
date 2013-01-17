@@ -1,7 +1,8 @@
--- Standard awesome library
 require("awful")
 require("awful.autofocus")
 require("awful.rules")
+require("beautiful")
+require("naughty")
 
 require("obvious.battery")
 require("obvious.temp_info")
@@ -9,8 +10,6 @@ require("obvious.volume_alsa")
 
 require("vicious")
 
-require("beautiful")
-require("naughty")
 
 -- Own custom modules
 require("lib.util")
@@ -34,9 +33,8 @@ modkey = "Mod4"
 
 
 -- Layout table can be used fo default layout settings of tags
-layouts =
-{
-  awful.layout.suit.tile.bottom,
+layouts = {
+  awful.layout.suit.tile.top,
   awful.layout.suit.max,
 }
 
@@ -53,8 +51,6 @@ end
 
 -- Create a laucher widget and a main menu
 myawesomemenu = {
-  { "manual", terminal .. " -e man awesome" },
-  { "edit config", editor_cmd .. " " .. awesome.conffile },
   { "restart", awesome.restart },
   { "quit", awesome.quit }
 }
