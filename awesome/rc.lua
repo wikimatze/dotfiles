@@ -329,11 +329,13 @@ awful.rules.rules = {
   -- All clients will match this rule.
   { rule        = { },
      properties = {
-       border_width = beautiful.border_width,
-       border_color = beautiful.border_normal,
-       focus = true,
-       keys = clientkeys,
-       buttons = clientbuttons
+       border_width     = beautiful.border_width,
+       border_color     = beautiful.border_normal,
+       -- remove gaps between windows
+       size_hints_honor = false,
+       focus            = true,
+       keys             = clientkeys,
+       buttons          = clientbuttons
      }
   },
   -- Set Firefox to always map on tags number 2 of screen 1.
