@@ -159,15 +159,15 @@ for s = 1, screen.count() do
   }
 end
 
--- {{{ Mouse bindings
+-- Mouse bindings
 root.buttons(awful.util.table.join(
   awful.button({ }, 3, function () mainmenu:toggle() end),
   awful.button({ }, 4, awful.tag.viewnext),
   awful.button({ }, 5, awful.tag.viewprev)
 ))
--- }}}
+--
 
--- {{{ Key bindings
+-- Key bindings
 globalkeys = awful.util.table.join(
 
   -- Reload awesome
@@ -176,9 +176,6 @@ globalkeys = awful.util.table.join(
   -- Go through all different
   awful.key({ modkey, }, "Left",   awful.tag.viewprev ),
   awful.key({ modkey, }, "Right",  awful.tag.viewnext ),
-
-  -- Switch between previous and active tag
-  awful.key({ modkey, }, "Tab", awful.tag.history.restore),
 
   -- Shortcuts to start most used programs
   awful.key({ modkey, "Shift" }, "b", function () awful.util.spawn("banshee") end),
@@ -209,7 +206,8 @@ globalkeys = awful.util.table.join(
       if client.focus then client.focus:raise() end
     end),
 
-  -- Change between previous and active window
+  -- Switch between previous and active tag
+  awful.key({ modkey, }, "Tab", awful.tag.history.restore),
   awful.key({ modkey, }, "Tab",
     function ()
       awful.client.focus.history.previous()
@@ -240,15 +238,8 @@ globalkeys = awful.util.table.join(
   awful.key({ modkey,         }, "space", function () awful.layout.inc(layouts,  1) end),
   awful.key({ modkey, "Shift" }, "space", function () awful.layout.inc(layouts, -1) end),
 
-  -- ???
-  awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1) end),
-  awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1) end),
-
-  -- ???
+  -- Restotes minimized windows
   awful.key({ modkey, "Control" }, "n", awful.client.restore),
-
-  -- ???
-  awful.key({ modkey, }, "u", awful.client.urgent.jumpto),
 
   -- Prompt for opening a program
   awful.key({ modkey },  "r", function () awful.util.spawn("gmrun")   end),
@@ -263,15 +254,9 @@ clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f", function (c) c.fullscreen = not c.fullscreen  end),
     -- Quit the window
     awful.key({ modkey, "Shift"   }, "q", function (c) c:kill()                         end),
-    -- ???
-    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
-    -- ???
-    awful.key({ modkey,           }, "o",  awful.client.movetoscreen                       ),
-
     -- Minimize all
     awful.key({ modkey,           }, "n", function (c) c.minimized = true end),
-
-    -- ???
+    -- Fullscreen with upper window visible
     awful.key({ modkey,           }, "m", function (c)
         c.maximized_horizontal = not c.maximized_horizontal
         c.maximized_vertical   = not c.maximized_vertical
