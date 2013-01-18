@@ -48,39 +48,39 @@ for s = 1, screen.count() do
   tags[s] = awful.tag(tags.names, s, layouts[1])
 end
 
+
 -- Create a laucher widget and a main menu
-myawesomemenu = {
+awesomemenu = {
   { "restart", awesome.restart },
   { "quit", awesome.quit }
 }
 
-mymainmenu = awful.menu({ items =
-  { { "awesome", myawesomemenu, beautiful.awesome_icon },
-    { "Debian", debian.menu.Debian_menu.Debian },
-    { "open terminal", terminal }
+mainmenu = awful.menu({ items = {
+    { "System"   , lib.menu.Debian_menu.Debian },
+    { "terminal" , terminal },
+    { "awesome"  , awesomemenu }
   }
 })
 
-mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
-                                     menu = mymainmenu })
+launcher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
+                                     menu = mainmenu })
 
 -- Textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+textclock = awful.widget.textclock({ align = "right" })
 
 -- Systray widget
-mysystray = widget({ type = "systray" })
+systray = widget({ type = "systray" })
 
 -- Separator widget
 separator = widget { type = "textbox" }
-separator.text = '<span color="#ee1111"> :: </span>'
+separator.text = '<span color="#ee1111"> : </span>'
 
 
 -- Create a wibox for each screen and add it
-mywibox     = {}
-mypromptbox = {}
-mylayoutbox = {}
-mytaglist   = {}
-mytaglist.buttons = awful.util.table.join(
+wibox     = {}
+layoutbox = {}
+taglist   = {}
+taglist.buttons = awful.util.table.join(
   awful.button({ }        , 1 , awful.tag.viewonly)     ,
   awful.button({ modkey } , 1 , awful.client.movetotag) ,
   awful.button({ }        , 3 , awful.tag.viewtoggle)   ,
@@ -88,8 +88,8 @@ mytaglist.buttons = awful.util.table.join(
   awful.button({ }        , 4 , awful.tag.viewnext)     ,
   awful.button({ }        , 5 , awful.tag.viewprev)
   )
-mytasklist = {}
-mytasklist.buttons = awful.util.table.join(
+tasklist = {}
+tasklist.buttons = awful.util.table.join(
   awful.button({ }, 1, function (c)
     if c == client.focus then
         c.minimized = true
@@ -123,39 +123,38 @@ end))
 for s = 1, screen.count() do
   -- Create an imagebox widget which will contains an icon indicating which layout we're using.
   -- We need one layoutbox per screen.
-  mylayoutbox[s] = awful.widget.layoutbox(s)
-  mylayoutbox[s]:buttons(awful.util.table.join(
+  layoutbox[s] = awful.widget.layoutbox(s)
+  layoutbox[s]:buttons(awful.util.table.join(
     awful.button({ }, 1, function () awful.layout.inc(layouts, 1) end),
     awful.button({ }, 3, function () awful.layout.inc(layouts, -1) end),
     awful.button({ }, 4, function () awful.layout.inc(layouts, 1) end),
     awful.button({ }, 5, function () awful.layout.inc(layouts, -1) end)))
   -- Create a taglist widget
-  mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.label.all, mytaglist.buttons)
+  taglist[s] = awful.widget.taglist(s, awful.widget.taglist.label.all, taglist.buttons)
 
   -- Create a tasklist widget
-  mytasklist[s] = awful.widget.tasklist(function(c)
+  tasklist[s] = awful.widget.tasklist(function(c)
     return awful.widget.tasklist.label.currenttags(c, s)
-  end, mytasklist.buttons)
+  end, tasklist.buttons)
 
   -- Create the wibox
-  mywibox[s] = awful.wibox({ position = "top", screen = s })
+  wibox[s] = awful.wibox({ position = "top", screen = s })
   -- Add widgets to the wibox - order matters
-  mywibox[s].widgets = {
+  wibox[s].widgets = {
     {
-      mylauncher,
-      mytaglist[s],
+      launcher,
+      taglist[s],
       layout = awful.widget.layout.horizontal.leftright
     },
-    mylayoutbox[s],
-    separator,
-    mytextclock,
+    layoutbox[s],
+    textclock,
     separator,
     obvious.battery(),
     separator,
     obvious.temp_info(),
-    s == 1 and mysystray or nil,
+    s == 1 and systray or nil,
     obvious.volume_alsa(),
-    mytasklist[s],
+    tasklist[s],
     layout = awful.widget.layout.horizontal.rightleft
   }
 end
