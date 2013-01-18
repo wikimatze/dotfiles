@@ -20,6 +20,7 @@ sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
 sudo apt-get remove -y xfce4-taskmanager
+sudo apt-get remove -y xmag
 
 # Remove games {{{
 
@@ -120,6 +121,7 @@ sudo apt-get install -y libxml2-dev
 sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
+sudo apt-get install -y lua5.1 # Luca programming language
 sudo apt-get install -y lynx
 sudo apt-get install -y mailutils
 sudo apt-get install -y make
@@ -144,7 +146,6 @@ sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y rake
 sudo apt-get install -y rar
-sudo apt-get install -y rhythmbox
 sudo apt-get install -y roxterm
 sudo apt-get install -y scala
 sudo apt-get install -y scrot
@@ -177,6 +178,7 @@ sudo apt-get install -y virtualbox-ose
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
+sudo apt-get install -y xournal
 sudo apt-get install -y xcfa
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
