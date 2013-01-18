@@ -11,11 +11,10 @@ require("obvious.volume_alsa")
 require("vicious")
 
 
--- Own custom modules
+-- Own modules
 require("lib.util")
+require("lib.menu")
 
--- Load Debian menu entries
-require("debian.menu")
 
 -- local variables which are used in the whole configuration file
 local home = os.getenv("HOME")
