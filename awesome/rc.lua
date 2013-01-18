@@ -252,7 +252,10 @@ globalkeys = awful.util.table.join(
 
   -- Prompt for opening a program
   awful.key({ modkey },  "r", function () awful.util.spawn("gmrun")   end),
-  awful.key({ modkey },  "s", function () awful.util.spawn("synapse") end)
+  awful.key({ modkey },  "s", function () awful.util.spawn("synapse") end),
+
+  -- Screengrabbing
+  awful.key({ modkey }, "F12", function () awful.util.spawn("scrot -e 'mv $f ~/Dropbox/images'") end)
 )
 
 clientkeys = awful.util.table.join(
@@ -376,4 +379,3 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
-
