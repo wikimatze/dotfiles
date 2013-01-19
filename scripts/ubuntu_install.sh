@@ -53,8 +53,8 @@ sudo apt-get install -y ack-grep
 sudo apt-get install -y acpi # for awesome wm battery widget
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
-sudo apt-get install -y arandr
 sudo apt-get install -y anki # friendly, intelligent flashcards
+sudo apt-get install -y arandr
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
 sudo apt-get install -y chromium-browser
@@ -148,6 +148,7 @@ sudo apt-get install -y rake
 sudo apt-get install -y rar
 sudo apt-get install -y roxterm
 sudo apt-get install -y scala
+sudo apt-get install -y screenkey
 sudo apt-get install -y scrot
 sudo apt-get install -y seahorse
 sudo apt-get install -y shntool
@@ -178,10 +179,10 @@ sudo apt-get install -y virtualbox-ose
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
-sudo apt-get install -y xournal
 sudo apt-get install -y xcfa
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
+sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
