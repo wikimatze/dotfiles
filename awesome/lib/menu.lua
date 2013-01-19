@@ -31,10 +31,12 @@ Debian_menu["Debian_Graphics"] = {
   { "xfig"    , "/usr/bin/xfig", "/usr/share/pixmaps/xfig32x32cmap.xpm" }
 }
 
--- System/Network
-Debian_menu["Debian_Network"] = {
-  { "Deluge BitTorrent Client", "/usr/bin/deluge", "/usr/share/pixmaps/deluge.xpm" },
-  { "vinagre"                  , "/usr/bin/vinagre" }
+-- System/Internet
+Debian_menu["Debian_Internet"] = {
+  { "Deluge" , "/usr/bin/deluge", "/usr/share/pixmaps/deluge.xpm" },
+  { "Dropbox", "/usr/bin/dropbox", "/usr/share/icons/hicolor/16x16/apps/dropbox.png" },
+  { "Skype", "/usr/bin/skype" },
+  { "vinagre", "/usr/bin/vinagre" }
 }
 
 -- System/Office
@@ -82,7 +84,7 @@ Debian_menu["Debian"] = {
   { "Emus"    , Debian_menu["Debian_Emulators"] },
   { "Files"   , Debian_menu["Debian_File_Management"] },
   { "Graphics", Debian_menu["Debian_Graphics"] },
-  { "Network" , Debian_menu["Debian_Network"] },
+  { "Internet" , Debian_menu["Debian_Internet"] },
   { "Office"  , Debian_menu["Debian_Office"] },
   { "Sound"   , Debian_menu["Debian_Sound"] },
   { "System"  , Debian_menu["Debian_System"] },

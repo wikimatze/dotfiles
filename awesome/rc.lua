@@ -40,7 +40,7 @@ layouts = {
 
 -- Tags/workspaces
 tags = {
-  names  = { "vim", "terminal", "www", "im", 5 }
+  names  = { 1, 2, 3, 4, 5 }
 }
 
 for s = 1, screen.count() do
