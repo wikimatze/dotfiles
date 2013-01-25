@@ -62,7 +62,8 @@ Debian_menu["Debian_System"] = {
 -- System/Utility
 Debian_menu["Debian_Utility"] = {
   { "anki", "/usr/bin/anki", "/usr/share/pixmaps/anki.xpm" },
-  { "pdfchain", "/usr/bin/pdfchain", "/usr/share/pixmaps/pdfchain.png" }
+  { "pdfchain", "/usr/bin/pdfchain", "/usr/share/pixmaps/pdfchain.png" },
+  { "xfburn", "/usr/bin/xfburn", "/usr/share/icons/hicolor/16x16/stock/media/stock_xfburn-burn-cd.png" }
 }
 
 -- System/Video
