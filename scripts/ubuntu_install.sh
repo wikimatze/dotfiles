@@ -47,10 +47,17 @@ sudo apt-get remove -y libxpm-dev
 sudo apt-get remove -y libxt-dev
 
 # }}}
+# Install package for awesome and extensions {{{
+
+sudo apt-get install -y acpi # for awesome wm battery widget
+sudo apt-get install -y awesome
+sudo apt-get install -y awesome-extra # obvious, vicious packages
+sudo apt-get install -y lua5.1 # Luca programming language
+
+# }}}
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
-sudo apt-get install -y acpi # for awesome wm battery widget
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y anki # friendly, intelligent flashcards
@@ -121,7 +128,6 @@ sudo apt-get install -y libxml2-dev
 sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
-sudo apt-get install -y lua5.1 # Luca programming language
 sudo apt-get install -y lynx
 sudo apt-get install -y mailutils
 sudo apt-get install -y make
