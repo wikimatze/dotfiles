@@ -40,7 +40,7 @@ layouts = {
 
 -- Tags/workspaces
 tags = {
-  names  = { 1, 2, 3, 4, 5 }
+  names  = { 1, 2, 3, 4 }
 }
 
 for s = 1, screen.count() do
@@ -62,8 +62,10 @@ mainmenu = awful.menu({ items = {
   }
 })
 
-launcher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
-                                     menu = mainmenu })
+launcher = awful.widget.launcher({
+  image = image(beautiful.awesome_icon),
+  menu = mainmenu
+})
 
 -- Textclock widget
 textclock = awful.widget.textclock({ align = "right" })
@@ -129,6 +131,7 @@ for s = 1, screen.count() do
     awful.button({ }, 3, function () awful.layout.inc(layouts, -1) end),
     awful.button({ }, 4, function () awful.layout.inc(layouts, 1) end),
     awful.button({ }, 5, function () awful.layout.inc(layouts, -1) end)))
+
   -- Create a taglist widget
   taglist[s] = awful.widget.taglist(s, awful.widget.taglist.label.all, taglist.buttons)
 
@@ -139,6 +142,7 @@ for s = 1, screen.count() do
 
   -- Create the wibox
   wibox[s] = awful.wibox({ position = "top", screen = s })
+
   -- Add widgets to the wibox - order matters
   wibox[s].widgets = {
     {
@@ -338,9 +342,27 @@ awful.rules.rules = {
        buttons          = clientbuttons
      }
   },
-  -- Set Firefox to always map on tags number 2 of screen 1.
-  -- { rule = { class = "Firefox" },
-  --   properties = { tag = tags[1][2] } },
+
+  -- Set Chrome maps always on tags number 2.
+  {
+    rule = { class = "Chromium" },
+    properties = { tag = tags[1][2], switchtotag = true }
+  },
+  -- Set Firefox maps always on tags number 2.
+  {
+    rule = { class = "Firefox" },
+    properties = { tag = tags[1][2], switchtotag = true }
+  },
+  -- Set Thunderbird maps always on tags number 3.
+  {
+    rule = { class = "Thunderbird" },
+    properties = { tag = tags[1][3], switchtotag = true }
+  },
+  -- Set Skype maps always on tags number 4.
+  {
+    rule = { class = "Skype" },
+    properties = { tag = tags[1][4] }
+  }
 }
 
 -- Autostart commands
