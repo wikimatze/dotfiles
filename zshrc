@@ -146,3 +146,6 @@ alias vwebrick="lsof | grep IPv4"
 # bundle aliases
 alias be="bundle exec"
 alias b="bundle"
+
+# remapping <Caps-Lock> with left <Ctrl>
+/usr/bin/setxkbmap -option "ctrl:swapcaps"
