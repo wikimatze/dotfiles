@@ -36,4 +36,6 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
+AccelPrevTab=<Primary><Shift>Up
+AccelNextTab=<Primary><Shift>Down
 
