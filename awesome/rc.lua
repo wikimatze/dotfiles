@@ -358,9 +358,14 @@ awful.rules.rules = {
     rule = { class = "Thunderbird" },
     properties = { tag = tags[1][3], switchtotag = true }
   },
+  -- Set Banshee maps always on tags number 4.
+  {
+    rule = { class = "banshee" },
+    properties = { tag = tags[1][4] }
+  },
   -- Set Skype maps always on tags number 4.
   {
-    rule = { class = "Skype" },
+    rule = { class = "skype" },
     properties = { tag = tags[1][4] }
   }
 }
