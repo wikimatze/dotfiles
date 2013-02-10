@@ -1,6 +1,7 @@
 # Removing links {{{
 # Directory links {{{
 
+rm -f $HOME/.anki
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f $HOME/bin
@@ -120,7 +121,6 @@ ln -sf $HOME/Dropbox/dotfiles/zshrc $HOME/.zshrc
 # }}}
 # Miscellaneous {{{
 
-ln -sf $HOME/Dropbox/git-repositories/oh-my-zsh $HOME/.oh-my-zsh
 ln -sf $HOME/Dropbox/dotfiles/gitconfig $HOME/.gitconfig
 ln -sf $HOME/Dropbox/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/ackrc $HOME/.ackrc
@@ -130,6 +130,7 @@ ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
+ln -sf $HOME/Dropbox/Anki $HOME/.anki
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 # }}}
 # Bin files {{{
