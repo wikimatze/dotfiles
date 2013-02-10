@@ -20,6 +20,7 @@ sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
 sudo apt-get remove -y xfce4-taskmanager
+sudo apt-get remove -y xmag
 
 # Remove games {{{
 
@@ -46,12 +47,21 @@ sudo apt-get remove -y libxpm-dev
 sudo apt-get remove -y libxt-dev
 
 # }}}
+# Install package for awesome and extensions {{{
+
+sudo apt-get install -y acpi # for awesome wm battery widget
+sudo apt-get install -y awesome
+sudo apt-get install -y awesome-extra # obvious, vicious packages
+sudo apt-get install -y lua5.1 # Luca programming language
+
+# }}}
 # Install of packages {{{
 
-sudo apt-get install -y arandr
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
+sudo apt-get install -y anki # friendly, intelligent flashcards
+sudo apt-get install -y arandr
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
 sudo apt-get install -y chromium-browser
@@ -63,6 +73,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge # python based torrent client
+sudo apt-get install -y erlang
 sudo apt-get install -y exfalso
 sudo apt-get install -y exuberant-ctags
 sudo apt-get install -y exuberant-tags
@@ -74,11 +85,13 @@ sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
 sudo apt-get install -y gedit
 sudo apt-get install -y gftp
+sudo apt-get install -y ghc
 sudo apt-get install -y gimp
 sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
+sudo apt-get install -y gmrun # Small window-prompt for running programs
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -125,6 +138,7 @@ sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
 sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
+sudo apt-get install -y ntfs-config
 sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
@@ -141,9 +155,9 @@ sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y rake
 sudo apt-get install -y rar
-sudo apt-get install -y rhythmbox
 sudo apt-get install -y roxterm
 sudo apt-get install -y scala
+sudo apt-get install -y screenkey
 sudo apt-get install -y scrot
 sudo apt-get install -y seahorse
 sudo apt-get install -y shntool
@@ -177,6 +191,7 @@ sudo apt-get install -y wmctrl
 sudo apt-get install -y xcfa
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
+sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
