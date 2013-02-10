@@ -1,3 +1,2 @@
-git clone http://git.sysphere.org/vicious
-git clone git://git.mercenariesguild.net/obvious.git
+git clone git@github.com:matthias-guenther/awesome-fallout.git themes
 
