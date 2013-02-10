@@ -73,6 +73,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge # python based torrent client
+sudo apt-get install -y erlang
 sudo apt-get install -y exfalso
 sudo apt-get install -y exuberant-ctags
 sudo apt-get install -y exuberant-tags
@@ -84,6 +85,7 @@ sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
 sudo apt-get install -y gedit
 sudo apt-get install -y gftp
+sudo apt-get install -y ghc
 sudo apt-get install -y gimp
 sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
@@ -136,6 +138,7 @@ sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
 sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
+sudo apt-get install -y ntfs-config
 sudo apt-get install -y npm
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
