@@ -34,6 +34,7 @@ rm -f $HOME/.unused_terms
 # Miscellaneous {{{
 
 rm -f $HOME/.ackrc
+rm -f $HOME/.config/awesome
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
 rm -f $HOME/.gitk
@@ -131,6 +132,7 @@ ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/Dropbox/Anki $HOME/.anki
+ln -sf $HOME/Dropbox/dotfiles/awesome $HOME/.config/awesome
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 # }}}
 # Bin files {{{
