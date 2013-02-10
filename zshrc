@@ -148,4 +148,4 @@ alias be="bundle exec"
 alias b="bundle"
 
 # remapping <Caps-Lock> with left <Ctrl>
-/usr/bin/setxkbmap -option "ctrl:swapcaps"
+#/usr/bin/setxkbmap -option "ctrl:swapcaps"
