@@ -21,7 +21,6 @@ rm -f -R $HOME/zsh-completions
 rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
 rm -f $HOME/.convert
-rm -f $HOME/.directory_aliases
 rm -f $HOME/.edit_aliases
 rm -f $HOME/.functions
 rm -f $HOME/.latex_convert_aliases
@@ -109,7 +108,6 @@ then
 fi
 
 ln -sf $HOME/Dropbox/dotfiles/convert $HOME/.convert
-ln -sf $HOME/Dropbox/dotfiles/directory_aliases $HOME/.directory_aliases
 ln -sf $HOME/Dropbox/dotfiles/edit_aliases $HOME/.edit_aliases
 ln -sf $HOME/Dropbox/dotfiles/functions $HOME/.functions
 ln -sf $HOME/Dropbox/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
