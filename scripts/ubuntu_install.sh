@@ -70,6 +70,13 @@ sudo apt-get install -y handbrake-gtk
 sudo apt-get install -y handbrake-cli
 
 # }}}
+# Install of chromium-browser {{{
+
+sudo add-apt-repository -y ppa:a-v-shkop/chromium
+sudo apt-get update
+sudo apt-get install -y chromium-browser
+
+# }}}
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
