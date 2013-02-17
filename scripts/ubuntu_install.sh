@@ -77,6 +77,13 @@ sudo apt-get update
 sudo apt-get install -y chromium-browser
 
 # }}}
+# Install of go-lang {{{
+
+sudo add-apt-repository -y ppa:gophers/go
+sudo apt-get update
+sudo apt-get install -y golang-stable
+
+# }}}
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
