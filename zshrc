@@ -9,6 +9,8 @@ done
 
 # Sourcing the script for z completion (https://github.com/rupa/z)
 . $HOME/zsh-lib/z.sh
+export _Z_DATA="$HOME/Dropbox/z/.z"
+
 
 fpath=($HOME/zsh-completions $fpath)
 # make `cd` easier to search after project
