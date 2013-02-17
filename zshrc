@@ -12,7 +12,7 @@ done
 export _Z_DATA="$HOME/Dropbox/z/.z"
 
 
-fpath=($HOME/zsh-completions $fpath)
+fpath=($HOME/.zsh-completions $fpath)
 # make `cd` easier to search after project
 cdpath=(~ ~/bitbucket ~/git-repositories)
 
@@ -44,7 +44,6 @@ unsetopt correct_all
 # Sourcing -------------------------------------------------------------------------{{{
 
 source $HOME/.convert
-source $HOME/.directory_aliases
 source $HOME/.edit_aliases
 source $HOME/.functions
 source $HOME/.latex_convert_aliases

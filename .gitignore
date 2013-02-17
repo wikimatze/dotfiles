@@ -2,3 +2,4 @@ gftp/cache/*
 gftp.log
 away.log
 awesome/themes
+npm-debug.log
