@@ -55,6 +55,11 @@ sudo apt-get install -y awesome-extra # obvious, vicious packages
 sudo apt-get install -y lua5.1 # Luca programming language
 
 # }}}
+# Install exfat detection {{{
+sudo add-apt-repository ppa:relan/exfat
+sudo apt-get update
+sudo apt-get install -y fuse-exfat
+# }}}
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
