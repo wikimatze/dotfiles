@@ -84,6 +84,13 @@ sudo apt-get update
 sudo apt-get install -y golang-stable
 
 # }}}
+# Install kazam screencaster {{{
+
+sudo add-apt-repository -y ppa:kazam-team/unstable-series
+sudo apt-get update
+sudo apt-get install -y kazam
+
+# }}}
 # Install of packages {{{
 
 sudo apt-get install -y ack-grep
