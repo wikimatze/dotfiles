@@ -56,9 +56,19 @@ sudo apt-get install -y lua5.1 # Luca programming language
 
 # }}}
 # Install exfat detection {{{
-sudo add-apt-repository ppa:relan/exfat
+
+sudo add-apt-repository -y ppa:relan/exfat
 sudo apt-get update
 sudo apt-get install -y fuse-exfat
+
+# }}}
+# Install handbrake {{{
+
+sudo add-apt-repository -y ppa:stebbins/handbrake-releases
+sudo apt-get update
+sudo apt-get install -y handbrake-gtk
+sudo apt-get install -y handbrake-cli
+
 # }}}
 # Install of packages {{{
 
