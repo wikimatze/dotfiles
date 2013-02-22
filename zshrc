@@ -8,8 +8,8 @@ for lib_file ($HOME/zsh-lib/*.zsh); do
 done
 
 # Sourcing the script for z completion (https://github.com/rupa/z)
-. $HOME/zsh-lib/z.sh
 export _Z_DATA="$HOME/Dropbox/z/.z"
+. $HOME/zsh-lib/z.sh
 
 
 fpath=($HOME/.zsh-completions $fpath)
@@ -150,3 +150,7 @@ alias b="bundle"
 
 # remapping <Caps-Lock> with left <Ctrl>
 #/usr/bin/setxkbmap -option "ctrl:swapcaps"
+
+# Variables for hub
+export GITHUB_USER='matthias-guenther'
+
