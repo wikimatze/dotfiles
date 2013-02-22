@@ -53,6 +53,7 @@ rm -f $HOME/bin/cpngpdf.sh
 rm -f $HOME/bin/crushjpg.sh
 rm -f $HOME/bin/crushpng.sh
 rm -f $HOME/bin/giffnaming.sh
+rm -f $HOME/bin/hub
 rm -f $HOME/bin/jnaming.sh
 rm -f $HOME/bin/jsmall.sh
 rm -f $HOME/bin/pnaming.sh
@@ -70,7 +71,6 @@ rm -f $HOME/bin/rbenv_install.sh
 rm -f $HOME/bin/rbenv_install_setup.sh
 rm -f $HOME/bin/tmux_install.sh
 rm -f $HOME/bin/ubuntu_install.sh
-rm -f $HOME/bin/xamp_install.sh
 
 # }}}
 # }}}
@@ -141,6 +141,7 @@ ln -sf $HOME/Dropbox/dotfiles/bin/cpngpdf.sh $HOME/bin/cpngpdf.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/crushjpg.sh $HOME/bin/crushjpg.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/crushpng.sh $HOME/bin/crushpng.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/giffnaming.sh $HOME/bin/giffnaming.sh
+ln -sf $HOME/Dropbox/dotfiles/bin/hub $HOME/bin/hub
 ln -sf $HOME/Dropbox/dotfiles/bin/jnaming.sh $HOME/bin/jnaming.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/jsmall.sh $HOME/bin/jsmall.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/pnaming.sh $HOME/bin/pnaming.sh
@@ -158,6 +159,5 @@ ln -sf $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh $HOME/bin/rbenv_install.s
 ln -sf $HOME/Dropbox/dotfiles/scripts/rbenv_install_setup.sh $HOME/bin/rbenv_install_setup.sh
 ln -sf $HOME/Dropbox/dotfiles/scripts/tmux_install.sh $HOME/bin/tmux_install.sh
 ln -sf $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh $HOME/bin/ubuntu_install.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/xamp_install.sh $HOME/bin/xamp_install.sh
 
 # }}}
