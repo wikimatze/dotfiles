@@ -96,7 +96,6 @@ sudo apt-get install -y kazam
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
-sudo apt-get install -y anki # friendly, intelligent flashcards
 sudo apt-get install -y arandr
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre

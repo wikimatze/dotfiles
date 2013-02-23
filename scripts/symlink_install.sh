@@ -129,7 +129,6 @@ ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
-ln -sf $HOME/Dropbox/Anki $HOME/.anki
 ln -sf $HOME/Dropbox/dotfiles/awesome $HOME/.config/awesome
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 # }}}
