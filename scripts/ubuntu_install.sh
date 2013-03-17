@@ -185,6 +185,7 @@ sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
 sudo apt-get install -y powertop
 sudo apt-get install -y preload
+sudo apt-get install -y procps # need for pgrep package
 sudo apt-get install -y pv
 sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
@@ -216,6 +217,7 @@ sudo apt-get install -y tmux
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra
 sudo apt-get install -y usb-creator-gtk
+sudo apt-get install -y vim
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
