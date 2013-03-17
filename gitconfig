@@ -6,15 +6,13 @@
 [core]
   editor = vim
 [alias]
-  ammend = commit --amend
-  ck = checkout
+  am = commit --amend
+  ch = checkout
   co = commit
   df = diff
   dw = diff --word-diff=color
-  h = help
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  st = status -s
-  wc = whatchanged --oneline
+  st = status -bs
 [color]
     ui = auto
   [color "branch"]
