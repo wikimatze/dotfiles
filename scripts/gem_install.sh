@@ -9,10 +9,6 @@ gem install abstract \
   albino \
   arel \
   authlogic \
-  autotest \
-  autotest-fsevent \
-  autotest-growl \
-  autotest-rails-pure \
   bluecloth \
   builder \
   bundler \
@@ -70,7 +66,6 @@ gem install abstract \
   rubyzip \
   showoff \
   sinatra \
-  slimtimer4r \
   sqlite3 \
   stringex \
   sweetie \
@@ -81,7 +76,6 @@ gem install abstract \
   tmuxinator \
   twitter \
   uuid \
-  vagrant \
   vagrant-vbguest \
   vimgolf \
   vimrunner \
