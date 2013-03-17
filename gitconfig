@@ -13,6 +13,7 @@
   dw = diff --word-diff=color
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   st = status -bs
+	g = grep --break --heading --line-number
 [color]
     ui = auto
   [color "branch"]
@@ -40,3 +41,6 @@
   browser = google-chrome
 [credential]
   helper = cache --timeout=3600
+[grep]
+  extendRegexp = true
+  lineNumber = true
