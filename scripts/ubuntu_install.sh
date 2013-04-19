@@ -107,7 +107,8 @@ sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
-sudo apt-get install -y deluge # python based torrent client
+sudo apt-get install -y deluge   # python based torrent client
+sudo apt-get install -y dos2unix # fix file problems between Windows and Unix
 sudo apt-get install -y erlang
 sudo apt-get install -y exfalso
 sudo apt-get install -y exuberant-ctags
