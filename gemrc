@@ -2,4 +2,3 @@
 :update_sources: true
 :backtrace: false
 :benchmark: false
-gem: --no-rdoc --no-ri
