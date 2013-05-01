@@ -9,6 +9,7 @@ gem install abstract \
   albino \
   arel \
   authlogic \
+  bcrypt-ruby \
   bluecloth \
   builder \
   bundler \
@@ -28,13 +29,12 @@ gem install abstract \
   glynn \
   gravatar \
   haml \
-  heroku \
   highline \
   jammit \
   jekyll \
-  jekyll_generator \
   json \
   json_pure \
+  keydown \
   liquid \
   maruku \
   mechanize \
