@@ -26,7 +26,7 @@ sudo apt-get remove -y xmag
 
 sudo apt-get remove -y aisleriot
 sudo apt-get remove -y gigolo
-sudo apt-get remove -y gnome-games-common checkbox evolution tomboy empathy libsane
+sudo apt-get remove -y checkbox evolution tomboy empathy libsane
 sudo apt-get remove -y gnome-sudoku
 sudo apt-get remove -y gnomine
 sudo apt-get remove -y mahjongg
@@ -64,31 +64,31 @@ sudo apt-get install -y fuse-exfat
 # }}}
 # Install handbrake {{{
 
-sudo add-apt-repository -y ppa:stebbins/handbrake-releases
-sudo apt-get update
-sudo apt-get install -y handbrake-gtk
-sudo apt-get install -y handbrake-cli
+#sudo add-apt-repository -y ppa:stebbins/handbrake-releases
+#sudo apt-get update
+#sudo apt-get install -y handbrake-gtk
+#sudo apt-get install -y handbrake-cli
 
 # }}}
 # Install of chromium-browser {{{
 
-sudo add-apt-repository -y ppa:a-v-shkop/chromium
-sudo apt-get update
-sudo apt-get install -y chromium-browser
+#sudo add-apt-repository -y ppa:a-v-shkop/chromium
+#sudo apt-get update
+#sudo apt-get install -y chromium-browser
 
 # }}}
 # Install of go-lang {{{
 
-sudo add-apt-repository -y ppa:gophers/go
-sudo apt-get update
-sudo apt-get install -y golang-stable
+#sudo add-apt-repository -y ppa:gophers/go
+#sudo apt-get update
+#sudo apt-get install -y golang-stable
 
 # }}}
 # Install kazam screencaster {{{
 
-sudo add-apt-repository -y ppa:kazam-team/unstable-series
-sudo apt-get update
-sudo apt-get install -y kazam
+#sudo add-apt-repository -y ppa:kazam-team/unstable-series
+#sudo apt-get update
+#sudo apt-get install -y kazam
 
 # }}}
 # Install of packages {{{
@@ -217,7 +217,6 @@ sudo apt-get install -y tig
 sudo apt-get install -y tmux
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra
-sudo apt-get install -y usb-creator-gtk
 sudo apt-get install -y vim
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
@@ -234,10 +233,6 @@ sudo apt-get install -y xpdf
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
-
-# add thumbnail-generator for music
-sudo add-apt-repository ppa:flozz/flozz -y
-sudo apt-get update && sudo apt-get install cover-thumbnailer -y
 
 # add for davmail program
 sudo apt-get install libswt-cairo-gtk-3-jni -y
