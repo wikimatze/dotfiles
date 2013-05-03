@@ -1,5 +1,4 @@
 gem install abstract \
-  SystemTimer \
   actionmailer \
   actionpack \
   activemodel \
