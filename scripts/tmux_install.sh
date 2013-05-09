@@ -1,6 +1,6 @@
 # Create the $HOME/lib folder {{{
 
-mkdir $HOME/Downloads
+mkdir $HOME/tmp && cd $HOME/tmp
 
 # }}}
 # Get the sources {{{
@@ -8,17 +8,16 @@ mkdir $HOME/Downloads
 curl -OL http://downloads.sourceforge.net/project/levent/libevent/libevent-2.0/libevent-2.0.21-stable.tar.gz
 curl -OL http://downloads.sourceforge.net/tmux/tmux-1.8.tar.gz
 
-tar -xvzf libevent-2.0.21-stable.tar.gz
-tar -xvzf tmux-1.8.tar.gz
+tar -xvzf libevent-2.0.21-stable.tar.gz && tar -xvzf tmux-1.8.tar.gz
 
 # }}}
 # Compiling libevent {{{
 
-cd $HOME/Downloads/libevent-2.0.21-stable && ./configure --prefix=/opt && make && sudo make install
+cd $HOME/tmp/libevent-2.0.21-stable && ./configure --prefix=/opt && make && sudo make install
 
 # }}}
 # Compiling tmux {{{
-cd $HOME/Downloads/tmux-1.8
+cd $HOME/tmux/tmux-1.8
 LDFLAGS="-L/opt/lib" CPPFLAGS="-I/opt/include" LIBS="-lresolv" ./configure --prefix=/opt && make && sudo make install
 
 # }}}
