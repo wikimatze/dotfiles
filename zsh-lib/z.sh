@@ -19,7 +19,17 @@
 #   * z foo bar # cd to most frecent dir matching foo and bar
 #   * z -r foo  # cd to highest ranked dir matching foo
 #   * z -t foo  # cd to most recently accessed dir matching foo
-#   * z -l foo  # list all dirs matching foo (by frecency)
+#   * z -l foo  # list matches instead of cd
+#   * z -c foo  # restrict matches to subdirs of $PWD
+
+case $- in
+ *i*) ;;
+   *) echo 'ERROR: z.sh is meant to be sourced, not directly executed.'
+esac
+
+[ -d "${_Z_DATA:-$HOME/.z}" ] && {
+    echo "ERROR: z.sh's datafile (${_Z_DATA:-$HOME/.z}) is a directory."
+}
 
 _z() {
 
@@ -43,7 +53,7 @@ _z() {
 
   # maintain the file
   local tempfile
-  tempfile="$(mktemp $datafile.XXXXXX)" || return
+  tempfile="$(mktemp "$datafile.XXXXXX")" || return
   while read line; do
    [ -d "${line%%\|*}" ] && echo $line
   done < "$datafile" | awk -v path="$*" -v now="$(date +%s)" -F"|" '
@@ -95,14 +105,17 @@ _z() {
  else
   # list/go
   while [ "$1" ]; do case "$1" in
-   -h) echo "z [-h][-l][-r][-t] args" >&2; return;;
-   -l) local list=1;;
-   -r) local typ="rank";;
-   -t) local typ="recent";;
    --) while [ "$1" ]; do shift; local fnd="$fnd $1";done;;
+   -*) local opt=${1:1}; while [ "$opt" ]; do case ${opt:0:1} in
+        c) local fnd="^$PWD $fnd";;
+        h) echo "${_Z_CMD:-z} [-chlrt] args" >&2; return;;
+        l) local list=1;;
+        r) local typ="rank";;
+        t) local typ="recent";;
+       esac; opt=${opt:1}; done;;
     *) local fnd="$fnd $1";;
   esac; local last=$1; shift; done
-  [ "$fnd" ] || local list=1
+  [ "$fnd" -a "$fnd" != "^$PWD " ] || local list=1
 
   # if we hit enter on a completion just go there
   case "$last" in
@@ -208,7 +221,8 @@ elif complete &> /dev/null; then
  complete -o filenames -C '_z --complete "$COMP_LINE"' ${_Z_CMD:-z}
  [ "$_Z_NO_PROMPT_COMMAND" ] || {
   # bash populate directory list. avoid clobbering other PROMPT_COMMANDs.
-  echo $PROMPT_COMMAND | grep -q "_z --add"
-  [ $? -gt 0 ] && PROMPT_COMMAND='_z --add "$(pwd '$_Z_RESOLVE_SYMLINKS' 2>/dev/null)" 2>/dev/null;'"$PROMPT_COMMAND"
+  echo $PROMPT_COMMAND | grep -q "_z --add" || {
+   PROMPT_COMMAND='_z --add "$(pwd '$_Z_RESOLVE_SYMLINKS' 2>/dev/null)" 2>/dev/null;'"$PROMPT_COMMAND"
+  }
  }
 fi
