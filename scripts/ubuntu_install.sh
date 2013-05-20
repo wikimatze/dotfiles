@@ -57,6 +57,7 @@ sudo apt-get install -y lua5.1 # Luca programming language
 # }}}
 # Install of packages {{{
 
+sudo apt-get install libsasl2-dev # fpr memcached gem
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
@@ -178,14 +179,12 @@ sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
 sudo apt-get install -y tig
-sudo apt-get install -y tmux
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra
 sudo apt-get install -y vim
-sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
-sudo apt-get install -y virtualbox-ose
+sudo apt-get install -y virtualbox
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
@@ -199,14 +198,14 @@ sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
 # add for davmail program
-sudo apt-get install libswt-cairo-gtk-3-jni -y
+sudo apt-get install -y libswt-cairo-gtk-3-jni
 
 
 # }}}
 # Update and upgrade {{{
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 # }}}
 # Unimportant stuff {{{
