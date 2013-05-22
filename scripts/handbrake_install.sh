@@ -1,4 +1,3 @@
-sudo add-apt-repository -y ppa:stebbins/handbrake-releases
-sudo apt-get update
-sudo apt-get install -y handbrake-gtk
-sudo apt-get install -y handbrake-cli
+wget -c https://launchpad.net/~stebbins/+archive/handbrake-releases/+files/handbrake-gtk_0.9.8%2Bppa1~quantal1_i386.deb
+sudo dpkg -i handbrake*
+sudo apt-get -f install
