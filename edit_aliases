@@ -1,13 +1,13 @@
 # documents {{{
 
-alias earchivepass='g $HOME/Dropbox/documents/archivepasswords.txt.asc'
-alias ebank='g $HOME/Dropbox/documents/bank.txt.asc'
-alias econtacts='g $HOME/Dropbox/documents/contacts.txt.asc'
+alias earchivepass='gvim $HOME/Dropbox/documents/archivepasswords.txt.asc'
+alias ebank='gvim $HOME/Dropbox/documents/bank.txt.asc'
+alias econtacts='gvim $HOME/Dropbox/documents/contacts.txt.asc'
 alias efreistellungsauftrag='g $HOME/Dropbox/documents/freistellungsauftrag.txt.asc'
 alias ecvmarkdown='vim $HOME/blog-wikimatze/cv.mkd'
 alias ecvtex='vim $HOME/latex/vorlagen/cv/cv.tex'
-alias epasswords='g $HOME/Dropbox/documents/passwords.txt.asc'
-alias evorlagenbank='g $HOME/Dropbox/documents/vorlagenbank.txt.asc'
+alias epasswords='gvim $HOME/Dropbox/documents/passwords.txt.asc'
+alias evorlagenbank='gvim $HOME/Dropbox/documents/vorlagenbank.txt.asc'
 
 # }}}
 # dotfiles {{{
@@ -28,10 +28,10 @@ alias eunusedterms='vim $HOME/.unused_terms'
 
 if [[ "$OSTYPE" -eq "linux-gnu" ]]
 then
-  alias ebashrc='g $HOME/.bashrc'
+  alias ebashrc='gvim $HOME/.bashrc'
 elif [[ "$OSTYPE" -eq "darwin10.0" ]]
 then
-  alias ebashrc='g $HOME/.bash_profile'
+  alias ebashrc='gvim $HOME/.bash_profile'
 fi
 
 # }}}
@@ -72,7 +72,7 @@ alias egitk='vim $HOME/.gitk'
 alias eirbc='vim $HOME/.irbc'
 alias elatexinstall:='vim $HOME/.latex_convert_aliases'
 alias erspec='vim $HOME/.rspec'
-alias etigrc='g $HOME/.tigrc'
+alias etigrc='vim $HOME/.tigrc'
 alias etmuxconf='vim $HOME/.tmux.conf'
 alias evimrc='vim $HOME/.vimrc'
 
