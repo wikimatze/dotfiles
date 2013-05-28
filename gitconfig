@@ -5,6 +5,7 @@
   whitespace = nowarn
 [core]
   editor = vim
+  autocrlf = input
 [alias]
   am = commit --amend
   ap = add -p
@@ -45,4 +46,4 @@
   extendRegexp = true
   lineNumber = true
 [push]
-	default = matching
+  default = matching
