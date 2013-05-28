@@ -29,7 +29,7 @@ MiscInheritGeometry=FALSE
 MiscMenubarDefault=TRUE
 MiscMouseAutohide=FALSE
 MiscToolbarsDefault=FALSE
-MiscConfirmClose=TRUE
+MiscConfirmClose=FALSE
 MiscCycleTabs=TRUE
 MiscTabCloseButtons=TRUE
 MiscTabCloseMiddleClick=TRUE
@@ -38,4 +38,3 @@ MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 AccelPrevTab=<Primary><Shift>Up
 AccelNextTab=<Primary><Shift>Down
-
