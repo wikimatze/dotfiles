@@ -7,11 +7,6 @@ for lib_file ($HOME/zsh-lib/*.zsh); do
   source $lib_file
 done
 
-# Sourcing the script for z completion (https://github.com/rupa/z)
-export _Z_DATA="$HOME/Dropbox/z/.z"
-. $HOME/zsh-lib/z.sh
-
-
 fpath=($HOME/.zsh-completions $fpath)
 # make `cd` easier to search after project
 cdpath=(~ ~/bitbucket ~/git-repositories)
