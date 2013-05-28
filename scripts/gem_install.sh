@@ -1,5 +1,4 @@
-gem install abstract \
-  actionmailer \
+gem install actionmailer \
   actionpack \
   activemodel \
   activerecord \
@@ -26,9 +25,12 @@ gem install abstract \
   github-markup \
   gli \
   glynn \
+  guard \
+  guard-rspec \
   gravatar \
   haml \
   highline \
+  i18n \
   jammit \
   jekyll \
   json \
@@ -37,11 +39,13 @@ gem install abstract \
   liquid \
   maruku \
   mechanize \
+  mustache \
   money \
   net-sftp \
   net-ssh \
   nokogiri \
   padrino \
+  parslet \
   puppet \
   puppetlabs_spec_helper \
   puppet-lint \
@@ -65,6 +69,7 @@ gem install abstract \
   rubyzip \
   showoff \
   sinatra \
+  slim \
   sqlite3 \
   stringex \
   sweetie \
@@ -75,6 +80,7 @@ gem install abstract \
   tmuxinator \
   twitter \
   uuid \
+  uglifier \
   vagrant-vbguest \
   vimgolf \
   vimrunner \
@@ -82,4 +88,4 @@ gem install abstract \
   will_paginate \
   wirble \
   xml-simple \
-  yui-compressor
+  yui-compressor \
