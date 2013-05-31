@@ -30,6 +30,7 @@ gem install actionmailer \
   gravatar \
   haml \
   highline \
+  interactive_editor \
   i18n \
   jammit \
   jekyll \
