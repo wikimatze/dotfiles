@@ -1,19 +1,19 @@
 # Removing links {{{
 # Directory links {{{
 
-rm -f $HOME/.anki
+rm -f $HOME/.gftp
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f $HOME/bin
 rm -f $HOME/bitbucket
 rm -f $HOME/blog-wikimatze
 rm -f $HOME/git-repositories
-rm -f $HOME/.gftp
 rm -f $HOME/latex
 rm -f $HOME/presentations
+rm -f $HOME/projects
 rm -f -R $HOME/.config/Terminal
-rm -f -R $HOME/.zsh-lib
 rm -f -R $HOME/.zsh-completions
+rm -f -R $HOME/.zsh-lib
 
 # }}}
 # Bash files {{{
@@ -88,6 +88,7 @@ ln -sf $HOME/Dropbox/dotfiles/zsh-lib $HOME/.zsh-lib
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
+ln -sf $HOME/Dropbox/projects $HOME/projects
 
 # }}}
 # Bash files {{{
@@ -146,17 +147,5 @@ ln -sf $HOME/Dropbox/dotfiles/bin/jsmall.sh $HOME/bin/jsmall.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/pnaming.sh $HOME/bin/pnaming.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/psmall.sh $HOME/bin/psmall.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/waterproof.sh $HOME/bin/waterproof.sh
-
-# }}}
-# Bash scripts {{{
-
-ln -sf $HOME/Dropbox/dotfiles/scripts/brew_install.sh $HOME/bin/brew_install.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/ctags_install.sh $HOME/bin/ctags_install.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/gem_install.sh $HOME/bin/gem_install.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/mac_backup.sh $HOME/bin/mac_backup.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/rbenv_install.sh $HOME/bin/rbenv_install.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/rbenv_install_setup.sh $HOME/bin/rbenv_install_setup.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/tmux_install.sh $HOME/bin/tmux_install.sh
-ln -sf $HOME/Dropbox/dotfiles/scripts/ubuntu_install.sh $HOME/bin/ubuntu_install.sh
 
 # }}}
