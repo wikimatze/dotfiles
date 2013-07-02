@@ -92,7 +92,8 @@ sudo apt-get install -y git-core
 sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
-sudo apt-get install -y gmrun # Small window-prompt for running programs
+sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
+sudo apt-get install -y golang # the Go programming language
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -170,7 +171,6 @@ sudo apt-get install -y sox
 sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
-sudo apt-get install -y synapse
 sudo apt-get install -y tetex-base
 sudo apt-get install -y tetex-bin
 sudo apt-get install -y tetex-extra
