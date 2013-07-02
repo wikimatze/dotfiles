@@ -1,23 +1,14 @@
 project_name: padrino-book
 project_root: ~/Dropbox/padrino/manuscript
 tabs:
-  - section: vim 02-job-vacancy-application.md
-  - git-book:
+  - section: vim 02-04-user-profile.md
+  - job-vacancy:
+      layout: eb46,157x57,0,0[157x41,0,0,157x15,0,42{78x15,0,42,78x15,79,42}]
       panes:
-        - git status
-        - tig
-  - job-vacancy: cd ~/git-repositories/job-vacancy; vim
-  - git-app:
-      panes:
-        - cd ~/git-repositories/job-vacancy; git status
-        - cd ~/git-repositories/job-vacancy; tig
+        - cd ~/git-repositories/job-vacancy; vim
+        - cd ~/git-repositories/job-vacancy; padrino s
+        - cd ~/git-repositories/job-vacancy;  rspec spec
+  - git: cd ~/git-repositories/job-vacancy; git status
   - notes: vim ~/Dropbox/notes/padrino.txt
   - todo: vim ~/Dropbox/notes/padrino-todo.txt
-  - git:
-      panes:
-        - git status
-        - tig
-  - padrino-code: cd ~/git-repositories/padrino-framework; vim
   - irc: irssi
-  - shell: #empty
-

@@ -5,7 +5,7 @@ tabs:
       layout: eb46,157x57,0,0[157x41,0,0,157x15,0,42{78x15,0,42,78x15,79,42}]
       panes:
         - vim
-        - rake preview
+        - rake
         - rake -T
   - index: vim index.md
   - about: vim about.md
