@@ -1,10 +1,4 @@
-gem install actionmailer \
-  actionpack \
-  activemodel \
-  activerecord \
-  activeresource \
-  activesupport \
-  albino \
+gem install albino \
   arel \
   authlogic \
   bcrypt-ruby \
@@ -13,10 +7,12 @@ gem install actionmailer \
   bundler \
   classifier \
   compass \
+  csscss \
   cucumber \
   cucumber-rails \
   database_cleaner \
   digestr \
+  eventmachine \
   erubis \
   faker \
   fast-stemmer \
@@ -32,6 +28,7 @@ gem install actionmailer \
   highline \
   interactive_editor \
   i18n \
+  git-smart \
   jammit \
   jekyll \
   json \
@@ -41,7 +38,9 @@ gem install actionmailer \
   maruku \
   mechanize \
   mustache \
+  multi_json \
   money \
+  omglog \
   net-sftp \
   net-ssh \
   nokogiri \
@@ -79,6 +78,7 @@ gem install actionmailer \
   thor \
   tilt \
   tmuxinator \
+  tweemux \
   twitter \
   uuid \
   uglifier \
