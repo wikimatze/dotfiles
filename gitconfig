@@ -6,6 +6,7 @@
 [core]
   editor = vim
   autocrlf = input
+	ignore = dirty
 [alias]
   am = commit --amend
   ap = add -p
@@ -47,3 +48,5 @@
   lineNumber = true
 [push]
   default = matching
+[hub]
+	protocol = https
