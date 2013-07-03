@@ -1,7 +1,6 @@
 # Remove back up directory and create the new one {{{
 
-sudo rm -R $HOME/Desktop/backup
-mkdir $HOME/Desktop/backup
+sudo rm -R $HOME/Desktop/backup && mkdir $HOME/Desktop/backup
 
 # }}}
 # Copy the backup file into $HOME/Desktop/backup {{{
