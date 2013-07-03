@@ -16,8 +16,3 @@ sudo make install
 
 # }}}
 
-# Cleanup {{{
-
-cd /tmp && rm -rf 1.0.1 clvv-fasd-4822023
-# }}}
-
