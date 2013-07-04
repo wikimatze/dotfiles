@@ -1,11 +1,3 @@
-# Change rights of a directory {{{
-
-fctchmod ()
-{
-  sudo chmod -R 777 "$1"
-}
-
-# }}}
 # Eject disk {{{
 
 fcteject ()
