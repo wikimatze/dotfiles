@@ -1,21 +1,19 @@
-cd /tmp
-git clone https://github.com/b4winckler/vim
-cd vim
-git co v7-3-1070
+cd /tmp && git clone https://github.com/b4winckler/vim && cd vim
+git co v7-3-1298
 
 ./configure --prefix=/usr/local \
-  --enable-gui=no \
   --without-x \
   --disable-nls \
-  --with-tlib=ncurses \
-  --enable-multibyte \
-  --enable-rubyinterp \
-  --enable-python3interp \
+  --enable-gui=no \
   --enable-luainterp \
-  --with-python-config-dir=$HOME/lib/config-3.3m \
-  --with-mac-arch=x86_64 \
-  --with-features=huge \
+  --enable-multibyte \
+  --enable-python3interp \
+  --enable-rubyinterp \
   --enable-gui=gnome2
+  --with-features=huge \
+  --with-mac-arch=x86_64 \
+  --with-python-config-dir=$HOME/lib/config-3.3m \
+  --with-tlib=ncurses \
 
 sudo make && sudo make install && sudo make clean
-cd /tmp && rm -rf vim
+
