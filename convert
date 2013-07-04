@@ -1,7 +1,7 @@
 # Music converting ---------------------------------------------------------------{{{
 # ogg in flac with sox {{{
 
-fctcvogg ()
+fctcvoggtoflac ()
 {
   for i in *.ogg; do sox "$i" "${i}.flac"; done
 }
@@ -15,7 +15,7 @@ fctcvmidi ()
 
 # }}}
 # ape in wave format with `mac` {{{
-fctcvape ()
+fctcvapetowav ()
 {
   for i in *.ape; do mac "$i" "${i#}.wav" -d; done
 }
@@ -23,7 +23,7 @@ fctcvape ()
 # }}}
 # wav into flac {{{
 
-fctcvwav ()
+fctcvwavtoflac ()
 {
   for i in *.wav; do sox "$i" "${i}.flac"; done
 }
@@ -33,7 +33,7 @@ fctcvwav ()
 # Video converting ---------------------------------------------------------------{{{
 # ogv video into flv format with `ffmpeg` {{{
 
-fctcvogv ()
+fctcvogvtoflv ()
 {
   ffmpeg -i input_file.ogv output_file.flv
 }
@@ -59,7 +59,7 @@ fctcveps ()
 # }}}
 # replace JGP through jpg (suffix) {{{
 
-fctrJPG ()
+fctrJPGtojpg ()
 {
   for i in *.JPG; do mv "$i" "${i%JPG}jpg"; done
 }
@@ -67,7 +67,7 @@ fctrJPG ()
 # }}}
 # replace MOVE through move (suffix) {{{
 
-fctrMOV ()
+fctrMOVtomov ()
 {
   for i in *.MOV; do mv "$i" "${i%MOV}mov"; done
 }
@@ -75,7 +75,7 @@ fctrMOV ()
 # }}}
 # replace MP3 through mp3 (suffix) {{{
 
-fctrMP3 ()
+fctrMP3tomp3 ()
 {
   for i in *.MP3; do mv "$i" "${i%MP3}mp3"; done
 }
@@ -83,7 +83,7 @@ fctrMP3 ()
 # }}}
 # replace MP4 through mp4 (suffix) {{{
 
-fctrMP4 ()
+fctrMP4tomp4 ()
 {
   for i in *.MP4; do mv "$i" "${i%MP4}mp4"; done
 }
