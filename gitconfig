@@ -6,14 +6,10 @@
 [core]
   editor = vim
   autocrlf = input
-	ignore = dirty
+  ignore = dirty
 [alias]
   am = commit --amend
   ap = add -p
-  ch = checkout
-  co = commit
-  df = diff
-  dw = diff --word-diff=color
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   st = status -bs
 [color]
