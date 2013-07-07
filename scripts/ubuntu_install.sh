@@ -142,6 +142,7 @@ sudo apt-get install -y nautilus
 sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y ntfs-config
 sudo apt-get install -y npm
+sudo apt-get install -y ncurses-term # additional terminal configuration
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
