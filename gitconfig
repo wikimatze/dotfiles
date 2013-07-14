@@ -6,7 +6,7 @@
 [core]
   editor = vim
   autocrlf = input
-  ignore = dirty
+  excludesfile = tags
 [alias]
   am = commit --amend
   ap = add -p
