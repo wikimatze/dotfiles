@@ -1,9 +1,6 @@
 # Removing links {{{
 # Directory links {{{
 
-rm -f $HOME/.gftp
-rm -f $HOME/.tmuxinator
-rm -f $HOME/.vim
 rm -f $HOME/bin
 rm -f $HOME/bitbucket
 rm -f $HOME/blog-wikimatze
@@ -11,6 +8,10 @@ rm -f $HOME/git-repositories
 rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/projects
+rm -f $HOME/.fonts
+rm -f $HOME/.gftp
+rm -f $HOME/.tmuxinator
+rm -f $HOME/.vim
 rm -f -R $HOME/.config/Terminal
 rm -f -R $HOME/.zsh-completions
 rm -f -R $HOME/.zsh-lib
@@ -81,6 +82,7 @@ ln -sf $HOME/Dropbox/bitbucket $HOME/bitbucket
 ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
 ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
 ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
+ln -sf $HOME/Dropbox/dotfiles/fonts $HOME/.fonts
 ln -sf $HOME/Dropbox/dotfiles/gftp $HOME/.gftp
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/zsh-completions $HOME/.zsh-completions
