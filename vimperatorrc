@@ -1,0 +1,19 @@
+source! /home/wikimatze/.vimperatorrc.local
+
+" set additional searchengines
+set defsearch=duckduckgo
+set defsearch=leo
+
+" :open opens first search engines, than bookmarks, and finally tabs
+set complete=sbt
+
+" keep 1000 entries into the search patterns
+set history=1000
+
+" maxium number of items displayed at once on listing
+set maxitems=25
+
+" use zsh when performing external programs with :!
+set shell=zsh
+
+" vim: set ft=vimperator:

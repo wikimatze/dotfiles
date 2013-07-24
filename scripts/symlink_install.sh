@@ -43,11 +43,13 @@ rm -f $HOME/.irssi
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimrc
+rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zshrc
 
 # }}}
 # Bin files {{{
 
+rm -f $HOME/bin/battery
 rm -f $HOME/bin/Markdown.pl
 rm -f $HOME/bin/cjpgpdf.sh
 rm -f $HOME/bin/cpngpdf.sh
@@ -132,11 +134,13 @@ ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
+ln -sf $HOME/Dropbox/dotfiles/vimperatorrc $HOME/.vimperatorrc
 ln -sf $HOME/Dropbox/dotfiles/awesome $HOME/.config/awesome
 ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
 # }}}
 # Bin files {{{
 
+ln -sf $HOME/Dropbox/dotfiles/bin/battery $HOME/bin/battery
 ln -sf $HOME/Dropbox/dotfiles/bin/Markdown.pl $HOME/bin/Markdown.pl
 ln -sf $HOME/Dropbox/dotfiles/bin/cjpgpdf.sh $HOME/bin/cjpgpdf.sh
 ln -sf $HOME/Dropbox/dotfiles/bin/cpngpdf.sh $HOME/bin/cpngpdf.sh
