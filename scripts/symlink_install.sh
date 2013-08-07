@@ -9,7 +9,6 @@ rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/projects
 rm -f $HOME/.fonts
-rm -f $HOME/.gftp
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f -R $HOME/.config/Terminal
@@ -85,7 +84,6 @@ ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
 ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
 ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
 ln -sf $HOME/Dropbox/dotfiles/fonts $HOME/.fonts
-ln -sf $HOME/Dropbox/dotfiles/gftp $HOME/.gftp
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
 ln -sf $HOME/Dropbox/dotfiles/zsh-completions $HOME/.zsh-completions
 ln -sf $HOME/Dropbox/dotfiles/zsh-lib $HOME/.zsh-lib
