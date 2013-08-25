@@ -120,22 +120,31 @@ ZSH_THEME_GIT_PROMPT_DIRTY=" ✗"
 ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
 
 # ----------------------------------------------------------------------------------}}}
+# chruby settings ------------------------------------------------------------------{{{
+
+# Used by chruby thing
+source /usr/local/share/chruby/chruby.sh
+# switch ruby versions if you are jumping to different versions for different projects
+source /usr/local/share/chruby/auto.sh
+# ----------------------------------------------------------------------------------}}}
 # Suffix aliases -------------------------------------------------------------------{{{
 # define file ending which should be open with appropriate programs
 alias -s tex=vim
 alias -s yaml=vim
 alias -s txt=vim
+alias -s rb=vim
 # ----------------------------------------------------------------------------------}}}
-# grepping running webrick services
-alias vwebrick="lsof | grep IPv4"
 
-# bundle aliases
-alias be="bundle exec"
-alias b="bundle"
-
-# remapping <Caps-Lock> with left <Ctrl>
-#/usr/bin/setxkbmap -option "ctrl:swapcaps"
+# viewing battery status
+alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 
 # Variables for hub
 export GITHUB_USER='matthias-guenther'
+
+# Press <C-X><C-X> to start autocompletion for commands typed into the history
+autoload -Uz history-beginning-search-menu
+zle -N history-beginning-search-menu
+bindkey '^X^X' history-beginning-search-menu
+
+export TERM=screen-256color
 
