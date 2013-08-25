@@ -1,33 +1,31 @@
 # Setup -----------------------------------------------------------------------------{{{
-LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
 
 # sourcing zsh-lib file
-for lib_file ($HOME/zsh-lib/*.zsh); do
+for lib_file ($HOME/.zsh-lib/*.zsh); do
   source $lib_file
 done
 
+# folder for all autocomplete functions
 fpath=($HOME/.zsh-completions $fpath)
-# make `cd` easier to search after project
-cdpath=(~ ~/bitbucket ~/git-repositories)
-
-# ----------------------------------------------------------------------------------}}}
-# Custom ZSH -----------------------------------------------------------------------{{{
-
-# custom stuff
 # Need these two lines for autocompletion
 autoload -U compinit
 compinit
 
-setopt autocd       # instead of cd /etc you can just type /etc to change directories
-# setopt auto_resume
-setopt extendedglob # enables the negation operator ^ for displaying files
+# make `cd` easier to search after project in the specified repos
+cdpath=(~ ~/bitbucket ~/git-repositories ~/Downloads ~/Desktop)
+
+# ----------------------------------------------------------------------------------}}}
+# Custom ZSH -----------------------------------------------------------------------{{{
+
+# instead of cd /etc you can just type /etc to change directories
+setopt autocd
+setopt extendedglob        # enables the negation operator ^ for displaying files
 unsetopt beep extendedglob # turn of noisy beep sounds
 
 export EDITOR='vim'
-
-# enable 256 only for tmux
-[ -z "$TMUX" ] && export TERM=xterm-256color
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # solution for tmux problems
@@ -39,7 +37,6 @@ unsetopt correct_all
 # Sourcing -------------------------------------------------------------------------{{{
 
 source $HOME/.convert
-source $HOME/.edit_aliases
 source $HOME/.functions
 source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
