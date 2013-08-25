@@ -1,6 +1,6 @@
 project_name: blog
 project_root: $HOME/blog-wikimatze
-tabs:
+windows:
   - main:
       layout: eb46,157x57,0,0[157x41,0,0,157x15,0,42{78x15,0,42,78x15,79,42}]
       panes:

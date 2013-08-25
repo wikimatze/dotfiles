@@ -1,6 +1,6 @@
 project_name: shortcuts
 project_root: $HOME/Dropbox/notes
-tabs:
+windows:
   - chrome: vim chrome-shortcuts.txt
   - git: vim git.txt
   - thunderbird: vim thunderbird-shortcuts.txt

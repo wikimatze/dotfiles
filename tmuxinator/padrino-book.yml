@@ -1,6 +1,6 @@
 project_name: padrino-book
 project_root: ~/Dropbox/padrino/manuscript
-tabs:
+windows:
   - section: vim 02-04-user-profile.md
   - job-vacancy:
       layout: eb46,157x57,0,0[157x41,0,0,157x15,0,42{78x15,0,42,78x15,79,42}]
@@ -8,7 +8,6 @@ tabs:
         - cd ~/git-repositories/job-vacancy; vim
         - cd ~/git-repositories/job-vacancy; padrino s
         - cd ~/git-repositories/job-vacancy;  rspec spec
-  - git: cd ~/git-repositories/job-vacancy; git status
   - notes: vim ~/Dropbox/notes/padrino.txt
   - todo: vim ~/Dropbox/notes/padrino-todo.txt
   - irc: irssi
