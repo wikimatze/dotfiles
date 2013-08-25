@@ -74,8 +74,8 @@ sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge   # python based torrent client
 sudo apt-get install -y dos2unix # fix file problems between Windows and Unix
-sudo apt-get install -y erlang
 sudo apt-get install -y exfalso
+sudo apt-get install -y exfat-fuse # for mounting ext4
 sudo apt-get install -y exuberant-ctags
 sudo apt-get install -y exuberant-tags
 sudo apt-get install -y ffmpeg
@@ -201,6 +201,7 @@ sudo apt-get install -y zsnes
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
 
+sudo apt-get remove ruby1.9.1 # makes a lot of issues ...
 
 # }}}
 # Update and upgrade {{{
