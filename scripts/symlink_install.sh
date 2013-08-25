@@ -9,6 +9,7 @@ rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/projects
 rm -f $HOME/.fonts
+rm -f $HOME/.ruby-version
 rm -f $HOME/.tmuxinator
 rm -f $HOME/.vim
 rm -f -R $HOME/.config/Terminal
@@ -130,6 +131,7 @@ ln -sf $HOME/Dropbox/dotfiles/gemrc $HOME/.gemrc
 ln -sf $HOME/Dropbox/dotfiles/gitk $HOME/.gitk
 ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
 ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
+ln -sf $HOME/Dropbox/dotfiles/ruby-version $HOME/.ruby-version
 ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
 ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/Dropbox/dotfiles/vimperatorrc $HOME/.vimperatorrc
