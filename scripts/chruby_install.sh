@@ -12,3 +12,7 @@ SECOND_LATEST_RUBY=1.9.3-p429
 echo "Installing ruby $SECOND_LATEST_RUBY"
 ruby-install ruby $SECOND_LATEST_RUBY
 
+cd /tmp && wget -O chruby-0.3.7.tar.gz https://github.com/postmodern/chruby/archive/v0.3.7.tar.gz
+tar -xzvf chruby-0.3.7.tar.gz
+cd chruby-0.3.7/
+sudo make install
