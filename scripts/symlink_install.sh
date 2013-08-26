@@ -11,10 +11,9 @@ rm -f $HOME/projects
 rm -f $HOME/.fonts
 rm -f $HOME/.ruby-version
 rm -f $HOME/.tmuxinator
+rm -f $HOME/.zsh
 rm -f $HOME/.vim
 rm -f -R $HOME/.config/Terminal
-rm -f -R $HOME/.zsh-completions
-rm -f -R $HOME/.zsh-lib
 
 # }}}
 # Bash files {{{
@@ -86,8 +85,7 @@ ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
 ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
 ln -sf $HOME/Dropbox/dotfiles/fonts $HOME/.fonts
 ln -sf $HOME/Dropbox/dotfiles/tmuxinator $HOME/.tmuxinator
-ln -sf $HOME/Dropbox/dotfiles/zsh-completions $HOME/.zsh-completions
-ln -sf $HOME/Dropbox/dotfiles/zsh-lib $HOME/.zsh-lib
+ln -sf $HOME/Dropbox/dotfiles/zsh $HOME/.zsh
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
