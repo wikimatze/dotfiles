@@ -152,6 +152,7 @@ sudo apt-get install -y php-codesniffer
 sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
 sudo apt-get install -y powertop
+sudo apt-get install -y python-fontforge # need poweline fonts
 sudo apt-get install -y preload
 sudo apt-get install -y procps # need for pgrep package
 sudo apt-get install -y pv
