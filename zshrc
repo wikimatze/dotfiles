@@ -4,7 +4,7 @@ LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
 
 # sourcing zsh-lib file
-for lib_file ($HOME/.zsh-lib/*.zsh); do
+for lib_file ($HOME/.zsh/zsh-lib/*.zsh); do
   source $lib_file
 done
 
@@ -110,14 +110,8 @@ fi
 
 # ----------------------------------------------------------------------------------}}}
 # Prompt tuning  -------------------------------------------------------------------{{{
-setopt promptsubst # enable changing of prompt
-
-PROMPT='%n@%m: ${PWD/#$HOME/~} $(git_prompt_info) '
-
-ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX=")"
-ZSH_THEME_GIT_PROMPT_DIRTY=" ✗"
-ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
+source $HOME/.zsh/zshrc.sh
+PROMPT='%B%m%~%b$(git_super_status): '
 
 # ----------------------------------------------------------------------------------}}}
 # chruby settings ------------------------------------------------------------------{{{
