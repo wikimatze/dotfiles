@@ -4,12 +4,12 @@ LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
 
 # sourcing zsh-lib file
-for lib_file ($HOME/.zsh/zsh-lib/*.zsh); do
+for lib_file ($HOME/.zsh/lib/*.zsh); do
   source $lib_file
 done
 
 # folder for all autocomplete functions
-fpath=($HOME/.zsh-completions $fpath)
+fpath=($HOME/.zsh/completions $fpath)
 # Need these two lines for autocompletion
 autoload -U compinit
 compinit
@@ -110,8 +110,7 @@ fi
 
 # ----------------------------------------------------------------------------------}}}
 # Prompt tuning  -------------------------------------------------------------------{{{
-source $HOME/.zsh/zshrc.sh
-PROMPT='%B%m%~%b$(git_super_status): '
+PROMPT='%B%m%~%b: '
 
 # ----------------------------------------------------------------------------------}}}
 # chruby settings ------------------------------------------------------------------{{{
