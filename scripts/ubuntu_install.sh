@@ -183,7 +183,7 @@ sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
 sudo apt-get install -y tig
 sudo apt-get install -y tree
-sudo apt-get install -y ubuntu-restricted-extra
+sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
@@ -201,6 +201,9 @@ sudo apt-get install -y zsnes
 
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
+
+# install missing codecs
+sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53
 
 sudo apt-get remove ruby1.9.1 # makes a lot of issues ...
 
