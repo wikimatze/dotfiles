@@ -199,6 +199,8 @@ sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
+sudo apt-get install -y gnome-sushi unoconv # press <Space> to preview files
+
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
 
