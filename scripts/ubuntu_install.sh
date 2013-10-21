@@ -186,7 +186,6 @@ sudo apt-get install -y ubuntu-restricted-extra
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
-sudo apt-get install -y virtualbox
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
@@ -213,7 +212,6 @@ sudo apt-get -y upgrade
 # }}}
 # Unimportant stuff {{{
 
-#sudo apt-get install -y virtualbox-guest-additions
 #sudo apt-get install -y vorbis-tools
 #sudo apt-get install -y sun-java6-jdk  # not available in > 11.10
 #sudo apt-get install -y sun-java6-jre
