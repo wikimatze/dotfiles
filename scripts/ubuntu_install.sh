@@ -4,6 +4,7 @@ sudo apt-get remove -y abiword
 sudo apt-get remove -y catfish
 sudo apt-get remove -y gigolo
 sudo apt-get remove -y gmusicbrowser
+sudo apt-get remove -y gnome-mines
 sudo apt-get remove -y gnumeric
 sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
@@ -15,6 +16,7 @@ sudo apt-get remove -y parole
 sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y ruby1.8-dev
+sudo apt-get remove -y ruby1.9.1 # makes a lot of issues so get rid of issues ...
 sudo apt-get remove -y simple-scan
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y xfce4-dict
@@ -67,7 +69,6 @@ sudo apt-get install -y calibre
 sudo apt-get install -y chromium-browser
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clementine
-sudo apt-get install -y clojure
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
@@ -207,7 +208,7 @@ sudo apt-get install -y libswt-cairo-gtk-3-jni
 # install missing codecs
 sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53
 
-sudo apt-get remove ruby1.9.1 # makes a lot of issues ...
+sudo apt-get remove -y ruby1.9.1 # makes a lot of issues so get rid of issues ...
 
 # }}}
 # Update and upgrade {{{
@@ -215,20 +216,4 @@ sudo apt-get remove ruby1.9.1 # makes a lot of issues ...
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
-# }}}
-# Unimportant stuff {{{
-
-#sudo apt-get install -y vorbis-tools
-#sudo apt-get install -y sun-java6-jdk  # not available in > 11.10
-#sudo apt-get install -y sun-java6-jre
-#sudo apt-get install -y phpmyadmin
-#sudo apt-get install -y mysql-server
-
-# Puppet stuff {{{
-
-#sudo apt-get install -y puppet
-#sudo apt-get install -y puppetmaster
-#sudo apt-get install -y facter
-
-# }}}
 # }}}
