@@ -1,12 +1,13 @@
 [user]
   name = Matthias Günther
-  email = matthias.guenther@wikimatze.de
+  email = matthias@wikimatze.de
 [apply]
   whitespace = nowarn
 [core]
   editor = vim
   autocrlf = input
-	excludesfile = /home/wikimatze/Dropbox/dotfiles/gitignore
+  excludesfile = /home/wikimatze/Dropbox/dotfiles/gitignore
+  pager = cat
 [alias]
   am = commit --amend
   ap = add -p
@@ -43,8 +44,8 @@
   extendRegexp = true
   lineNumber = true
 [push]
-	default = tracking
+  default = tracking
 [hub]
-	protocol = https
+  protocol = https
 [pull]
-	rebase = true
+  rebase = true

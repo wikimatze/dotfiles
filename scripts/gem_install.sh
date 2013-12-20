@@ -8,9 +8,6 @@ gem install albino \
   classifier \
   compass \
   csscss \
-  cucumber \
-  cucumber-rails \
-  database_cleaner \
   digestr \
   eventmachine \
   erubis \
@@ -26,6 +23,7 @@ gem install albino \
   gravatar \
   haml \
   highline \
+  httparty \
   interactive_editor \
   i18n \
   git-smart \
@@ -43,13 +41,14 @@ gem install albino \
   omglog \
   net-sftp \
   net-ssh \
-  nokogiri \
+  nokogiri -v '1.6.0'\
   padrino \
   parslet \
   puppet \
   puppetlabs_spec_helper \
   puppet-lint \
   pygmentize \
+  pry \
   rack \
   rack-mount \
   rack-test \

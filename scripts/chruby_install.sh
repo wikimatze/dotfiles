@@ -1,18 +1,17 @@
-LATEST_RUBY=2.0.0-p247
-SECOND_LATEST_RUBY=1.9.3-p429
-cd /tmp && git clone https://github.com/postmodern/ruby-install.git
+SECOND_LATEST_RUBY=1.9.3-p484
+cd /tmp && rm -rf ruby-install && git clone https://github.com/postmodern/ruby-install.git
 cd ruby-install && sudo make install
 echo "Done with ruby-install ..."
 
-exec $SHELL
-
 echo "Installing the latest stable ruby version"
-ruby-install ruby $LATEST_RUBY
+/usr/local/bin/ruby-install ruby stable
 
 echo "Installing ruby $SECOND_LATEST_RUBY"
-ruby-install ruby $SECOND_LATEST_RUBY
+/usr/local/bin/ruby-install ruby $SECOND_LATEST_RUBY
 
-cd /tmp && git clone https://github.com/postmodern/chruby.git
+echo "Done with installing ruby versions"
+
+cd /tmp && rm -rf chruby && git clone https://github.com/postmodern/chruby.git
 cd chruby && sudo make install
 
 echo "Done with chruby ..."

@@ -51,22 +51,22 @@ sudo apt-get remove -y libxt-dev
 # }}}
 # Install package for awesome and extensions {{{
 
-sudo apt-get install -y acpi # for awesome wm battery widget
+sudo apt-get install -y acpi          # for awesome wm battery widget
 sudo apt-get install -y awesome
 sudo apt-get install -y awesome-extra # obvious, vicious packages
-sudo apt-get install -y lua5.1 # Luca programming language
+sudo apt-get install -y lua5.1        # Luca programming language
+sudo apt-get install -y liblua5.1-dev # help lua support inside vim
 
 # }}}
 # Install of packages {{{
 
-sudo apt-get install libsasl2-dev # fpr memcached gem
+sudo apt-get install -y libsasl2-dev # fpr memcached gem
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
-sudo apt-get install -y chromium-browser
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clementine
 sudo apt-get install -y cuetools
@@ -109,6 +109,7 @@ sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
 sudo apt-get install -y irssi
 sudo apt-get install -y jfstils
+sudo apt-get install -y kazam
 sudo apt-get install -y lame
 sudo apt-get install -y laptop-mode-tools # saving battery life => configuration during installation
 sudo apt-get install -y libatk1.0-dev
@@ -135,7 +136,7 @@ sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
 sudo apt-get install -y lynx
-sudo apt-get install -y mailutils
+# sudo apt-get install -y mailutils
 sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
@@ -201,6 +202,9 @@ sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
 sudo apt-get install -y gnome-sushi unoconv # press <Space> to preview files
+
+# chromium things
+sudo apt-get install -y chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
 
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
