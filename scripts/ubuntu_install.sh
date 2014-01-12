@@ -96,7 +96,8 @@ sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
 sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
-sudo apt-get install -y golang # the Go programming language
+sudo apt-get install -y golang
+sudo apt-get install -y gparted # better then using fdisk in the terminal
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -157,6 +158,7 @@ sudo apt-get install -y php-codesniffer
 sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
 sudo apt-get install -y powertop
+sudo apt-get install -y postgresql postgresql-client pgadmin3
 sudo apt-get install -y python-fontforge # need poweline fonts
 sudo apt-get install -y preload
 sudo apt-get install -y procps # need for pgrep package
