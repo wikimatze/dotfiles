@@ -67,10 +67,12 @@ sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
 sudo apt-get install -y banshee
 sudo apt-get install -y calibre
+sudo apt-get install -y checkbashisms # syntax checker for shell scripts
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clementine
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
+sudo apt-get install -y cryptsetup
 sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge   # python based torrent client
