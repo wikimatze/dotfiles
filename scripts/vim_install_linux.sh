@@ -1,4 +1,4 @@
-cd ~/git-repositories/vim && git checkout v7-4-044
+cd ~/git-repositories/vim && git checkout v7-4-161 && git clean -f
 
 ./configure --prefix=/usr/local \
   --without-x \

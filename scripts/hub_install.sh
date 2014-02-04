@@ -1,1 +1,2 @@
-curl http://hub.github.com/standalone -sLo ~/bin/hub && chmod +x ~/bin/hub
+gem install hub
+hub hub standalone > ~/bin/hub && chmod +x ~/bin/hub

@@ -22,8 +22,10 @@ gem install albino \
   guard-rspec \
   gravatar \
   haml \
+  haml-lint \
   highline \
   httparty \
+  hub \
   interactive_editor \
   i18n \
   git-smart \
@@ -41,7 +43,7 @@ gem install albino \
   omglog \
   net-sftp \
   net-ssh \
-  nokogiri -v '1.6.0'\
+  nokogiri:1.6.0\
   padrino \
   parslet \
   puppet \
@@ -49,6 +51,7 @@ gem install albino \
   puppet-lint \
   pygmentize \
   pry \
+  pry-doc \
   rack \
   rack-mount \
   rack-test \
@@ -69,6 +72,7 @@ gem install albino \
   showoff \
   sinatra \
   slim \
+  scss-lint \
   sqlite3 \
   stringex \
   sweetie \
@@ -76,12 +80,12 @@ gem install albino \
   test-unit \
   thor \
   tilt \
-  tmuxinator \
   tweemux \
   twitter \
   uuid \
   uglifier \
   vagrant-vbguest \
+  vimdeck \
   vimgolf \
   vimrunner \
   waiting_on_rails \

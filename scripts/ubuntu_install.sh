@@ -60,7 +60,7 @@ sudo apt-get install -y liblua5.1-dev # help lua support inside vim
 # }}}
 # Install of packages {{{
 
-sudo apt-get install -y libsasl2-dev # fpr memcached gem
+# sudo apt-get install -y mailutils
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
@@ -70,9 +70,9 @@ sudo apt-get install -y calibre
 sudo apt-get install -y checkbashisms # syntax checker for shell scripts
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
 sudo apt-get install -y clementine
+sudo apt-get install -y cryptsetup
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
-sudo apt-get install -y cryptsetup
 sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge   # python based torrent client
@@ -131,6 +131,7 @@ sudo apt-get install -y libreoffice-calc
 sudo apt-get install -y libreoffice-gtk
 sudo apt-get install -y libreoffice-impress
 sudo apt-get install -y libreoffice-writer
+sudo apt-get install -y libsasl2-dev # for memcached gem
 sudo apt-get install -y libsqlite3-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libx11-dev
@@ -139,16 +140,15 @@ sudo apt-get install -y libxpm-dev
 sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
 sudo apt-get install -y lynx
-# sudo apt-get install -y mailutils
 sudo apt-get install -y make
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
 sudo apt-get install -y nautilus
-sudo apt-get install -y nfs-kernel-server
-sudo apt-get install -y ntfs-config
-sudo apt-get install -y npm
 sudo apt-get install -y ncurses-term # additional terminal configuration
+sudo apt-get install -y nfs-kernel-server
+sudo apt-get install -y npm
+sudo apt-get install -y ntfs-config
 sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
@@ -157,12 +157,12 @@ sudo apt-get install -y pdftk
 sudo apt-get install -y php-codesniffer
 sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
-sudo apt-get install -y powertop
 sudo apt-get install -y postgresql postgresql-client pgadmin3
-sudo apt-get install -y python-fontforge # need poweline fonts
+sudo apt-get install -y powertop
 sudo apt-get install -y preload
 sudo apt-get install -y procps # need for pgrep package
 sudo apt-get install -y pv
+sudo apt-get install -y python-fontforge # need poweline fonts
 sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y rake
@@ -190,6 +190,7 @@ sudo apt-get install -y texlive-base
 sudo apt-get install -y tig
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
+sudo apt-get install -y unetbootin
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
@@ -201,6 +202,7 @@ sudo apt-get install -y xclip
 sudo apt-get install -y xfig
 sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
+sudo apt-get install -y xsel # needed for tmux buffer copy and paste with clipboard
 sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes

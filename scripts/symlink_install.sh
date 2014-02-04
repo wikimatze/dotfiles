@@ -7,7 +7,6 @@ rm -f $HOME/blog-wikimatze
 rm -f $HOME/git-repositories
 rm -f $HOME/latex
 rm -f $HOME/presentations
-rm -f $HOME/projects
 rm -f $HOME/.fonts
 rm -f $HOME/.ruby-version
 rm -f $HOME/.tmuxinator
@@ -89,7 +88,6 @@ ln -sf $HOME/Dropbox/dotfiles/zsh $HOME/.zsh
 ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
 ln -sf $HOME/Dropbox/latex $HOME/latex
 ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
-ln -sf $HOME/Dropbox/projects $HOME/projects
 
 # }}}
 # Bash files {{{
