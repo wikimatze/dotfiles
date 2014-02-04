@@ -1,6 +1,14 @@
+*.spl
 .*.sw*
+*.gem
+*.thor
 .DS_Store
 .bundle/*
+.netrwhist
 log/**/*
-tmp/**/*
+backup/*
+bundle/**/*
 tags
+tmp/**/*
+yankring.txt
+bin/hub
