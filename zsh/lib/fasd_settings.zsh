@@ -19,7 +19,7 @@
 # alias z='fasd_cd -d'     # cd, same functionality as j in autojump
 # alias zz='fasd_cd -d -i' # cd with interactive selection
 # ```#
-
+if which fasd> /dev/null; then
 eval "$(fasd --init auto)"
 
 # Setting filename to 00-fasd.zsh to help order
@@ -34,4 +34,5 @@ alias v='f -e vim'      # quick opening files with vim
 alias m='f -e mplayer'  # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
+fi
 # ----------------------------------------------------------------------------------}}}
