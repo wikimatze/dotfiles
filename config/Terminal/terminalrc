@@ -38,3 +38,4 @@ MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 AccelPrevTab=<Primary><Shift>Up
 AccelNextTab=<Primary><Shift>Down
+FontName=DejaVu Sans Mono for Powerline 12
