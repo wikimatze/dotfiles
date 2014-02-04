@@ -93,6 +93,7 @@ setopt share_history
 
 export PATH="/usr/local/bin:/usr/local/lib:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 # set PATH so it includes user's private bin if it exists
 if [[ -d "$HOME/bin" ]] ; then
@@ -117,8 +118,10 @@ PROMPT='%B%m%~%b: '
 
 # Used by chruby thing
 source /usr/local/share/chruby/chruby.sh
-# switch ruby versions if you are jumping to different versions for different projects
-source /usr/local/share/chruby/auto.sh
+if which chruby > /dev/null; then
+  chruby ruby-2.1.0
+fi
+
 # ----------------------------------------------------------------------------------}}}
 # Suffix aliases -------------------------------------------------------------------{{{
 # define file ending which should be open with appropriate programs
@@ -128,8 +131,13 @@ alias -s txt=vim
 alias -s rb=vim
 # ----------------------------------------------------------------------------------}}}
 
-# viewing battery status
-alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
+# tmuxifier autocompletion
+eval "$(tmuxifier init -)"
+export TMUXIFIER_LAYOUT_PATH="$HOME/Dropbox/dotfiles/tmuxifier_layouts"
+
+# chruby autocompletion
+compctl -g '~/.rubies/*(:t)' chruby
+
 
 # Variables for hub
 export GITHUB_USER='matthias-guenther'
@@ -140,4 +148,7 @@ zle -N history-beginning-search-menu
 bindkey '^X^X' history-beginning-search-menu
 
 export TERM=screen-256color
+
+# better lessc output
+export LESS='-i-P%f (%i/%m) Line %lt/%L'
 
