@@ -1,14 +1,14 @@
-source! /home/wikimatze/.vimperatorrc.local
-
-" set additional searchengines
-set defsearch=duckduckgo
-set defsearch=leo
-
 " :open opens first search engines, than bookmarks, and finally tabs
-set complete=sbt
+" h ... history
+" b ... bookmarks
+" s ... search enginges
+set complete=hbs
 
 " keep 1000 entries into the search patterns
 set history=1000
+
+" defined command line completion - full means to complete the to complete the next full match
+set wildmode=full
 
 " maxium number of items displayed at once on listing
 set maxitems=25
@@ -16,4 +16,30 @@ set maxitems=25
 " use zsh when performing external programs with :!
 set shell=zsh
 
-" vim: set ft=vimperator:
+" hintchars settings
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+
+highlight Hint font-size:100%;color:white;background-color:red;padding:2px;
+
+" Mappings {{{
+
+" Enable normal copy and paste mappings
+noremap <C-c> <C-v><C-c>
+noremap <C-v> <C-v><C-v>
+
+
+" using <C-j> and <C-k> to move down and up in the selection
+cnoremap <C-j> <Tab>
+cnoremap <C-k> <S-Tab>
+
+
+" Custom search commands
+command -nargs=* amazonde open amazonde <args>
+command -nargs=* amazonen open amazonen <args>
+command -nargs=* google open google <args>
+command -nargs=* rubygems open rubygems <args>
+command -nargs=* wikipediade open wikipediade <args>
+command -nargs=* wikipediaen open wikipediaen <args>
+
+" }}}
+" vim: set ft=vim:
