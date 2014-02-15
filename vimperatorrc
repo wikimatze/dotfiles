@@ -38,6 +38,7 @@ command -nargs=* amazonde open amazonde <args>
 command -nargs=* amazonen open amazonen <args>
 command -nargs=* google open google <args>
 command -nargs=* rubygems open rubygems <args>
+command -nargs=* leo open <args>
 command -nargs=* wikipediade open wikipediade <args>
 command -nargs=* wikipediaen open wikipediaen <args>
 
