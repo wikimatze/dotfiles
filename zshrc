@@ -152,3 +152,6 @@ export TERM=screen-256color
 # better lessc output
 export LESS='-i-P%f (%i/%m) Line %lt/%L'
 
+
+# print the whole history
+alias history='history 0'
