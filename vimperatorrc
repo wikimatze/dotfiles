@@ -41,6 +41,7 @@ command -nargs=* rubygems open rubygems <args>
 command -nargs=* wikipediade open wikipediade <args>
 command -nargs=* wikipediaen open wikipediaen <args>
 command -nargs=* leo open <args>
+command -nargs=* github open <args>
 
 " }}}
 " vim: set ft=vim:
