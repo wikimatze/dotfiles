@@ -155,3 +155,10 @@ export LESS='-i-P%f (%i/%m) Line %lt/%L'
 
 # print the whole history
 alias history='history 0'
+
+# chruby autocompletion
+# based on https://github.com/postmodern/chruby/issues/27#issuecomment-36629835
+
+_chruby() { compadd $(chruby | tr -d '* ') }
+compdef _chruby chruby
+
