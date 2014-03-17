@@ -10,6 +10,7 @@
   pager = cat
 [alias]
   am = commit --amend
+  co = commit
   ap = add -p
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   st = status -bs
@@ -37,15 +38,15 @@
 [difftool]
   prompt = false
 [web]
-  browser = google-chrome
+  browser = firefox
 [credential]
   helper = cache --timeout=3600
 [grep]
   extendRegexp = true
   lineNumber = true
-[push]
-  default = tracking
 [hub]
   protocol = https
 [pull]
   rebase = true
+[branch]
+	autosetuprebase = always
