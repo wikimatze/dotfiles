@@ -9,7 +9,7 @@
   excludesfile = /home/wikimatze/Dropbox/dotfiles/gitignore
   pager = cat
 [alias]
-  am = commit --amend
+  ca = commit --amend
   co = commit
   ap = add -p
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -49,8 +49,8 @@
 [pull]
   rebase = true
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [rerere]
-	enabled = 1
+  enabled = 1
 [push]
-	default = matching
+  default = matching
