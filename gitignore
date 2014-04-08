@@ -16,3 +16,5 @@ scripts/out.txt
 _site/*
 coverage/*
 tags.html
+application.css
+application.js
