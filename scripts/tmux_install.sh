@@ -19,7 +19,7 @@ cd /tmp/libevent-2.0.21-stable && ./configure --prefix=/opt && make && sudo make
 # }}}
 # Compiling tmux {{{
 cd /tmp && git clone git://git.code.sf.net/p/tmux/tmux-code tmux
-cd /tmp/tmux
+cd /tmp/tmux && git checkout 1.9a
 bash autogen.sh
 LDFLAGS="-L/opt/lib" CPPFLAGS="-I/opt/include" LIBS="-lresolv" ./configure --prefix=/opt && make && sudo make install
 
