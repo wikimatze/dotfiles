@@ -1,14 +1,16 @@
 ----------
 | Jekyll |
 ----------
-_site/*
+_site/
+
 
 --------
 | Ruby |
 --------
 *.gem
 *.thor
-bundle/**/*
+bundle/
+.bundle/
 
 
 -----------
