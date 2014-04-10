@@ -1,20 +1,50 @@
-*.spl
-.*.sw*
+----------
+| Jekyll |
+----------
+_site/*
+
+--------
+| Ruby |
+--------
 *.gem
 *.thor
-.DS_Store
-.bundle/*
-.netrwhist
-log/**/*
-backup/*
 bundle/**/*
-tags
-tmp/**/*
-yankring.txt
-bin/hub
-scripts/out.txt
-_site/*
-coverage/*
-tags.html
+
+
+-----------
+| Padrino |
+-----------
 application.css
 application.js
+coverage/*
+tags.html
+
+
+--------
+| Vim  |
+--------
+*.spl
+*.sw*
+backup/*
+tags
+yankring.txt
+.netrwhist
+
+
+----------------------
+| Logs and databases |
+----------------------
+*.log
+*.sql
+*.sqlite
+
+
+----------------------
+| OS generated files |
+----------------------
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+._*
+Thumbs.db
