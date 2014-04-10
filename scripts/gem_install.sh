@@ -69,6 +69,7 @@ gem install albino \
   ruby-mp3info \
   rubygems-update \
   rubyzip \
+  ruby-lint \
   showoff \
   sinatra \
   slim \
