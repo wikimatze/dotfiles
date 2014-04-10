@@ -39,8 +39,6 @@
   prompt = false
 [web]
   browser = firefox
-[credential]
-  helper = cache --timeout=3600
 [grep]
   extendRegexp = true
   lineNumber = true
@@ -54,3 +52,5 @@
   enabled = 1
 [push]
   default = matching
+[credential]
+  helper = netrc -f ~/.netrc.asc -v
