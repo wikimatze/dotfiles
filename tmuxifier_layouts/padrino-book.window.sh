@@ -1,12 +1,13 @@
-window_root "$HOME/Dropbox/padrino/manuscript"
+DIR=$HOME/ownCloud
+window_root "$DIR/padrino/manuscript"
 new_window "section"
-run_cmd "vim 02-04-user-profile.md"     # runs in active pane
+run_cmd "vim 02-04-user-profile.md"
 
-window_root "$HOME/Dropbox/notes"
+window_root "$DIR/notes"
 new_window "notes"
 run_cmd "vim padrino.txt"
 
-window_root "$HOME/Dropbox/notes"
+window_root "$DIR/notes"
 new_window "todo"
 run_cmd "vim padrino-todo.txt"
 

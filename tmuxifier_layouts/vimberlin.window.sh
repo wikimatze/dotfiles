@@ -1,4 +1,4 @@
-window_root "~/git-repositories/vimberlin.de"
+window_root "~/ownCloud/vimberlin.de"
 new_window "main"
 
 run_cmd "vim"

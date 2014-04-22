@@ -1,4 +1,4 @@
-window_root "$HOME/Dropbox/padrinobook-website"
+window_root "$HOME/ownCloud/padrinobook-website"
 new_window "main"
 
 run_cmd "vim"
