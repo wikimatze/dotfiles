@@ -6,9 +6,6 @@ cd /tmp
 # Get the sources {{{
 
 curl -OL http://downloads.sourceforge.net/project/levent/libevent/libevent-2.0/libevent-2.0.21-stable.tar.gz
-# curl -OL http://downloads.sourceforge.net/tmux/tmux-1.8.tar.gz
-# tar -xvzf tmux-1.8.tar.gz
-
 tar -xvzf libevent-2.0.21-stable.tar.gz &&
 
 # }}}
