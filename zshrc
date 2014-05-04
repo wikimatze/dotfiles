@@ -95,11 +95,6 @@ export PATH="/usr/local/bin:/usr/local/lib:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
-# set PATH so it includes user's private bin if it exists
-if [[ -d "$HOME/bin" ]] ; then
-  PATH="$HOME/bin:$PATH"
-fi
-
 # ----------------------------------------------------------------------------------}}}
 # LS Settings ----------------------------------------------------------------------{{{
 
@@ -133,14 +128,10 @@ alias -s rb=vim
 
 # tmuxifier autocompletion
 eval "$(tmuxifier init -)"
-export TMUXIFIER_LAYOUT_PATH="$HOME/Dropbox/dotfiles/tmuxifier_layouts"
+export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
 
 # chruby autocompletion
 compctl -g '~/.rubies/*(:t)' chruby
-
-
-# Variables for hub
-export GITHUB_USER='matthias-guenther'
 
 # Press <C-X><C-X> to start autocompletion for commands typed into the history
 autoload -Uz history-beginning-search-menu
