@@ -153,3 +153,11 @@ alias history='history 0'
 _chruby() { compadd $(chruby | tr -d '* ') }
 compdef _chruby chruby
 
+# git-prompt {{{
+
+source ~/ownCloud/dotfiles/zsh/git-prompt/zshrc.sh
+
+# an example prompt
+PROMPT='%B%m%~%b$(git_super_status)$ '
+# }}}
+
