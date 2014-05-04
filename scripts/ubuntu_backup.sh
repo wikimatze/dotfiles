@@ -9,7 +9,7 @@ cp -r  $HOME/Desktop $HOME/Downloads
 mv     $HOME/Downloads/Desktop $HOME/Desktop/backup
 rm -rf $HOME/Download/Desktop
 cp -r  $HOME/Downloads $HOME/Desktop/backup
-cp -r  $HOME/Dropbox $HOME/Desktop/backup
+cp -r  $HOME/ownCloud $HOME/Desktop/backup
 
 # }}}
 

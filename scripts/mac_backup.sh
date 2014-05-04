@@ -14,7 +14,7 @@ mkdir $HOME/Desktop/backup/Skype
 # }}}
 # Copy the backup file into $HOME/Desktop/backup {{{
 
-cp -r $HOME/Dropbox $HOME/Desktop/backup
+cp -r $HOME/ownCloud $HOME/Desktop/backup
 cp -r $HOME/Library/Application\ Support/Cyberduck $HOME/Desktop/backup/Cyberduck
 cp -r $HOME/Library/Application\ Support/Firefox $HOME/Desktop/backup/Firefox
 cp -r $HOME/Library/Application\ Support/Google/Chrome $HOME/Desktop/backup/Chrome

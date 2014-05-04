@@ -1,16 +1,15 @@
 # Removing links {{{
 # Directory links {{{
+DIR=$HOME/ownCloud
 
-rm -f $HOME/bin
 rm -f $HOME/bitbucket
-rm -f $HOME/blog-wikimatze
-rm -f $HOME/git-repositories
 rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/.fonts
 rm -f $HOME/.ruby-version
 rm -f $HOME/.zsh
-rm -f $HOME/.vim
+rm -f $HOME/.gnupg
+rm -f $HOME/.ssh
 rm -f -R $HOME/.config/Terminal
 
 # }}}
@@ -25,7 +24,6 @@ rm -f $HOME/.latex_convert_aliases
 rm -f $HOME/.miscellaneous
 rm -f $HOME/.program_aliases_linux
 rm -f $HOME/.program_aliases_mac
-rm -f $HOME/.unused_terms
 
 # }}}
 # Miscellaneous {{{
@@ -34,118 +32,98 @@ rm -f $HOME/.ackrc
 rm -f $HOME/.config/awesome
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
+rm -f $HOME/.gitignore
 rm -f $HOME/.gitk
-rm -f $HOME/.irbc
+rm -f $HOME/.irbrc
 rm -f $HOME/.irssi
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
-rm -f $HOME/.vimrc
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zshrc
 
 # }}}
 # Bin files {{{
 
-rm -f $HOME/bin/battery
-rm -f $HOME/bin/Markdown.pl
-rm -f $HOME/bin/cjpgpdf.sh
-rm -f $HOME/bin/cpngpdf.sh
-rm -f $HOME/bin/crushjpg.sh
-rm -f $HOME/bin/crushpng.sh
-rm -f $HOME/bin/giffnaming.sh
-rm -f $HOME/bin/hub
-rm -f $HOME/bin/jnaming.sh
-rm -f $HOME/bin/jsmall.sh
-rm -f $HOME/bin/pnaming.sh
-rm -f $HOME/bin/psmall.sh
-rm -f $HOME/bin/waterproof.sh
-
-# }}}
-# Bin scripts {{{
-
-rm -f $HOME/bin/brew_install.sh
-rm -f $HOME/bin/ctags_install.sh
-rm -f $HOME/bin/gem_install.sh
-rm -f $HOME/bin/mac_backup.sh
-rm -f $HOME/bin/rbenv_install.sh
-rm -f $HOME/bin/rbenv_install_setup.sh
-rm -f $HOME/bin/tmux_install.sh
-rm -f $HOME/bin/ubuntu_install.sh
+sudo rm -f /usr/local/bin/battery
+sudo rm -f /usr/local/bin/cjpgpdf.sh
+sudo rm -f /usr/local/bin/cpngpdf.sh
+sudo rm -f /usr/local/bin/crushjpg.sh
+sudo rm -f /usr/local/bin/crushpng.sh
+sudo rm -f /usr/local/bin/giffnaming.sh
+sudo rm -f /usr/local/bin/jnaming.sh
+sudo rm -f /usr/local/bin/jsmall.sh
+sudo rm -f /usr/local/bin/pnaming.sh
+sudo rm -f /usr/local/bin/psmall.sh
+sudo rm -f /usr/local/bin/waterproof.sh
 
 # }}}
 # }}}
 # Directories links {{{
 
-ln -sf $HOME/Dropbox/bin $HOME/bin
-ln -sf $HOME/Dropbox/bitbucket $HOME/bitbucket
-ln -sf $HOME/Dropbox/bitbucket/presentations $HOME/presentations
-ln -sf $HOME/Dropbox/blog-wikimatze $HOME/blog-wikimatze
-ln -sf $HOME/Dropbox/dotfiles/config/Terminal $HOME/.config/Terminal
-ln -sf $HOME/Dropbox/dotfiles/fonts $HOME/.fonts
-ln -sf $HOME/Dropbox/dotfiles/zsh $HOME/.zsh
-ln -sf $HOME/Dropbox/git-repositories $HOME/git-repositories
-ln -sf $HOME/Dropbox/latex $HOME/latex
-ln -sf $HOME/Dropbox/vim-settings $HOME/.vim
+ln -sf $DIR/bitbucket $HOME/bitbucket
+ln -sf $DIR/documents/gnupg $HOME/.gnupg
+ln -sf $DIR/documents/ssh $HOME/.ssh
+ln -sf $DIR/dotfiles/config/Terminal $HOME/.config/Terminal
+ln -sf $DIR/dotfiles/fonts $HOME/.fonts
+ln -sf $DIR/dotfiles/zsh $HOME/.zsh
+ln -sf $DIR/latex $HOME/latex
 
 # }}}
 # Bash files {{{
 
 if [ "$OSTYPE" == "linux-gnu" ]
 then
-  ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bashrc
-  ln -sf $HOME/Dropbox/dotfiles/functions_linux $HOME/.functions_linux
+  ln -sf $DIR/dotfiles/bashrc $HOME/.bashrc
+  ln -sf $DIR/dotfiles/functions_linux $HOME/.functions_linux
   sudo rm -f /etc/wpa_supplicant.conf
   sudo ln -sf $HOME/Dropbox/dotfiles/wpa_supplicant.conf /etc/wpa_supplicant.conf
   rm -f $HOME/.thunderbird
   ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
-  ln -sf $HOME/Dropbox/dotfiles/bashrc $HOME/.bash_profile
+  ln -sf $DIR/dotfiles/bashrc $HOME/.bash_profile
   rm -f $HOME/Library/Thunderbird
   ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
 fi
 
-ln -sf $HOME/Dropbox/dotfiles/convert $HOME/.convert
-ln -sf $HOME/Dropbox/dotfiles/edit_aliases $HOME/.edit_aliases
-ln -sf $HOME/Dropbox/dotfiles/functions $HOME/.functions
-ln -sf $HOME/Dropbox/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
-ln -sf $HOME/Dropbox/dotfiles/miscellaneous $HOME/.miscellaneous
-ln -sf $HOME/Dropbox/dotfiles/program_aliases_linux $HOME/.program_aliases_linux
-ln -sf $HOME/Dropbox/dotfiles/program_aliases_mac $HOME/.program_aliases_mac
-ln -sf $HOME/Dropbox/dotfiles/unused_terms $HOME/.unused_terms
-ln -sf $HOME/Dropbox/dotfiles/zshrc $HOME/.zshrc
+ln -sf $DIR/dotfiles/convert $HOME/.convert
+ln -sf $DIR/dotfiles/edit_aliases $HOME/.edit_aliases
+ln -sf $DIR/dotfiles/functions $HOME/.functions
+ln -sf $DIR/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
+ln -sf $DIR/dotfiles/miscellaneous $HOME/.miscellaneous
+ln -sf $DIR/dotfiles/program_aliases_linux $HOME/.program_aliases_linux
+ln -sf $DIR/dotfiles/program_aliases_mac $HOME/.program_aliases_mac
+ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
 
 # }}}
 # Miscellaneous {{{
 
-ln -sf $HOME/Dropbox/dotfiles/gitconfig $HOME/.gitconfig
-ln -sf $HOME/Dropbox/tigrc $HOME/.tigrc
-ln -sf $HOME/Dropbox/dotfiles/ackrc $HOME/.ackrc
-ln -sf $HOME/Dropbox/dotfiles/gemrc $HOME/.gemrc
-ln -sf $HOME/Dropbox/dotfiles/gitk $HOME/.gitk
-ln -sf $HOME/Dropbox/dotfiles/irbrc $HOME/.irbrc
-ln -sf $HOME/Dropbox/dotfiles/irssi $HOME/.irssi
-ln -sf $HOME/Dropbox/dotfiles/ruby-version $HOME/.ruby-version
-ln -sf $HOME/Dropbox/dotfiles/tigrc $HOME/.tigrc
-ln -sf $HOME/Dropbox/dotfiles/tmux.conf $HOME/.tmux.conf
-ln -sf $HOME/Dropbox/dotfiles/vimperatorrc $HOME/.vimperatorrc
-ln -sf $HOME/Dropbox/dotfiles/awesome $HOME/.config/awesome
-ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
+ln -sf $DIR/dotfiles/ackrc $HOME/.ackrc
+ln -sf $DIR/dotfiles/awesome $HOME/.config/awesome
+ln -sf $DIR/dotfiles/gemrc $HOME/.gemrc
+ln -sf $DIR/dotfiles/gitconfig $HOME/.gitconfig
+ln -sf $DIR/dotfiles/gitignore $HOME/.gitignore
+ln -sf $DIR/dotfiles/gitk $HOME/.gitk
+ln -sf $DIR/dotfiles/irbrc $HOME/.irbrc
+ln -sf $DIR/dotfiles/irssi $HOME/.irssi
+ln -sf $DIR/dotfiles/ruby-version $HOME/.ruby-version
+ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
+ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
+ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
+
 # }}}
 # Bin files {{{
 
-ln -sf $HOME/Dropbox/dotfiles/bin/battery $HOME/bin/battery
-ln -sf $HOME/Dropbox/dotfiles/bin/Markdown.pl $HOME/bin/Markdown.pl
-ln -sf $HOME/Dropbox/dotfiles/bin/cjpgpdf.sh $HOME/bin/cjpgpdf.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/cpngpdf.sh $HOME/bin/cpngpdf.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/crushjpg.sh $HOME/bin/crushjpg.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/crushpng.sh $HOME/bin/crushpng.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/giffnaming.sh $HOME/bin/giffnaming.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/hub $HOME/bin/hub
-ln -sf $HOME/Dropbox/dotfiles/bin/jnaming.sh $HOME/bin/jnaming.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/jsmall.sh $HOME/bin/jsmall.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/pnaming.sh $HOME/bin/pnaming.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/psmall.sh $HOME/bin/psmall.sh
-ln -sf $HOME/Dropbox/dotfiles/bin/waterproof.sh $HOME/bin/waterproof.sh
+sudo ln -sf $DIR/dotfiles/bin/battery /usr/local/bin/battery
+sudo ln -sf $DIR/dotfiles/bin/cjpgpdf.sh /usr/local/bin/cjpgpdf.sh
+sudo ln -sf $DIR/dotfiles/bin/cpngpdf.sh /usr/local/bin/cpngpdf.sh
+sudo ln -sf $DIR/dotfiles/bin/crushjpg.sh /usr/local/bin/crushjpg.sh
+sudo ln -sf $DIR/dotfiles/bin/crushpng.sh /usr/local/bin/crushpng.sh
+sudo ln -sf $DIR/dotfiles/bin/giffnaming.sh /usr/local/bin/giffnaming.sh
+sudo ln -sf $DIR/dotfiles/bin/jnaming.sh /usr/local/bin/jnaming.sh
+sudo ln -sf $DIR/dotfiles/bin/jsmall.sh /usr/local/bin/jsmall.sh
+sudo ln -sf $DIR/dotfiles/bin/pnaming.sh /usr/local/bin/pnaming.sh
+sudo ln -sf $DIR/dotfiles/bin/psmall.sh /usr/local/bin/psmall.sh
+sudo ln -sf $DIR/dotfiles/bin/waterproof.sh /usr/local/bin/waterproof.sh
 
 # }}}

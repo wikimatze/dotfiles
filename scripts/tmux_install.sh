@@ -23,7 +23,7 @@ LDFLAGS="-L/opt/lib" CPPFLAGS="-I/opt/include" LIBS="-lresolv" ./configure --pre
 # }}}
 # Move the tmux-bin file in the right directory where it can be executed {{{
 
-sudo mv -f /opt/bin/tmux $HOME/bin/
+sudo mv -f /opt/bin/tmux /usr/local/bin
 
 # }}}
 
