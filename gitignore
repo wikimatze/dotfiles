@@ -31,6 +31,7 @@ backup/*
 tags
 yankring.txt
 .netrwhist
+github_issues.vim
 
 
 ----------------------
@@ -50,3 +51,11 @@ yankring.txt
 .Trashes
 ._*
 Thumbs.db
+
+-----------
+| gitbook |
+-----------
+Sample.txt
+Subset.txt
+_book/
+

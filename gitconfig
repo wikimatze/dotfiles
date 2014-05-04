@@ -6,7 +6,7 @@
 [core]
   editor = vim
   autocrlf = input
-  excludesfile = /home/wikimatze/Dropbox/dotfiles/gitignore
+  excludesfile = ~/.gitignore
   pager = cat
 [alias]
   ca = commit --amend
@@ -53,4 +53,4 @@
 [push]
   default = matching
 [credential]
-  helper = netrc -f ~/.netrc.asc -v
+  helper = netrc -f ~/ownCloud/documents/netrc.asc -v
