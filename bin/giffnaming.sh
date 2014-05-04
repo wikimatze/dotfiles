@@ -1,4 +1,4 @@
-/home/helex/.bashrc#!/bin/bash
+#!/bin/bash
 # using backticks, that was the solution ;)
 z=`ls | wc -l`
 z=0
