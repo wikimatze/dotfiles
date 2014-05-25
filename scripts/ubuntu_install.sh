@@ -49,11 +49,8 @@ sudo apt-get remove -y libxpm-dev
 sudo apt-get remove -y libxt-dev
 
 # }}}
-# Packages for awesome and extensions {{{
+# Packages lua {{{
 
-sudo apt-get install -y acpi          # for awesome wm battery widget
-sudo apt-get install -y awesome
-sudo apt-get install -y awesome-extra # obvious, vicious packages
 sudo apt-get install -y lua5.1        # Luca programming language
 sudo apt-get install -y liblua5.1-dev # help lua support inside vim
 
