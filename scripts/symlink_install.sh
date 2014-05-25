@@ -18,7 +18,6 @@ rm -f -R $HOME/.config/Terminal
 rm -f $HOME/.bash_profile
 rm -f $HOME/.bashrc
 rm -f $HOME/.convert
-rm -f $HOME/.edit_aliases
 rm -f $HOME/.functions
 rm -f $HOME/.latex_convert_aliases
 rm -f $HOME/.miscellaneous
@@ -87,7 +86,6 @@ then
 fi
 
 ln -sf $DIR/dotfiles/convert $HOME/.convert
-ln -sf $DIR/dotfiles/edit_aliases $HOME/.edit_aliases
 ln -sf $DIR/dotfiles/functions $HOME/.functions
 ln -sf $DIR/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
 ln -sf $DIR/dotfiles/miscellaneous $HOME/.miscellaneous
