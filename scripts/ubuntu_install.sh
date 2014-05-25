@@ -114,6 +114,8 @@ sudo apt-get install -y gthumb
 sudo apt-get install -y guvcview
 sudo apt-get install -y hpijs
 sudo apt-get install -y htop
+sudo apt-get install -y libmagickcore-dev
+sudo apt-get install -y libmagickand-dev
 sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
