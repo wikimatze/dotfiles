@@ -8,6 +8,7 @@ git clone https://github.com/StudioNelstrom/vimdojo.git
 git clone https://github.com/danchoi/ri.vim.git
 git clone https://github.com/fancyapps/fancyBox.git
 git clone https://github.com/jgallen23/toc.git
+git clone https://github.com/GumbyFramework/Gumby.git
 git clone https://github.com/matthias-guenther/awesome-fallout.git
 git clone https://github.com/matthias-guenther/brokenlifts-vm.git
 git clone https://github.com/matthias-guenther/hammer.vim.git
