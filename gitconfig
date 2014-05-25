@@ -30,7 +30,7 @@
     changed = green
     untracked = cyan
 [github]
-  user = matthias-guenther
+  user = wikimatze
 [diff]
   tool = vimdiff
 [merge]
