@@ -28,7 +28,6 @@ rm -f $HOME/.program_aliases_mac
 # Miscellaneous {{{
 
 rm -f $HOME/.ackrc
-rm -f $HOME/.config/awesome
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
 rm -f $HOME/.gitignore
@@ -97,7 +96,6 @@ ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
 # Miscellaneous {{{
 
 ln -sf $DIR/dotfiles/ackrc $HOME/.ackrc
-ln -sf $DIR/dotfiles/awesome $HOME/.config/awesome
 ln -sf $DIR/dotfiles/gemrc $HOME/.gemrc
 ln -sf $DIR/dotfiles/gitconfig $HOME/.gitconfig
 ln -sf $DIR/dotfiles/gitignore $HOME/.gitignore
