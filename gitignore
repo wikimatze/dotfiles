@@ -2,6 +2,7 @@
 | Jekyll |
 ----------
 _site/
+google00fa3fea3dcd1cf3.html
 
 
 --------
@@ -20,6 +21,7 @@ application.css
 application.js
 coverage/*
 tags.html
+.sass-cache
 
 
 --------
@@ -51,6 +53,7 @@ github_issues.vim
 .Trashes
 ._*
 Thumbs.db
+
 
 -----------
 | gitbook |

@@ -53,4 +53,4 @@
 [push]
   default = matching
 [credential]
-  helper = netrc -f ~/ownCloud/documents/netrc.asc -v
+  helper = netrc -f ~/.netrc
