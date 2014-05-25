@@ -114,7 +114,7 @@ PROMPT='%B%m%~%b: '
 # Used by chruby thing
 source /usr/local/share/chruby/chruby.sh
 if which chruby > /dev/null; then
-  chruby ruby-2.1.0
+  chruby ruby-2.1.2
 fi
 
 # ----------------------------------------------------------------------------------}}}
