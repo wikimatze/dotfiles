@@ -49,7 +49,7 @@ sudo apt-get remove -y libxpm-dev
 sudo apt-get remove -y libxt-dev
 
 # }}}
-# Install package for awesome and extensions {{{
+# Packages for awesome and extensions {{{
 
 sudo apt-get install -y acpi          # for awesome wm battery widget
 sudo apt-get install -y awesome
@@ -58,9 +58,16 @@ sudo apt-get install -y lua5.1        # Luca programming language
 sudo apt-get install -y liblua5.1-dev # help lua support inside vim
 
 # }}}
+# Packages for i3 window manager {{{
+
+sudo apt-get install i3-wm    # get the basic window manager
+sudo apt-get install i3status # get the basic window manager
+sudo apt-get install i3lock   # for the lock screen
+sudo apt-get install dmenu    # install the program launcher
+
+# }}}
 # Install of packages {{{
 
-# sudo apt-get install -y mailutils
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
