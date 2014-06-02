@@ -57,10 +57,10 @@ sudo apt-get install -y liblua5.1-dev # help lua support inside vim
 # }}}
 # Packages for i3 window manager {{{
 
-sudo apt-get install i3-wm    # get the basic window manager
-sudo apt-get install i3status # get the basic window manager
-sudo apt-get install i3lock   # for the lock screen
-sudo apt-get install dmenu    # install the program launcher
+sudo apt-get install -y i3-wm    # get the basic window manager
+sudo apt-get install -y i3status # get the basic window manager
+sudo apt-get install -y i3lock   # for the lock screen
+sudo apt-get install -y dmenu    # install the program launcher
 
 # }}}
 # Install of packages {{{
@@ -214,9 +214,6 @@ sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
 sudo apt-get install -y gnome-sushi unoconv # press <Space> to preview files
-
-# chromium things
-sudo apt-get install -y chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
 
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
