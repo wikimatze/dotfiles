@@ -7,3 +7,4 @@ cd chruby && sudo make install
 
 echo "Done with chruby ..."
 
+exec $SHELL

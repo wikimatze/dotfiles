@@ -37,6 +37,7 @@ rm -f $HOME/.irssi
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
+rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
 
 # }}}
@@ -90,7 +91,6 @@ ln -sf $DIR/dotfiles/latex_convert_aliases $HOME/.latex_convert_aliases
 ln -sf $DIR/dotfiles/miscellaneous $HOME/.miscellaneous
 ln -sf $DIR/dotfiles/program_aliases_linux $HOME/.program_aliases_linux
 ln -sf $DIR/dotfiles/program_aliases_mac $HOME/.program_aliases_mac
-ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
 
 # }}}
 # Miscellaneous {{{
@@ -106,6 +106,8 @@ ln -sf $DIR/dotfiles/ruby-version $HOME/.ruby-version
 ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
+ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
+ln -sf ~/ownCloud/zsh_history $HOME/.zsh_history
 
 # }}}
 # Bin files {{{

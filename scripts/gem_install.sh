@@ -25,7 +25,6 @@ gem install albino \
   haml-lint \
   highline \
   httparty \
-  hub \
   interactive_editor \
   i18n \
   git-smart \
@@ -43,7 +42,7 @@ gem install albino \
   omglog \
   net-sftp \
   net-ssh \
-  nokogiri:1.6.0\
+  nokogiri:'1.6.1' \
   padrino \
   parslet \
   puppet \
