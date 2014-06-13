@@ -1,3 +1,4 @@
+#!/bin/bash
 DIR=$HOME/ownCloud/dotfiles/latex_package_install
 DEST=/usr/share/texmf/tex/latex
 

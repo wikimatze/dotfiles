@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /tmp && rm -rf ruby-install && git clone https://github.com/postmodern/ruby-install.git
 cd ruby-install && sudo make install
 echo "Done with ruby-install ..."
@@ -8,3 +9,4 @@ cd chruby && sudo make install
 echo "Done with chruby ..."
 
 exec $SHELL
+

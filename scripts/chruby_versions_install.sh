@@ -1,3 +1,4 @@
+#!/bin/bash
 NINE_THREE=1.9.3
 TWO_ZERO=2.0
 
