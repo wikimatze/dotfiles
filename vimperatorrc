@@ -35,13 +35,15 @@ cnoremap <C-k> <S-Tab>
 
 " Custom search commands
 command -nargs=* amazonde open amazonde <args>
-command -nargs=* amazonen open amazonen <args>
+command -nargs=* amazon open amazon <args>
+command -nargs=* duck open duck <args>
 command -nargs=* google open google <args>
+command -nargs=* googlede open googlede <args>
 command -nargs=* rubygems open rubygems <args>
+command -nargs=* wikipedia open wikipedia <args>
 command -nargs=* wikipediade open wikipediade <args>
-command -nargs=* wikipediaen open wikipediaen <args>
-command -nargs=* leo open <args>
-command -nargs=* github open <args>
+command -nargs=* leo open leo <args>
+command -nargs=* github open github <args>
 
 " }}}
 " vim: set ft=vim:
