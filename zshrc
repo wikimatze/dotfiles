@@ -94,6 +94,7 @@ setopt share_history
 export PATH="/usr/local/bin:/usr/local/lib:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # ----------------------------------------------------------------------------------}}}
 # LS Settings ----------------------------------------------------------------------{{{
