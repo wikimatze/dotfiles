@@ -1,5 +1,8 @@
 #!/bin/bash
-rm out.txt
+# Usage:
+#  bash backup.sh <path-to-source> <dest-to-which-sync-to>
+#
+sudo rm out.txt
 echo "" > out.txt
 # -v ... increase verbosity
 # -r ... recurse into directories
@@ -8,6 +11,5 @@ echo "" > out.txt
 # -p ... the source and receiving permissions should be the same
 # -l ... preserve symlinks
 
-#nice -n 19 rsync -v -r -u -W -p -L -z --delete --ignore-errors --exclude .Trash* "$1" "$2" 2>> out.txt
-nice -n 19 rsync -rltDvuWz --delete --ignore-errors --exclude .Trash* "$1" "$2" 2>> out.txt
+sudo nice -n 19 rsync -rltDvuWz --delete --ignore-errors --exclude .Trash* "$1" "$2" 2>> out.txt
 
