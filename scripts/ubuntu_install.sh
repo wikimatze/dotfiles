@@ -1,5 +1,4 @@
 # Remove packages {{{
-
 sudo apt-get remove -y abiword
 sudo apt-get remove -y catfish
 sudo apt-get remove -y gigolo
@@ -19,6 +18,7 @@ sudo apt-get remove -y ruby1.8-dev
 sudo apt-get remove -y ruby1.9.1 # makes a lot of issues so get rid of issues ...
 sudo apt-get remove -y simple-scan
 sudo apt-get remove -y transmission-common
+sudo apt-get remove -y uget
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
 sudo apt-get remove -y xfce4-taskmanager
@@ -38,21 +38,22 @@ sudo apt-get remove -y mahjongg
 # }}}
 # Install packages for gvim {{{
 
-sudo apt-get remove -y libatk1.0-dev
-sudo apt-get remove -y libbonoboui2-dev
-sudo apt-get remove -y libcairo2-dev
-sudo apt-get remove -y libgnome2-dev
-sudo apt-get remove -y libgtk2.0-dev
-sudo apt-get remove -y libncurses-dev
-sudo apt-get remove -y libx11-dev
-sudo apt-get remove -y libxpm-dev
-sudo apt-get remove -y libxt-dev
+sudo apt-get install -y libatk1.0-dev
+sudo apt-get install -y libbonoboui2-dev
+sudo apt-get install -y libcairo2-dev
+sudo apt-get install -y libgnome2-dev
+sudo apt-get install -y libgtk2.0-dev
+sudo apt-get install -y libncurses-dev
+sudo apt-get install -y libx11-dev
+sudo apt-get install -y libxpm-dev
+sudo apt-get install -y libxt-dev
 
 # }}}
 # Packages lua {{{
 
 sudo apt-get install -y lua5.1        # Luca programming language
 sudo apt-get install -y liblua5.1-dev # help lua support inside vim
+sudo apt-get install -y libtolua-dev  # for vim installation
 
 # }}}
 # Packages for i3 window manager {{{
@@ -70,6 +71,7 @@ sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
 sudo apt-get install -y banshee
+sudo apt-get install -y build-essential
 sudo apt-get install -y calibre
 sudo apt-get install -y checkbashisms # syntax checker for shell scripts
 sudo apt-get install -y cifs-utils # SMB cross-platform file sharing
@@ -78,6 +80,7 @@ sudo apt-get install -y cryptsetup
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
+sudo apt-get install -y gdebi-core # easier installation of packages and resolves dependencies in a better way
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge   # python based torrent client
 sudo apt-get install -y dos2unix # fix file problems between Windows and Unix
@@ -156,6 +159,7 @@ sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y npm
 sudo apt-get install -y ntfs-config
 sudo apt-get install -y openjdk-7-jre
+sudo apt-get install -y openssl # need for node
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
 sudo apt-get install -y pdfchain
@@ -199,6 +203,7 @@ sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd for
 sudo apt-get install -y unetbootin
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
+sudo apt-get build-dep vim # install all dependencies for vim compilation
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
@@ -213,15 +218,15 @@ sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
-sudo apt-get install -y gnome-sushi unoconv # press <Space> to preview files
+sudo apt-get install -y icedtea-plugin # Java Applet Browser support
+
+#sudo apt-get install -y gnome-sushi unoconv # press <Space> to preview files
 
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
 
 # install missing codecs
-sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53
-
-sudo apt-get remove -y ruby1.9.1 # makes a lot of issues so get rid of issues ...
+sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53 xubuntu-restricted-extras libavcodec-extra
 
 # }}}
 # Update and upgrade {{{

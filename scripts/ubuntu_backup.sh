@@ -1,15 +1,16 @@
-# Remove back up directory and create the new one {{{
+#!/bin/bash
+YEAR="`date +%Y`"
+MONTH="`date +%b`"
 
-mkdir $HOME/Desktop/backup
+DATE=$YEAR\_$MONTH
+DEST=/media/wm/verbatim/backups/$DATE
 
-# }}}
-# Copy the backup file into $HOME/Desktop/backup {{{
+rm -rf $HOME/Desktop/$DATE
+mkdir $HOME/Desktop/$DATE
 
-cp -r  $HOME/Desktop $HOME/Downloads
-mv     $HOME/Downloads/Desktop $HOME/Desktop/backup
-rm -rf $HOME/Download/Desktop
-cp -r  $HOME/Downloads $HOME/Desktop/backup
-cp -r  $HOME/ownCloud $HOME/Desktop/backup
 
-# }}}
+tar czpvf $DEST/desktop.tar.zip ~/Desktop
+tar czpvf $DEST/ownCloud.tar.zip ~/ownCloud
+tar czpvf $DEST/downloads.tar.zip ~/Downloads
+tar czpvf $DEST/dropbox.tar.zip ~/Dropbox
 
