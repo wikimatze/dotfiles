@@ -1,4 +1,4 @@
-cd /tmp && git clone https://github.com/b4winckler/vim && cd vim && git checkout v7-4-307 && git clean -f
+cd /tmp && git clone https://github.com/b4winckler/vim && cd vim && git checkout v7-4-316 && git clean -f
 
 ./configure --prefix=/usr/local \
   --without-x \
