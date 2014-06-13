@@ -54,3 +54,6 @@
   default = matching
 [credential]
   helper = netrc -f ~/.netrc
+[gh]
+  autoUpdate = always
+  protocol = https
