@@ -1,7 +1,5 @@
-sudo apt-get install nodejs
-
-cd /tmp && wget http://nodejs.org/dist/node-latest.tar.gz && tar xvfz node-latest.tar.gz
-./configure && make && sudo make
+#!/bin/bash
+cd /tmp && git clone git://github.com/ry/node.git && cd node && ./configure && make && sudo make install
 
 sudo npm install -g csslint jshint js-yaml claymate bower
 
