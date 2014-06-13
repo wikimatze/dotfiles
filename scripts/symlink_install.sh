@@ -1,3 +1,4 @@
+#!/bin/bash
 # Removing links {{{
 # Directory links {{{
 DIR=$HOME/ownCloud
