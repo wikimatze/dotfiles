@@ -1,4 +1,3 @@
-alias bburn='dd if=/dev/cdrom of=/home/apensiv/iso.iso'            # burn iso
 alias gitk='gitk &'                                                # git
 alias irb='irb -rubygems'                                          # better when loading irb to test gems
 alias gitg='gitg &'                                                # start gitg in background

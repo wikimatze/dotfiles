@@ -55,27 +55,9 @@ source $HOME/.miscellaneous
 if [ "$OSTYPE" = "linux-gnu" ]; then
   source $HOME/.program_aliases_linux
   source $HOME/.functions_linux
-  g () {
-    servername="`gvim --serverlist`"
-    if [ "$servername" = "GVIM" ]
-    then
-      gvim --remote $*
-    else
-      gvim $*
-    fi
-  }
 elif [ "$OSTYPE" = "darwin10.0" ]; then
   export TEXEDIT='mvim'
   source $HOME.program_aliases_mac
-  g () {
-    servername="`mvim --serverlist`"
-    if [ "$servername" = "VIM" ]
-    then
-      mvim --remote $*
-    else
-      mvim $*
-    fi
-  }
 fi
 
 # ----------------------------------------------------------------------------------}}}
