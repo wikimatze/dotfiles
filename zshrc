@@ -33,6 +33,11 @@ export DISABLE_AUTO_TITLE="true"
 
 unsetopt correct_all
 
+export TERM=screen-256color
+
+# better lessc output
+export LESS='-i-P%f (%i/%m) Line %lt/%L'
+
 # ----------------------------------------------------------------------------------}}}
 # Sourcing -------------------------------------------------------------------------{{{
 
@@ -73,7 +78,7 @@ then
 fi
 
 # ----------------------------------------------------------------------------------}}}
-# History Settings -----------------------------------------------------------------{{{
+# History settings -----------------------------------------------------------------{{{
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -97,7 +102,7 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 # ----------------------------------------------------------------------------------}}}
-# LS Settings ----------------------------------------------------------------------{{{
+# LS setting -----------------------------------------------------------------------{{{
 
 # enable color support of ls and also add handy aliases
 if [[ -x /usr/bin/dircolors ]]; then
@@ -107,58 +112,47 @@ fi
 
 # ----------------------------------------------------------------------------------}}}
 # Prompt tuning  -------------------------------------------------------------------{{{
+
 PROMPT='%B%m%~%b: '
 
 # ----------------------------------------------------------------------------------}}}
-# chruby settings ------------------------------------------------------------------{{{
+# chruby setting -------------------------------------------------------------------{{{
 
 # Used by chruby thing
 source /usr/local/share/chruby/chruby.sh
 if which chruby > /dev/null; then
   chruby ruby-2.1.2
+
+  # chruby autocompletion
+  # based on https://github.com/postmodern/chruby/issues/27#issuecomment-36629835
+  compctl -g '~/.rubies/*(:t)' chruby
 fi
 
 # ----------------------------------------------------------------------------------}}}
-# Suffix aliases -------------------------------------------------------------------{{{
-# define file ending which should be open with appropriate programs
-alias -s tex=vim
-alias -s yaml=vim
-alias -s txt=vim
-alias -s rb=vim
-# ----------------------------------------------------------------------------------}}}
+# tmuxifier setting ----------------------------------------------------------------{{{
 
-# tmuxifier autocompletion
 eval "$(tmuxifier init -)"
 export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
 
-# chruby autocompletion
-compctl -g '~/.rubies/*(:t)' chruby
+# ----------------------------------------------------------------------------------}}}
 
 # Press <C-X><C-X> to start autocompletion for commands typed into the history
 autoload -Uz history-beginning-search-menu
 zle -N history-beginning-search-menu
 bindkey '^X^X' history-beginning-search-menu
 
-export TERM=screen-256color
-
-# better lessc output
-export LESS='-i-P%f (%i/%m) Line %lt/%L'
-
-
 # print the whole history
 alias history='history 0'
 
-# chruby autocompletion
-# based on https://github.com/postmodern/chruby/issues/27#issuecomment-36629835
-
-_chruby() { compadd $(chruby | tr -d '* ') }
-compdef _chruby chruby
-
 # git-prompt {{{
-
+# sources from this repository olivierverdier/zsh-git-prompt
 source ~/ownCloud/dotfiles/zsh/git-prompt/zshrc.sh
 
 # an example prompt
 PROMPT='%B%m%~%b$(git_super_status)$ '
 # }}}
+
+eval "$(sack init)"
+
+# gh settings https://github.com/jingweno/gh
 
