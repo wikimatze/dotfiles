@@ -38,6 +38,9 @@ export TERM=screen-256color
 # better lessc output
 export LESS='-i-P%f (%i/%m) Line %lt/%L'
 
+# print the whole history
+alias history='history 0'
+
 # ----------------------------------------------------------------------------------}}}
 # Sourcing -------------------------------------------------------------------------{{{
 
@@ -47,7 +50,7 @@ source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
 
 # ----------------------------------------------------------------------------------}}}
-# Differentiation between OS -------------------------------------------------------{{{
+# OS differeneces ------------------------------------------------------------------{{{
 
 if [ "$OSTYPE" = "linux-gnu" ]
 then
@@ -116,6 +119,13 @@ fi
 PROMPT='%B%m%~%b: '
 
 # ----------------------------------------------------------------------------------}}}
+# Commandline completion -----------------------------------------------------------{{{
+# Press <C-X><C-X> to start autocompletion for commands typed into the history
+autoload -Uz history-beginning-search-menu
+zle -N history-beginning-search-menu
+bindkey '^X^X' history-beginning-search-menu
+
+# ----------------------------------------------------------------------------------}}}
 # chruby setting -------------------------------------------------------------------{{{
 
 # Used by chruby thing
@@ -130,29 +140,22 @@ fi
 
 # ----------------------------------------------------------------------------------}}}
 # tmuxifier setting ----------------------------------------------------------------{{{
-
+# https://github.com/jimeh/tmuxifier
 eval "$(tmuxifier init -)"
 export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
 
 # ----------------------------------------------------------------------------------}}}
+# git-prompt setting ---------------------------------------------------------------{{{
+# https://github.com/olivierverdier/zsh-git-prompt
 
-# Press <C-X><C-X> to start autocompletion for commands typed into the history
-autoload -Uz history-beginning-search-menu
-zle -N history-beginning-search-menu
-bindkey '^X^X' history-beginning-search-menu
-
-# print the whole history
-alias history='history 0'
-
-# git-prompt {{{
-# sources from this repository olivierverdier/zsh-git-prompt
 source ~/ownCloud/dotfiles/zsh/git-prompt/zshrc.sh
-
-# an example prompt
 PROMPT='%B%m%~%b$(git_super_status)$ '
-# }}}
+
+# ----------------------------------------------------------------------------------}}}
+# sack setting ---------------------------------------------------------------------{{{
+# https://github.com/zph/go-sack
 
 eval "$(sack init)"
 
-# gh settings https://github.com/jingweno/gh
+# ----------------------------------------------------------------------------------}}}
 
