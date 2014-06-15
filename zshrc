@@ -52,8 +52,7 @@ source $HOME/.miscellaneous
 # ----------------------------------------------------------------------------------}}}
 # OS differeneces ------------------------------------------------------------------{{{
 
-if [ "$OSTYPE" = "linux-gnu" ]
-then
+if [ "$OSTYPE" = "linux-gnu" ]; then
   source $HOME/.program_aliases_linux
   source $HOME/.functions_linux
   g () {
@@ -65,8 +64,7 @@ then
       gvim $*
     fi
   }
-elif [ "$OSTYPE" = "darwin10.0" ]
-then
+elif [ "$OSTYPE" = "darwin10.0" ]; then
   export TEXEDIT='mvim'
   source $HOME.program_aliases_mac
   g () {
@@ -108,7 +106,7 @@ export PATH="$HOME/bin:$PATH"
 # LS setting -----------------------------------------------------------------------{{{
 
 # enable color support of ls and also add handy aliases
-if [[ -x /usr/bin/dircolors ]]; then
+if [ -x /usr/bin/dircolors ]; then
   eval "`dircolors -b`"
   alias ls='ls --color=auto'
 fi
@@ -141,8 +139,10 @@ fi
 # ----------------------------------------------------------------------------------}}}
 # tmuxifier setting ----------------------------------------------------------------{{{
 # https://github.com/jimeh/tmuxifier
-eval "$(tmuxifier init -)"
-export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
+if which tmuxifier> /dev/null; then
+  eval "$(tmuxifier init -)"
+  export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
+fi
 
 # ----------------------------------------------------------------------------------}}}
 # git-prompt setting ---------------------------------------------------------------{{{
@@ -155,7 +155,9 @@ PROMPT='%B%m%~%b$(git_super_status)$ '
 # sack setting ---------------------------------------------------------------------{{{
 # https://github.com/zph/go-sack
 
-eval "$(sack init)"
+if which sack> /dev/null; then
+  eval "$(sack init)"
+fi
 
 # ----------------------------------------------------------------------------------}}}
 
