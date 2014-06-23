@@ -29,12 +29,14 @@ rm -f $HOME/.program_aliases_mac
 # Miscellaneous {{{
 
 rm -f $HOME/.ackrc
+rm -f $HOME/.fasd
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
 rm -f $HOME/.gitignore
 rm -f $HOME/.gitk
 rm -f $HOME/.irbrc
 rm -f $HOME/.irssi
+rm -f $HOME/.ptignore
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
@@ -99,6 +101,7 @@ ln -sf $DIR/dotfiles/program_aliases_mac $HOME/.program_aliases_mac
 ln -sf $DIR/dotfiles/ackrc $HOME/.ackrc
 ln -sf $DIR/dotfiles/gemrc $HOME/.gemrc
 ln -sf $DIR/dotfiles/gitconfig $HOME/.gitconfig
+ln -sf $DIR/dotfiles/ptignore $HOME/.ptignore
 ln -sf $DIR/dotfiles/gitignore $HOME/.gitignore
 ln -sf $DIR/dotfiles/gitk $HOME/.gitk
 ln -sf $DIR/dotfiles/irbrc $HOME/.irbrc
