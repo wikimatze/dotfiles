@@ -53,7 +53,7 @@
 [push]
   default = matching
 [credential]
-  helper = netrc -f ~/.netrc
+  helper = store -f ~/.netrc
 [gh]
   autoUpdate = always
   protocol = https
