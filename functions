@@ -30,3 +30,11 @@ fctrotatejpg ()
 }
 
 # }}}
+# Allows commit message without typing quotes (can't have quotes in the commit msg though) {{{
+# thanks Ben Orenstein
+function gc {
+  git commit -m "$*"
+}
+
+# }}}
+
