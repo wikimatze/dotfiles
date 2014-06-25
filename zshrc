@@ -1,7 +1,13 @@
 # Setup {{{
-LC_ALL=en_US.UTF-8
-LANG=en_US.UTF-8
-LANGUAGE=en_US.UTF-8
+export EDITOR='vim'
+export TERM=screen-256color
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# solution for tmux problems
+export DISABLE_AUTO_TITLE="true"
+
+# diable auto correct
+unsetopt correct_all
 
 # sourcing zsh-lib file
 for lib_file ($HOME/.zsh/lib/*.zsh); do
@@ -17,38 +23,17 @@ compinit
 # make `cd` easier to search after project in the specified repos
 cdpath=(~ ~/ownCloud ~/Downloads ~/Desktop ~/bitbucket ~/git-repositories)
 
-# }}}
-# Custom ZSH {{{
+# Paths settings
 
-setopt extendedglob        # enables the negation operator ^ for displaying files
-unsetopt beep extendedglob # turn of noisy beep sounds
+export PATH="$PATH:/usr/local/bin:/usr/local/lib:PATH:$HOME/.tmuxifier/bin:$HOME/bin:$PATH"
 
-export EDITOR='vim'
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# solution for tmux problems
-export DISABLE_AUTO_TITLE="true"
-
-unsetopt correct_all
-
-export TERM=screen-256color
-
-# better lessc output
-export LESS='-i-P%f (%i/%m) Line %lt/%L'
-
-# print the whole history
-alias history='history 0'
-
-# }}}
-# Sourcing {{{
-
+# Sourcing
 source $HOME/.convert
 source $HOME/.functions
 source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
-
 # }}}
-# OS differeneces {{{
+# OS differences {{{
 
 if [ "$OSTYPE" = "linux-gnu" ]; then
   source $HOME/.program_aliases_linux
@@ -59,7 +44,7 @@ elif [ "$OSTYPE" = "darwin10.0" ]; then
 fi
 
 # }}}
-# History settings {{{
+# History {{{
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -73,23 +58,6 @@ setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
 setopt share_history
-
-# }}}
-# Paths settings {{{
-
-export PATH="/usr/local/bin:/usr/local/lib:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-
-# }}}
-# LS setting {{{
-
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-  eval "`dircolors -b`"
-  alias ls='ls --color=auto'
-fi
 
 # }}}
 # Prompt tuning  {{{
@@ -153,8 +121,10 @@ fi
 # }}}
 # aliases {{{
 
-alias la='ls -la'
+alias la='ls -rtlh --color'
 alias ..='cd ..'
+alias history='history 0' # print the whole history
+alias ls='ls --color=auto'
 
 # }}}
 
