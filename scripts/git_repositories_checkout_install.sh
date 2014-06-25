@@ -5,7 +5,6 @@ mkdir $DES && cd $DES
 
 git clone $SRC/JoshCheek/ruby-kickstart.git
 git clone $SRC/GumbyFramework/Gumby.git
-git clone $SRC/GumbyFramework/Gumby.git
 git clone $SRC/StudioNelstrom/vimdojo.git
 git clone $SRC/danchoi/ri.vim.git
 git clone $SRC/fancyapps/fancyBox.git

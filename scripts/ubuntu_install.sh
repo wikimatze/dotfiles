@@ -66,6 +66,7 @@ sudo apt-get install -y dmenu    # install the program launcher
 # }}}
 # Install of packages {{{
 
+sudo apt-get build-dep vim # install all dependencies for vim compilation
 sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
@@ -80,7 +81,6 @@ sudo apt-get install -y cryptsetup
 sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
-sudo apt-get install -y gdebi-core # easier installation of packages and resolves dependencies in a better way
 sudo apt-get install -y cvs
 sudo apt-get install -y deluge   # python based torrent client
 sudo apt-get install -y dos2unix # fix file problems between Windows and Unix
@@ -94,6 +94,7 @@ sudo apt-get install -y fig2sty
 sudo apt-get install -y flac
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
+sudo apt-get install -y gdebi-core # easier installation of packages and resolves dependencies in a better way
 sudo apt-get install -y gedit
 sudo apt-get install -y gftp
 sudo apt-get install -y ghc
@@ -114,8 +115,6 @@ sudo apt-get install -y gthumb
 sudo apt-get install -y guvcview
 sudo apt-get install -y hpijs
 sudo apt-get install -y htop
-sudo apt-get install -y libmagickcore-dev
-sudo apt-get install -y libmagickand-dev
 sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
@@ -127,9 +126,12 @@ sudo apt-get install -y laptop-mode-tools # saving battery life => configuration
 sudo apt-get install -y libatk1.0-dev
 sudo apt-get install -y libbonoboui2-dev
 sudo apt-get install -y libcairo2-dev
+sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libgnome2-dev
 sudo apt-get install -y libgraph-writer-graphviz-perl
 sudo apt-get install -y libgtk2.0-dev
+sudo apt-get install -y libmagickand-dev
+sudo apt-get install -y libmagickcore-dev
 sudo apt-get install -y libmagickwand-dev # needed for rmagick ruby gem
 sudo apt-get install -y libmysqlclient-dev
 sudo apt-get install -y libncurses-dev
@@ -197,13 +199,13 @@ sudo apt-get install -y tex-common
 sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
+sudo apt-get install -y texlive-xetex # xelatex
 sudo apt-get install -y tig
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
 sudo apt-get install -y unetbootin
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
-sudo apt-get build-dep vim # install all dependencies for vim compilation
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf

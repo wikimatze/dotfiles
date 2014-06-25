@@ -111,7 +111,8 @@ ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
-ln -sf ~/ownCloud/zsh_history $HOME/.zsh_history
+ln -sf $DIR/zsh_history $HOME/.zsh_history
+ln -sf $DIR/fasd $HOME/.fasd
 
 # }}}
 # Bin files {{{
