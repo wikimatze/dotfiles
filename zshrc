@@ -1,4 +1,4 @@
-# Setup -----------------------------------------------------------------------------{{{
+# Setup {{{
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
@@ -15,13 +15,11 @@ autoload -U compinit
 compinit
 
 # make `cd` easier to search after project in the specified repos
-cdpath=(~ ~/bitbucket ~/git-repositories ~/Downloads ~/Desktop)
+cdpath=(~ ~/ownCloud ~/Downloads ~/Desktop ~/bitbucket ~/git-repositories)
 
-# ----------------------------------------------------------------------------------}}}
-# Custom ZSH -----------------------------------------------------------------------{{{
+# }}}
+# Custom ZSH {{{
 
-# instead of cd /etc you can just type /etc to change directories
-setopt autocd
 setopt extendedglob        # enables the negation operator ^ for displaying files
 unsetopt beep extendedglob # turn of noisy beep sounds
 
@@ -41,16 +39,16 @@ export LESS='-i-P%f (%i/%m) Line %lt/%L'
 # print the whole history
 alias history='history 0'
 
-# ----------------------------------------------------------------------------------}}}
-# Sourcing -------------------------------------------------------------------------{{{
+# }}}
+# Sourcing {{{
 
 source $HOME/.convert
 source $HOME/.functions
 source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
 
-# ----------------------------------------------------------------------------------}}}
-# OS differeneces ------------------------------------------------------------------{{{
+# }}}
+# OS differeneces {{{
 
 if [ "$OSTYPE" = "linux-gnu" ]; then
   source $HOME/.program_aliases_linux
@@ -60,8 +58,8 @@ elif [ "$OSTYPE" = "darwin10.0" ]; then
   source $HOME.program_aliases_mac
 fi
 
-# ----------------------------------------------------------------------------------}}}
-# History settings -----------------------------------------------------------------{{{
+# }}}
+# History settings {{{
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -76,16 +74,16 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
-# ----------------------------------------------------------------------------------}}}
-# Paths settings -------------------------------------------------------------------{{{
+# }}}
+# Paths settings {{{
 
 export PATH="/usr/local/bin:/usr/local/lib:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
-# ----------------------------------------------------------------------------------}}}
-# LS setting -----------------------------------------------------------------------{{{
+# }}}
+# LS setting {{{
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -93,20 +91,23 @@ if [ -x /usr/bin/dircolors ]; then
   alias ls='ls --color=auto'
 fi
 
-# ----------------------------------------------------------------------------------}}}
-# Prompt tuning  -------------------------------------------------------------------{{{
+# }}}
+# Prompt tuning  {{{
+
 
 PROMPT='%B%m%~%b: '
 
-# ----------------------------------------------------------------------------------}}}
-# Commandline completion -----------------------------------------------------------{{{
+
+
+# }}}
+# Commandline completion {{{
 # Press <C-X><C-X> to start autocompletion for commands typed into the history
 autoload -Uz history-beginning-search-menu
 zle -N history-beginning-search-menu
 bindkey '^X^X' history-beginning-search-menu
 
-# ----------------------------------------------------------------------------------}}}
-# chruby setting -------------------------------------------------------------------{{{
+# }}}
+# chruby setting {{{
 
 # Used by chruby thing
 source /usr/local/share/chruby/chruby.sh
@@ -118,28 +119,34 @@ if which chruby > /dev/null; then
   compctl -g '~/.rubies/*(:t)' chruby
 fi
 
-# ----------------------------------------------------------------------------------}}}
-# tmuxifier setting ----------------------------------------------------------------{{{
+# }}}
+# tmuxifier setting {{{
 # https://github.com/jimeh/tmuxifier
 if which tmuxifier> /dev/null; then
   eval "$(tmuxifier init -)"
   export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
 fi
 
-# ----------------------------------------------------------------------------------}}}
-# git-prompt setting ---------------------------------------------------------------{{{
+# }}}
+# git-prompt setting {{{
 # https://github.com/olivierverdier/zsh-git-prompt
 
 source ~/ownCloud/dotfiles/zsh/git-prompt/zshrc.sh
 PROMPT='%B%m%~%b$(git_super_status)$ '
 
-# ----------------------------------------------------------------------------------}}}
-# sack setting ---------------------------------------------------------------------{{{
+# }}}
+# sack setting {{{
 # https://github.com/zph/go-sack
 
 if which sack> /dev/null; then
   eval "$(sack init)"
 fi
 
-# ----------------------------------------------------------------------------------}}}
+# }}}
+# aliases {{{
+
+alias la='ls -la'
+alias ..='cd ..'
+
+# }}}
 
