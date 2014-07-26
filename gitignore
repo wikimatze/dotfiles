@@ -33,7 +33,6 @@ backup/*
 tags
 yankring.txt
 .netrwhist
-github_issues.vim
 plugged/*
 
 
