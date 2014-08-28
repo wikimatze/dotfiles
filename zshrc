@@ -114,9 +114,12 @@ fi
 # sack setting {{{
 # https://github.com/zph/go-sack
 
-if which sack> /dev/null; then
-  eval "$(sack init)"
+if [[ `uname -m` == 'x86_64' ]]; then
+  if which sack> /dev/null; then
+    eval "$(sack init)"
+  fi
 fi
+
 
 # }}}
 # aliases {{{
@@ -125,6 +128,22 @@ alias la='ls -rtlh --color'
 alias ..='cd ..'
 alias history='history 0' # print the whole history
 alias ls='ls --color=auto'
+alias dropbox='~/.dropbox-dist/dropboxd'
 
 # }}}
+# vim mapping {{{
 
+# <C-z> will toggle foreground and background
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
+# }}}
