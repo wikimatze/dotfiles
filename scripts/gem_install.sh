@@ -5,6 +5,7 @@ gem install albino \
   bluecloth \
   builder \
   bundler \
+  byebug \
   classifier \
   compass \
   csscss \

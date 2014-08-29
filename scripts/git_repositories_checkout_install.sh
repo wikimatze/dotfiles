@@ -25,6 +25,7 @@ git clone $SRC/wikimatze/mailclient.git
 git clone $SRC/wikimatze/padrino-livingstyleguide.git
 git clone $SRC/wikimatze/padrino-zsh-completion.git
 git clone $SRC/wikimatze/sweetie.git
+git clone $SRC/wikimatze/mdbook.git
 git clone $SRC/wikimatze/tocdown.git
 git clone $SRC/wikimatze/zimki.git
 git clone $SRC/zurb/foundation.git

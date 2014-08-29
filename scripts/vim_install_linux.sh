@@ -1,10 +1,10 @@
-cd /tmp && git clone https://github.com/b4winckler/vim && cd vim && git checkout v7-4-316 && git clean -f
+cd /tmp && git clone https://github.com/b4winckler/vim && cd vim && git checkout v7-4-402 && git clean -f
 
 ./configure --prefix=/usr/local \
   --with-x \
   --disable-nls \
   --disable-netbeans \
-  --enable-gui=no \
+  --enable-gui \
   --enable-multibyte \
   --enable-rubyinterp \
   --enable-luainterp \
