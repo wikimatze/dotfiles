@@ -1,9 +1,14 @@
 #!/bin/bash
+cd /tmp
+VERSION=v1.7.3
+
 if [ "$(uname -m)" == "x86_64" ]
 then
-  cd /tmp && wget "https://drone.io/github.com/monochromegane/the_platinum_searcher/files/artifacts/bin/linux_amd64/pt"
+  wget https://github.com/monochromegane/the_platinum_searcher/releases/download/$VERSION/pt_linux_amd64.tar.gz && for pt in *.tar.gz; do tar -xzvf $pt; done;
+  mv pt_linux_amd64 pt
 else
-  cd /tmp && wget "https://drone.io/github.com/monochromegane/the_platinum_searcher/files/artifacts/bin/linux_i386/pt"
+  wget https://github.com/monochromegane/the_platinum_searcher/releases/download/$VERSION/pt_linux_386.tar.gz && for pt in *.tar.gz; do tar -xzvf $pt; done;
+  mv pt_linux_386 pt
 fi
 
-sudo mv /tmp/pt /usr/local/bin && sudo chmod 777 /usr/local/bin/pt
+sudo mv /tmp/pt/pt /usr/local/bin && sudo chmod 777 /usr/local/bin/pt
