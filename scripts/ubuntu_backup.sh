@@ -2,15 +2,9 @@
 YEAR="`date +%Y`"
 MONTH="`date +%b`"
 
-DATE=$YEAR\_$MONTH
-DEST=/media/wm/verbatim/backups/$DATE
+DEST=/media/wm/verbatim/backups/$YEAR\_$MONTH
 
-rm -rf $HOME/Desktop/$DATE
-mkdir $HOME/Desktop/$DATE
+mkdir $DEST
 
-
-tar czpvf $DEST/desktop.tar.zip ~/Desktop
-tar czpvf $DEST/ownCloud.tar.zip ~/ownCloud
-tar czpvf $DEST/downloads.tar.zip ~/Downloads
-tar czpvf $DEST/dropbox.tar.zip ~/Dropbox
+tar cvf $DEST/backup.tar.zip ~/Desktop ~/Downloads ~/ownCloud ~/Dropbox
 
