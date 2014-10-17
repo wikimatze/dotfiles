@@ -7,7 +7,6 @@ rm -f $HOME/bitbucket
 rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/.fonts
-rm -f $HOME/.ruby-version
 rm -f $HOME/.zsh
 rm -f $HOME/.gnupg
 rm -f $HOME/.ssh
@@ -105,7 +104,6 @@ ln -sf $DIR/dotfiles/gitignore $HOME/.gitignore
 ln -sf $DIR/dotfiles/gitk $HOME/.gitk
 ln -sf $DIR/dotfiles/irbrc $HOME/.irbrc
 ln -sf $DIR/dotfiles/irssi $HOME/.irssi
-ln -sf $DIR/dotfiles/ruby-version $HOME/.ruby-version
 ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
