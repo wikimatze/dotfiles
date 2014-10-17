@@ -12,6 +12,6 @@ run_cmd "irb"
 select_pane 1
 
 new_window "pdf"
-run_cmd "pdflatex ruby.tex && evince -w ruby.pdf"
+run_cmd "pdflatex ruby.tex && evince ruby.pdf"
 
 select_window 1
