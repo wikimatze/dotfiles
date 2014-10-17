@@ -1,0 +1,40 @@
+#compdef softcover
+
+typeset -A opt_args
+
+_arguments -C \
+  '1:cmd:->cmds' \
+&& ret=0
+
+case "$state" in
+  (cmds)
+     local commands; commands=(
+      'build:Build all formats'
+      'build\:epub:Build EPUB'
+      'build\:html:Build HTML'
+      'build\:mobi:Build MOBI'
+      'build\:pdf:Build PDF'
+      'build\:preview:Build book preview in all formats'
+      'check:Check dependencies'
+      'clean:Clean unneeded files'
+      'config:View local config'
+      'config\:add:Add to your local config vars (like key=value)'
+      'config\:remove:Remove [key] from local config vars'
+      'deploy:Build & publish book'
+      'epub\:validate:Validate EPUB with epubcheck'
+      'epub\:check:Validate EPUB with epubcheck'
+      'help:Describe available commands or one specific command (like [COMMAND])'
+      'login:Log into Softcover account'
+      'logout:Log out of Softcover account'
+      'new':'Generate new book directory structure (like <name>)'
+      'publish:Publish your book on Softcover'
+      'publish\:media:Publish media'
+      'server:Run local server'
+      'unpublish:Remove book from Softcover'
+      'version:Return the version number (-v for short)'
+     )
+      _describe -t commands 'command' commands && ret=0
+  ;;
+esac
+
+return 1
