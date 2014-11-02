@@ -30,6 +30,7 @@ case "$state" in
           "app:generates a new Padrino application"
           "controller:generates a new Padrino controller"
           "component:add components into a Padrino project (you have to be inside an existing Padrino application)"
+          "helper:generates a new Padrino helper"
           "mailer:generates a new Padrino mailer"
           "migration:generates a new migration file"
           "model:creates a new model"
@@ -154,13 +155,13 @@ case "$state" in
           "-a:specify db adapter (options: 'mysql', 'mysql2', 'mysql-gem', sqlite' , 'postgres')"
           "-b:execute bundler dependencies installation"
           "-c:define stylesheet (options: 'compass', 'less', 'sass', 'scss', 'none')"
-          "-d:define orm (options: 'activerecord', 'mongoid', 'couchrest', 'datamapper', 'minirecord', 'mongomatic', 'mongomapper', 'ohm', 'ripple', 'sequel', 'none')"
+          "-d:define orm (options: 'activerecord', 'couchrest', 'mongoid', 'datamapper', 'minirecord', 'mongomatic', 'mongomapper', 'ohm', 'ripple', 'sequel', 'none')"
           "-e:define renderer (options: 'erb', 'haml','liquid', 'slim', 'none')"
           "-i:generate tiny project skeleton without any components"
           "-m:define mock (options: 'mocha', 'rr', 'none')"
           "-n:specify app name different from the project name"
           "-r:the root destination path for the project"
-          "-s:define script (options: 'jquery', 'dojo', 'extcore', 'mootools', 'prototype', 'rightjs', 'none')"
+          "-s:define script (options: 'dojo', 'extcore', 'jquery', 'mootools', 'prototype', 'rightjs', 'none')"
           "-t:define test (options: 'bacon', 'cucumber', 'shoulda', 'riot', 'rspec', 'steak', 'minitest', 'none')"
         )
         _describe -t projects 'project' projects && ret=0
