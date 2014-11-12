@@ -43,7 +43,7 @@ gem install albino \
   omglog \
   net-sftp \
   net-ssh \
-  nokogiri:'1.6.1' \
+  nokogiri:1.6.4 \
   padrino \
   parslet \
   puppet \
