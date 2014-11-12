@@ -73,6 +73,7 @@ gem install albino \
   showoff \
   sinatra \
   slim \
+  softcover --pre \
   scss-lint \
   sqlite3 \
   stringex \
