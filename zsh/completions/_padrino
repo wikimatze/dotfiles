@@ -29,11 +29,11 @@ case "$state" in
         local generate; generates=(
           "app:generates a new Padrino application"
           "controller:generates a new Padrino controller"
-          "component:add components into a Padrino project (you have to be inside an existing Padrino application)"
+          "component:add components into a Padrino project"
           "helper:generates a new Padrino helper"
           "mailer:generates a new Padrino mailer"
           "migration:generates a new migration file"
-          "model:creates a new model"
+          "model:generates a new model and migration files"
           "project:generates a new Padrino project"
           "plugin:sets up a plugin within a Padrino application"
           "task:generates a new task file"
@@ -98,11 +98,26 @@ case "$state" in
   ;;
   (args)
     case $line[2] in
+      (app)
+        local apps; apps=(
+          '-f:Generate app files if app already exists'
+          '--force:Generate app files if app already exists'
+        )
+        _describe -t apps 'app' apps && ret=0
+      ;;
       (controller)
         local controllers; controllers=(
           '-d:remove all generated files'
-          '-n:specify the application'
-          '-r:specify the root'
+          '--destroy:remove all generated files'
+          '-n:The name space of your Padrino project'
+          '--namespace:The name space of your Padrino project'
+          '-l:The layout for the controller'
+          '--layout:The layout for the controller'
+          '-p:The parent of the controller'
+          '--parent:The parent of the controller'
+          '-r:The root destination'
+          '--root:The root destination'
+          '--no-helper:Not generate helper'
         )
         _describe -t controllers 'controller' controllers && ret=0
       ;;
@@ -147,6 +162,8 @@ case "$state" in
           '-d:removes all generated files'
           '-r:specify the root destination path'
           '-s:skip migration generation'
+          '-f:Generate app files if app already exists'
+          '--force:Generate app files if app already exists'
         )
         _describe -t models 'model' models && ret=0
       ;;
