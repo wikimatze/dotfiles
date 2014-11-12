@@ -1,6 +1,6 @@
 #!/bin/bash
 NINE_THREE=1.9.3
-TWO_ZERO=2.0
+TWO_ZERO=2.1.4
 
 echo "Installing ruby $NINE_THREE"
 /usr/local/bin/ruby-install ruby $NINE_THREE
