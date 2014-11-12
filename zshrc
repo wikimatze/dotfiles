@@ -95,7 +95,7 @@ bindkey '^X^X' history-beginning-search-menu
 # Used by chruby thing
 source /usr/local/share/chruby/chruby.sh
 if which chruby > /dev/null; then
-  chruby ruby-2.1.2
+  chruby ruby-2.1.4
 
   # chruby autocompletion
   # based on https://github.com/postmodern/chruby/issues/27#issuecomment-36629835
