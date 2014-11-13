@@ -131,6 +131,12 @@ alias history='history 0' # print the whole history
 alias ls='ls --color=auto'
 alias dropbox='~/.dropbox-dist/dropboxd'
 
+# zsh-stats: shows the most typed in commands
+# based on https://github.com/robbyrussell/oh-my-zsh/blob/217d8f0540a41b2927caf986561e45634fa1952a/lib/functions.zsh#L2
+function zsh-stats() {
+  fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n25
+}
+
 # }}}
 # vim mapping {{{
 
