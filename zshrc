@@ -99,7 +99,8 @@ if which chruby > /dev/null; then
 
   # chruby autocompletion
   # based on https://github.com/postmodern/chruby/issues/27#issuecomment-36629835
-  compctl -g '~/.rubies/*(:t)' chruby
+  _chruby() { _arguments '1:ruby version:(system ${RUBIES[@]##*/})' }
+  compdef _chruby chruby
 fi
 
 # }}}
