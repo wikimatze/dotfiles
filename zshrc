@@ -112,17 +112,6 @@ if which tmuxifier> /dev/null; then
 fi
 
 # }}}
-# sack setting {{{
-# https://github.com/zph/go-sack
-
-if [[ `uname -m` == 'x86_64' ]]; then
-  if which sack> /dev/null; then
-    eval "$(sack init)"
-  fi
-fi
-
-
-# }}}
 # aliases {{{
 
 alias la='ls -rtlh --color'
