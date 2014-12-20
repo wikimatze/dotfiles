@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# install curse dependencies
+sudo apt-get install -y libevent-dev libncurses-dev pkg-config
+
 cd /tmp && curl -OL http://downloads.sourceforge.net/project/levent/libevent/libevent-2.0/libevent-2.0.21-stable.tar.gz && tar -xvzf libevent-2.0.21-stable.tar.gz && cd /tmp/libevent-2.0.21-stable && ./configure --prefix=/opt && make && sudo make install
 
 # Compiling tmux
