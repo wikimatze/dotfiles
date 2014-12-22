@@ -1,9 +1,5 @@
-gem install albino \
-  arel \
-  authlogic \
-  bcrypt-ruby \
+gem install bcrypt-ruby \
   bluecloth \
-  builder \
   bundler \
   byebug \
   classifier \
@@ -16,7 +12,6 @@ gem install albino \
   fast-stemmer \
   fileutils \
   fuubar \
-  github-markup \
   gli \
   glynn \
   guard \
@@ -52,6 +47,7 @@ gem install albino \
   pygmentize \
   pry \
   pry-doc \
+  rabbit \
   rack \
   rack-mount \
   rack-test \
