@@ -12,7 +12,7 @@ new_window "layout-default"
 run_cmd "vim _layouts/default.html"
 
 new_window "css-style"
-run_cmd "vim _includes/css/agency.css"
+run_cmd "vim _layouts/style.css"
 
 new_window "config"
 run_cmd "vim _config.yml"
