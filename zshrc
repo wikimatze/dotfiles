@@ -90,18 +90,9 @@ zle -N history-beginning-search-menu
 bindkey '^X^X' history-beginning-search-menu
 
 # }}}
-# chruby setting {{{
-
-# Used by chruby thing
-source /usr/local/share/chruby/chruby.sh
-if which chruby > /dev/null; then
-  chruby ruby-2.1.4
-
-  # chruby autocompletion
-  # based on https://github.com/postmodern/chruby/issues/27#issuecomment-36629835
-  _chruby() { _arguments '1:ruby version:(system ${RUBIES[@]##*/})' }
-  compdef _chruby chruby
-fi
+# rvm setting {{{
+source /home/wm/.rvm/scripts/rvm
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # }}}
 # tmuxifier setting {{{
@@ -143,3 +134,4 @@ zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
 # }}}
+
