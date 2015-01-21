@@ -41,6 +41,7 @@ rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
+rm -f $HOME/.config/fish
 
 # }}}
 # Bin files {{{
@@ -105,6 +106,7 @@ ln -sf $DIR/dotfiles/gitk $HOME/.gitk
 ln -sf $DIR/dotfiles/irbrc $HOME/.irbrc
 ln -sf $DIR/dotfiles/irssi $HOME/.irssi
 ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
+ln -sf $DIR/dotfiles/fish $HOME/.config/fish
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
