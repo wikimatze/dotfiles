@@ -41,6 +41,7 @@ rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
+rm -f $HOME/.config/fish
 
 # }}}
 # Bin files {{{
@@ -77,13 +78,9 @@ then
   ln -sf $DIR/dotfiles/bashrc $HOME/.bashrc
   ln -sf $DIR/dotfiles/functions_linux $HOME/.functions_linux
   sudo rm -f /etc/wpa_supplicant.conf
-  rm -f $HOME/.thunderbird
-  ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $DIR/dotfiles/bashrc $HOME/.bash_profile
-  rm -f $HOME/Library/Thunderbird
-  ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
 fi
 
 ln -sf $DIR/dotfiles/convert $HOME/.convert
@@ -105,6 +102,7 @@ ln -sf $DIR/dotfiles/gitk $HOME/.gitk
 ln -sf $DIR/dotfiles/irbrc $HOME/.irbrc
 ln -sf $DIR/dotfiles/irssi $HOME/.irssi
 ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
+ln -sf $DIR/dotfiles/fish $HOME/.config/fish
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
