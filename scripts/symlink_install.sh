@@ -78,13 +78,9 @@ then
   ln -sf $DIR/dotfiles/bashrc $HOME/.bashrc
   ln -sf $DIR/dotfiles/functions_linux $HOME/.functions_linux
   sudo rm -f /etc/wpa_supplicant.conf
-  rm -f $HOME/.thunderbird
-  ln -sf $HOME/Dropbox/Thunderbird $HOME/.thunderbird
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $DIR/dotfiles/bashrc $HOME/.bash_profile
-  rm -f $HOME/Library/Thunderbird
-  ln -sf $HOME/Dropbox/Thunderbird $HOME/Library/Thunderbird
 fi
 
 ln -sf $DIR/dotfiles/convert $HOME/.convert
