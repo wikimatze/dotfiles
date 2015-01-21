@@ -78,7 +78,6 @@ gem install bcrypt-ruby \
   test-unit \
   thor \
   tilt \
-  tweemux \
   twitter \
   uuid \
   uglifier \

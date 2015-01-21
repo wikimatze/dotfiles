@@ -1,1 +1,1 @@
-exec fish
+exec zsh
