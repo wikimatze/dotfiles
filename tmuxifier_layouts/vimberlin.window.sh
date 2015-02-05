@@ -4,9 +4,7 @@ new_window "main"
 run_cmd "vim"
 
 split_v 20
-run_cmd "bundle exec rake s"
-split_h 80
-run_cmd "bundle exec rake -T"
+run_cmd "bundle exec jekyll s"
 
 select_pane 1
 
