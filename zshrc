@@ -134,4 +134,47 @@ zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
 # }}}
+# fzf mappings {{{
+# Details under https://github.com/junegunn/fzf
+# find files
+fe() {
+  local file
+  file=$(fzf --query="$1" --select-1 --exit-0)
+  [ -n "$file" ] && ${EDITOR:-vim} "$file"
+}
 
+# find pictures
+fp() {
+  local file
+  file=$(fzf --query="$1" --select-1 --exit-0)
+  [ -n "$file" ] && gthumb "$file"
+}
+
+fd() {
+  local DIR
+  DIR=$(d | fzf +s +m) && cd $(sed 's/^[0-9.]* *//' <<< "$DIR")
+}
+
+# fkill - kill process
+fkill() {
+  ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
+}
+
+# fs - select tmux session (if you are not already in one)
+fs() {
+  local session
+  session=$(tmux list-sessions -F "#{session_name}" | \
+    fzf --query="$1" --select-1 --exit-0) &&
+  tmux attach-session -t "$session"
+}
+
+# fsc - select antother tmux session (if you are already in a tmux session)
+fsc() {
+  local session
+  session=$(tmux list-sessions -F "#{session_name}" | \
+    fzf --query="$1" --select-1 --exit-0) &&
+  tmux switch-client -t "$session"
+}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# }}}
