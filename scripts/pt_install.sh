@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /tmp
-VERSION=v1.7.3
+VERSION=v1.7.8
 
 if [ "$(uname -m)" == "x86_64" ]
 then
