@@ -8,6 +8,7 @@
   autocrlf = input
   excludesfile = ~/.gitignore
   pager = cat
+  filemode = false
 [alias]
   ca = commit --amend
   co = commit
