@@ -4,6 +4,7 @@
 DIR=$HOME/ownCloud
 
 rm -f $HOME/bitbucket
+rm -f $HOME/git-repositories
 rm -f $HOME/latex
 rm -f $HOME/presentations
 rm -f $HOME/.fonts
@@ -69,6 +70,7 @@ ln -sf $DIR/dotfiles/config/Terminal $HOME/.config/Terminal
 ln -sf $DIR/dotfiles/fonts $HOME/.fonts
 ln -sf $DIR/dotfiles/zsh $HOME/.zsh
 ln -sf $DIR/latex $HOME/latex
+ln -sf $DIR/git-repositories $HOME/git-repositories
 
 # }}}
 # Bash files {{{
