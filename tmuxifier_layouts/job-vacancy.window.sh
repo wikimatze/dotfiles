@@ -1,4 +1,4 @@
-window_root "~/ownCloud/git-repositories/job-vacancy"
+window_root "~/git-repositories/job-vacancy"
 new_window "job-vacancy"
 
 run_cmd "vim"
