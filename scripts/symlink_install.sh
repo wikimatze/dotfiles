@@ -3,10 +3,7 @@
 # Directory links {{{
 DIR=$HOME/ownCloud
 
-rm -f $HOME/bitbucket
-rm -f $HOME/git-repositories
 rm -f $HOME/latex
-rm -f $HOME/presentations
 rm -f $HOME/.fonts
 rm -f $HOME/.zsh
 rm -f $HOME/.gnupg
@@ -63,14 +60,12 @@ sudo rm -f /usr/local/bin/waterproof.sh
 # }}}
 # Directories links {{{
 
-ln -sf $DIR/bitbucket $HOME/bitbucket
 ln -sf $DIR/documents/gnupg $HOME/.gnupg
 ln -sf $DIR/documents/ssh $HOME/.ssh
 ln -sf $DIR/dotfiles/config/Terminal $HOME/.config/Terminal
 ln -sf $DIR/dotfiles/fonts $HOME/.fonts
 ln -sf $DIR/dotfiles/zsh $HOME/.zsh
 ln -sf $DIR/latex $HOME/latex
-ln -sf $DIR/git-repositories $HOME/git-repositories
 
 # }}}
 # Bash files {{{

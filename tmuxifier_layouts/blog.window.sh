@@ -1,10 +1,10 @@
-window_root "$HOME/ownCloud/blog-wikimatze"
+window_root "$HOME/git/blog-wikimatze"
 new_window "main"
 
 run_cmd "vim"
 
 split_v 20
-run_cmd "bundle exec rake s"
+run_cmd "bundle && bundle exec rake s"
 
 select_pane 1
 

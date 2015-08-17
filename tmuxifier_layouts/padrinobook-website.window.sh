@@ -1,10 +1,10 @@
-window_root "$HOME/ownCloud/padrinobook-website"
+window_root "$HOME/git/padrinobook-website"
 new_window "main"
 
 run_cmd "vim"
 
 split_v 20
-run_cmd "bundle exec rake s"
+run_cmd "bundle && bundle exec rake s"
 
 select_pane 1
 

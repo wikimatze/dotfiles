@@ -1,10 +1,10 @@
-window_root "~/git-repositories/die-lernhelfer-website"
+window_root "~/git/die-lernhelfer-website"
 new_window "main"
 
 run_cmd "vim"
 
 split_v 20
-run_cmd "bundle exec jekyll s"
+run_cmd "bundle && bundle exec jekyll s"
 
 select_pane 1
 

@@ -1,4 +1,4 @@
-window_root "~/git-repositories/dielernhelfer"
+window_root "~/git/dielernhelfer"
 new_window "main"
 
 run_cmd "vim"
