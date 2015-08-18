@@ -1,4 +1,4 @@
-window_root "~/git/die-lernhelfer-website"
+window_root "~/bitbucket/die-lernhelfer-website"
 new_window "main"
 
 run_cmd "vim"
