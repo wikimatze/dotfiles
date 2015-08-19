@@ -161,6 +161,30 @@ fh() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
+
+fco() {
+  local tags branches target
+  tags=$(
+  git tag | awk '{print "\x1b[31;1mtag\x1b[m\t" $1}') || return
+  branches=$(
+    git branch --all | grep -v HEAD             |
+    sed "s/.* //"    | sed "s#remotes/[^/]*/##" |
+    sort -u          | awk '{print "\x1b[34;1mbranch\x1b[m\t" $1}') || return
+  target=$(
+    (echo "$tags"; echo "$branches") |
+    fzf-tmux -l30 -- --no-hscroll --ansi +m -d "\t" -n 2) || return
+  git checkout $(echo "$target" | awk '{print $2}')
+}
+
+# fcoc - checkout git commit
+fcoc() {
+  local commits commit
+  commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf --tac +s +m -e) &&
+  git checkout $(echo "$commit" | sed "s/ .*//")
+}
+
+
 # fkill - kill process
 fkill() {
   ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
