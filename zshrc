@@ -183,7 +183,7 @@ fkill() {
   ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
 }
 
-# fs - select tmux session (if you are not already in one)
+# select tmux session (if you are not already in one)
 fs() {
   local session
   session=$(tmux list-sessions -F "#{session_name}" | \
@@ -191,12 +191,20 @@ fs() {
   tmux attach-session -t "$session"
 }
 
-# fsc - select antother tmux session (if you are already in a tmux session)
+# select antother tmux session (if you are already in a tmux session)
 fsc() {
   local session
   session=$(tmux list-sessions -F "#{session_name}" | \
     fzf --query="$1" --select-1 --exit-0) &&
   tmux switch-client -t "$session"
+}
+
+# RVM integration
+frb() {
+  local rb
+  rb=$((echo system; rvm list | grep ruby | cut -c 4-) |
+  awk '{print $1}' |
+  fzf-tmux -l 30 +m --reverse) && rvm use $rb
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
