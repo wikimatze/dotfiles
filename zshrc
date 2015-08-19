@@ -135,7 +135,8 @@ bindkey '^Z' fancy-ctrl-z
 
 # }}}
 # fzf mappings {{{
-# Details under https://github.com/junegunn/fzf
+# Is installed via vim
+# Details under https://github.com/junegunn/fzf/wiki/Examples
 # find files
 fe() {
   local file
@@ -143,25 +144,18 @@ fe() {
   [ -n "$file" ] && ${EDITOR:-vim} "$file"
 }
 
-# find pictures
-fp() {
-  local file
-  file=$(fzf --query="$1" --select-1 --exit-0)
-  [ -n "$file" ] && gthumb "$file"
-}
-
-# find directories
+# directories
 fd() {
   local dir
   dir=$(d | fzf +s +m) && cd $(sed 's/^[0-9.]* *//' <<< "$dir")
 }
 
-# fh - repeat history
+# repeat history
 fh() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
-
+# checkout git branch/tag
 fco() {
   local tags branches target
   tags=$(
@@ -176,7 +170,7 @@ fco() {
   git checkout $(echo "$target" | awk '{print $2}')
 }
 
-# fcoc - checkout git commit
+# checkout git commit
 fcoc() {
   local commits commit
   commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
@@ -184,8 +178,7 @@ fcoc() {
   git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
-
-# fkill - kill process
+# kill process
 fkill() {
   ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
 }
