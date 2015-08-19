@@ -150,9 +150,15 @@ fp() {
   [ -n "$file" ] && gthumb "$file"
 }
 
+# find directories
 fd() {
-  local DIR
-  DIR=$(d | fzf +s +m) && cd $(sed 's/^[0-9.]* *//' <<< "$DIR")
+  local dir
+  dir=$(d | fzf +s +m) && cd $(sed 's/^[0-9.]* *//' <<< "$dir")
+}
+
+# fh - repeat history
+fh() {
+  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
 # fkill - kill process
