@@ -34,6 +34,9 @@ tags
 yankring.txt
 .netrwhist
 plugged/*
+autoload/
+thesaurus/mthesaur.txt
+
 
 
 ----------------------
