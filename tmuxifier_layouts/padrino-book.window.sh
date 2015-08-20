@@ -4,7 +4,7 @@ window_root "$DIR/padrino/manuscript"
 new_window "section"
 run_cmd "vim chapters/user_profile.md"
 split_v 20
-run_cmd "softcover build"
+run_cmd "bundle install --binstubs && bundle exec softcover build"
 select_pane 1
 
 window_root "$DIR/notes"
