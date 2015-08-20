@@ -90,6 +90,15 @@ zle -N history-beginning-search-menu
 bindkey '^X^X' history-beginning-search-menu
 
 # }}}
+# vim-superman {{{
+vman() {
+  vim -c "SuperMan $*"
+
+  if [ "$?" != "0" ]; then
+    echo "No manual entry for $*"
+  fi
+}
+# }}}
 # rvm setting {{{
 source /home/wm/.rvm/scripts/rvm
 export PATH="$PATH:$HOME/.rvm/bin"
