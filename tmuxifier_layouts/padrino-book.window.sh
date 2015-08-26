@@ -1,5 +1,5 @@
-DIR=$HOME/ownCloud
-window_root "$DIR/padrino/manuscript"
+DIR=$HOME/git
+window_root "$DIR/PadrinoBook"
 
 new_window "section"
 run_cmd "vim chapters/user_profile.md"
