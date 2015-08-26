@@ -3,51 +3,62 @@ DES=$HOME/git
 SRC=git@github.com
 mkdir -p $DES && cd $DES
 
-git clone $SRC:JoshCheek/ruby-kickstart
-git clone $SRC:StudioNelstrom/vimdojo.git
-git clone $SRC:alexbeletsky/github-commits-widget
-git clone $SRC:danchoi/ri.vim
-git clone $SRC:fancyapps/fancyBox
-git clone $SRC:gitig/Practical-Vim-Notes
-git clone $SRC:jgallen23/toc
-git clone $SRC:livingstyleguide/livingstyleguide
-git clone $SRC:neo/ruby_koans
-git clone $SRC:nightsailer/padrino-sprockets
-git clone $SRC:nightsailer/padrino-sprockets
-git clone $SRC:padrino/padrino-docs
-git clone $SRC:padrino/padrino-framework
-git clone $SRC:padrino/padrino-recipes
-git clone $SRC:padrino/padrino-web
-git clone $SRC:runpaint/read-ruby
-git clone $SRC:sotte/presenting.vim
-git clone $SRC:sozialhelden/brokenlift
-git clone $SRC:syn-systems/puppet-boilerplate-modules
-git clone $SRC:vhf/free-programming-books
-git clone $SRC:wikimatze/awesome
-git clone $SRC:wikimatze/awesome-fallout
-git clone $SRC:wikimatze/brokenlifts-vm
-git clone $SRC:wikimatze/hammer.vim
-git clone $SRC:wikimatze/hello-world-padrino-anynines-mysql
-git clone $SRC:wikimatze/i3files
-git clone $SRC:wikimatze/job-vacancy
-git clone $SRC:wikimatze/mailclient
-git clone $SRC:wikimatze/mdbook
-git clone $SRC:wikimatze/padrino-codeship
-git clone $SRC:wikimatze/padrino-hello-world-heroku
-git clone $SRC:wikimatze/padrino-hello-world-heroku-postgres
-git clone $SRC:wikimatze/padrino-livingstyleguide
-git clone $SRC:wikimatze/padrino-observer-example-app
-git clone $SRC:wikimatze/padrino-sprockets-example
-git clone $SRC:wikimatze/padrino-vagrant
-git clone $SRC:wikimatze/padrino-zsh-completion
-git clone $SRC:wikimatze/padrinorb-website
-git clone $SRC:wikimatze/pumog
-git clone $SRC:wikimatze/sponsorpay-api
-git clone $SRC:wikimatze/surveyor
-git clone $SRC:wikimatze/sweetie
-git clone $SRC:wikimatze/tocdown
-git clone $SRC:wikimatze/tocdown
-git clone $SRC:wikimatze/vim-banshee
-git clone $SRC:wikimatze/zimki
-git clone $SRC:zurb/foundation
+repos=(
+  wikimatze/PadrinoBook
+  wikimatze/awesome
+  wikimatze/awesome-fallout
+  wikimatze/brokenlifts-vm
+  wikimatze/hammer.vim
+  wikimatze/hello-world-padrino-anynines-mysql
+  wikimatze/i3files
+  wikimatze/job-vacancy
+  wikimatze/mailclient
+  wikimatze/mdbook
+  wikimatze/padrino-codeship
+  wikimatze/padrino-hello-world-heroku
+  wikimatze/padrino-hello-world-heroku-postgres
+  wikimatze/padrino-livingstyleguide
+  wikimatze/padrino-observer-example-app
+  wikimatze/padrino-sprockets-example
+  wikimatze/padrino-vagrant
+  wikimatze/padrino-zsh-completion
+  wikimatze/padrinorb-website
+  wikimatze/pumog
+  wikimatze/sponsorpay-api
+  wikimatze/surveyor
+  wikimatze/sweetie
+  wikimatze/tocdown
+  wikimatze/tocdown
+  wikimatze/vim-banshee
+  wikimatze/zimki
+  JoshCheek/ruby-kickstart
+  StudioNelstrom/vimdojo
+  alexbeletsky/github-commits-widget
+  danchoi/ri.vim
+  fancyapps/fancyBox
+  gitig/Practical-Vim-Notes
+  jgallen23/toc
+  livingstyleguide/livingstyleguide
+  neo/ruby_koans
+  nightsailer/padrino-sprockets
+  nightsailer/padrino-sprockets
+  padrino/padrino-docs
+  padrino/padrino-framework
+  padrino/padrino-recipes
+  padrino/padrino-web
+  runpaint/read-ruby
+  sotte/presenting.vim
+  sozialhelden/brokenlift
+  syn-systems/puppet-boilerplate-modules
+  vhf/free-programming-books
+  zurb/foundation
+)
+
+for repo in ${repos[*]}
+do
+  # cut away the repo owner
+  if [ ! -d "${repo##*/}" ]; then
+    git clone $SRC:$repo
+  fi
+done
 
