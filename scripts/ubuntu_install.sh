@@ -66,8 +66,6 @@ sudo apt-get install -y dmenu    # install the program launcher
 # }}}
 # Install of packages {{{
 
-sudo apt-get build-dep vim # install all dependencies for vim compilation
-sudo apt-get install -y ack-grep
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
@@ -82,10 +80,10 @@ sudo apt-get install -y cuetools
 sudo apt-get install -y curl
 sudo apt-get install -y curlftpfs
 sudo apt-get install -y cvs
-sudo apt-get install -y deluge   # python based torrent client
-sudo apt-get install -y dos2unix # fix file problems between Windows and Unix
+sudo apt-get install -y deluge          # python based torrent client
+sudo apt-get install -y dos2unix        # fix file problems between Windows and Unix
 sudo apt-get install -y exfalso
-sudo apt-get install -y exfat-fuse # for mounting ext4
+sudo apt-get install -y exfat-fuse      # for mounting ext4
 sudo apt-get install -y exuberant-ctags
 sudo apt-get install -y exuberant-tags
 sudo apt-get install -y ffmpeg
@@ -107,6 +105,7 @@ sudo apt-get install -y gitk
 sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
 sudo apt-get install -y golang
 sudo apt-get install -y gparted # better then using fdisk in the terminal
+sudo apt-get install -y gpg2 # updated version of gpg
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
@@ -223,7 +222,6 @@ sudo apt-get install -y zsnes
 
 sudo apt-get install -y icedtea-plugin # Java Applet Browser support
 
-#sudo apt-get install -y gnome-sushi unoconv # press <Space> to preview files
 
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
