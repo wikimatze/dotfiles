@@ -8,6 +8,7 @@ repos=(
   wikimatze/die-lernhelfer-website
   wikimatze/example_book
   wikimatze/fragebogen-masterarbeit
+  wikimatze/jenkins
   wikimatze/padrino-appsterdam
   wikimatze/padrino-spellinterieur
   wikimatze/pmwiki-dropcaps-recipe
