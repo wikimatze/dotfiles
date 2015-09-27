@@ -26,6 +26,7 @@ rm -f $HOME/.program_aliases_mac
 # Miscellaneous {{{
 
 rm -f $HOME/.ackrc
+rm -f $HOME/.config/fish
 rm -f $HOME/.fasd
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
@@ -33,13 +34,13 @@ rm -f $HOME/.gitignore
 rm -f $HOME/.gitk
 rm -f $HOME/.irbrc
 rm -f $HOME/.irssi
+rm -f $HOME/.profile
 rm -f $HOME/.ptignore
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
-rm -f $HOME/.config/fish
 
 # }}}
 # Bin files {{{
@@ -98,6 +99,7 @@ ln -sf $DIR/dotfiles/gitignore $HOME/.gitignore
 ln -sf $DIR/dotfiles/gitk $HOME/.gitk
 ln -sf $DIR/dotfiles/irbrc $HOME/.irbrc
 ln -sf $DIR/dotfiles/irssi $HOME/.irssi
+ln -sf $DIR/dotfiles/profile $HOME/.profile
 ln -sf $DIR/dotfiles/tigrc $HOME/.tigrc
 ln -sf $DIR/dotfiles/fish $HOME/.config/fish
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
