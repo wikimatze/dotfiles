@@ -36,7 +36,7 @@
   tool = vimdiff
 [merge]
   tool = vimdiff
-	conflictstyle = diff3
+  conflictstyle = diff3
 [difftool]
   prompt = false
 [web]
@@ -45,7 +45,7 @@
   extendRegexp = true
   lineNumber = true
 [hub]
-  protocol = https
+  protocol = git
 [pull]
   rebase = true
 [branch]
