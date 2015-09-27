@@ -6,8 +6,8 @@ DIR=$HOME/ownCloud
 rm -f $HOME/latex
 rm -f $HOME/.fonts
 rm -f $HOME/.zsh
-rm -f $HOME/.gnupg
-rm -f $HOME/.ssh
+rm -rf $HOME/.gnupg
+rm -rf $HOME/.ssh
 rm -f -R $HOME/.config/Terminal
 
 # }}}
