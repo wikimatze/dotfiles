@@ -42,7 +42,6 @@ repos=(
   neo/ruby_koans
   nightsailer/padrino-sprockets
   nightsailer/padrino-sprockets
-  padrino/padrino-docs
   padrino/padrino-framework
   padrino/padrino-recipes
   padrino/padrino-web
