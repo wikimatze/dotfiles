@@ -1,4 +1,7 @@
-cd /tmp && git clone https://github.com/vim-jp/vim.git && cd vim && git checkout v7-4-622 && git clean -f
+cd /tmp && git clone https://github.com/vim/vim.git && cd vim && git checkout v7.4.884 && git clean -f
+
+echo "Install xclip for better copy/paste"
+sudo apt-get install xclip
 
 ./configure --prefix=/usr/local \
   --with-x \
