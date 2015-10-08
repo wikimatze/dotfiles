@@ -3,7 +3,7 @@
 exec --no-startup-id nm-applet
 
 # }}}
-# Define the global mod key to the windows key shortcut {{{
+# Define global mod key shortcut {{{
 set $mod Mod4
 # }}}
 # Font for window titles {{{
@@ -49,9 +49,20 @@ assign [class="^Inkscape$"] 5
 # Custom window settings {{{
 for_window [class="^Gimp$"] floating enable
 for_window [class="^Inkscape$"] floating enable
+for_window [class="xfce4-notifyd"] floating enable; border none; focus mode_toggle
 # }}}
 # Popups during fullscreen {{{
 popup_during_fullscreen ignore
+# }}}
+# Statusline elements {{{
+bar {
+  status_command i3status
+  mode dock    # always show the dock menu
+  position top # put the window menu at the top
+  font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+  font pango:DejaVu Sans Mono 10
+  workspace_buttons yes # display workspace buttons
+}
 # }}}
 # Mappings {{{
 # New terminal ... `Mod-Return` {{{
@@ -124,6 +135,11 @@ bindsym $mod+Shift+3 move container to workspace 3; workspace 3
 bindsym $mod+Shift+4 move container to workspace 4; workspace 4
 bindsym $mod+Shift+5 move container to workspace 5; workspace 5
 # }}}
+# Manage sound `Mod-F10`, `Mod-F11`, `Mod-F12` {{{
+bindsym $mod+F10 exec /usr/bin/pactl set-sink-mute 0 toggle
+bindsym $mod+F11 exec /usr/bin/pactl set-sink-volume 0 -- '-10%'
+bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+10%'
+# }}}
 # resize window `Mod-r` (use `h,j,k,l` or arrows for resizing) {{{
 mode "resize" {
   # Vim move keys
@@ -144,15 +160,5 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-# }}}
-# Statusline elements {{{
-bar {
-  status_command i3status
-  mode dock    # always show the dock menu
-  position top # put the window menu at the top
-  font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-  font pango:DejaVu Sans Mono 10
-  workspace_buttons yes # display workspace buttons
-}
 # }}}
 
