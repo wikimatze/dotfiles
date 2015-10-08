@@ -1,19 +1,19 @@
 # Startup commands {{{
-exec --no-startup nm-applet
+# Open the applet
+exec --no-startup-id nm-applet
 
 # }}}
 # Define the global mod key to the windows key shortcut {{{
 set $mod Mod4
 # }}}
-# Font for window titles => this is mainly taken from the standard configuration {{{
-# font for window titles. ISO 10646 = Unicode
+# Font for window titles {{{
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
 font pango:DejaVu Sans Mono 30
 font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 16
 
 # workspace and terminal sizes
-font pango:Terminus 9px
+font pango:Terminus 12px
 # }}}
 # Setting for floating windows {{{
 # Default settings from the wizzard
@@ -54,36 +54,38 @@ for_window [class="^Inkscape$"] floating enable
 popup_during_fullscreen ignore
 # }}}
 # Mappings {{{
-# Enter fullscreen mode for the focused container {{{
-bindsym $mod+f fullscreen
+# New terminal ... `Mod-Return` {{{
+bindsym $mod+Return exec xfce4-terminal
 # }}}
-# Auto back-and-forth jumping when switching workspaces `Mod-Tab` {{{
+# Toggling workspaces `Mod-Tab` {{{
 # jump from "1: www" to "2: IM" => press `Mod-2` will go back to 1
 workspace_auto_back_and_forth yes
 bindsym $mod+Tab workspace back_and_forth
 # }}}
-# Change container layout (stacked, tabbed, toggle split) bindsym $mod+Shift+s layout stacking {{{
-bindsym $mod+s layout stacked
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# Fullscreen mode `Mod-f`{{{
+bindsym $mod+f fullscreen
 # }}}
-# Change focus between tiling / floating windows {{{
-bindsym $mod+space focus mode_toggle
-# }}}
-# Toggle tiling / floating bindsym $mod+Shift+space floating toggle {{{
-bindsym $mod+Shift+space floating toggle
-# }}}
-# Take a screenshot under /tmp with `Mod-x` {{{
-# bindsym --release $mod+x exec --no-startup-id import /tmp/latest-screenshot.png
-bindsym --release $mod+x exec --no-startup-id scrot -e 'mv $f /tmp/'
-# }}}
-# Start a terminal ... `Mod-Return` {{{
-bindsym $mod+Return exec xfce4-terminal
-# }}}
-# Kill focused window ... `Mod-Shift-q {{{
+# Kill focused window `Mod-Shift-q` {{{
 bindsym $mod+Shift+q kill
 # }}}
-# start dmenu (a program launcher) {{{
+# Lockscreen `Mod-q`{{{
+bindsym $mod+q exec i3lock -c 111111 -d
+# }}}
+# Change container layout (stacked, tabbed, toggle split) `Mod-s` (stacked), `Mod-t` (tabbed), `Mod-e` (toggle splitv and splith){{{
+bindsym $mod+s layout stacked
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+# }}}
+# Toggle tiling / floating mode of the current window `Mod-Shift-Space` {{{
+bindsym $mod+Shift+space floating toggle
+# }}}
+# Toggling between tiling / floating windows `Mod-Shift-Space`{{{
+bindsym $mod+space focus mode_toggle
+# }}}
+# Screenshot under /tmp `Mod-x` {{{
+bindsym --release $mod+x exec --no-startup-id scrot -e 'mv $f /tmp/'
+# }}}
+# start dmenu `Mod-d`{{{
 bindsym $mod+d exec dmenu_run
 # }}}
 # Change focus the vim way {{{
@@ -98,43 +100,39 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 # }}}
-# Lockscreen {{{
-bindsym $mod+q exec i3lock -c 111111 -d
-# }}}
-# Restart i3 inplace (preserves your layout/session) {{{
+# Restart i3 inplace `Mod-Shift-r` {{{
 bindsym $mod+Shift+r restart
 # }}}
 # Exit i3 (logs you out of your X session) {{{
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 # }}}
-# Make a horziontal or vertical split for the next open window `Mod+Shift+h|v`
+# Make a horziontal or vertical split for the next open window `Mod+Shift+h|v` {{{
 bindsym $mod+Shift+h split v
 bindsym $mod+Shift+v split h
 # }}}
-# Workspace switching {{{
+# Workspace switching `Mod-1|2|3|4|5` {{{
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 # }}}
-# Move focused container to workspace {{{
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
+# Move focused container to workspace `Mod-Shift-1|2|3|4|5` {{{
+bindsym $mod+Shift+1 move container to workspace 1; workspace 1
+bindsym $mod+Shift+2 move container to workspace 2; workspace 2
+bindsym $mod+Shift+3 move container to workspace 3; workspace 3
+bindsym $mod+Shift+4 move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
 # }}}
-# resize window (you can also use the mouse for that) {{{
+# resize window `Mod-r` (use `h,j,k,l` or arrows for resizing) {{{
 mode "resize" {
-  # Press `Mod-r` to get into resize mode
-  # These bindings trigger as soon as you enter the resize mode
+  # Vim move keys
   bindsym h resize grow width 10 px or 10 ppt
   bindsym j resize grow height 10 px or 10 ppt
   bindsym k resize shrink height 10 px or 10 ppt
   bindsym l resize shrink width 10 px or 10 ppt
 
-  # same bindings, but for the arrow keys
+  # Arrow keys for moving around
   bindsym Left resize shrink width 10 px or 10 ppt
   bindsym Down resize grow height 10 px or 10 ppt
   bindsym Up resize shrink height 10 px or 10 ppt
