@@ -36,10 +36,10 @@ workspace_layout default
 new_window normal
 # }}}
 # Assign programs on certain workspaces {{{
-# use xprop to get the name of the window names
-# this doesn't seems to work on work ... :)
+# use xprop to get the window name
 assign [class="^Firefox$"] 2
 assign [class="^Chromium-browser$"] 2
+assign [class="^Google-chrome$"] 2
 assign [class="^Thunderbird$"] 3
 assign [class="^Skype$"] 4
 assign [class="^Gimp$"] 5
@@ -98,6 +98,16 @@ bindsym --release $mod+x exec --no-startup-id scrot -e 'mv $f /tmp/'
 # }}}
 # start dmenu `Mod-d`{{{
 bindsym $mod+d exec dmenu_run
+# }}}
+# Custom programs {{{
+
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+c exec google-chrome
+bindsym $mod+Shift+m exec thunderbird
+bindsym $mod+Shift+n exec nautilus
+bindsym $mod+Shift+s exec skype
+bindsym $mod+Shift+g exec gimp
+bindsym $mod+Shift+g exec inkscape
 # }}}
 # Change focus the vim way {{{
 bindsym $mod+h focus left
