@@ -9,6 +9,7 @@ rm -f $HOME/.zsh
 rm -rf $HOME/.gnupg
 rm -rf $HOME/.ssh
 rm -f -R $HOME/.config/Terminal
+rm -rf $HOME/.i3
 
 # }}}
 # Bash files {{{
@@ -41,6 +42,7 @@ rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
+rm -f /etc/default/apport
 
 # }}}
 # Bin files {{{
@@ -66,6 +68,7 @@ ln -sf $DIR/documents/ssh $HOME/.ssh
 ln -sf $DIR/dotfiles/config/Terminal $HOME/.config/Terminal
 ln -sf $DIR/dotfiles/fonts $HOME/.fonts
 ln -sf $DIR/dotfiles/zsh $HOME/.zsh
+ln -sf $DIR/dotfiles/i3 $HOME/.i3
 ln -sf $DIR/latex $HOME/latex
 
 # }}}
@@ -122,5 +125,6 @@ sudo ln -sf $DIR/dotfiles/bin/jsmall.sh /usr/local/bin/jsmall.sh
 sudo ln -sf $DIR/dotfiles/bin/pnaming.sh /usr/local/bin/pnaming.sh
 sudo ln -sf $DIR/dotfiles/bin/psmall.sh /usr/local/bin/psmall.sh
 sudo ln -sf $DIR/dotfiles/bin/waterproof.sh /usr/local/bin/waterproof.sh
+sudo ln -sf $DIR/dotfiles/etc/default/apport /etc/default/apport
 
 # }}}
