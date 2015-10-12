@@ -42,7 +42,8 @@ rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
-rm -f /etc/default/apport
+rm -f $HOME/.Xmodmap
+sudo rm -f /etc/default/apport
 
 # }}}
 # Bin files {{{
@@ -108,6 +109,7 @@ ln -sf $DIR/dotfiles/fish $HOME/.config/fish
 ln -sf $DIR/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $DIR/dotfiles/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DIR/dotfiles/zshrc $HOME/.zshrc
+ln -sf $DIR/dotfiles/Xmodmap $HOME/.Xmodmap
 ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
 
