@@ -10,11 +10,9 @@ set $mod Mod4
 # Font for window titles {{{
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
-font pango:DejaVu Sans Mono 30
-font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 16
-
 # workspace and terminal sizes
 font pango:Terminus 12px
+
 # }}}
 # Setting for floating windows {{{
 # Default settings from the wizzard
