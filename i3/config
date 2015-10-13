@@ -55,17 +55,29 @@ popup_during_fullscreen ignore
 # }}}
 # Statusline elements {{{
 bar {
-  status_command i3status
-  mode dock    # always show the dock menu
-  position top # put the window menu at the top
-  font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-  font pango:DejaVu Sans Mono 10
-  workspace_buttons yes # display workspace buttons
+    colors {
+        # Whole color settings
+        background #000000
+        statusline #ffffff
+        separator  #666666
+
+        # Type             border  background font
+        focused_workspace  #008fff #007fff #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #aa0000 #990000 #ffffff
+    }
+    # Using custom i3status.conf
+    status_command i3status -c ~/.i3/i3status.conf
+    mode dock    # always show the dock menu
+    position top # put the window menu at the top
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:DejaVu Sans Mono 10
 }
 # }}}
 # Mappings {{{
 # New terminal ... `Mod-Return` {{{
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec i3-sensible-terminal
 # }}}
 # Toggling workspaces `Mod-Tab` {{{
 # jump from "1: www" to "2: IM" => press `Mod-2` will go back to 1
