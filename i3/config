@@ -118,7 +118,8 @@ bindsym $mod+Shift+m exec thunderbird
 bindsym $mod+Shift+n exec nautilus
 bindsym $mod+Shift+s exec skype
 bindsym $mod+Shift+g exec gimp
-bindsym $mod+Shift+g exec inkscape
+bindsym $mod+Shift+i exec inkscape
+bindsym $mod+Shift+x exec xfce4-settings-manager
 # }}}
 # Change focus the vim way {{{
 bindsym $mod+h focus left
