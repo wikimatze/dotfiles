@@ -55,7 +55,7 @@ info_eol = "false";
 
 # these characters are automatically replaced with specified color
 # (dark grey by default)
-replaces = { "[]=" = "%K$*%n"; };
+#replaces = { "[]=" = "%K$*%n"; };
 
 abstracts = {
   ##
@@ -63,62 +63,62 @@ abstracts = {
   ##
 
   # text to insert at the beginning of each non-message line
-  line_start = "%g-%W!%g-%n ";
+  line_start = " %R! ";
 
   # timestamp styling, nothing by default
   timestamp = "$*";
 
   # any kind of text that needs hilighting, default is to bold
-  hilight = "%_$*%_";
+  hilight = "%R$*";
 
   # any kind of error message, default is bright red
-  error = "%R$*%n";
+  error = "%R$*";
 
   # channel name is printed
-  channel = "%_$*%_";
+  channel = "%R$*";
 
   # nick is printed
-  nick = "%_$*%_";
+  nick = "%R$*";
 
   # nick host is printed
-  nickhost = "[$*]";
+  nickhost = "%R[$*]";
 
   # server name is printed
-  server = "%_$*%_";
+  server = "%R$*";
 
   # some kind of comment is printed
-  comment = "[$*]";
+  comment = "%R[$*]";
 
   # reason for something is printed (part, quit, kick, ..)
-  reason = "{comment $*}";
+  reason = "{comment $*}%R";
 
   # mode change is printed ([+o nick])
-  mode = "{comment $*}";
+  mode = "{comment $*}%R";
 
   ##
   ## channel specific messages
   ##
 
   # highlighted nick/host is printed (joins)
-  channick_hilight = "%G$*%n";
-  chanhost_hilight = "{nickhost %g$*%n}";
+  channick_hilight = "%R$*";
+  chanhost_hilight = "{nickhost $*}%R";
 
   # nick/host is printed (parts, quits, etc.)
-  channick = "%g$*%n";
-  chanhost = "{nickhost $*}";
+  channick = "%R$*";
+  chanhost = "{nickhost $*}%R";
 
   # highlighted channel name is printed
-  channelhilight = "%g$*%n";
+  channelhilight = "%R$*";
 
   # ban/ban exception/invite list mask is printed
-  ban = "%g$*%n";
+  ban = "%R$*";
 
   ##
   ## messages
   ##
 
   # the basic styling of how to print message, $0 = nick mode, $1 = nick
-  msgnick = "%W<%n%g$0%n$1-%W>%n %|";
+  msgnick = "%_$0$1-%n: %|";
 
   # message from you is printed. "msgownnick" specifies the styling of the
   # nick ($0 part in msgnick) and "ownmsgnick" specifies the styling of the
@@ -137,23 +137,23 @@ abstracts = {
   #  privmsgnick = "%K{msgnick  %R$*%K}%n";
 
   # $0 = nick mode, $1 = nick
-  ownmsgnick = "{msgnick $0 $1-}";
-  ownnick = "%W$*%n";
+  ownmsgnick = "{msgnick $0 $1-}%K";
+  ownnick = "%G$*%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
-  pubmsgnick = "{msgnick $0 $1-}";
-  pubnick = "%N$*%n";
+  pubmsgnick = "{msgnick $0 $1-}%K";
+  pubnick = "$*";
 
   # public message in channel meant for me, $0 = nick mode, $1 = nick
-  pubmsgmenick = "{msgnick $0 $1-}";
-  menick = "%G$*%n";
+  pubmsgmenick = "{msgnick $0 $1-}%M";
+  menick = "%M$*%n";
 
   # public highlighted message in channel
   # $0 = highlight color, $1 = nick mode, $2 = nick
   pubmsghinick = "{msgnick $1 $0$2-%n}";
 
   # channel name is printed with message
-  msgchannel = "%K:%g$*%n";
+  msgchannel = "%K:%c$*%n";
 
   # private message, $0 = nick, $1 = host
   privmsg = "[%R$0%K(%r$1-%K)%n] ";
@@ -162,18 +162,18 @@ abstracts = {
   ownprivmsg = "[%r$0%K(%R$1-%K)%n] ";
 
   # own private message in query
-  ownprivmsgnick = "{msgnick  $*}";
-  ownprivnick = "%W$*%n";
+  ownprivmsgnick = "{msgnick  $*}%K";
+  ownprivnick = "$*";
 
   # private message in query
-  privmsgnick = "{msgnick  %R$*%n}";
+  privmsgnick = "{msgnick  $*}%K";
 
   ##
   ## Actions (/ME stuff)
   ##
 
   # used internally by this theme
-  action_core = "%W * $*%n";
+  action_core = "%B * $*";
 
   # generic one that's used by most actions
   action = "{action_core $*} ";
@@ -182,10 +182,10 @@ abstracts = {
   ownaction = "{action $*}";
 
   # own action with target, both private/public
-  ownaction_target = "{action_core $0}%K:%g$1%n ";
+  ownaction_target = "{action_core $0}%K:%c$1%n ";
 
   # private action sent by others
-  pvtaction = "%W (*) $*%n ";
+  pvtaction = "%B (*) $*%n ";
   pvtaction_query = "{action $*}";
 
   # public action sent by others
@@ -200,32 +200,32 @@ abstracts = {
   whois = "%# $[8]0 : $1-";
 
   # notices
-  ownnotice = "[%r$0%K(%R$1-%K)]%n ";
-  notice = "%K-%M$*%K-%n ";
-  pubnotice_channel = "%K:%m$*";
-  pvtnotice_host = "%K(%m$*%K)";
-  servernotice = "%g!$*%n ";
+  ownnotice = "%R[$0%R($1-%R)]%n ";
+  notice = "%R-%R$*%R-%n ";
+  pubnotice_channel = "%R:$*";
+  pvtnotice_host = "%R($*%R)";
+  servernotice = "%R!$* ";
 
   # CTCPs
   ownctcp = "[%r$0%K(%R$1-%K)] ";
   ctcp = "%g$*%n";
 
   # wallops
-  wallop = "%W$*%n: ";
-  wallop_nick = "%n$*";
-  wallop_action = "%W * $*%n ";
+  wallop = "%R$*%n: ";
+  wallop_nick = "%R$*";
+  wallop_action = "%R * $*%n ";
 
   # netsplits
   netsplit = "%R$*%n";
-  netjoin = "%G$*%n";
+  netjoin = "%R$*%n";
 
   # /names list
   names_prefix = "";
-  names_nick = "[%_$0%_$1-] ";
+  names_nick = "%_[$0$1-]%_ ";
   names_nick_op = "{names_nick $*}";
   names_nick_halfop = "{names_nick $*}";
   names_nick_voice = "{names_nick $*}";
-  names_users = "[%g$*%n]";
+  names_users = "%G[$*]%n";
   names_channel = "%G$*%n";
 
   # DCC
@@ -237,7 +237,7 @@ abstracts = {
   dccownnick = "%R$*%n";
   dccownquerynick = "%W$*%n";
   dccownaction = "{action $*}";
-  dccownaction_target = "{action_core $0}%K:%g$1%n ";
+  dccownaction_target = "{action_core $0}%K:%c$1%n ";
 
   # DCC chat, others
   dccmsg = "[%G$1-%K(%g$0%K)%n] ";
@@ -250,44 +250,41 @@ abstracts = {
 
   # default background for all statusbars. You can also give
   # the default foreground color for statusbar items.
-  #sb_background = "%4%w";
-  sb_background = "%w";
+  sb_background = "%0%W";
 
   # default backround for "default" statusbar group
-  sb_default_bg = "%K%w";
-
+  #sb_default_bg = "%4";
   # background for prompt / input line
   sb_prompt_bg = "%n";
-
   # background for info statusbar
   sb_info_bg = "%8";
-
   # background for topicbar (same default)
-  sb_topic_bg = "%n";
+  #sb_topic_bg = "%4";
 
   # text at the beginning of statusbars. sb-item already puts
   # space there,so we don't use anything by default.
-  sbstart = "%W>>%n";
+  sbstart = "";
   # text at the end of statusbars. Use space so that it's never
   # used for anything.
   sbend = " ";
 
-  topicsbstart = "{sbstart}";
-  topicsbend = "";
+  topicsbstart = "{sbstart $*}";
+  topicsbend = "{sbend $*}";
 
-  prompt = "%g[%n$*%g]%n ";
+  prompt = "$* %_> ";
 
-  sb = " %g(%n$*%g)%n";
-  sbmode = "[%g+%n$*]";
-  sbaway = "[%9away%n]";
+  sb = " %C[%n$*%C]%n";
+  sbmode = "(+$*)";
+  sbaway = " (%GzZzZ%n)";
   sbservertag = ":$0";
+  sbnickmode = "$0";
 
   # activity in statusbar
 
   # ',' separator
-  sb_act_sep = "%g$*";
+  sb_act_sep = "%K$*";
   # normal text
-  sb_act_text = "%g$*";
+  sb_act_text = "%K$*";
   # public message
   sb_act_msg = "%W$*";
   # hilight

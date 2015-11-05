@@ -214,11 +214,11 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "helex";
-    user_name = "helex";
-    nick = "helex";
+    nick = "wikimatze";
+    real_name = "Matthias Günther";
+    user_name = "wikimatze";
     timestamp_format = "%h:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
-  "fe-common/core" = { theme = "fear2"; bell_beeps = "yes"; };
+  "fe-common/core" = { theme = "trakhel"; bell_beeps = "yes"; };
 };
