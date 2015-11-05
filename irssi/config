@@ -198,3 +198,7 @@ settings = {
     usercount_show_zero = "no";
   };
 };
+hilights = (
+  { text = "wikimatze"; nick = "no"; word = "yes"; },
+  { text = "padrino"; nick = "no"; word = "yes"; }
+);
