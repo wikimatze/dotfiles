@@ -131,6 +131,7 @@ statusbar = {
         window_empty = { };
         more = { priority = "-1"; alignment = "right"; };
         barend = { priority = "100"; alignment = "right"; };
+        usercount = { };
       };
     };
 
@@ -193,5 +194,7 @@ settings = {
     awl_shared_sbar = "OFF";
     awl_viewer_tmux_position = "bottom";
     awl_height_adjust = "0";
+    usercount_show_halfops = "no";
+    usercount_show_zero = "no";
   };
 };
