@@ -179,6 +179,13 @@ statusbar = {
         topicbarend = { priority = "100"; alignment = "right"; };
       };
     };
+    awl_0 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
   };
 };
 settings = {
@@ -196,6 +203,7 @@ settings = {
     awl_height_adjust = "0";
     usercount_show_halfops = "no";
     usercount_show_zero = "no";
+    awl_viewer = "no";
   };
 };
 hilights = (
