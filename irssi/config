@@ -59,46 +59,19 @@ aliases = {
   UMODE = "mode $N";
   WC = "window close";
   WN = "window new hide";
-  SV = "say Irssi $J ($V) -
-    http://irssi.org/";
+  SV = "say Irssi $J ($V) -\012    http://irssi.org/";
   GOTO = "sb goto";
   CHAT = "dcc chat";
   RUN = "SCRIPT LOAD";
-  CALC = "exec - if
-    command -v bc
-    >/dev/null 2>&1\\;
-  >then printf '%s='
-    >'$*'\\; echo '$*' |
-    >bc -l\\; else echo bc
-    >was not found\\; fi";
+  CALC = "exec - if\012    command -v bc\012    >/dev/null 2>&1\\;\012  >then printf '%s='\012    >'$*'\\; echo '$*' |\012    >bc -l\\; else echo bc\012    >was not found\\; fi";
   SBAR = "STATUSBAR";
-  INVITELIST = "mode
-    $C +I";
+  INVITELIST = "mode\012    $C +I";
   Q = "QUERY";
-  "MANUAL-WINDOWS"
-    = "set
-    use_status_window
-    off;set
-    autocreate_windows
-    off;set
-    autocreate_query_level
-    none;set
-    autoclose_windows
-    off;set
-    reuse_unused_windows
-    on;save";
-  EXEMPTLIST =
-    "mode $C
-    +e";
-  ATAG =
-    "WINDOW
-    SERVER";
-  UNSET =
-    "set
-    -clear";
-  RESET
-    = "set
-    -default";
+  "MANUAL-WINDOWS" = "set\012    use_status_window\012    off;set\012    autocreate_windows\012    off;set\012    autocreate_query_level\012    none;set\012    autoclose_windows\012    off;set\012    reuse_unused_windows\012    on;save";
+  EXEMPTLIST = "mode $C\012    +e";
+  ATAG = "WINDOW\012    SERVER";
+  UNSET = "set\012    -clear";
+  RESET = "set\012    -default";
 };
 
 statusbar = {
@@ -156,7 +129,6 @@ statusbar = {
         user = { };
         window = { };
         window_empty = { };
-        act = { priority = "10"; };
         more = { priority = "-1"; alignment = "right"; };
         barend = { priority = "100"; alignment = "right"; };
       };
@@ -217,4 +189,5 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
   "fe-common/core" = { theme = "trakhel"; bell_beeps = "yes"; };
+  "perl/core/scripts" = { awl_shared_sbar = "OFF"; };
 };
