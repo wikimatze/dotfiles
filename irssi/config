@@ -116,7 +116,6 @@ statusbar = {
     topicbarend = "{topicsbend}";
 
     # treated "normally", you could change the time/user name to whatever
-    time = "{sb $Z}";
     user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}";
 
     # treated specially .. window is printed with non-empty windows,
@@ -129,7 +128,6 @@ statusbar = {
     topic_empty = " Irssi v$J - http://www.irssi.org";
 
     # all of these treated specially, they're only displayed when needed
-    lag = "{sb Lag: $0-}";
     act = "{sb Act: $0-}";
     more = "-- more --";
   };
@@ -155,11 +153,9 @@ statusbar = {
       # list of items in statusbar in the display order
       items = {
         barstart = { priority = "100"; };
-        time = { };
         user = { };
         window = { };
         window_empty = { };
-        lag = { priority = "-1"; };
         act = { priority = "10"; };
         more = { priority = "-1"; alignment = "right"; };
         barend = { priority = "100"; alignment = "right"; };
