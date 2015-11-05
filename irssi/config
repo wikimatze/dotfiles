@@ -189,5 +189,9 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
   "fe-common/core" = { theme = "trakhel"; bell_beeps = "yes"; };
-  "perl/core/scripts" = { awl_shared_sbar = "OFF"; };
+  "perl/core/scripts" = {
+    awl_shared_sbar = "OFF";
+    awl_viewer_tmux_position = "bottom";
+    awl_height_adjust = "0";
+  };
 };
