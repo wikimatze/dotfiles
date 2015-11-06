@@ -210,3 +210,4 @@ hilights = (
   { text = "wikimatze"; nick = "no"; word = "yes"; },
   { text = "padrino"; nick = "no"; word = "yes"; }
 );
+keyboard = ( { key = "^R"; id = "command"; data = "history_search "; } );
