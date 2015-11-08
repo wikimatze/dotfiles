@@ -220,3 +220,5 @@ frb() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }}}
+
+eval `gnome-keyring-daemon --start`
