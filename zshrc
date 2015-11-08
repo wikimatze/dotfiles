@@ -23,8 +23,10 @@ compinit
 # make `cd` easier to search after project in the specified repos
 cdpath=(~ ~/ownCloud ~/Downloads ~/Desktop ~/bitbucket ~/git-repositories)
 
-# Paths settings
+# autocompletion for gpg2 which has similar commands as gpg
+compdef gpg2=gpg
 
+# Paths settings
 export PATH="$PATH:/usr/local/bin:/usr/local/lib:PATH:$HOME/.tmuxifier/bin:$HOME/bin:$PATH"
 
 # Sourcing
