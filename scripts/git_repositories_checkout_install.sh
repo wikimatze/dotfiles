@@ -4,33 +4,6 @@ SRC=git@github.com
 mkdir -p $DES && cd $DES
 
 repos=(
-  wikimatze/PadrinoBook
-  wikimatze/awesome
-  wikimatze/awesome-fallout
-  wikimatze/brokenlifts-vm
-  wikimatze/hammer.vim
-  wikimatze/hello-world-padrino-anynines-mysql
-  wikimatze/i3files
-  wikimatze/job-vacancy
-  wikimatze/mailclient
-  wikimatze/mdbook
-  wikimatze/padrino-codeship
-  wikimatze/padrino-hello-world-heroku
-  wikimatze/padrino-hello-world-heroku-postgres
-  wikimatze/padrino-livingstyleguide
-  wikimatze/padrino-observer-example-app
-  wikimatze/padrino-sprockets-example
-  wikimatze/padrino-vagrant
-  wikimatze/padrino-zsh-completion
-  wikimatze/padrinorb-website
-  wikimatze/pumog
-  wikimatze/sponsorpay-api
-  wikimatze/surveyor
-  wikimatze/sweetie
-  wikimatze/tocdown
-  wikimatze/tocdown
-  wikimatze/vim-banshee
-  wikimatze/zimki
   JoshCheek/ruby-kickstart
   StudioNelstrom/vimdojo
   alexbeletsky/github-commits-widget
@@ -50,6 +23,34 @@ repos=(
   sozialhelden/brokenlift
   syn-systems/puppet-boilerplate-modules
   vhf/free-programming-books
+  wikimatze/PadrinoBook
+  wikimatze/awesome
+  wikimatze/awesome-fallout
+  wikimatze/brokenlifts-vm
+  wikimatze/hammer.vim
+  wikimatze/hello-world-padrino-anynines-mysql
+  wikimatze/i3files
+  wikimatze/job-vacancy
+  wikimatze/mailclient
+  wikimatze/minimal-vim
+  wikimatze/mdbook
+  wikimatze/padrino-codeship
+  wikimatze/padrino-hello-world-heroku
+  wikimatze/padrino-hello-world-heroku-postgres
+  wikimatze/padrino-livingstyleguide
+  wikimatze/padrino-observer-example-app
+  wikimatze/padrino-sprockets-example
+  wikimatze/padrino-vagrant
+  wikimatze/padrino-zsh-completion
+  wikimatze/padrinorb-website
+  wikimatze/pumog
+  wikimatze/sponsorpay-api
+  wikimatze/surveyor
+  wikimatze/sweetie
+  wikimatze/tocdown
+  wikimatze/tocdown
+  wikimatze/vim-banshee
+  wikimatze/zimki
   zurb/foundation
 )
 
