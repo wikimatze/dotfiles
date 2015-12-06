@@ -9,6 +9,7 @@ sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
 sudo apt-get remove -y leafpad
 sudo apt-get remove -y libruby1.8
+sudo apt-get remove -y mousepad
 sudo apt-get remove -y onboard
 sudo apt-get remove -y orage
 sudo apt-get remove -y parole
@@ -62,6 +63,9 @@ sudo apt-get install -y i3-wm    # get the basic window manager
 sudo apt-get install -y i3status # get the basic window manager
 sudo apt-get install -y i3lock   # for the lock screen
 sudo apt-get install -y dmenu    # install the program launcher
+
+sudo apt-get install -y lxappearance
+sudo apt-get install -y feh  # opens a small window and display the image
 
 # }}}
 # Install of packages {{{
