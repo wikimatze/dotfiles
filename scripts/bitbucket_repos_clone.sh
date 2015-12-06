@@ -1,6 +1,6 @@
 #!/bin/bash
 DES=$HOME/bitbucket
-SRC=git@bitbucket.org:
+SRC=git@bitbucket.org
 mkdir -p $DES && cd $DES
 
 repos=(
@@ -26,7 +26,7 @@ for repo in ${repos[*]}
 do
   # cut away the repo owner
   if [ ! -d "${repo##*/}" ]; then
-    git clone $SRC:$repo
+    git clone $SRC:$repo $DES/${repo##*/}
   fi
 done
 
