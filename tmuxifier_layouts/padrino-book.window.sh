@@ -4,7 +4,7 @@ window_root "$DIR/PadrinoBook"
 new_window "section"
 run_cmd "vim chapters/user_profile.md"
 split_v 20
-run_cmd "bundle install --binstubs && bundle exec softcover build"
+run_cmd "bundle install --binstubs && bundle exec softcover server"
 select_pane 1
 
 
