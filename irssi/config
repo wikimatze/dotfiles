@@ -6,11 +6,26 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
-  }
+  },
+  {
+    address = "irc.psigenix.net";
+    chatnet = "psigenix";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  },
 );
 
 chatnets = {
   freenode = {
+    type = "IRC";
+    nick = "wikimatze";
+    username = "Matthias";
+    realname = "Matthias Günther";
+    max_modes = "4";
+  };
+  psigenix = {
     type = "IRC";
     nick = "wikimatze";
     username = "Matthias";
@@ -22,6 +37,7 @@ chatnets = {
 channels = (
   { name = "#padrino"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#vimberlin"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#gamemp3s"; chatnet = "psigenix"; autojoin = "yes"; }
 );
 
 aliases = {
