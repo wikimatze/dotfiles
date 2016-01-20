@@ -100,6 +100,8 @@ vman() {
     echo "No manual entry for $*"
   fi
 }
+
+compdef vman="man"
 # }}}
 # rvm setting {{{
 source /home/wm/.rvm/scripts/rvm
