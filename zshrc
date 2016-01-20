@@ -1,3 +1,8 @@
+# Prezto {{{
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+# }}}
 # Setup {{{
 export EDITOR='vim'
 export TERM=screen-256color
@@ -16,9 +21,8 @@ done
 
 # folder for all autocomplete functions
 fpath=($HOME/.zsh/completions $fpath)
-# Need these two lines for autocompletion
 autoload -U compinit
-compinit
+
 
 # make `cd` easier to search after project in the specified repos
 cdpath=(~ ~/ownCloud ~/Downloads ~/Desktop ~/bitbucket ~/git-repositories)
@@ -52,37 +56,41 @@ HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
-setopt append_history share_history histignorealldups
-setopt extended_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt hist_ignore_space
-setopt hist_verify
-setopt inc_append_history
-setopt share_history
+setopt append_history
+setopt extended_history       # write the history file in the ':start:elapsed;command' format
+setopt inc_append_history     # write to the history file immediately, not when the shell exits
+setopt hist_expire_dups_first # expire a duplicate event first when trimming history
+setopt hist_ignore_dups       # do not record an event that was just recorded again
+setopt hist_ignore_all_dups   # delete an old recorded event if a new event is a duplicate
+setopt hist_save_no_dups      # do not write a duplicate event to the history file
+setopt hist_verify            # do not execute immediately upon history expansion
+setopt share_history          # share history between all sessions
+
 
 # }}}
-# Prompt tuning  {{{
+# Prompt {{{
 
-setopt prompt_subst
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' stagedstr 'M'
-zstyle ':vcs_info:*' unstagedstr 'M'
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' actionformats '%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
-zstyle ':vcs_info:*' formats \
-  '%F{5}[%F{2}%b%F{5}] %F{2}%c%F{3}%u%f'
-zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
-zstyle ':vcs_info:*' enable git
-+vi-git-untracked() {
-  if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
-    git status --porcelain | grep '??' &> /dev/null ; then
-    hook_com[unstaged]+='%F{1}??%f'
-  fi
-}
+if [ ! -d "$HOME/.zprezto" ]; then
+  setopt prompt_subst
+  autoload -Uz vcs_info
+  zstyle ':vcs_info:*' stagedstr 'M'
+  zstyle ':vcs_info:*' unstagedstr 'M'
+  zstyle ':vcs_info:*' check-for-changes true
+  zstyle ':vcs_info:*' actionformats '%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
+  zstyle ':vcs_info:*' formats \
+    '%F{5}[%F{2}%b%F{5}] %F{2}%c%F{3}%u%f'
+  zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+  zstyle ':vcs_info:*' enable git
+  +vi-git-untracked() {
+    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+      git status --porcelain | grep '??' &> /dev/null ; then
+      hook_com[unstaged]+='%F{1}??%f'
+    fi
+  }
 
-precmd () { vcs_info }
-PROMPT='%B%m%~%b ${vcs_info_msg_0_} %f%# '
+  precmd () { vcs_info }
+  PROMPT='%B%m%~%b ${vcs_info_msg_0_} %f%# '
+fi
 
 # }}}
 # Commandline completion {{{
@@ -224,3 +232,4 @@ frb() {
 # }}}
 
 eval `gnome-keyring-daemon --start`
+

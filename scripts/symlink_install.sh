@@ -2,6 +2,7 @@
 # Removing links {{{
 # Directory links {{{
 DIR=$HOME/ownCloud
+DOTFILES=$HOME/git/dotfiles
 
 rm -f $HOME/latex
 rm -f $HOME/.fonts
@@ -43,6 +44,8 @@ rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
 rm -f $HOME/.Xmodmap
+rm -f $HOME/.zpreztorc
+rm -f $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 sudo rm -f /etc/default/apport
 
 # }}}
