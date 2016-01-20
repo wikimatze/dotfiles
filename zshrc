@@ -116,6 +116,25 @@ source /home/wm/.rvm/scripts/rvm
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # }}}
+# mucks {{{
+export PATH="$PATH:$HOME/git/mucks"
+
+alias mucksblog="mucks ~/git/blog-wikimatze/.mucksrc"
+alias muckscv="mucks ~/ownCloud/latex/vorlagen/cv/.mucksrc"
+alias mucksjavascript="mucks ~/ownCloud/latex/projekte/javascript/.mucksrc"
+alias mucksscrum="mucks ~/ownCloud/latex/projekte/scrum/.mucksrc"
+alias mucksjobvacancy="mucks ~/git/job-vacancy/.mucksrc"
+alias muckslernhelferadmin="mucks ~/bitbucket/die-lernhelfer-admin/.mucksrc"
+alias muckslernhelferwebsite="mucks ~/bitbucket/die-lernhelfer-website/.mucksrc"
+alias muckspadrinobook="mucks ~/git/PadrinoBook/.mucksrc"
+alias muckspadrinobookwebsite="mucks ~/git/padrinobook-website/.mucksrc"
+alias muckspresentation="mucks ~/bitbucket/presentations/.mucksrc"
+alias muckspumog="mucks ~/git/pumog/.mucksrc"
+alias muckssweetie="mucks ~/git/sweetie/.mucksrc"
+alias mucksruby="mucks ~/ownCloud/latex/projekte/ruby/.mucksrc"
+alias mucksvimberlin="mucks ~/git/vimberlin.de/.mucksrc"
+
+# }}}
 # tmuxifier setting {{{
 # https://github.com/jimeh/tmuxifier
 if which tmuxifier> /dev/null; then
