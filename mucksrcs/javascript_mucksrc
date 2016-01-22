@@ -1,0 +1,21 @@
+#
+# javascript
+#
+mux: tmux
+name: javascript
+dir: ~/ownCloud/latex/projekte/javascript
+
+
+[text]
+vim javascript.tex
+- sh sleep 0.2
+:VimtexCompile
+
+
+[console]
+
+
+[tmp]
+tmux select-window -t text
+tmux kill-window -t tmp
+

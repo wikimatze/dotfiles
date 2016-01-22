@@ -1,0 +1,18 @@
+#
+# pumog
+#
+mux: tmux
+name: pumog
+dir: ~/git/pumog
+
+
+[files]
+vim
+
+[specs]
+bundle && bundle exec rspec
+
+[tmp]
+tmux select-window -t files
+tmux kill-window -t tmp
+

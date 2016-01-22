@@ -1,0 +1,21 @@
+#
+# scrum
+#
+mux: tmux
+name: scrum
+dir: ~/ownCloud/latex/projekte/scrum
+
+
+[main]
+vim scrum.tex
+- sh sleep 0.2
+:VimtexCompile
+
+
+[console]
+
+
+[tmp]
+tmux select-window -t main
+tmux kill-window -t tmp
+

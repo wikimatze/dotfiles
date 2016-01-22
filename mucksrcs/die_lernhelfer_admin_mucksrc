@@ -1,0 +1,23 @@
+#
+# die-lernhelfer-admin
+#
+mux: tmux
+name: die-lernhelfer-admin
+dir: ~/bitbucket/die-lernhelfer-admin
+
+
+[vim]
+vim
+
+[padrino]
+bundle && bundle exec padrino s
+
+[shell]
+
+[lernhelfer notes]
+vim ~/ownCloud/notes/lernhelfer.txt
+
+[tmp]
+tmux select-window -t vim
+tmux kill-window -t tmp
+

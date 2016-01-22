@@ -1,0 +1,21 @@
+#
+# javascript
+#
+mux: tmux
+name: ruby
+dir: ~/ownCloud/latex/projekte/ruby
+
+
+[text]
+vim ruby.tex
+- sh sleep 0.2
+:VimtexCompile
+
+
+[console]
+
+
+[tmp]
+tmux select-window -t text
+tmux kill-window -t tmp
+

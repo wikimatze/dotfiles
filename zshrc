@@ -121,26 +121,19 @@ export PATH="$PATH:$HOME/git/mucks"
 
 alias mucksblog="mucks ~/git/blog-wikimatze/.mucksrc"
 alias muckscv="mucks ~/ownCloud/latex/vorlagen/cv/.mucksrc"
+alias mucksdielernhelferadmin="mucks ~/bitbucket/die-lernhelfer-admin/.mucksrc"
+alias mucksdielernhelferwebsite="mucks ~/bitbucket/die-lernhelfer-website/.mucksrc"
 alias mucksjavascript="mucks ~/ownCloud/latex/projekte/javascript/.mucksrc"
-alias mucksscrum="mucks ~/ownCloud/latex/projekte/scrum/.mucksrc"
 alias mucksjobvacancy="mucks ~/git/job-vacancy/.mucksrc"
-alias muckslernhelferadmin="mucks ~/bitbucket/die-lernhelfer-admin/.mucksrc"
-alias muckslernhelferwebsite="mucks ~/bitbucket/die-lernhelfer-website/.mucksrc"
 alias muckspadrinobook="mucks ~/git/PadrinoBook/.mucksrc"
 alias muckspadrinobookwebsite="mucks ~/git/padrinobook-website/.mucksrc"
+alias muckspadrinowebnew="mucks ~/git/padrino-web-new/.mucksrc"
 alias muckspresentation="mucks ~/bitbucket/presentations/.mucksrc"
 alias muckspumog="mucks ~/git/pumog/.mucksrc"
-alias muckssweetie="mucks ~/git/sweetie/.mucksrc"
 alias mucksruby="mucks ~/ownCloud/latex/projekte/ruby/.mucksrc"
+alias mucksscrum="mucks ~/ownCloud/latex/projekte/scrum/.mucksrc"
+alias muckssweetie="mucks ~/git/sweetie/.mucksrc"
 alias mucksvimberlin="mucks ~/git/vimberlin.de/.mucksrc"
-
-# }}}
-# tmuxifier setting {{{
-# https://github.com/jimeh/tmuxifier
-if which tmuxifier> /dev/null; then
-  eval "$(tmuxifier init -)"
-  export TMUXIFIER_LAYOUT_PATH="$HOME/ownCloud/dotfiles/tmuxifier_layouts"
-fi
 
 # }}}
 # aliases {{{

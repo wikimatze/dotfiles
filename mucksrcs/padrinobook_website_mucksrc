@@ -1,0 +1,21 @@
+#
+# padrinobook-website
+#
+mux: tmux
+name: padrinobook-website
+dir: ~/git/padrinobook-website
+
+
+[vim]
+vim
+
+[build]
+bundle && bundle exec rake s
+
+[config]
+vim _config.yml
+
+[tmp]
+tmux select-window -t vim
+tmux kill-window -t tmp
+

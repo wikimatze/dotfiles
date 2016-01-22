@@ -1,0 +1,26 @@
+#
+# cv
+#
+mux: tmux
+name: cv
+dir: ~/ownCloud/latex/vorlagen/cv
+
+[cv matze]
+vim Matthias_Guenther_Lebenslauf_deutsch.tex
+
+[cv matze englisch]
+vim Matthias_Guenther_Lebenslauf_englisch.tex
+
+[cv hanna]
+vim Hanna_Lebenslauf_deutsch.tex
+
+[cv hanna englisch]
+vim Hanna_Lebenslauf_englisch.tex
+
+[compiling]
+pdflatex Matthias_Guenther_Lebenslauf_deutsch.tex && pdflatex Matthias_Guenther_Lebenslauf_englisch.tex && pdflatex Hanna_Lebenslauf_deutsch.tex && pdflatex Hanna_Lebenslauf_englisch.tex
+
+[tmp]
+tmux select-window -t 1
+tmux kill-window -t tmp
+

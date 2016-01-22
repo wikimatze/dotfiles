@@ -1,0 +1,18 @@
+#
+# die-lernhelfer-website
+#
+mux: tmux
+name: die-lernhelfer-website
+dir: ~/bitbucket/die-lernhelfer-website
+
+
+[main]
+vim
+
+[jekyll]
+bundle exec jekyll s
+
+[tmp]
+tmux select-window -t main
+tmux kill-window -t tmp
+
