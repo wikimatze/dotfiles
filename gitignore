@@ -74,6 +74,14 @@ fish_history
 fishd*
 
 
+
+-----------
+| latexmk |
+-----------
+*.fdb_latexmk
+*.fls
+
+
 -------------
 | softcover |
 -------------
@@ -106,6 +114,9 @@ epub/META-INF/*
 # Generated ebooks
 ebooks/
 
+# irssi
+irssi/config.autosave
+
 # Media (likely to be huge)
 media/
 
@@ -113,3 +124,5 @@ media/
 log/
 *.bak
 .DS_Store
+gems.tag
+
