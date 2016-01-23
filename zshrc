@@ -29,11 +29,12 @@ compdef gpg2=gpg
 # Paths settings
 export PATH="$PATH:/usr/local/bin:/usr/local/lib:PATH:$HOME/.tmuxifier/bin:$HOME/bin:$PATH"
 
-# Sourcing
+# Sourcing bash files
 source $HOME/.convert
 source $HOME/.functions
 source $HOME/.latex_convert_aliases
 source $HOME/.miscellaneous
+
 # }}}
 # OS differences {{{
 
@@ -136,9 +137,7 @@ alias mucksvimberlin="mucks ~/git/vimberlin.de/.mucksrc"
 
 alias la='ls -rtlh --color'
 alias ..='cd ..'
-alias history='history 0' # print the whole history
 alias ls='ls --color=auto'
-alias dropbox='~/.dropbox-dist/dropboxd'
 
 # zsh-stats: shows the most typed in commands
 # based on https://github.com/robbyrussell/oh-my-zsh/blob/217d8f0540a41b2927caf986561e45634fa1952a/lib/functions.zsh#L2
@@ -166,37 +165,9 @@ bindkey '^Z' fancy-ctrl-z
 # fzf mappings {{{
 # Is installed via vim
 # Details under https://github.com/junegunn/fzf/wiki/Examples
-# find files
-fe() {
-  local file
-  file=$(fzf --query="$1" --select-1 --exit-0)
-  [ -n "$file" ] && ${EDITOR:-vim} "$file"
-}
-
-# directories
-fd() {
-  local dir
-  dir=$(d | fzf +s +m) && cd $(sed 's/^[0-9.]* *//' <<< "$dir")
-}
-
-# repeat history
-fh() {
-  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
-}
-
-# checkout git branch/tag
-fco() {
-  local tags branches target
-  tags=$(
-  git tag | awk '{print "\x1b[31;1mtag\x1b[m\t" $1}') || return
-  branches=$(
-    git branch --all | grep -v HEAD             |
-    sed "s/.* //"    | sed "s#remotes/[^/]*/##" |
-    sort -u          | awk '{print "\x1b[34;1mbranch\x1b[m\t" $1}') || return
-  target=$(
-    (echo "$tags"; echo "$branches") |
-    fzf-tmux -l30 -- --no-hscroll --ansi +m -d "\t" -n 2) || return
-  git checkout $(echo "$target" | awk '{print $2}')
+# kill process
+fkill() {
+  ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
 }
 
 # checkout git commit
@@ -207,26 +178,6 @@ fcoc() {
   git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
-# kill process
-fkill() {
-  ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
-}
-
-# select tmux session (if you are not already in one)
-fs() {
-  local session
-  session=$(tmux list-sessions -F "#{session_name}" | \
-    fzf --query="$1" --select-1 --exit-0) &&
-  tmux attach-session -t "$session"
-}
-
-# select antother tmux session (if you are already in a tmux session)
-fsc() {
-  local session
-  session=$(tmux list-sessions -F "#{session_name}" | \
-    fzf --query="$1" --select-1 --exit-0) &&
-  tmux switch-client -t "$session"
-}
 
 # RVM integration
 frb() {
