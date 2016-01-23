@@ -23,10 +23,6 @@ done
 fpath=($HOME/.zsh/completions $fpath)
 autoload -U compinit
 
-
-# make `cd` easier to search after project in the specified repos
-cdpath=(~ ~/ownCloud ~/Downloads ~/Desktop ~/bitbucket ~/git-repositories)
-
 # autocompletion for gpg2 which has similar commands as gpg
 compdef gpg2=gpg
 
