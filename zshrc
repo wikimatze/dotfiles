@@ -165,9 +165,14 @@ bindkey '^Z' fancy-ctrl-z
 # fzf mappings {{{
 # Is installed via vim
 # Details under https://github.com/junegunn/fzf/wiki/Examples
-# kill process
+# fkill - kill process
 fkill() {
-  ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
+  pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]
+  then
+    kill -${1:-9} $pid
+  fi
 }
 
 # checkout git commit
