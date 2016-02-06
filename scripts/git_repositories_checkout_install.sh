@@ -10,6 +10,7 @@ repos=(
   danchoi/ri.vim
   fancyapps/fancyBox
   gitig/Practical-Vim-Notes
+  icholy/ttygif
   jgallen23/toc
   livingstyleguide/livingstyleguide
   neo/ruby_koans
@@ -32,8 +33,8 @@ repos=(
   wikimatze/i3files
   wikimatze/job-vacancy
   wikimatze/mailclient
-  wikimatze/minimal-vim
   wikimatze/mdbook
+  wikimatze/minimal-vim
   wikimatze/mucks
   wikimatze/padrino-codeship
   wikimatze/padrino-hello-world-heroku

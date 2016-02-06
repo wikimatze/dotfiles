@@ -62,6 +62,7 @@ sudo rm -f /usr/local/bin/jsmall.sh
 sudo rm -f /usr/local/bin/pnaming.sh
 sudo rm -f /usr/local/bin/psmall.sh
 sudo rm -f /usr/local/bin/waterproof.sh
+sudo rm -f /usr/local/bin/ttyconcat
 
 # }}}
 # }}}
@@ -133,5 +134,6 @@ sudo ln -sf $DOTFILES/bin/pnaming.sh /usr/local/bin/pnaming.sh
 sudo ln -sf $DOTFILES/bin/psmall.sh /usr/local/bin/psmall.sh
 sudo ln -sf $DOTFILES/bin/waterproof.sh /usr/local/bin/waterproof.sh
 sudo ln -sf $DOTFILES/etc/default/apport /etc/default/apport
+sudo ln -sf $HOME/git/ttygif/concat.sh /usr/local/bin/ttyconcat
 
 # }}}
