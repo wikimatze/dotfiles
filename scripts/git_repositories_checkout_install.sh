@@ -9,6 +9,7 @@ repos=(
   alexbeletsky/github-commits-widget
   danchoi/ri.vim
   fancyapps/fancyBox
+  finnp/gitter-irc-bot
   gitig/Practical-Vim-Notes
   icholy/ttygif
   jgallen23/toc
@@ -19,11 +20,13 @@ repos=(
   padrino/padrino-framework
   padrino/padrino-recipes
   padrino/padrino-web
+  padrinobot/padrinobot
   runpaint/read-ruby
   sotte/presenting.vim
   sozialhelden/brokenlift
   syn-systems/puppet-boilerplate-modules
   vhf/free-programming-books
+  vimberlin/vimberlinbot
   wikimatze/PadrinoBook
   wikimatze/awesome
   wikimatze/awesome-fallout
