@@ -82,6 +82,13 @@ fishd*
 *.fls
 
 
+---------
+| latex |
+---------
+*.pdftex
+*.pdftex_t
+
+
 -------------
 | softcover |
 -------------
