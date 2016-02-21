@@ -27,6 +27,8 @@ repos=(
   syn-systems/puppet-boilerplate-modules
   vhf/free-programming-books
   vimberlin/vimberlinbot
+  vimberlin/vimfest
+  vimberlin/vimberlin.de
   wikimatze/PadrinoBook
   wikimatze/awesome
   wikimatze/awesome-fallout
