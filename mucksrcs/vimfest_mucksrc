@@ -1,0 +1,24 @@
+#
+# padrino-web-new
+#
+mux: tmux
+name: vimfest
+dir: ~/git/vimfest
+
+
+[main]
+vim
+
+[rake]
+bundle exec middleman s
+
+[music]
+vim
+- sh sleep 0.2
+:Unite radio
+
+
+[tmp]
+tmux select-window -t 1
+tmux kill-window -t tmp
+

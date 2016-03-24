@@ -41,12 +41,33 @@ rm -f $HOME/.ptignore
 rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
+rm -f $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
+rm -f $HOME/.zpreztorc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
-rm -f $HOME/.Xmodmap
-rm -f $HOME/.zpreztorc
-rm -f $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 sudo rm -f /etc/default/apport
+
+# }}}
+# Mucksrcs {{{
+
+rm -f $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
+rm -f $HOME/bitbucket/die-lernhelfer-website/.mucksrc
+rm -f $HOME/bitbucket/presentations/.mucksrc
+rm -f $HOME/git/PadrinoBook/.mucksrc
+rm -f $HOME/git/blog-wikimatze/.mucksrc
+rm -f $HOME/git/job-vacancy/.mucksrc
+rm -f $HOME/git/padrino-web/.mucksrc
+rm -f $HOME/git/padrinobook-website/.mucksrc
+rm -f $HOME/git/pumog/.mucksrc
+rm -f $HOME/git/sweetie/.mucksrc
+rm -f $HOME/git/vimberlin.de/.mucksrc
+rm -f $HOME/git/vimfest/.mucksrc
+rm -f $HOME/git/padrino-web/.mucksrc
+rm -f $HOME/ownCloud/latex/projekte/javascript/.mucksrc
+rm -f $HOME/ownCloud/latex/projekte/ruby/.mucksrc
+rm -f $HOME/ownCloud/latex/projekte/scrum/.mucksrc
+rm -f $HOME/ownCloud/latex/projekte/angular/.mucksrc
+rm -f $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
 
 # }}}
 # Bin files {{{
@@ -118,6 +139,29 @@ ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
 ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
 ln -sf $DOTFILES/prezto/prompt_wikimatze_setup $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
+
+# }}}
+# Mucksrcs {{{
+
+ln -sf $HOME/git/dotfiles/mucksrcs/blog_wikimatze_mucksrc $HOME/git/blog-wikimatze/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_admin_mucksrc $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_website_mucksrc $HOME/bitbucket/die-lernhelfer-website/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/javascript_mucksrc $HOME/ownCloud/latex/projekte/javascript/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/job_vacancy_mucksrc $HOME/git/job-vacancy/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/padrino_web_mucksrc $HOME/git/padrino-web/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_mucksrc $HOME/git/PadrinoBook/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrinobook-website/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/presentations_mucksrc $HOME/bitbucket/presentations/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/pumog_mucksrc $HOME/git/pumog/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/scrum_mucksrc $HOME/ownCloud/latex/projekte/scrum/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/sweetie_mucksrc $HOME/git/sweetie/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/ruby_mucksrc $HOME/ownCloud/latex/projekte/ruby/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/vimberlin_mucksrc $HOME/git/vimberlin.de/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 
 # }}}
 # Bin files {{{
