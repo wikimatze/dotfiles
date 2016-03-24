@@ -2,7 +2,7 @@
 # javascript
 #
 mux: tmux
-name: javascript
+name: angular
 dir: ~/ownCloud/latex/projekte/angular
 
 
