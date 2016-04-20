@@ -1,3 +1,7 @@
+# folder for all autocomplete functions
+fpath=($HOME/.zsh/completions $fpath)
+autoload -U compinit
+
 # Prezto {{{
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -18,10 +22,6 @@ unsetopt correct_all
 for lib_file ($HOME/.zsh/lib/*.zsh); do
   source $lib_file
 done
-
-# folder for all autocomplete functions
-fpath=($HOME/.zsh/completions $fpath)
-autoload -U compinit
 
 # autocompletion for gpg2 which has similar commands as gpg
 compdef gpg2=gpg
