@@ -1,6 +1,6 @@
-#!/bin/bash 
-IRSSI=irssi-0.8.17.tar.gz
-IRSSIDIR=irssi-0.8.17
+#!/bin/bash
+VERSION=0.8.19
+DIR=irssi-$VERSION
 
-cd /tmp && wget http://www.irssi.org/files/$IRSSI && tar -xvf $IRSSI && cd $IRSSIDIR && ./configure && make && sudo make install
+cd /tmp && wget https://github.com/irssi/irssi/releases/download/$VERSION/$DIR.tar.gz && tar xf $DIR.tar.gz && cd $DIR && ./configure && make && sudo make install
 
