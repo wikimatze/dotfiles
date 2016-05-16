@@ -5,17 +5,15 @@ mux: tmux
 name: scrum
 dir: ~/ownCloud/latex/projekte/scrum
 
-
-[main]
-vim scrum.tex
-- sh sleep 0.2
-:VimtexCompile
+[tex]
+svim scrum.tex
 
 
-[console]
+[pdf]
+latexmk
 
 
 [tmp]
-tmux select-window -t main
+tmux select-window -t tex
 tmux kill-window -t tmp
 

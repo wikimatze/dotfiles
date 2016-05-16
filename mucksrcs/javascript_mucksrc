@@ -5,17 +5,13 @@ mux: tmux
 name: javascript
 dir: ~/ownCloud/latex/projekte/javascript
 
+[tex]
+svim javascript.tex
 
-[text]
-vim javascript.tex
-- sh sleep 0.2
-:VimtexCompile
-
-
-[console]
-
+[pdf]
+latexmk
 
 [tmp]
-tmux select-window -t text
+tmux select-window -t tex
 tmux kill-window -t tmp
 

@@ -1,21 +1,18 @@
 #
-# javascript
+# angular
 #
 mux: tmux
 name: angular
 dir: ~/ownCloud/latex/projekte/angular
 
-
-[text]
-vim angular.tex
+[tex]
+svim angular.tex
 - sh sleep 0.2
-:VimtexCompile
 
-
-[console]
-
+[pdf]
+latexmk
 
 [tmp]
-tmux select-window -t text
+tmux select-window -t tex
 tmux kill-window -t tmp
 

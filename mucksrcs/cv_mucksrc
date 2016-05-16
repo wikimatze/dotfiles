@@ -6,19 +6,19 @@ name: cv
 dir: ~/ownCloud/latex/vorlagen/cv
 
 [cv matze]
-vim Matthias_Guenther_Lebenslauf_deutsch.tex
+svim Matthias_Guenther_Lebenslauf_deutsch.tex
 
 [cv matze englisch]
-vim Matthias_Guenther_Lebenslauf_englisch.tex
+svim Matthias_Guenther_Lebenslauf_englisch.tex
 
 [cv hanna]
-vim Hanna_Lebenslauf_deutsch.tex
+svim Hanna_Lebenslauf_deutsch.tex
 
 [cv hanna englisch]
-vim Hanna_Lebenslauf_englisch.tex
+svim Hanna_Lebenslauf_englisch.tex
 
 [compiling]
-pdflatex Matthias_Guenther_Lebenslauf_deutsch.tex && pdflatex Matthias_Guenther_Lebenslauf_englisch.tex && pdflatex Hanna_Lebenslauf_deutsch.tex && pdflatex Hanna_Lebenslauf_englisch.tex
+latexmk
 
 [tmp]
 tmux select-window -t 1
