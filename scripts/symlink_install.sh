@@ -92,6 +92,7 @@ sudo rm -f /usr/local/bin/ttyconcat
 ln -sf $DIR/documents/gnupg $HOME/.gnupg
 ln -sf $DIR/documents/ssh $HOME/.ssh
 ln -sf $DOTFILES/config/Terminal $HOME/.config/Terminal
+ln -sf $DOTFILES/config/ranger $HOME/.config/ranger
 ln -sf $DOTFILES/fonts $HOME/.fonts
 ln -sf $DOTFILES/zsh $HOME/.zsh
 ln -sf $DOTFILES/i3 $HOME/.i3
