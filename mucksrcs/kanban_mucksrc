@@ -1,0 +1,19 @@
+#
+# kanban
+#
+mux: tmux
+name: kanban
+dir: ~/ownCloud/latex/projekte/kanban
+
+[tex]
+svim kanban.tex
+
+
+[pdf]
+latexmk
+
+
+[tmp]
+tmux select-window -t tex
+tmux kill-window -t tmp
+

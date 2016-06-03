@@ -66,6 +66,7 @@ rm -f $HOME/git/padrino-web/.mucksrc
 rm -f $HOME/ownCloud/latex/projekte/javascript/.mucksrc
 rm -f $HOME/ownCloud/latex/projekte/ruby/.mucksrc
 rm -f $HOME/ownCloud/latex/projekte/scrum/.mucksrc
+rm -f $HOME/ownCloud/latex/projekte/kanban/.mucksrc
 rm -f $HOME/ownCloud/latex/projekte/angular/.mucksrc
 rm -f $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
 
@@ -158,6 +159,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrino
 ln -sf $HOME/git/dotfiles/mucksrcs/presentations_mucksrc $HOME/bitbucket/presentations/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/pumog_mucksrc $HOME/git/pumog/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/scrum_mucksrc $HOME/ownCloud/latex/projekte/scrum/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/ownCloud/latex/projekte/kanban/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/sweetie_mucksrc $HOME/git/sweetie/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/ruby_mucksrc $HOME/ownCloud/latex/projekte/ruby/.mucksrc
