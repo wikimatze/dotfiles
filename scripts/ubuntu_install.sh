@@ -181,6 +181,7 @@ sudo apt-get install -y pv
 sudo apt-get install -y python-fontforge # need poweline fonts
 sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-software-properties
+sudo apt-get install -y python-pip # need to install python extensions via pip
 sudo apt-get install -y rake
 sudo apt-get install -y rar
 sudo apt-get install -y roxterm
