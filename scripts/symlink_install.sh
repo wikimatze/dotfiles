@@ -45,6 +45,7 @@ rm -f $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 rm -f $HOME/.zpreztorc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
+rm -f $HOME/.latexmkrc
 sudo rm -f /etc/default/apport
 
 # }}}
@@ -141,6 +142,7 @@ ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
 ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
 ln -sf $DOTFILES/prezto/prompt_wikimatze_setup $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
+ln -sf $DOTFILES/latexmkrc $HOME/.latexmkrc
 
 # }}}
 # Mucksrcs {{{
