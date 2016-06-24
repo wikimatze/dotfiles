@@ -10,6 +10,8 @@ fi
 # Setup {{{
 export EDITOR='vim'
 export TERM=screen-256color
+# vim as manpage viewer
+export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # solution for tmux problems
@@ -96,17 +98,6 @@ autoload -Uz history-beginning-search-menu
 zle -N history-beginning-search-menu
 bindkey '^X^X' history-beginning-search-menu
 
-# }}}
-# vim-superman {{{
-vman() {
-  vim -c "SuperMan $*"
-
-  if [ "$?" != "0" ]; then
-    echo "No manual entry for $*"
-  fi
-}
-
-compdef vman="man"
 # }}}
 # rvm setting {{{
 source /home/wm/.rvm/scripts/rvm
