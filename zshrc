@@ -11,7 +11,7 @@ fi
 export EDITOR='vim'
 export TERM=screen-256color
 # vim as manpage viewer
-export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # solution for tmux problems
