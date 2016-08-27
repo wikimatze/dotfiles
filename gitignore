@@ -17,8 +17,6 @@ bundle/
 -----------
 | Padrino |
 -----------
-application.css
-application.js
 coverage/*
 tags.html
 .sass-cache
@@ -36,7 +34,6 @@ yankring.txt
 plugged/*
 autoload/
 thesaurus/mthesaur.txt
-
 
 
 ----------------------
@@ -89,6 +86,22 @@ fishd*
 *.pdftex_t
 
 
+------------
+| weehchat |
+------------
+
+weechat/charset.conf
+weechat/exec.conf
+weechat/logger.conf
+weechat/logs/
+weechat/relay.conf
+weechat/trigger.conf
+weechat/xfer.conf
+logs/core.weechat.weechatlog
+logs/irc.freenode.#vimberlin.weechatlog
+logs/irc.server.freenode.weechatlog
+
+
 -------------
 | softcover |
 -------------
@@ -100,9 +113,16 @@ fishd*
 *.tmp.*
 tmp/
 generated_polytex/
-
 .highlight_cache
 .softcover-book
+
+
+----------
+| ranger |
+----------
+ranger/bookmarks
+ranger/history
+
 
 # Generated HTML files
 html/*.html
@@ -132,4 +152,5 @@ log/
 *.bak
 .DS_Store
 gems.tag
+
 
