@@ -14,7 +14,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
-  },
+  }
 );
 
 chatnets = {
@@ -36,7 +36,9 @@ chatnets = {
 
 channels = (
   { name = "#padrino"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#vimberlin"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#vimberlin"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#vimfest"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#padrinobook"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#gamemp3s"; chatnet = "psigenix"; autojoin = "yes"; }
 );
 
