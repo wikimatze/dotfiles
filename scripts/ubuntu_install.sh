@@ -134,6 +134,7 @@ sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libgnome2-dev
 sudo apt-get install -y libgraph-writer-graphviz-perl
 sudo apt-get install -y libgtk2.0-dev
+sudo apt-get install -y libmagic-dev
 sudo apt-get install -y libmagickand-dev
 sudo apt-get install -y libmagickcore-dev
 sudo apt-get install -y libmagickwand-dev # needed for rmagick ruby gem
@@ -180,8 +181,8 @@ sudo apt-get install -y procps # need for pgrep package
 sudo apt-get install -y pv
 sudo apt-get install -y python-fontforge # need poweline fonts
 sudo apt-get install -y python-gtkspell
-sudo apt-get install -y python-software-properties
 sudo apt-get install -y python-pip # need to install python extensions via pip
+sudo apt-get install -y python-software-properties
 sudo apt-get install -y rake
 sudo apt-get install -y rar
 sudo apt-get install -y roxterm
