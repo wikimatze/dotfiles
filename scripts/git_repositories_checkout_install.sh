@@ -26,10 +26,12 @@ repos=(
   sozialhelden/brokenlift
   syn-systems/puppet-boilerplate-modules
   vhf/free-programming-books
+  vimberlin/vimberlin.de
   vimberlin/vimberlinbot
   vimberlin/vimfest
-  vimberlin/vimberlin.de
   wikimatze/PadrinoBook
+  wikimatze/angular-fundamentals-app.git
+  wikimatze/angular-testing-app
   wikimatze/awesome
   wikimatze/awesome-fallout
   wikimatze/brokenlifts-vm
@@ -49,12 +51,10 @@ repos=(
   wikimatze/padrino-sprockets-example
   wikimatze/padrino-vagrant
   wikimatze/padrino-zsh-completion
-  wikimatze/padrinorb-website
   wikimatze/pumog
   wikimatze/sponsorpay-api
   wikimatze/surveyor
   wikimatze/sweetie
-  wikimatze/tocdown
   wikimatze/tocdown
   wikimatze/vim-banshee
   wikimatze/zimki
