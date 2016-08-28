@@ -9,8 +9,10 @@ rm -f $HOME/.fonts
 rm -f $HOME/.zsh
 rm -rf $HOME/.gnupg
 rm -rf $HOME/.ssh
+rm -f -R $HOME/.config/Ranger
 rm -f -R $HOME/.config/Terminal
 rm -rf $HOME/.i3
+rm -f $HOME/.weechat
 
 # }}}
 # Bash files {{{
@@ -27,8 +29,8 @@ rm -f $HOME/.program_aliases_mac
 # }}}
 # Miscellaneous {{{
 
+rm -f $HOME/.Xmodmap
 rm -f $HOME/.ackrc
-rm -f $HOME/.config/fish
 rm -f $HOME/.fasd
 rm -f $HOME/.gemrc
 rm -f $HOME/.gitconfig
@@ -46,6 +48,7 @@ rm -f $HOME/.zpreztorc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
 rm -f $HOME/.latexmkrc
+rm -f $HOME/.weechat_passphrase
 sudo rm -f /etc/default/apport
 
 # }}}
@@ -99,6 +102,7 @@ ln -sf $DOTFILES/fonts $HOME/.fonts
 ln -sf $DOTFILES/zsh $HOME/.zsh
 ln -sf $DOTFILES/i3 $HOME/.i3
 ln -sf $DIR/latex $HOME/latex
+ln -sf $DOTFILES/weechat $HOME/.weechat
 
 # }}}
 # Bash files {{{
@@ -133,7 +137,6 @@ ln -sf $DOTFILES/irbrc $HOME/.irbrc
 ln -sf $DOTFILES/irssi $HOME/.irssi
 ln -sf $DOTFILES/profile $HOME/.profile
 ln -sf $DOTFILES/tigrc $HOME/.tigrc
-ln -sf $DOTFILES/fish $HOME/.config/fish
 ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 ln -sf $DOTFILES/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
@@ -143,6 +146,7 @@ ln -sf $DIR/fasd $HOME/.fasd
 ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
 ln -sf $DOTFILES/prezto/prompt_wikimatze_setup $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 ln -sf $DOTFILES/latexmkrc $HOME/.latexmkrc
+ln -sf $DIR/documents/weechat_passphrase $HOME/.weechat_passphrase
 
 # }}}
 # Mucksrcs {{{
