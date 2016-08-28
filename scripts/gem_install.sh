@@ -33,6 +33,7 @@ gem install bcrypt --no-ri \
   liquid --no-ri \
   maruku --no-ri \
   mechanize --no-ri \
+  middleman --no-ri \
   mustache --no-ri \
   multi_json --no-ri \
   money --no-ri \
