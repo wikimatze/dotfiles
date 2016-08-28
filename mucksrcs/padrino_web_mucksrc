@@ -1,5 +1,5 @@
 #
-# padrino-web-new
+# padrino-web
 #
 mux: tmux
 name: padrino-web

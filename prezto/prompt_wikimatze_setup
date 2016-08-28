@@ -28,7 +28,7 @@ function prompt_wikimatze_setup {
       "%F{magenta}"
       "%F{yellow}"
       "%F{red}"
-      "%F{119}"
+      "%F{green}"
     )
   fi
 
