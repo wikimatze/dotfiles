@@ -20,6 +20,7 @@ repos=(
   wikimatze/rails-sample-app
   wikimatze/ruby-scripts
   wikimatze/vocabularly
+  Konfekt/.config.git
 )
 
 for repo in ${repos[*]}
