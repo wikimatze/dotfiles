@@ -70,6 +70,7 @@ sudo apt-get install -y feh  # opens a small window and display the image
 # }}}
 # Install of packages {{{
 
+sudo apt-get install -y audacity
 sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
