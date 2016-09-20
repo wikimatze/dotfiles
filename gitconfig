@@ -1,59 +1,59 @@
 [user]
-  name = Matthias Guenther
-  email = matthias@wikimatze.de
+    name = Matthias Guenther
+    email = matthias@wikimatze.de
 [apply]
-  whitespace = nowarn
+    whitespace = nowarn
 [core]
-  editor = vim
-  autocrlf = input
-  excludesfile = ~/.gitignore
-  pager = cat
-  filemode = false
+    editor = vim
+    autocrlf = input
+    excludesfile = ~/.gitignore
+    pager = cat
+    filemode = false
 [alias]
-  ca = commit --amend
-  co = commit
-  ap = add -p
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  st = status -bs
-  up = !git fetch --prune && git rebase --autostash FETCH_HEAD
+    ca = commit --amend
+    co = commit
+    ap = add -p
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    st = status -bs
+    up = !git fetch --prune && git rebase --autostash FETCH_HEAD
 [color]
     ui = auto
-  [color "branch"]
+[color "branch"]
     current = yellow reverse
     local = yellow
     remote = green
-  [color "diff"]
+[color "diff"]
     meta = black bold
     frag = magenta bold
     old = red bold
     new = green bold
-  [color "status"]
+[color "status"]
     added = yellow
     changed = green
     untracked = cyan
 [github]
-  user = wikimatze
+    user = wikimatze
 [diff]
-  tool = vimdiff
+    tool = vimdiff
 [merge]
-  tool = vimdiff
-  conflictstyle = diff3
+    tool = vimdiff
+    conflictstyle = diff3
 [difftool]
-  prompt = false
+    prompt = false
 [web]
-  browser = firefox
+    browser = firefox
 [grep]
-  extendRegexp = true
-  lineNumber = true
+    extendRegexp = true
+    lineNumber = true
 [pull]
-  rebase = true
+    rebase = true
 [branch]
-  autosetuprebase = always
+    autosetuprebase = always
 [rerere]
-  enabled = 1
+    enabled = 1
 [push]
-  default = matching
+    default = matching
 [credential]
-  helper = cache --timeout=36000000
+    helper = cache --timeout=36000000
 [commit]
-  gpgsign = true
+    gpgsign = true
