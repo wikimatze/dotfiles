@@ -64,5 +64,9 @@
 [commit]
     gpgsign = true
 [diff-so-fancy]
-	stripLeadingSymbols = true
-	changeHunkIndicators = true
+   stripLeadingSymbols = true
+   changeHunkIndicators = true
+
+# use separate file credentials
+[include]
+    path = ~/ownCloud/documents/gitconfig
