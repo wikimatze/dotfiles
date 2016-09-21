@@ -74,6 +74,7 @@ gem install bcrypt --no-ri \
   scss-lint --no-ri \
   sqlite3 --no-ri \
   stringex --no-ri \
+  tldr --no-ri \
   sweetie --no-ri \
   term-ansicolor --no-ri \
   test-unit --no-ri \
