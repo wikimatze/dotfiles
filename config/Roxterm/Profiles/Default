@@ -1,6 +1,7 @@
 [roxterm profile]
 colour_scheme=Solarized Light
 font=Droid Sans Mono for Powerline 13
+show_resize_grip=1
 hide_menubar=0
 saturation=1,000000
 scroll_background=1
