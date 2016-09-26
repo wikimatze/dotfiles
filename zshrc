@@ -188,6 +188,14 @@ frb() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }}}
+# Pimp terminal color {{{
+# By default, executable directories show up as white on a light green background
+# Details under http://www.bigsoft.co.uk/blog/index.php/2008/04/11/configuring-ls_colors
+LS_COLORS="ow=01;90:di=01;90"
+export LS_COLORS
+
+# }}}
 
 eval `gnome-keyring-daemon --start`
+
 
