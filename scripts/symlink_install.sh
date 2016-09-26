@@ -10,6 +10,7 @@ rm -f $HOME/.zsh
 rm -rf $HOME/.gnupg
 rm -rf $HOME/.ssh
 rm -f -R $HOME/.config/Ranger
+rm -f -R $HOME/.config/roxterm.sourceforge.net
 rm -f -R $HOME/.config/Terminal
 rm -rf $HOME/.i3
 rm -f $HOME/.weechat
@@ -98,6 +99,8 @@ ln -sf $DIR/documents/gnupg $HOME/.gnupg
 ln -sf $DIR/documents/ssh $HOME/.ssh
 ln -sf $DOTFILES/config/Terminal $HOME/.config/Terminal
 ln -sf $DOTFILES/config/ranger $HOME/.config/ranger
+ln -sf $DOTFILES/config/Roxterm $HOME/.config/roxterm.sourceforge.net
+
 ln -sf $DOTFILES/fonts $HOME/.fonts
 ln -sf $DOTFILES/zsh $HOME/.zsh
 ln -sf $DOTFILES/i3 $HOME/.i3
