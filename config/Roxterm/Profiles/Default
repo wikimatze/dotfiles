@@ -11,3 +11,4 @@ scrollbar_pos=0
 full_screen=0
 maximise=0
 scroll_on_keystroke=1
+term=xterm-256color
