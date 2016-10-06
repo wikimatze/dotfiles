@@ -109,7 +109,7 @@ ln -sf $DOTFILES/config/Roxterm $HOME/.config/roxterm.sourceforge.net
 ln -sf $DOTFILES/fonts $HOME/.fonts
 ln -sf $DOTFILES/zsh $HOME/.zsh
 ln -sf $DOTFILES/i3 $HOME/.i3
-ln -sf $DOTFILES/i3 $HOME/.conky
+ln -sf $DOTFILES/conky $HOME/.conky
 ln -sf $DIR/latex $HOME/latex
 ln -sf $DOTFILES/weechat $HOME/.weechat
 
