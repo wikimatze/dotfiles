@@ -13,6 +13,7 @@ rm -f -R $HOME/.config/Ranger
 rm -f -R $HOME/.config/roxterm.sourceforge.net
 rm -f -R $HOME/.config/Terminal
 rm -rf $HOME/.i3
+rm -rf $HOME/.conky
 rm -f $HOME/.weechat
 
 # }}}
@@ -49,6 +50,7 @@ rm -f $HOME/.zpreztorc
 rm -f $HOME/.zsh_history
 rm -f $HOME/.zshrc
 rm -f $HOME/.latexmkrc
+rm -f $HOME/.conkyrc
 rm -f $HOME/.weechat_passphrase
 sudo rm -f /etc/default/apport
 
@@ -107,6 +109,7 @@ ln -sf $DOTFILES/config/Roxterm $HOME/.config/roxterm.sourceforge.net
 ln -sf $DOTFILES/fonts $HOME/.fonts
 ln -sf $DOTFILES/zsh $HOME/.zsh
 ln -sf $DOTFILES/i3 $HOME/.i3
+ln -sf $DOTFILES/i3 $HOME/.conky
 ln -sf $DIR/latex $HOME/latex
 ln -sf $DOTFILES/weechat $HOME/.weechat
 
@@ -153,6 +156,7 @@ ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
 ln -sf $DOTFILES/prezto/prompt_wikimatze_setup $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 ln -sf $DOTFILES/latexmkrc $HOME/.latexmkrc
 ln -sf $DIR/documents/weechat_passphrase $HOME/.weechat_passphrase
+ln -sf $HOME/.conky/conkyrc $HOME/.conkyrc
 
 # }}}
 # Mucksrcs {{{
