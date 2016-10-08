@@ -120,8 +120,9 @@ generated_polytex/
 ----------
 | ranger |
 ----------
-ranger/bookmarks
-ranger/history
+config/ranger/bookmarks
+config/ranger/history
+config/ranger/tagged
 
 
 # Generated HTML files
