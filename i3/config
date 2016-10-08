@@ -67,8 +67,8 @@ bar {
         inactive_workspace #333333 #222222 #888888
         urgent_workspace   #aa0000 #990000 #ffffff
     }
-    # Using custom i3status.conf
-    status_command i3status -c ~/.i3/i3status.conf
+    # status_command i3status -c ~/.i3/i3status.conf
+    status_command $HOME/.conky/conky-i3bar
     mode dock    # always show the dock menu
     position top # put the window menu at the top
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
