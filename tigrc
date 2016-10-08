@@ -1,8 +1,0 @@
-set show-author = abbreviated   # show abbreviated author names
-set show-date = relative        # show relative commit date
-set line-graphics = utf8        # use utf8 for line-drawing
-set show-refs = true            # show tags, branches
-set show-rev-graph = true       # show revision graph
-set show-line-numbers = false   # no line numbers in commit message per default
-set line-number-interval = 5    # interval between line numbers when the toggling information is turned on
-

@@ -42,7 +42,6 @@ rm -f $HOME/.irbrc
 rm -f $HOME/.irssi
 rm -f $HOME/.profile
 rm -f $HOME/.ptignore
-rm -f $HOME/.tigrc
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
@@ -145,7 +144,6 @@ ln -sf $DOTFILES/gitk $HOME/.gitk
 ln -sf $DOTFILES/irbrc $HOME/.irbrc
 ln -sf $DOTFILES/irssi $HOME/.irssi
 ln -sf $DOTFILES/profile $HOME/.profile
-ln -sf $DOTFILES/tigrc $HOME/.tigrc
 ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 ln -sf $DOTFILES/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
