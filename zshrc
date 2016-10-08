@@ -134,6 +134,7 @@ alias mucksvimfest="mucks ~/git/vimfest/.mucksrc"
 alias la='ls -rtlh --color'
 alias ..='cd ..'
 alias ls='ls --color=auto'
+alias svim='vim --servername vim'
 
 # zsh-stats: shows the most typed in commands
 # based on https://github.com/robbyrussell/oh-my-zsh/blob/217d8f0540a41b2927caf986561e45634fa1952a/lib/functions.zsh#L2
