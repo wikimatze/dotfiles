@@ -12,6 +12,8 @@ export EDITOR='vim'
 export TERM=screen-256color
 # vim as manpage viewer
 export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
+# need for urlview (a tmux plugin for opening URLs in a browser)
+export BROWSER='/usr/bin/firefox'
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # solution for tmux problems
