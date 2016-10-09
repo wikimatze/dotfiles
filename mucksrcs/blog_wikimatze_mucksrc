@@ -15,7 +15,7 @@ bundle exec rake
 [music]
 vim
 - sh sleep 0.2
-:Unite radio
+:Radio
 
 
 [tmp]

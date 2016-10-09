@@ -159,25 +159,25 @@ ln -sf $HOME/.conky/conkyrc $HOME/.conkyrc
 # }}}
 # Mucksrcs {{{
 
-ln -sf $HOME/git/dotfiles/mucksrcs/blog_wikimatze_mucksrc $HOME/git/blog-wikimatze/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/blog_wikimatze_mucksrc $HOME/git/blog-wikimatze/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_admin_mucksrc $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_website_mucksrc $HOME/bitbucket/die-lernhelfer-website/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/javascript_mucksrc $HOME/ownCloud/latex/projekte/javascript/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/job_vacancy_mucksrc $HOME/git/job-vacancy/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/ownCloud/latex/projekte/kanban/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrino_web_mucksrc $HOME/git/padrino-web/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_mucksrc $HOME/git/PadrinoBook/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrinobook-website/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/presentations_mucksrc $HOME/bitbucket/presentations/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/pumog_mucksrc $HOME/git/pumog/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/scrum_mucksrc $HOME/ownCloud/latex/projekte/scrum/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/ownCloud/latex/projekte/kanban/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/sweetie_mucksrc $HOME/git/sweetie/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/ruby_mucksrc $HOME/ownCloud/latex/projekte/ruby/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/scrum_mucksrc $HOME/ownCloud/latex/projekte/scrum/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/sweetie_mucksrc $HOME/git/sweetie/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimberlin_mucksrc $HOME/git/vimberlin.de/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 
 # }}}

@@ -16,8 +16,7 @@ bundle install --binstubs && bundle exec softcover server
 vim ~/ownCloud/notes/padrino-todo.txt
 
 [irc]
-irssi
-
+weechat
 
 [tmp]
 tmux select-window -t section

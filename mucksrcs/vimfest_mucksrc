@@ -15,8 +15,7 @@ bundle exec middleman s
 [music]
 vim
 - sh sleep 0.2
-:Unite radio
-
+:Radio
 
 [tmp]
 tmux select-window -t 1

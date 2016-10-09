@@ -8,10 +8,8 @@ dir: ~/ownCloud/latex/projekte/scrum
 [tex]
 svim scrum.tex
 
-
 [pdf]
 latexmk
-
 
 [tmp]
 tmux select-window -t tex

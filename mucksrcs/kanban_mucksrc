@@ -8,10 +8,8 @@ dir: ~/ownCloud/latex/projekte/kanban
 [tex]
 svim kanban.tex
 
-
 [pdf]
 latexmk
-
 
 [tmp]
 tmux select-window -t tex
