@@ -94,6 +94,7 @@ sudo rm -f /usr/local/bin/ttyconcat
 sudo rm -f /usr/local/bin/ttd
 sudo rm -f /usr/local/bin/ttl
 sudo rm -f /usr/local/bin/ttt
+sudo rm -f /usr/local/bin/ttscreencast
 sudo rm -f /usr/local/bin/zoom_xfce.sh
 
 # }}}
@@ -198,6 +199,7 @@ sudo ln -sf $DOTFILES/bin/waterproof.sh /usr/local/bin/waterproof.sh
 sudo ln -sf $DOTFILES/bin/ttd.sh /usr/local/bin/ttd
 sudo ln -sf $DOTFILES/bin/ttl.sh /usr/local/bin/ttl
 sudo ln -sf $DOTFILES/bin/ttt.sh /usr/local/bin/ttt
+sudo ln -sf $DOTFILES/bin/ttscreencast.sh /usr/local/bin/ttscreencast
 sudo ln -sf $DOTFILES/bin/zoom_xfce.sh /usr/local/bin/zoom_xfce.sh
 sudo ln -sf $DOTFILES/etc/default/apport /etc/default/apport
 sudo ln -sf $HOME/git/ttygif/concat.sh /usr/local/bin/ttyconcat
