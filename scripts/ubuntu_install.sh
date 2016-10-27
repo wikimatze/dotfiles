@@ -210,7 +210,6 @@ sudo apt-get install -y texlive-xetex # xelatex
 sudo apt-get install -y tig
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
-sudo apt-get install -y unetbootin
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
