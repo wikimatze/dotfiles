@@ -16,6 +16,8 @@ repos=(
   livingstyleguide/livingstyleguide
   neo/ruby_koans
   nightsailer/padrino-sprockets
+  padrino/padrino-framework
+  padrino/padrino-recipes
   padrino/padrino-web
   padrinobot/padrinobot
   runpaint/read-ruby
@@ -49,12 +51,13 @@ repos=(
   wikimatze/padrino-sprockets-example
   wikimatze/padrino-vagrant
   wikimatze/padrino-zsh-completion
+  wikimatze/padrinobook-website
   wikimatze/pumog
-  wikimatze/sponsorpay-api
   wikimatze/surveyor
   wikimatze/sweetie
   wikimatze/tocdown
   wikimatze/vim-banshee
+  wikimatze/wikimatze.de
   wikimatze/zimki
   zurb/foundation
 )
