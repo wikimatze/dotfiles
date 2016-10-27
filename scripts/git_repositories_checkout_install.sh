@@ -16,8 +16,6 @@ repos=(
   livingstyleguide/livingstyleguide
   neo/ruby_koans
   nightsailer/padrino-sprockets
-  padrino/padrino-framework
-  padrino/padrino-recipes
   padrino/padrino-web
   padrinobot/padrinobot
   runpaint/read-ruby
