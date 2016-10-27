@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: blog
-dir: ~/git/blog-wikimatze
+dir: ~/git/wikimatze.de
 
 
 [main]

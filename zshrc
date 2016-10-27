@@ -109,7 +109,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # mucks {{{
 export PATH="$PATH:$HOME/git/mucks"
 
-alias mucksblog="mucks ~/git/blog-wikimatze/.mucksrc"
 alias mucksangular="mucks ~/ownCloud/latex/projekte/angular/.mucksrc"
 alias muckscv="mucks ~/ownCloud/latex/vorlagen/cv/.mucksrc"
 alias mucksdielernhelferadmin="mucks ~/bitbucket/die-lernhelfer-admin/.mucksrc"
@@ -127,6 +126,7 @@ alias mucksscrum="mucks ~/ownCloud/latex/projekte/scrum/.mucksrc"
 alias muckssweetie="mucks ~/git/sweetie/.mucksrc"
 alias mucksvimberlin="mucks ~/git/vimberlin.de/.mucksrc"
 alias mucksvimfest="mucks ~/git/vimfest/.mucksrc"
+alias muckswikimatze="mucks ~/git/wikimatze.de/.mucksrc"
 
 # }}}
 # aliases {{{

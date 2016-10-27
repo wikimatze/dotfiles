@@ -60,7 +60,7 @@ rm -f $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
 rm -f $HOME/bitbucket/die-lernhelfer-website/.mucksrc
 rm -f $HOME/bitbucket/presentations/.mucksrc
 rm -f $HOME/git/PadrinoBook/.mucksrc
-rm -f $HOME/git/blog-wikimatze/.mucksrc
+rm -f $HOME/git/wikimatze.de/.mucksrc
 rm -f $HOME/git/job-vacancy/.mucksrc
 rm -f $HOME/git/padrino-web/.mucksrc
 rm -f $HOME/git/padrinobook-website/.mucksrc
@@ -164,7 +164,7 @@ ln -sf $HOME/.conky/conkyrc $HOME/.conkyrc
 
 ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/blog_wikimatze_mucksrc $HOME/git/blog-wikimatze/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/wikimatze_mucksrc $HOME/git/wikimatze.de/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_admin_mucksrc $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_website_mucksrc $HOME/bitbucket/die-lernhelfer-website/.mucksrc
