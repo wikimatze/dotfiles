@@ -16,7 +16,6 @@ repos=(
   livingstyleguide/livingstyleguide
   neo/ruby_koans
   nightsailer/padrino-sprockets
-  nightsailer/padrino-sprockets
   padrino/padrino-framework
   padrino/padrino-recipes
   padrino/padrino-web
@@ -35,6 +34,7 @@ repos=(
   wikimatze/awesome
   wikimatze/awesome-fallout
   wikimatze/brokenlifts-vm
+  wikimatze/dotfiles
   wikimatze/hammer.vim
   wikimatze/hello-world-padrino-anynines-mysql
   wikimatze/i3files
