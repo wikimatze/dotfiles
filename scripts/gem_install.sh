@@ -1,92 +1,92 @@
-gem install bcrypt --no-ri \
-  bluecloth --no-ri \
-  bundler --no-ri \
-  byebug --no-ri \
-  classifier --no-ri \
-  compass --no-ri \
-  csscss --no-ri \
-  digestr --no-ri \
-  eventmachine --no-ri \
-  erubis --no-ri \
-  faker --no-ri \
-  fast-stemmer --no-ri \
-  fileutils --no-ri \
-  fuubar --no-ri \
-  gli --no-ri \
-  glynn --no-ri \
-  guard --no-ri \
-  guard-rspec --no-ri \
-  gravatar --no-ri \
-  haml --no-ri \
-  haml-lint --no-ri \
-  highline --no-ri \
-  httparty --no-ri \
-  interactive_editor --no-ri \
-  i18n --no-ri \
-  git-smart --no-ri \
-  ftp-sync --no-ri \
-  jammit --no-ri \
-  jekyll --no-ri \
-  json --no-ri \
-  json_pure --no-ri \
-  keydown --no-ri \
-  liquid --no-ri \
-  maruku --no-ri \
-  mechanize --no-ri \
-  middleman --no-ri \
-  mustache --no-ri \
-  multi_json --no-ri \
-  money --no-ri \
-  omglog --no-ri \
-  net-sftp --no-ri \
-  net-ssh --no-ri \
-  nokogiri:1.6.4 --no-ri \
-  padrino --no-ri \
-  parslet --no-ri \
-  puppet --no-ri \
-  puppetlabs_spec_helper --no-ri \
-  puppet-lint --no-ri \
-  pygmentize --no-ri \
-  pry --no-ri \
-  pry-doc --no-ri \
-  rabbit --no-ri \
-  rack --no-ri \
-  rack-mount --no-ri \
-  rack-test --no-ri \
-  rake --no-ri \
-  rdiscount --no-ri \
-  redcarpet --no-ri \
-  rspec --no-ri \
-  rspec-core --no-ri \
-  rspec-expectations --no-ri \
-  rspec-mocks --no-ri \
-  rspec-puppet --no-ri \
-  rspec-rails --no-ri \
-  ruby-debug --no-ri \
-  ruby-mp3info --no-ri \
-  rubygems-update --no-ri \
-  rubyzip --no-ri \
-  ruby-lint --no-ri \
-  showoff --no-ri \
-  sinatra --no-ri \
-  slim --no-ri \
-  softcover --pre --no-ri \
-  scss-lint --no-ri \
-  sqlite3 --no-ri \
-  stringex --no-ri \
-  tldr --no-ri \
-  sweetie --no-ri \
-  term-ansicolor --no-ri \
-  test-unit --no-ri \
-  thor --no-ri \
-  tilt --no-ri \
-  twitter --no-ri \
-  uuid --no-ri \
-  uglifier --no-ri \
-  vimdeck --no-ri \
-  vimgolf --no-ri \
-  vimrunner --no-ri \
-  will_paginate --no-ri \
-  wirble --no-ri \
-  xml-simple --no-ri \
-  yui-compressor --no-ri \
+gem install bcrypt --no-ri --no-rdoc \
+  bluecloth --no-ri --no-rdoc \
+  bundler --no-ri --no-rdoc \
+  byebug --no-ri --no-rdoc \
+  classifier --no-ri --no-rdoc \
+  compass --no-ri --no-rdoc \
+  csscss --no-ri --no-rdoc \
+  digestr --no-ri --no-rdoc \
+  eventmachine --no-ri --no-rdoc \
+  erubis --no-ri --no-rdoc \
+  faker --no-ri --no-rdoc \
+  fast-stemmer --no-ri --no-rdoc \
+  fileutils --no-ri --no-rdoc \
+  fuubar --no-ri --no-rdoc \
+  gli --no-ri --no-rdoc \
+  glynn --no-ri --no-rdoc \
+  guard --no-ri --no-rdoc \
+  guard-rspec --no-ri --no-rdoc \
+  gravatar --no-ri --no-rdoc \
+  haml --no-ri --no-rdoc \
+  haml-lint --no-ri --no-rdoc \
+  highline --no-ri --no-rdoc \
+  httparty --no-ri --no-rdoc \
+  interactive_editor --no-ri --no-rdoc \
+  i18n --no-ri --no-rdoc \
+  git-smart --no-ri --no-rdoc \
+  ftp-sync --no-ri --no-rdoc \
+  jammit --no-ri --no-rdoc \
+  jekyll --no-ri --no-rdoc \
+  json --no-ri --no-rdoc \
+  json_pure --no-ri --no-rdoc \
+  keydown --no-ri --no-rdoc \
+  liquid --no-ri --no-rdoc \
+  maruku --no-ri --no-rdoc \
+  mechanize --no-ri --no-rdoc \
+  middleman --no-ri --no-rdoc \
+  mustache --no-ri --no-rdoc \
+  multi_json --no-ri --no-rdoc \
+  money --no-ri --no-rdoc \
+  omglog --no-ri --no-rdoc \
+  net-sftp --no-ri --no-rdoc \
+  net-ssh --no-ri --no-rdoc \
+  nokogiri:1.6.4 --no-ri --no-rdoc \
+  padrino --no-ri --no-rdoc \
+  parslet --no-ri --no-rdoc \
+  puppet --no-ri --no-rdoc \
+  puppetlabs_spec_helper --no-ri --no-rdoc \
+  puppet-lint --no-ri --no-rdoc \
+  pygmentize --no-ri --no-rdoc \
+  pry --no-ri --no-rdoc \
+  pry-doc --no-ri --no-rdoc \
+  rabbit --no-ri --no-rdoc \
+  rack --no-ri --no-rdoc \
+  rack-mount --no-ri --no-rdoc \
+  rack-test --no-ri --no-rdoc \
+  rake --no-ri --no-rdoc \
+  rdiscount --no-ri --no-rdoc \
+  redcarpet --no-ri --no-rdoc \
+  rspec --no-ri --no-rdoc \
+  rspec-core --no-ri --no-rdoc \
+  rspec-expectations --no-ri --no-rdoc \
+  rspec-mocks --no-ri --no-rdoc \
+  rspec-puppet --no-ri --no-rdoc \
+  rspec-rails --no-ri --no-rdoc \
+  ruby-debug --no-ri --no-rdoc \
+  ruby-mp3info --no-ri --no-rdoc \
+  rubygems-update --no-ri --no-rdoc \
+  rubyzip --no-ri --no-rdoc \
+  ruby-lint --no-ri --no-rdoc \
+  showoff --no-ri --no-rdoc \
+  sinatra --no-ri --no-rdoc \
+  slim --no-ri --no-rdoc \
+  softcover --pre --no-ri --no-rdoc \
+  scss-lint --no-ri --no-rdoc \
+  sqlite3 --no-ri --no-rdoc \
+  stringex --no-ri --no-rdoc \
+  tldr --no-ri --no-rdoc \
+  sweetie --no-ri --no-rdoc \
+  term-ansicolor --no-ri --no-rdoc \
+  test-unit --no-ri --no-rdoc \
+  thor --no-ri --no-rdoc \
+  tilt --no-ri --no-rdoc \
+  twitter --no-ri --no-rdoc \
+  uuid --no-ri --no-rdoc \
+  uglifier --no-ri --no-rdoc \
+  vimdeck --no-ri --no-rdoc \
+  vimgolf --no-ri --no-rdoc \
+  vimrunner --no-ri --no-rdoc \
+  will_paginate --no-ri --no-rdoc \
+  wirble --no-ri --no-rdoc \
+  xml-simple --no-ri --no-rdoc \
+  yui-compressor --no-ri --no-rdoc \
