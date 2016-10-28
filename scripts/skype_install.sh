@@ -7,6 +7,6 @@ else
 fi
 
 sudo dpkg -i getskype-linux-beta-ubuntu.deb
-sudo apt-get -f install
+sudo apt-get -f -y install
 sudo dpkg -i getskype-linux-beta-ubuntu.deb
 
