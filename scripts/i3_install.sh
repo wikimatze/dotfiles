@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=4.11
+VERSION=4.12
 git clone https://github.com/i3/i3.git /tmp/i3 && cd /tmp/i3 && git checkout $VERSION
 
 sudo apt-get install -y libxcb1-dev
