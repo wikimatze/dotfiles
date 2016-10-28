@@ -199,6 +199,7 @@ sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
 sudo apt-get install -y texlive-xetex # xelatex
+sudo apt-get install -y texlive-lang-german
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
 sudo apt-get install -y vim
