@@ -70,8 +70,8 @@ sudo apt-get install -y feh  # opens a small window and display the image
 # }}}
 # Install of packages {{{
 
+sudo apt-get install -y browser-plugin-freshplayer-pepperflash # need for flash chromium + firefox
 sudo apt-get install -y audacity
-sudo apt-get install -y adobe-flashplugin
 sudo apt-get install -y aircrack-ng
 sudo apt-get install -y arandr
 sudo apt-get install -y banshee
