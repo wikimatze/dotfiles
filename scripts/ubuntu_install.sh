@@ -8,7 +8,6 @@ sudo apt-get remove -y gnumeric
 sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
 sudo apt-get remove -y leafpad
-sudo apt-get remove -y libruby1.8
 sudo apt-get remove -y mousepad
 sudo apt-get remove -y onboard
 sudo apt-get remove -y orage
@@ -103,8 +102,6 @@ sudo apt-get install -y gedit
 sudo apt-get install -y gftp
 sudo apt-get install -y ghc
 sudo apt-get install -y gimp
-sudo apt-get install -y git-core
-sudo apt-get install -y git-doc
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
 sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
@@ -166,14 +163,11 @@ sudo apt-get install -y ncurses-term # additional terminal configuration
 sudo apt-get install -y nfs-kernel-server
 sudo apt-get install -y npm
 sudo apt-get install -y ntfs-config
-sudo apt-get install -y openjdk-7-jre
 sudo apt-get install -y openssl # need for node
 sudo apt-get install -y p7zip-full
 sudo apt-get install -y pandoc
 sudo apt-get install -y pdfchain
 sudo apt-get install -y pdftk
-sudo apt-get install -y php-codesniffer
-sudo apt-get install -y phpunit
 sudo apt-get install -y pngcrush
 sudo apt-get install -y postgresql postgresql-client pgadmin3
 sudo apt-get install -y powertop
@@ -199,15 +193,12 @@ sudo apt-get install -y sox
 sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
-sudo apt-get install -y tetex-base
-sudo apt-get install -y tetex-bin
-sudo apt-get install -y tetex-extra
+sudo apt-get install -y texinfo
 sudo apt-get install -y tex-common
 sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
 sudo apt-get install -y texlive-base
 sudo apt-get install -y texlive-xetex # xelatex
-sudo apt-get install -y tig
 sudo apt-get install -y tree
 sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
 sudo apt-get install -y vim
