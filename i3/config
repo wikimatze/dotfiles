@@ -158,9 +158,10 @@ bindsym $mod+Shift+4 move container to workspace 4; workspace 4
 bindsym $mod+Shift+5 move container to workspace 5; workspace 5
 # }}}
 # Manage sound `Mod-F10`, `Mod-F11`, `Mod-F12` {{{
-bindsym $mod+F10 exec /usr/bin/pactl set-sink-mute 0 toggle
-bindsym $mod+F11 exec /usr/bin/pactl set-sink-volume 0 -- '-10%'
-bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+10%'
+bindsym $mod+F10 exec /usr/bin/amixer -D pulse set Master toggle
+bindsym $mod+F11 exec /usr/bin/amixer -q sset Master '1-'
+bindsym $mod+F12 exec /usr/bin/amixer -q sset Master '1+'
+
 # }}}
 # resize window `Mod-r` (use `h,j,k,l` or arrows for resizing) {{{
 mode "resize" {
