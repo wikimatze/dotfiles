@@ -101,7 +101,7 @@ sudo apt-get install -y gdebi-core # easier installation of packages and resolve
 sudo apt-get install -y gedit
 sudo apt-get install -y gftp
 sudo apt-get install -y ghc
-sudo apt-get install -y gimp
+sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
 sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
@@ -201,7 +201,6 @@ sudo apt-get install -y texlive-base
 sudo apt-get install -y texlive-xetex # xelatex
 sudo apt-get install -y texlive-lang-german
 sudo apt-get install -y tree
-sudo apt-get install -y ubuntu-restricted-extra # to play all videos and dvd formats
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
@@ -219,12 +218,14 @@ sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
 sudo apt-get install -y icedtea-plugin # Java Applet Browser support
+sudo apt-get install -y icedtea-8-plugin # Java Applet Browser support
 
+sudo apt-get install -y libdvd-pkg # encrypted DVD playback
 
 # add for davmail program
 sudo apt-get install -y libswt-cairo-gtk-3-jni
 
-# install missing codecs
+# install missing codecs, to play all videos and dvd formats
 sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53 xubuntu-restricted-extras libavcodec-extra
 
 # }}}
