@@ -226,7 +226,7 @@ sudo apt-get install -y libdvd-pkg # encrypted DVD playback
 sudo apt-get install -y libswt-cairo-gtk-3-jni
 
 # install missing codecs, to play all videos and dvd formats
-sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53 xubuntu-restricted-extras libavcodec-extra
+sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53 xubuntu-restricted-extras libavcodec-extra ubuntu-restricted-extras
 
 # }}}
 # Update and upgrade {{{
