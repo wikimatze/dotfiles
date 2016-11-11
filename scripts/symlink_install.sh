@@ -51,6 +51,7 @@ rm -f $HOME/.zshrc
 rm -f $HOME/.latexmkrc
 rm -f $HOME/.conkyrc
 rm -f $HOME/.weechat_passphrase
+rm -rf $HOME/.config/gromit-mpx.cfg
 sudo rm -f /etc/default/apport
 
 # }}}
@@ -157,6 +158,7 @@ ln -sf $DOTFILES/prezto/prompt_wikimatze_setup $HOME/.zprezto/modules/prompt/fun
 ln -sf $DOTFILES/latexmkrc $HOME/.latexmkrc
 ln -sf $DIR/documents/weechat_passphrase $HOME/.weechat_passphrase
 ln -sf $HOME/.conky/conkyrc $HOME/.conkyrc
+ln -sf $DOTFILES/config/gromit/gromit-mpx.cfg $HOME/.config/gromit-mpx.cfg
 
 # }}}
 # Mucksrcs {{{
