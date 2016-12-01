@@ -1,0 +1,20 @@
+#
+# padrinocasts
+#
+mux: tmux
+name: padrinocasts
+dir: ~/bitbucket/padrinocasts
+
+[files]
+vim
+
+[build]
+middleman s
+
+[deploy]
+
+
+[tmp]
+tmux select-window -t files
+tmux kill-window -t tmp
+

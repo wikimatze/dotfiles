@@ -60,6 +60,7 @@ sudo rm -f /etc/default/apport
 rm -f $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
 rm -f $HOME/bitbucket/die-lernhelfer-website/.mucksrc
 rm -f $HOME/bitbucket/presentations/.mucksrc
+rm -f $HOME/bitbucket/padrinocasts/.mucksrc
 rm -f $HOME/git/PadrinoBook/.mucksrc
 rm -f $HOME/git/wikimatze.de/.mucksrc
 rm -f $HOME/git/job-vacancy/.mucksrc
@@ -174,6 +175,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/job_vacancy_mucksrc $HOME/git/job-vacancy/.mu
 ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/ownCloud/latex/projekte/kanban/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrino_web_mucksrc $HOME/git/padrino-web/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_mucksrc $HOME/git/PadrinoBook/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/padrinocasts_mucksrc $HOME/bitbucket/padrinocasts/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrinobook-website/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/presentations_mucksrc $HOME/bitbucket/presentations/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/pumog_mucksrc $HOME/git/pumog/.mucksrc
