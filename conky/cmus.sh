@@ -9,8 +9,7 @@ Instance=$(echo -e "$Cmus_remote" | wc -l)
 
 if [ $Instance -gt 1 ]; then
   TITLE=`cmus-remote -Q | grep " title " | cut -c 11-`
-  ALBUM=`cmus-remote -Q | grep " album " | cut -c 11-`
   ARTIST=`cmus-remote -Q | grep " albumartist " | cut -c 17-`
-  echo "$TITLE" - "$ALBUM" - "$ARTIST"
+  echo "$TITLE" - "$ARTIST"
 fi
 
