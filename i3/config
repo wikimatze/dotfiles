@@ -107,8 +107,9 @@ bindsym $mod+space focus mode_toggle
 # Screenshot under /tmp `Mod-x` {{{
 bindsym --release $mod+x exec --no-startup-id scrot -e 'mv $f /tmp/'
 # }}}
-# start dmenu `Mod-d`{{{
-bindsym $mod+d exec dmenu_run
+# start rofi `Mod-d`{{{
+bindsym $mod+d exec rofi -show run -font "ubuntu mono 16"
+
 # }}}
 # Custom programs {{{
 
