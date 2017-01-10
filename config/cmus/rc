@@ -1,0 +1,11 @@
+unbind -f common E
+bind common E run easytag {}
+
+unbind -f common +
+bind common + vol +5%
+
+unbind -f common -
+bind common - vol -5%
+
+unbind -f common I
+bind common I shell bash ~/.config/cmus/album.sh

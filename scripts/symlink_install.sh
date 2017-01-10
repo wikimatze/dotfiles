@@ -52,6 +52,8 @@ rm -f $HOME/.latexmkrc
 rm -f $HOME/.conkyrc
 rm -f $HOME/.weechat_passphrase
 rm -rf $HOME/.config/gromit-mpx.cfg
+rm -rf $HOME/.config/cmus/rc
+rm -rf $HOME/.config/cmus/album.sh
 sudo rm -f /etc/default/apport
 
 # }}}
@@ -152,6 +154,8 @@ ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 ln -sf $DOTFILES/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
 ln -sf $DOTFILES/Xmodmap $HOME/.Xmodmap
+ln -sf $DOTFILES/config/cmus/rc $HOME/.config/cmus/rc
+ln -sf $DOTFILES/config/cmus/album.sh $HOME/.config/cmus/album.sh
 ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
 ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
