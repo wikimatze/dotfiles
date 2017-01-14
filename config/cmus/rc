@@ -9,3 +9,10 @@ bind common - vol -5%
 
 unbind -f common I
 bind common I shell bash ~/.config/cmus/album.sh
+
+# Vim like shortcuts to jump to the next/prev section
+unbind -f common ^N
+bind common ^N player-next
+unbind -f common ^P
+bind common ^P player-prev
+
