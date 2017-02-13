@@ -13,7 +13,7 @@ vim chapters/user_profile.md
 bundle install --binstubs && bundle exec softcover server
 
 [todo]
-vim ~/ownCloud/notes/padrino-todo.txt
+vim ~/nextcloud/notes/padrino-todo.txt
 
 [irc]
 weechat

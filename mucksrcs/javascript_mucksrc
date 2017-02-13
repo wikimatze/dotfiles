@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: javascript
-dir: ~/ownCloud/latex/projekte/javascript
+dir: ~/nextcloud/latex/projekte/javascript
 
 [tex]
 svim javascript.tex

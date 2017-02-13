@@ -1,0 +1,22 @@
+#
+# padrinocasts
+#
+mux: tmux
+name: padrinocasts
+dir: ~/git/screencasts
+
+
+[code]
+vim
+
+[slides]
+gromit-mpx &
+simplescreenrecorder &
+vimdeck slides.md -h doom
+
+
+[tmp]
+sed -i "s/mode dock/mode invisible/g" ~/.i3/config
+tmux select-window -t slides
+tmux kill-window -t tmp
+

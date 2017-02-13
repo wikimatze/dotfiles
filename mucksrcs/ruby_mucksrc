@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: ruby
-dir: ~/ownCloud/latex/projekte/ruby
+dir: ~/nextcloud/latex/projekte/ruby
 
 
 [text]

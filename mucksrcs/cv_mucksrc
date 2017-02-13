@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: cv
-dir: ~/ownCloud/latex/vorlagen/cv
+dir: ~/nextcloud/latex/vorlagen/cv
 
 [cv matze]
 svim Matthias_Guenther_Lebenslauf_deutsch.tex

@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: scrum
-dir: ~/ownCloud/latex/projekte/scrum
+dir: ~/nextcloud/latex/projekte/scrum
 
 [tex]
 svim scrum.tex

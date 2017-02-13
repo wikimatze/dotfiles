@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: kanban
-dir: ~/ownCloud/latex/projekte/kanban
+dir: ~/nextcloud/latex/projekte/kanban
 
 [tex]
 svim kanban.tex

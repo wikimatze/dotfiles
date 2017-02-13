@@ -1,7 +1,7 @@
 #!/bin/bash
 # Removing links {{{
 # Directory links {{{
-DIR=$HOME/ownCloud
+DIR=$HOME/nextcloud
 DOTFILES=$HOME/git/dotfiles
 
 rm -f $HOME/latex
@@ -73,12 +73,12 @@ rm -f $HOME/git/sweetie/.mucksrc
 rm -f $HOME/git/vimberlin.de/.mucksrc
 rm -f $HOME/git/vimfest/.mucksrc
 rm -f $HOME/git/padrino-web/.mucksrc
-rm -f $HOME/ownCloud/latex/projekte/javascript/.mucksrc
-rm -f $HOME/ownCloud/latex/projekte/ruby/.mucksrc
-rm -f $HOME/ownCloud/latex/projekte/scrum/.mucksrc
-rm -f $HOME/ownCloud/latex/projekte/kanban/.mucksrc
-rm -f $HOME/ownCloud/latex/projekte/angular/.mucksrc
-rm -f $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
+rm -f $HOME/nextcloud/latex/projekte/javascript/.mucksrc
+rm -f $HOME/nextcloud/latex/projekte/ruby/.mucksrc
+rm -f $HOME/nextcloud/latex/projekte/scrum/.mucksrc
+rm -f $HOME/nextcloud/latex/projekte/kanban/.mucksrc
+rm -f $HOME/nextcloud/latex/projekte/angular/.mucksrc
+rm -f $HOME/nextcloud/latex/vorlagen/cv/.mucksrc
 
 # }}}
 # Bin files {{{
@@ -168,23 +168,23 @@ ln -sf $DOTFILES/config/gromit/gromit-mpx.cfg $HOME/.config/gromit-mpx.cfg
 # }}}
 # Mucksrcs {{{
 
-ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/ownCloud/latex/projekte/angular/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/nextcloud/latex/projekte/angular/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/nextcloud/latex/projekte/angular/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/wikimatze_mucksrc $HOME/git/wikimatze.de/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/ownCloud/latex/vorlagen/cv/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/nextcloud/latex/vorlagen/cv/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_admin_mucksrc $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_website_mucksrc $HOME/bitbucket/die-lernhelfer-website/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/javascript_mucksrc $HOME/ownCloud/latex/projekte/javascript/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/javascript_mucksrc $HOME/nextcloud/latex/projekte/javascript/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/job_vacancy_mucksrc $HOME/git/job-vacancy/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/ownCloud/latex/projekte/kanban/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/nextcloud/latex/projekte/kanban/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrino_web_mucksrc $HOME/git/padrino-web/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_mucksrc $HOME/git/PadrinoBook/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinocasts_mucksrc $HOME/bitbucket/padrinocasts/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrinobook-website/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/presentations_mucksrc $HOME/bitbucket/presentations/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/pumog_mucksrc $HOME/git/pumog/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/ruby_mucksrc $HOME/ownCloud/latex/projekte/ruby/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/scrum_mucksrc $HOME/ownCloud/latex/projekte/scrum/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/ruby_mucksrc $HOME/nextcloud/latex/projekte/ruby/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/scrum_mucksrc $HOME/nextcloud/latex/projekte/scrum/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/sweetie_mucksrc $HOME/git/sweetie/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimberlin_mucksrc $HOME/git/vimberlin.de/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc

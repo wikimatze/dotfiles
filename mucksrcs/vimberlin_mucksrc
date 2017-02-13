@@ -9,8 +9,11 @@ dir: ~/git/vimberlin.de
 [main]
 vim
 
-[jekyll]
-bundle && bundle exec jekyll s
+[build]
+middleman b && middleman s
+
+[ssh]
+ssh xa6195@xa6.serverdomain.org
 
 [tmp]
 tmux select-window -t main

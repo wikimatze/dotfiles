@@ -16,10 +16,10 @@ bundle && bundle exec rspec spec
 sqlite3 db/job_vacancy_development.db
 
 [notes]
-vim ~/ownCloud/notes/padrino.txt
+vim ~/nextcloud/notes/padrino.txt
 
 [todo]
-vim ~/ownCloud/notes/padrino-todo.txt
+vim ~/nextcloud/notes/padrino-todo.txt
 
 
 [tmp]

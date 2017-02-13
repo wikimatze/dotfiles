@@ -16,7 +16,7 @@ rabbit -p --slides-per-page 1 -o slides.pdf slides.md
 [pdf]
 
 [notes rabbit]
-vim ~/ownCloud/notes/rabbit-gem.txt
+vim ~/nextcloud/notes/rabbit-gem.txt
 
 [tmp]
 tmux select-window -t slides

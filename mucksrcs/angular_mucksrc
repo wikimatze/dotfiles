@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: angular
-dir: ~/ownCloud/latex/projekte/angular
+dir: ~/nextcloud/latex/projekte/angular
 
 [tex]
 svim angular.tex

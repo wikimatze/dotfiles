@@ -15,7 +15,7 @@ bundle && bundle exec padrino s
 [shell]
 
 [lernhelfer notes]
-vim ~/ownCloud/notes/lernhelfer.txt
+vim ~/nextcloud/notes/lernhelfer.txt
 
 [tmp]
 tmux select-window -t vim

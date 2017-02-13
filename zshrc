@@ -109,21 +109,21 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # mucks {{{
 export PATH="$PATH:$HOME/git/mucks"
 
-alias mucksangular="mucks ~/ownCloud/latex/projekte/angular/.mucksrc"
-alias muckscv="mucks ~/ownCloud/latex/vorlagen/cv/.mucksrc"
+alias mucksangular="mucks ~/nextcloud/latex/projekte/angular/.mucksrc"
+alias muckscv="mucks ~/nextcloud/latex/vorlagen/cv/.mucksrc"
 alias mucksdielernhelferadmin="mucks ~/bitbucket/die-lernhelfer-admin/.mucksrc"
 alias mucksdielernhelferwebsite="mucks ~/bitbucket/die-lernhelfer-website/.mucksrc"
-alias mucksjavascript="mucks ~/ownCloud/latex/projekte/javascript/.mucksrc"
+alias mucksjavascript="mucks ~/nextcloud/latex/projekte/javascript/.mucksrc"
 alias mucksjobvacancy="mucks ~/git/job-vacancy/.mucksrc"
-alias muckskanban="mucks ~/ownCloud/latex/projekte/kanban/.mucksrc"
+alias muckskanban="mucks ~/nextcloud/latex/projekte/kanban/.mucksrc"
 alias muckspadrinobook="mucks ~/git/PadrinoBook/.mucksrc"
 alias muckspadrinocasts="mucks ~/bitbucket/padrinocasts/.mucksrc"
 alias muckspadrinobookwebsite="mucks ~/git/padrinobook-website/.mucksrc"
 alias muckspadrinoweb="mucks ~/git/padrino-web/.mucksrc"
 alias muckspresentation="mucks ~/bitbucket/presentations/.mucksrc"
 alias muckspumog="mucks ~/git/pumog/.mucksrc"
-alias mucksruby="mucks ~/ownCloud/latex/projekte/ruby/.mucksrc"
-alias mucksscrum="mucks ~/ownCloud/latex/projekte/scrum/.mucksrc"
+alias mucksruby="mucks ~/nextcloud/latex/projekte/ruby/.mucksrc"
+alias mucksscrum="mucks ~/nextcloud/latex/projekte/scrum/.mucksrc"
 alias muckssweetie="mucks ~/git/sweetie/.mucksrc"
 alias mucksvimberlin="mucks ~/git/vimberlin.de/.mucksrc"
 alias mucksvimfest="mucks ~/git/vimfest/.mucksrc"
@@ -201,5 +201,4 @@ export LS_COLORS
 # }}}
 
 eval `gnome-keyring-daemon --start`
-
 

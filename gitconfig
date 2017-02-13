@@ -69,4 +69,4 @@
 
 # use separate file credentials
 [include]
-    path = ~/ownCloud/documents/gitconfig
+    path = ~/nextcloud/documents/gitconfig
