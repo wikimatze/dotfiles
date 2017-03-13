@@ -19,10 +19,9 @@ if       [[ "$WETTER" =~ [Rr]egen ]];     then echo -n Regen
     elif [[ "$WETTER" =~ [Nn]ebel ]];     then echo -n Nebel
     elif [[ "$WETTER" =~ [Ss]onnig ]];    then echo -n Sonnig
     elif [[ "$WETTER" =~ [Kk]lar ]];      then echo -n klar
-    elif [[ "$WETTER" =~ [Bb]ewÃ¶lkt ]];   then echo -n wolken
+    elif [[ "$WETTER" =~ [Bb]ewölkt ]];   then echo -n wolken
     elif [[ "$WETTER" =~ [Bb]edeckt ]];   then echo -n bedeckt‚
 fi
 
-echo -n '' # Spaces between Wetter and Temp
 echo -n "$TEMP"
 

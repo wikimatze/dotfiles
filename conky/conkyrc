@@ -48,7 +48,7 @@ TEXT
   ${endif}
   ${endif}
   { "full_text" : "${exec $HOME/.conky/cmus.sh}", "color" : "\#ffffff"},
-  { "full_text" : "${exec $HOME/.conky/wetter.sh}", "color" : "\#ffffff"},
+  { "full_text" : "${execi 1800 $HOME/.conky/wetter.sh}", "color" : "\#ffffff"},
   { "full_text" : "${exec $HOME/.conky/sound.sh}", "color" : "\#ccffbb"},
   { "full_text" : "${exec $HOME/.conky/battery.sh}", "color" : "\#ccffbb"},
   { "full_text" : "${fs_free /home} Free" , "color" : "\#ffff" },
