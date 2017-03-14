@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=448
+VERSION=452c
 
 cd /tmp && rm -rf latexmk* && wget http://users.phys.psu.edu/%7Ecollins/software/latexmk-jcc/latexmk-$VERSION.zip && unzip latexmk-$VERSION.zip
 sudo cp latexmk/latexmk.pl /usr/local/bin
