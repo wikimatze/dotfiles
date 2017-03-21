@@ -5,15 +5,11 @@ mux: tmux
 name: padrinobook-website
 dir: ~/git/padrinobook-website
 
-
 [vim]
 vim
 
 [build]
-bundle && bundle exec rake s
-
-[config]
-vim _config.yml
+rake
 
 [tmp]
 tmux select-window -t vim
