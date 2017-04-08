@@ -12,8 +12,12 @@ vim chapters/user_profile.md
 [softcover]
 bundle install --binstubs && bundle exec softcover server
 
+[cheatsheet]
+vim ~/git/padrinocheatsheet/latexsheet.tex
+
 [todo]
 vim ~/nextcloud/notes/padrino-todo.txt
+
 
 [irc]
 weechat
