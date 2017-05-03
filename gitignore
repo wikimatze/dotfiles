@@ -29,11 +29,13 @@ tags.html
 *.sw*
 backup/*
 tags
+tags.lock
+tags.temp
 yankring.txt
 .netrwhist
 plugged/*
 autoload/
-thesaurus/mthesaur.txt
+thesaurus/*
 
 
 ----------------------
@@ -84,6 +86,7 @@ fishd*
 ---------
 *.pdftex
 *.pdftex_t
+*.synctex.gz
 
 
 ------------
