@@ -70,3 +70,5 @@
 # use separate file credentials
 [include]
     path = ~/nextcloud/documents/gitconfig
+[advice]
+	detachedHead = false
