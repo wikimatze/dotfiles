@@ -42,7 +42,7 @@
 [diff]
     tool = vimdiff
 [merge]
-    tool = vimdiff
+    tool = meld
     conflictstyle = diff3
 [difftool]
     prompt = false
