@@ -14,11 +14,11 @@ cd /tmp && curl -OL http://downloads.sourceforge.net/project/levent/libevent/lib
 
 # Compiling tmux
 cd /tmp && git clone https://github.com/tmux/tmux.git tmux
-cd /tmp/tmux && git checkout 2.3
+cd /tmp/tmux && git checkout 2.4
 bash autogen.sh
 LDFLAGS="-L/opt/lib" CPPFLAGS="-I/opt/include" LIBS="-lresolv" ./configure --prefix=/opt && make && sudo make install
 
 # Move the tmux-bin file in the right directory where it can be executed
 
-sudo mv -f /opt/bin/tmux /usr/local/bin
+sudo mv -f /opt/bin/tmux ~/bin
 
