@@ -43,6 +43,7 @@ assign [class="^Thunderbird$"] 3
 assign [class="^Simplescreenrecorder$"] 3
 
 assign [class="^Skype$"] 4
+assign [class="^banshee$"] 4
 assign [class="^Gimp$"] 5
 assign [class="^Inkscape$"] 5
 
