@@ -189,3 +189,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 # }}}
 
+hide_edge_borders both
+#client.focused			#333333 #000000  #ffffff
+
