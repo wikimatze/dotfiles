@@ -202,5 +202,8 @@ export LS_COLORS
 
 # }}}
 
+# need this for german keyboard
+setxkbmap de
+
 eval `gnome-keyring-daemon --start`
 
