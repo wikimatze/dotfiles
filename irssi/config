@@ -214,7 +214,7 @@ settings = {
     timestamp_format = "%H:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
-  "fe-common/core" = { theme = "trakhel"; bell_beeps = "yes"; };
+  "fe-common/core" = { theme = "trakhel"; };
   "perl/core/scripts" = {
     awl_shared_sbar = "OFF";
     awl_viewer_tmux_position = "bottom";
