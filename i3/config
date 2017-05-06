@@ -2,6 +2,7 @@
 # Open the applet
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-fill ~/nextcloud/backgrounds/total_war_1.jpg
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 
 # }}}
 # Define global mod key shortcut {{{
@@ -37,13 +38,14 @@ new_window normal 1
 # Assign programs on certain workspaces {{{
 # use xprop to get the window name
 assign [class="^Firefox$"] 2
-assign [class="^Chromium-browser$"] 2
-assign [class="^Google-chrome$"] 2
+
+assign [class="^google-chrome$"] 3
 assign [class="^Thunderbird$"] 3
 assign [class="^Simplescreenrecorder$"] 3
 
 assign [class="^Skype$"] 4
 assign [class="^banshee$"] 4
+
 assign [class="^Gimp$"] 5
 assign [class="^Inkscape$"] 5
 
