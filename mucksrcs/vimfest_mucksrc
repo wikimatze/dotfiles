@@ -10,7 +10,7 @@ dir: ~/git/vimfest
 vim
 
 [rake]
-bundle exec middleman s
+rvm use ruby-2.3.1 && bundle exec middleman s
 
 [music]
 vim

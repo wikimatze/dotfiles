@@ -10,7 +10,7 @@ dir: ~/git/wikimatze.de
 vim
 
 [rake]
-bundle exec rake
+rvm use ruby-2.3.1 && bundle exec rake
 
 [music]
 vim

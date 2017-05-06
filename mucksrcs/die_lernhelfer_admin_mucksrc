@@ -10,7 +10,7 @@ dir: ~/bitbucket/die-lernhelfer-admin
 vim
 
 [padrino]
-bundle && bundle exec padrino s
+rvm use ruby-2.3.1 && bundle && bundle exec padrino s
 
 [shell]
 

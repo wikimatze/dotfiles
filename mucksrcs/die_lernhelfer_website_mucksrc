@@ -10,7 +10,10 @@ dir: ~/bitbucket/die-lernhelfer-website
 vim
 
 [jekyll]
-bundle exec jekyll s
+rvm use ruby-2.3.1 && bundle exec jekyll s
+
+[notes]
+vim ~/nextcloud/notes/lernhelfer.txt
 
 [tmp]
 tmux select-window -t main

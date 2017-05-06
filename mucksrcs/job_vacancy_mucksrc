@@ -10,7 +10,7 @@ dir: ~/git/job-vacancy
 vim
 
 [specs]
-bundle && bundle exec rspec spec
+rvm use ruby-2.3.1 && bundle && bundle exec rspec spec
 
 [sqlite]
 sqlite3 db/job_vacancy_development.db

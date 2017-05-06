@@ -10,7 +10,7 @@ dir: ~/git/pumog
 vim
 
 [specs]
-bundle && bundle exec rspec
+rvm use ruby-2.3.1 && bundle && bundle exec rspec
 
 [tmp]
 tmux select-window -t files

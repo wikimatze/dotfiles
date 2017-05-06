@@ -10,7 +10,7 @@ dir: ~/git/vimberlin.de
 vim
 
 [build]
-middleman b && middleman s
+rvm use ruby-2.3.1 && middleman b && middleman s
 
 [ssh]
 ssh xa6195@xa6.serverdomain.org
