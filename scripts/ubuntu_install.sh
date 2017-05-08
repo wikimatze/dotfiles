@@ -128,6 +128,8 @@ sudo apt-get install -y jfstils
 sudo apt-get install -y kazam
 sudo apt-get install -y lame
 sudo apt-get install -y laptop-mode-tools # saving battery life => configuration during installation
+sudo apt-get build-dep -y libcurl4-openssl-dev
+sudo apt-get install -y libcurl3-dev
 sudo apt-get install -y libatk1.0-dev
 sudo apt-get install -y libbonoboui2-dev
 sudo apt-get install -y libcairo2-dev
