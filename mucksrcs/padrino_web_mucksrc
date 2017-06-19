@@ -7,7 +7,7 @@ dir: ~/git/padrino-web
 
 
 [main]
-vim
+rvm use ruby-2.3.1
 
 [rake]
 rvm use ruby-2.3.1 && bundle exec middleman s
