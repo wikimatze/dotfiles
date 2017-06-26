@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -x /usr/bin/cmus-remote ]; then
+if [ ! -x /usr/local/bin/cmus-remote ]; then
   exit
 fi
 
