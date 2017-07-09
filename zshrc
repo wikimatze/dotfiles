@@ -11,7 +11,7 @@ fi
 export EDITOR='vim'
 export TERM=screen-256color
 # vim as manpage viewer
-export MANPAGER="env MAN_PN=1 vim -M +MANPAGER -"
+export MANPAGER="vim -M +MANPAGER -"
 # need for urlview (a tmux plugin for opening URLs in a browser)
 export BROWSER='/usr/bin/firefox'
 export CMUS_HOME="$HOME/.config/cmus"
