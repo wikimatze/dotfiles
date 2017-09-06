@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR=$HOME/nextcloud/dotfiles/latex_package_install
+DIR=$HOME/git/dotfiles/latex_package_install
 DEST=/usr/share/texmf/tex/latex
 
 sudo cp -r $DIR/lineno $DEST
