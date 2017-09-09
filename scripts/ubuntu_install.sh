@@ -100,6 +100,7 @@ sudo apt-get install -y fish
 sudo apt-get install -y flac
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
+sudo apt-get install -y handbrake
 sudo apt-get install -y gdebi-core # easier installation of packages and resolves dependencies in a better way
 sudo apt-get install -y gedit
 sudo apt-get install -y gftp
