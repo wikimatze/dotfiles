@@ -1,7 +1,7 @@
 echo "Install all dependencies for vim compilation"
-sudo apt-get build-dep vim
+sudo apt-get build-dep vim -y
 
-cd /tmp && git clone https://github.com/vim/vim && cd vim && git checkout v8.0.0575 && git clean -f
+cd /tmp && rm -rf vim && git clone https://github.com/vim/vim && cd vim && git checkout v8.0.0692 && git clean -f
 
 echo "Install xclip for better copy/paste"
 sudo apt-get install xclip
