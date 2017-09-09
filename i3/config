@@ -169,6 +169,12 @@ bindsym $mod+F11 exec /usr/bin/amixer set Master '5%-'
 bindsym $mod+F12 exec /usr/bin/amixer set Master '5%+'
 
 # }}}
+# Manage brightness `Mod-F3`, `Mod-F4` {{{
+
+bindsym $mod+F3 exec --no-startup-id /bin/bash $HOME/.conky/bright_down.sh
+bindsym $mod+F4 exec --no-startup-id /bin/bash $HOME/.conky/bright_up.sh
+
+# }}
 # resize window `Mod-r` (use `h,j,k,l` or arrows for resizing) {{{
 mode "resize" {
   # Vim move keys
