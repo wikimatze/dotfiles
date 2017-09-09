@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=n3.3
+VERSION=n3.1.10
 
 sudo apt-get build-dep -y ffmpeg
 
