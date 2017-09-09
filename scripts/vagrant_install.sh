@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=1.9.4
+VERSION=1.9.8
 cd /tmp
 if [ "$(uname -m)" == "x86_64" ]
 then
