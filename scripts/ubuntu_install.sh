@@ -5,7 +5,6 @@ sudo apt-get remove -y gigolo
 sudo apt-get remove -y gmusicbrowser
 sudo apt-get remove -y gnome-mines
 sudo apt-get remove -y gnumeric
-sudo apt-get remove -y gnumusicbrowser
 sudo apt-get remove -y gucharmap
 sudo apt-get remove -y leafpad
 sudo apt-get remove -y mousepad
@@ -14,8 +13,6 @@ sudo apt-get remove -y orage
 sudo apt-get remove -y parole
 sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
-sudo apt-get remove -y ruby1.8-dev
-sudo apt-get remove -y ruby1.9.1 # makes a lot of issues so get rid of issues ...
 sudo apt-get remove -y simple-scan
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y uget
@@ -202,15 +199,10 @@ sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
 sudo apt-get install -y texinfo
-sudo apt-get install -y tex-common
 sudo apt-get install -y tex4ht
 sudo apt-get install -y texlive
-sudo apt-get install -y texlive-base
-sudo apt-get install -y texlive-xetex # xelatex
 sudo apt-get install -y texlive-lang-german
 sudo apt-get install -y tree
-sudo apt-get install -y vim
-sudo apt-get install -y vim-gnome
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
