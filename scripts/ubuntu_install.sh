@@ -33,19 +33,6 @@ sudo apt-get remove -y mahjongg
 # }}}
 
 # }}}
-# Install packages for gvim {{{
-
-sudo apt-get install -y libatk1.0-dev
-sudo apt-get install -y libbonoboui2-dev
-sudo apt-get install -y libcairo2-dev
-sudo apt-get install -y libgnome2-dev
-sudo apt-get install -y libgtk2.0-dev
-sudo apt-get install -y libncurses-dev
-sudo apt-get install -y libx11-dev
-sudo apt-get install -y libxpm-dev
-sudo apt-get install -y libxt-dev
-
-# }}}
 # Packages lua {{{
 
 sudo apt-get install -y lua5.1        # Luca programming language
