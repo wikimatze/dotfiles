@@ -37,20 +37,9 @@ sudo apt-get remove -y mahjongg
 # }}}
 # Packages lua {{{
 
-sudo apt-get install -y lua5.1        # Luca programming language
+sudo apt-get install -y lua5.1
 sudo apt-get install -y liblua5.1-dev # help lua support inside vim
 sudo apt-get install -y libtolua-dev  # for vim installation
-
-# }}}
-# Packages for i3 window manager {{{
-
-sudo apt-get install -y i3-wm    # get the basic window manager
-sudo apt-get install -y i3status # get the basic window manager
-sudo apt-get install -y i3lock   # for the lock screen
-sudo apt-get install -y dmenu    # install the program launcher
-
-sudo apt-get install -y lxappearance
-sudo apt-get install -y feh  # opens a small window and display the image
 
 # }}}
 # Install of packages {{{
