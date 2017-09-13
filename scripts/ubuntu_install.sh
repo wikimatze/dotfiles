@@ -10,12 +10,14 @@ sudo apt-get remove -y leafpad
 sudo apt-get remove -y mousepad
 sudo apt-get remove -y onboard
 sudo apt-get remove -y orage
+sudo apt-get remove -y pidgin
 sudo apt-get remove -y parole
 sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y simple-scan
 sudo apt-get remove -y transmission-common
 sudo apt-get remove -y uget
+sudo apt-get remove -y xfburn
 sudo apt-get remove -y xfce4-dict
 sudo apt-get remove -y xfce4-notes
 sudo apt-get remove -y xfce4-taskmanager
