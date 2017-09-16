@@ -91,6 +91,7 @@ sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
 sudo apt-get install -y gstreamer0.10-plugins-good
 sudo apt-get install -y gstreamer0.10-plugins-ugly
+sudo apt-get install -y gnupg
 sudo apt-get install -y gthumb
 sudo apt-get install -y guvcview
 sudo apt-get install -y hpijs
@@ -191,7 +192,6 @@ sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y xsel # needed for tmux buffer copy and paste with clipboard
 sudo apt-get install -y zlibmagickwand-dev
-sudo apt-get install -y zsh
 sudo apt-get install -y zsnes
 
 sudo apt-get install -y icedtea-plugin # Java Applet Browser support
