@@ -50,7 +50,9 @@ repos=(
   wikimatze/padrino-sprockets-example
   wikimatze/padrino-vagrant
   wikimatze/padrino-zsh-completion
-  wikimatze/padrinobook-website
+
+  padrinobook/padrinobook.com
+
   wikimatze/pumog
   wikimatze/surveyor
   wikimatze/sweetie
