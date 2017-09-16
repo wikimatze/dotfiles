@@ -2,7 +2,6 @@
 # Open the applet
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-fill ~/nextcloud/backgrounds/total_war_1.jpg
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 
 # }}}
 # Define global mod key shortcut {{{
