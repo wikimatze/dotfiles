@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install -y libvte-dev libgnomeui-dev libxfce4ui-1-dev xfce4-dev-tools libvte-2.91-dev libxfce4ui-2-dev
+sudo apt-get install -y libvte-dev libgnomeui-dev libxfce4ui-1-dev xfce4-dev-tools libvte-2.91-dev libxfce4ui-2-dev xfce4-dev-tools
 
 rm -rf /tmp/xfce4-terminal
 # Credits: https://forum.xfce.org/viewtopic.php?id=9297
