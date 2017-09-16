@@ -33,7 +33,7 @@ done
 compdef gpg2=gpg
 
 # Paths settings
-export PATH="$PATH:/usr/local/bin:/usr/local/lib:PATH:$HOME/.tmuxifier/bin:$HOME/bin:$PATH"
+export PATH="$PATH:/usr/local/bin:/usr/local/lib:PATH:$HOME/.tmuxifier/bin"
 
 # Sourcing bash files
 source $HOME/.convert
