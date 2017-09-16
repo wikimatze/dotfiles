@@ -86,7 +86,6 @@ sudo apt-get install -y gitk
 sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
 sudo apt-get install -y golang
 sudo apt-get install -y gparted # better then using fdisk in the terminal
-sudo apt-get install -y gpg2 # updated version of gpg
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
 sudo apt-get install -y gstreamer0.10-plugins-bad
