@@ -180,7 +180,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/nextcloud/latex/projekte
 ln -sf $HOME/git/dotfiles/mucksrcs/padrino_web_mucksrc $HOME/git/padrino-web/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_mucksrc $HOME/git/PadrinoBook/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/padrinocasts_mucksrc $HOME/bitbucket/padrinocasts/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrinobook-website/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/padrinobook_website_mucksrc $HOME/git/padrinobook.com/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/presentations_mucksrc $HOME/bitbucket/presentations/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/pumog_mucksrc $HOME/git/pumog/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/ruby_mucksrc $HOME/nextcloud/latex/projekte/ruby/.mucksrc
