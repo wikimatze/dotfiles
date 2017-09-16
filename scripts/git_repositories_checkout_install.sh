@@ -14,7 +14,6 @@ repos=(
   icholy/ttygif
   jgallen23/toc
   livingstyleguide/livingstyleguide
-  neo/ruby_koans
   nightsailer/padrino-sprockets
   padrino/padrino-framework
   padrino/padrino-recipes
