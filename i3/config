@@ -11,7 +11,7 @@ set $mod Mod4
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
 # workspace and terminal sizes
-font pango:Font Awesome, Futura Bk Bt Bold 10
+font pango:Font Awesome, Futura Bk Bt Bold 11
 
 # }}}
 # Setting for floating windows {{{
@@ -76,7 +76,7 @@ bar {
     mode dock # always show the dock menu
     position top # put the window menu at the top
     font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    font pango:DejaVu Sans Mono 10
+    font pango:DejaVu Sans Mono 13
 }
 # }}}
 # Mappings {{{
