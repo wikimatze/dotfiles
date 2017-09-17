@@ -40,13 +40,6 @@ TEXT
 # JSON for i3bar
 
 [
-  ${if_up eth0}
-    { "full_text" : "◉ ${addr eth0}", "color" : "\#ffffff" },
-  ${else}
-  ${if_up wlan0}
-    { "full_text" : "◎ ${addr wlan0}", "color" : "\#ffffff" },
-  ${endif}
-  ${endif}
   { "full_text" : "${exec $HOME/.conky/cmus.sh}", "color" : "\#ffffff"},
   { "full_text" : "${execi 1800 $HOME/.conky/wetter.sh}", "color" : "\#ffffff"},
   { "full_text" : "${exec $HOME/.conky/sound.sh}", "color" : "\#ccffbb"},
