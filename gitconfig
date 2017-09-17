@@ -71,4 +71,4 @@
 [include]
     path = ~/nextcloud/documents/gitconfig
 [advice]
-	detachedHead = false
+    detachedHead = false
