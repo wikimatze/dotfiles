@@ -184,6 +184,7 @@ sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
+sudo apt-get install -y xfce4-dev-tools
 sudo apt-get install -y xcfa
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig
