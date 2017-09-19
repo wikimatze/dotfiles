@@ -99,7 +99,6 @@ sudo apt-get install -y htop
 sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
-sudo apt-get install -y irssi
 sudo apt-get install -y jfstils
 sudo apt-get install -y kazam
 sudo apt-get install -y lame
