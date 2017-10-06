@@ -2,6 +2,7 @@
 DIR=$HOME/git/dotfiles/latex_package_install
 DEST=/usr/share/texmf/tex/latex
 
+sudo cp -r $DIR/ngerman $DEST
 sudo cp -r $DIR/lineno $DEST
 sudo cp -r $DIR/picins $DEST
 sudo cp -r $DIR/rechnung $DEST
