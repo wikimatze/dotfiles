@@ -135,6 +135,7 @@ sudo apt-get install -y libxslt-dev
 sudo apt-get install -y libxt-dev
 sudo apt-get install -y lynx
 sudo apt-get install -y make
+sudo apt-get install -y meld
 sudo apt-get install -y mencoder
 sudo apt-get install -y mercurial # enables hb command
 sudo apt-get install -y mozilla-plugin-gnash
