@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir -p $HOME/bitbucket
+
 DES=$HOME/bitbucket
 SRC=git@bitbucket.org
 mkdir -p $DES && cd $DES
