@@ -176,10 +176,6 @@ sudo apt-get install -y sox
 sudo apt-get install -y sqlite3
 sudo apt-get install -y sqlmap
 sudo apt-get install -y subversion
-sudo apt-get install -y texinfo
-sudo apt-get install -y tex4ht
-sudo apt-get install -y texlive
-sudo apt-get install -y texlive-lang-german
 sudo apt-get install -y tree
 sudo apt-get install -y vinagre # rdp for gnome
 sudo apt-get install -y vlc
