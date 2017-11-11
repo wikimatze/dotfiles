@@ -20,11 +20,15 @@ else
   gem install neovim
 fi
 
+if [ ! -d "$HOME/.config/nvim" ]; then
+  echo "Cloning my config files into ~/.config/nvim"
+  git clone https://github.com/wikimatze/nvim.git ~/.config/nvim
+fi
 
-echo "Cloning my config files into ~/.config/nvim"
+echo "Updating latest python2 and python3 clients ..."
 
-git clone https://github.com/wikimatze/nvim.git ~/.config/nvim
-
+sudo pip2 install --upgrade neovim
+sudo pip3 install --upgrade neovim
 
 echo "Please open nvim and run :PlugInstall"
 
