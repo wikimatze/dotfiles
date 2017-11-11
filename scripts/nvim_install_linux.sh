@@ -1,7 +1,14 @@
-echo "Install all dependencies for neovim compilation"
-sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip
+# error: "Protocol "https" not supported or disabled in libcurl
+# make sure cmake 3.2.2 is installed  (details under https://github.com/ruslo/hunter/issues/328)
 
-cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout 77a4f8f2
+echo "Install all dependencies for neovim compilation"
+sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl
+
+if [ ! -d "/tmp/neovim" ]; then
+  cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout v0.2.1
+else
+  cd /tmp/neovim
+fi
 
 make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install
 
