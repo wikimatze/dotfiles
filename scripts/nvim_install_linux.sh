@@ -37,5 +37,13 @@ echo "Updating latest python2 and python3 clients ..."
 sudo pip2 install --upgrade neovim
 sudo pip3 install --upgrade neovim
 
+
+if [ ! -f "/usr/share/vim/vim74/rgb.txt" ]; then
+  echo "The file /usr/share/vim/vim74/rgb.txt does not exists => so in ranger :e of a new file will not work"
+else
+  # see related issue under https://github.com/neovim/neovim/issues/6682
+  sudo cp /usr/share/vim/vim74/rgb.txt /usr/local/share/nvim/runtime
+fi
+
 echo "Please open nvim and run :PlugInstall"
 

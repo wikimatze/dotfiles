@@ -10,7 +10,7 @@ dir: ~/git/PadrinoBook
 vim chapters/user_profile.md
 
 [softcover]
-rvm use ruby-2.3.0 && bundle install --binstubs && bundle exec softcover server
+rvm use ruby-2.3.1 && bundle install --binstubs && bundle exec softcover server
 
 [cheatsheet]
 vim ~/git/padrinocheatsheet/latexsheet.tex

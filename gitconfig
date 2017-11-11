@@ -60,7 +60,7 @@
 [push]
     default = matching
 [credential]
-    helper = cache --timeout=36000000
+    helper = netrc -f ~/.netrc.asc -v
 [commit]
     gpgsign = true
 [diff-so-fancy]
@@ -72,3 +72,5 @@
     path = ~/nextcloud/documents/gitconfig
 [advice]
     detachedHead = false
+[gpg]
+	program = gpg
