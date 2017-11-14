@@ -43,7 +43,6 @@ rm -f $HOME/.irssi
 rm -f $HOME/.profile
 rm -f $HOME/.ptignore
 rm -f $HOME/.tmux.conf
-rm -f $HOME/.vimperatorrc
 rm -f $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 rm -f $HOME/.zpreztorc
 rm -f $HOME/.zsh_history
@@ -151,7 +150,6 @@ ln -sf $DOTFILES/irbrc $HOME/.irbrc
 ln -sf $DOTFILES/irssi $HOME/.irssi
 ln -sf $DOTFILES/profile $HOME/.profile
 ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
-ln -sf $DOTFILES/vimperatorrc $HOME/.vimperatorrc
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
 ln -sf $DOTFILES/Xmodmap $HOME/.Xmodmap
 ln -sf $DOTFILES/config/cmus/rc $HOME/.config/cmus/rc
