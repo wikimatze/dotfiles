@@ -1,19 +1,19 @@
 #
-# blog
+# wikimatze
 #
 mux: tmux
-name: blog
+name: wikimatze
 dir: ~/git/wikimatze.de
 
 
 [main]
-vim
+nvim
 
 [rake]
-rvm use ruby-2.3.1 && bundle exec rake
+rvm use ruby-2.4.1 && bundle exec rake
 
 [music]
-vim
+nvim
 - sh sleep 0.2
 :Radio
 
