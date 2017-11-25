@@ -34,8 +34,8 @@ fi
 
 echo "Updating latest python2 and python3 clients ..."
 
-sudo pip2 install --upgrade neovim
-sudo pip3 install --upgrade neovim
+sudo -H pip2 install --upgrade neovim
+sudo -H pip3 install --upgrade neovim
 
 
 if [ ! -f "/usr/share/vim/vim74/rgb.txt" ]; then
