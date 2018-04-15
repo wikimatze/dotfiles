@@ -2,6 +2,9 @@
 # Open the applet
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-fill ~/nextcloud/backgrounds/total_war_1.jpg
+exec --no-startup-id bash ~/.i3/startup_gnome.sh
+
+
 
 # }}}
 # Define global mod key shortcut {{{
@@ -37,6 +40,7 @@ new_window normal 1
 # Assign programs on certain workspaces {{{
 # use xprop to get the window name
 assign [class="^Firefox$"] 2
+assign [class="^qutebrowser"] 2
 
 assign [class="^google-chrome$"] 3
 assign [class="^Thunderbird$"] 3

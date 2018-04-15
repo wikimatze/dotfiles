@@ -53,6 +53,7 @@ rm -f $HOME/.weechat_passphrase
 rm -rf $HOME/.config/gromit-mpx.cfg
 rm -rf $HOME/.config/cmus/rc
 rm -rf $HOME/.config/cmus/album.sh
+rm -f $HOME/.config/qutebrowser/autoconfig.yml
 sudo rm -f /etc/default/apport
 
 # }}}
@@ -106,9 +107,9 @@ sudo rm -f /usr/local/bin/zoom_xfce.sh
 
 ln -sf $DIR/documents/gnupg $HOME/.gnupg
 ln -sf $DIR/documents/ssh $HOME/.ssh
-ln -sf $DOTFILES/config/Terminal $HOME/.config/Terminal
 ln -sf $DOTFILES/config/ranger $HOME/.config/ranger
 ln -sf $DOTFILES/config/Roxterm $HOME/.config/roxterm.sourceforge.net
+ln -sf $DOTFILES/config/Terminal $HOME/.config/Terminal
 
 ln -sf $DOTFILES/fonts $HOME/.fonts
 ln -sf $DOTFILES/zsh $HOME/.zsh
@@ -154,6 +155,7 @@ ln -sf $DOTFILES/zshrc $HOME/.zshrc
 ln -sf $DOTFILES/Xmodmap $HOME/.Xmodmap
 ln -sf $DOTFILES/config/cmus/rc $HOME/.config/cmus/rc
 ln -sf $DOTFILES/config/cmus/album.sh $HOME/.config/cmus/album.sh
+ln -sf $DOTFILES/config/qutebrowser/autoconfig.yml $HOME/.config/qutebrowser/autoconfig.yml
 ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
 ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
