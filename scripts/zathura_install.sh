@@ -1,8 +1,18 @@
 #!/bin/bash
 
-GIRARA_VERSION=0.2.7
-POPPLER_VERSION=0.2.7
-ZATHURA_VERSION=0.3.7
+lsb_release -a | grep 14.04
+ubuntu_old=$?
+
+if [ $ubuntu_old == 0 ]
+then
+  GIRARA_VERSION=0.2.6
+  POPPLER_VERSION=0.2.6
+  ZATHURA_VERSION=0.3.6
+else
+  GIRARA_VERSION=0.2.7
+  POPPLER_VERSION=0.2.7
+  ZATHURA_VERSION=0.3.7
+fi
 
 # otherwise the own girara compilation will not work
 sudo apt-get remove libgirara-dev
