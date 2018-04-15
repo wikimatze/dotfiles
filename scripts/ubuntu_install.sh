@@ -166,7 +166,6 @@ sudo apt-get install -y rar
 sudo apt-get install -y roxterm
 sudo apt-get install -y scala
 sudo apt-get install -y screenkey
-sudo apt-get install -y scrot
 sudo apt-get install -y seahorse
 sudo apt-get install -y shntool
 sudo apt-get install -y skype
@@ -182,6 +181,7 @@ sudo apt-get install -y vlc
 sudo apt-get install -y wkhtmltopdf
 sudo apt-get install -y wmctrl
 sudo apt-get install -y xfce4-dev-tools
+sudo apt-get install -y xfce4-screenshooter
 sudo apt-get install -y xcfa
 sudo apt-get install -y xclip
 sudo apt-get install -y xfig

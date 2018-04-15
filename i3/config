@@ -110,8 +110,8 @@ bindsym $mod+Shift+space floating toggle
 # Toggling between tiling / floating windows `Mod-Shift-Space`{{{
 bindsym $mod+space focus mode_toggle
 # }}}
-# Screenshot under /tmp `Mod-x` {{{
-bindsym --release $mod+x exec --no-startup-id scrot -e 'mv $f /tmp/'
+# Screenshot with `Mod-x` {{{
+bindsym --release $mod+x exec --no-startup-id xfce4-screenshooter
 # }}}
 # start rofi `Mod-d`{{{
 bindsym $mod+d exec rofi -show run -font "ubuntu mono 16"
