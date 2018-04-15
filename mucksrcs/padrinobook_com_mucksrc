@@ -2,8 +2,8 @@
 # padrinobook-website
 #
 mux: tmux
-name: padrinobook-website
-dir: ~/git/padrinobook-website
+name: padrinobook-com
+dir: ~/git/padrinobook.com
 
 [vim]
 vim
