@@ -10,7 +10,7 @@ dir: ~/git/wikimatze.de
 nvim
 
 [rake]
-rvm use ruby-2.4.1 && bundle exec rake
+rvm use ruby-2.5.0 && bundle exec rake
 
 [music]
 nvim

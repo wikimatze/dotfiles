@@ -7,19 +7,19 @@ dir: ~/git/job-vacancy
 
 
 [main]
-vim
+nvim
 
 [specs]
-rvm use ruby-2.3.1 && bundle && bundle exec rspec spec
+rvm use ruby-2.4.2 && bundle && bundle exec rspec spec
 
 [sqlite]
 sqlite3 db/job_vacancy_development.db
 
 [notes]
-vim ~/nextcloud/notes/padrino.txt
+nvim ~/nextcloud/notes/padrino.txt
 
 [todo]
-vim ~/nextcloud/notes/padrino-todo.txt
+nvim ~/nextcloud/notes/padrino-todo.txt
 
 
 [tmp]

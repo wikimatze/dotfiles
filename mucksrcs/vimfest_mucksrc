@@ -7,15 +7,12 @@ dir: ~/git/vimfest
 
 
 [main]
-vim
+nvim
 
 [rake]
 rvm use ruby-2.4.2 && bundle exec middleman s
 
-[music]
-vim
-- sh sleep 0.2
-:Radio
+[free]
 
 [tmp]
 tmux select-window -t 1

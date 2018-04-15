@@ -1,10 +1,8 @@
 # Startup commands {{{
 # Open the applet
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill ~/nextcloud/backgrounds/total_war_1.jpg
+exec --no-startup-id feh --bg-fill ~/nextcloud/backgrounds/mordheim/626374.jpg
 exec --no-startup-id bash ~/.i3/startup_gnome.sh
-
-
 
 # }}}
 # Define global mod key shortcut {{{

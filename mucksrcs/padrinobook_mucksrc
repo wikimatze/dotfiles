@@ -7,20 +7,20 @@ dir: ~/git/PadrinoBook
 
 
 [section]
-vim chapters/user_profile.md
+nvim chapters/user_profile.md
 
 [softcover]
 rvm use ruby-2.3.1 && bundle install --binstubs && bundle exec softcover server
 
 [cheatsheet]
-vim ~/git/padrinocheatsheet/latexsheet.tex
+nvim ~/git/padrinocheatsheet/latexsheet.tex
 
 [todo]
-vim ~/nextcloud/notes/padrino-todo.txt
+nvim ~/nextcloud/notes/padrino-todo.txt
 
 
 [irc]
-weechat
+ssh padrino@fomalhaut.uberspace.de
 
 [tmp]
 tmux select-window -t section
