@@ -121,7 +121,6 @@ if [ "$OSTYPE" == "linux-gnu" ]
 then
   ln -sf $DOTFILES/bashrc $HOME/.bashrc
   ln -sf $DOTFILES/functions_linux $HOME/.functions_linux
-  sudo rm -f /etc/wpa_supplicant.conf
 elif [ "$OSTYPE" == "darwin10.0" ]
 then
   ln -sf $DOTFILES/bashrc $HOME/.bash_profile
