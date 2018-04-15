@@ -1,7 +1,8 @@
 #!/bin/bash
-GIRARA_VERSION=0.2.6
-POPPLER_VERSION=0.2.6
-ZATHURA_VERSION=0.3.6
+
+GIRARA_VERSION=0.2.7
+POPPLER_VERSION=0.2.7
+ZATHURA_VERSION=0.3.7
 
 # otherwise the own girara compilation will not work
 sudo apt-get remove libgirara-dev
@@ -13,6 +14,9 @@ sudo apt-get install libgtk-3-dev
 sudo apt-get install libmagic-dev xdotool
 
 rm -rf /tmp/girara /tmp/zathura /tmp/zathura-pdf-poppler
+
+# need thid for zathura-pdf-poppler compilation
+sudo apt-get install libpoppler-glib-dev
 
 
 cd /tmp && git clone https://github.com/pwmt/girara.git && cd girara && git checkout $GIRARA_VERSION && make && sudo make install
