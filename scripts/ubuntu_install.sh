@@ -202,6 +202,10 @@ sudo apt-get install -y libswt-cairo-gtk-3-jni
 # install missing codecs, to play all videos and dvd formats
 sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53 xubuntu-restricted-extras libavcodec-extra ubuntu-restricted-extras
 
+# qtpass (https://github.com/IJHack/qtpass)
+sudo apt-get install -y qtpass
+
+
 # }}}
 # Update and upgrade {{{
 
