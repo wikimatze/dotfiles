@@ -82,6 +82,9 @@ bar {
 }
 # }}}
 # Mappings {{{
+# Launch password manager `Mod-p`{{{
+bindsym $mod+p exec rofi-pass
+# }}}
 # New terminal ... `Mod-Return` {{{
 bindsym $mod+Return exec i3-sensible-terminal
 # }}}
