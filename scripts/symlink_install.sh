@@ -8,6 +8,7 @@ unlink $HOME/latex
 unlink $HOME/.fonts
 unlink $HOME/.zsh
 unlink $HOME/.config/ranger
+unlink $HOME/.config/rofi-pass
 unlink $HOME/.config/roxterm.sourceforge.net
 unlink $HOME/.config/Terminal
 unlink $HOME/.i3
@@ -102,6 +103,7 @@ sudo unlink /usr/local/bin/zoom_xfce.sh
 # Directories links {{{
 
 ln -sf $DOTFILES/config/ranger $HOME/.config/ranger
+ln -sf $DOTFILES/config/rofi-pass $HOME/.config/rofi-pass
 ln -sf $DOTFILES/config/Roxterm $HOME/.config/roxterm.sourceforge.net
 ln -sf $DOTFILES/config/Terminal $HOME/.config/Terminal
 
