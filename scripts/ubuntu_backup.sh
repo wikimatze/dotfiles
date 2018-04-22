@@ -15,4 +15,5 @@ sudo nice -n 19 rsync -rltDvuWz --delete ~/Downloads "$DEST" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/.thunderbird "$DEST" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/.ssh "$DEST" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/.password-store "$DEST" 2>> out.txt
+sudo nice -n 19 rsync -rltDvuWz --delete ~/.gnupg "$DEST" 2>> out.txt
 
