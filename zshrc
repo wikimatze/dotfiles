@@ -208,3 +208,5 @@ setxkbmap de
 
 eval `gnome-keyring-daemon --start`
 
+# export gpg key because prezto is not anymore
+export GPG_TTY=$(tty)
