@@ -1,0 +1,38 @@
+#################
+# CORE SETTINGS #
+#################
+
+#
+# Zim settings
+#
+
+# Select what modules you would like enabled.
+zmodules=(git-info utility prompt syntax-highlighting completion autosuggestions)
+
+
+###################
+# MODULE SETTINGS #
+###################
+
+#
+# Prompt
+#
+# Set your desired prompt here
+zprompt_theme='gitster'
+
+#
+# Input
+#
+# Set to vi or emacs
+zinput_mode='vi'
+
+
+#
+# Syntax-Highlighting
+#
+# This determines what highlighters will be used with the syntax-highlighting module.
+# Documentation of the highlighters can be found here:
+#   https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
+# For (u)rxvt, termite and gnome-terminal users,
+# removing the 'cursor' highlighter will fix the disappearing cursor problem
+zhighlighters=(main brackets cursor)

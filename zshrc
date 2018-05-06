@@ -1,12 +1,15 @@
-# folder for all autocomplete functions
 fpath=($HOME/.zsh/completions $fpath)
 autoload -U compinit
 
-# Prezto {{{
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# zimfw {{{
+# Change default zim location
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+
+# Start zim
+[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+
 # }}}
+
 # Setup {{{
 export EDITOR='vim'
 export TERM=screen-256color
@@ -28,9 +31,6 @@ unsetopt correct_all
 for lib_file ($HOME/.zsh/lib/*.zsh); do
   source $lib_file
 done
-
-# autocompletion for gpg2 which has similar commands as gpg
-compdef gpg2=gpg
 
 # Paths settings
 export PATH="$PATH:/usr/local/bin:/usr/local/lib:PATH:$HOME/.tmuxifier/bin"

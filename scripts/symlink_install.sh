@@ -15,6 +15,7 @@ unlink $HOME/.i3
 unlink $HOME/.conky
 unlink $HOME/.weechat
 
+
 # }}}
 # Bash files {{{
 
@@ -41,8 +42,6 @@ unlink $HOME/.irssi
 unlink $HOME/.profile
 unlink $HOME/.ptignore
 unlink $HOME/.tmux.conf
-unlink $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
-unlink $HOME/.zpreztorc
 unlink $HOME/.zsh_history
 unlink $HOME/.zshrc
 unlink $HOME/.latexmkrc
@@ -52,6 +51,8 @@ unlink $HOME/.config/gromit-mpx.cfg
 unlink $HOME/.config/cmus/rc
 unlink $HOME/.config/cmus/album.sh
 unlink $HOME/.config/qutebrowser/autoconfig.yml
+unlink $HOME/.zimrc
+
 sudo unlink /etc/default/apport
 
 # }}}
@@ -153,12 +154,11 @@ ln -sf $DOTFILES/config/cmus/album.sh $HOME/.config/cmus/album.sh
 ln -sf $DOTFILES/config/qutebrowser/autoconfig.yml $HOME/.config/qutebrowser/autoconfig.yml
 ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
-ln -sf $DOTFILES/prezto/zpreztorc $HOME/.zpreztorc
-ln -sf $DOTFILES/prezto/prompt_wikimatze_setup $HOME/.zprezto/modules/prompt/functions/prompt_wikimatze_setup
 ln -sf $DOTFILES/latexmkrc $HOME/.latexmkrc
 ln -sf $DIR/documents/weechat_passphrase $HOME/.weechat_passphrase
 ln -sf $HOME/.conky/conkyrc $HOME/.conkyrc
 ln -sf $DOTFILES/config/gromit/gromit-mpx.cfg $HOME/.config/gromit-mpx.cfg
+ln -sf $DOTFILES/zimrc $HOME/.zimrc
 
 # }}}
 # Mucksrcs {{{
