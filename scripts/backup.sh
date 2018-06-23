@@ -4,12 +4,17 @@
 #
 sudo rm out.txt
 echo "" > out.txt
-# -v ... increase verbosity
+# -a ... archive mode; equals -rlptgoD
 # -r ... recurse into directories
-# -u ... skip files that are newer on the receiver
-# -W ... copy whole file
-# -p ... the source and receiving permissions should be the same
 # -l ... preserve symlinks
+# -p ... the source and receiving permissions should be the same
+# -t ... preserve modified time
+# -g ... preserve group
+# -o ... preserve owner
+# -D ... preserve device files (e.g. symbolic links)
+# -W ... copy whole file
+# -z ... compress file data during the transfer
+# -P ... keep partially transferred files
 
-sudo nice -n 19 rsync -rltDvuWz --delete --ignore-errors --exclude .Trash* "$1" "$2" 2>> out.txt
+sudo nice -n 19 rsync -aWzPv --delete --ignore-errors --exclude .Trash* "$1" "$2" 2>> out.txt
 
