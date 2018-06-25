@@ -6,7 +6,7 @@ name: padrinocasts
 dir: ~/bitbucket/padrinocasts
 
 [files]
-vim
+nvim
 
 [build]
 rvm use ruby-2.3.1 && middleman s

@@ -10,14 +10,13 @@ dir: ~/git/PadrinoBook
 nvim chapters/user_profile.md
 
 [softcover]
-rvm use ruby-2.3.1 && bundle install --binstubs && bundle exec softcover server
+rvm use ruby-2.5.0 && bundle install --binstubs && bundle exec softcover server
 
 [cheatsheet]
 nvim ~/git/padrinocheatsheet/latexsheet.tex
 
 [todo]
 nvim ~/nextcloud/notes/padrino-todo.txt
-
 
 [irc]
 ssh padrino@fomalhaut.uberspace.de

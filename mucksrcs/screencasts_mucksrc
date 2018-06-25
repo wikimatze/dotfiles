@@ -7,7 +7,7 @@ dir: ~/git/screencasts
 
 
 [code]
-vim
+nvim
 
 [slides]
 gromit-mpx &

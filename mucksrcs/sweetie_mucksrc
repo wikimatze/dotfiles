@@ -7,7 +7,7 @@ dir: ~/git/sweetie
 
 
 [files]
-vim
+nvim
 
 [specs]
 rvm use ruby-2.3.1 && bundle && bundle exec rspec

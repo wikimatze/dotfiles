@@ -6,7 +6,7 @@ name: padrinobook-com
 dir: ~/git/padrinobook.com
 
 [vim]
-vim
+nvim
 
 [build]
 rvm use ruby-head && rake
