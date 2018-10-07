@@ -1,6 +1,6 @@
 [roxterm profile]
 colour_scheme=Default
-font=Droid Sans Mono for Powerline 21
+font=Droid Sans Mono for Powerline 19
 show_resize_grip=1
 visible_bell=1
 cursor_shape=0
