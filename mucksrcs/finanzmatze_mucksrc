@@ -1,0 +1,18 @@
+#
+# padrinobook
+#
+mux: tmux
+name: finanzmatze
+dir: ~/git/finanzmatze
+
+
+[section]
+nvim
+
+[server]
+hugo server
+
+[tmp]
+tmux select-window -t section
+tmux kill-window -t tmp
+
