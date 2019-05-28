@@ -3,7 +3,7 @@
 #
 mux: tmux
 name: finanzmatze
-dir: ~/git/finanzmatze
+dir: ~/git/finanzen
 
 
 [section]

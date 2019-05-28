@@ -184,7 +184,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/sweetie_mucksrc $HOME/git/sweetie/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimberlin_mucksrc $HOME/git/vimberlin.de/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/finanzmatze_mucksrc $HOME/git/finanzmatze/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/finanzmatze_mucksrc $HOME/git/finanzen/.mucksrc
 
 # }}}
 # Bin files {{{
