@@ -22,6 +22,14 @@ settings:
     global: white
   completion.scrollbar.width:
     global: 12
+  content.host_blocking.enabled:
+    global: true
+  content.host_blocking.whitelist:
+    global:
+    - piwik.org
+    - 0.0.0.0
+  content.plugins:
+    global: true
   content.private_browsing:
     global: false
   fonts.messages.warning:
