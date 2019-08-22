@@ -115,7 +115,7 @@ alias mucksangular="mucks ~/nextcloud/latex/projekte/angular/.mucksrc"
 alias muckscv="mucks ~/nextcloud/latex/vorlagen/cv/.mucksrc"
 alias mucksdielernhelferadmin="mucks ~/bitbucket/die-lernhelfer-admin/.mucksrc"
 alias mucksdielernhelferwebsite="mucks ~/bitbucket/die-lernhelfer-website/.mucksrc"
-alias mucksfinanten="mucks ~/git/finanzen/.mucksrc"
+alias mucksfinanzen="mucks ~/git/finanzen/.mucksrc"
 alias mucksjavascript="mucks ~/nextcloud/latex/projekte/javascript/.mucksrc"
 alias mucksjobvacancy="mucks ~/git/job-vacancy/.mucksrc"
 alias muckskanban="mucks ~/nextcloud/latex/projekte/kanban/.mucksrc"
@@ -140,6 +140,9 @@ alias ..='cd ..'
 alias ls='ls --color=auto'
 alias svim='vim --servername vim'
 alias qutebrowser='qutebrowser --backend webengine'
+alias edividenden='libreoffice /home/wm/nextcloud/finanzen/dividenden.ods'
+alias efinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/finanzcockpit.ods'
+alias ehaushaltsbuch='libreoffice /home/wm/nextcloud/finanzen/haushaltsbuch.ods'
 
 # zsh-stats: shows the most typed in commands
 # based on https://github.com/robbyrussell/oh-my-zsh/blob/217d8f0540a41b2927caf986561e45634fa1952a/lib/functions.zsh#L2
