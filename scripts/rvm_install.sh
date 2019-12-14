@@ -1,7 +1,6 @@
 #!/bin/bash
-command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-unset GEM_HOME
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-
-source /usr/local/rvm/scripts/rvm
+# instructions under https://github.com/rvm/ubuntu_rvm
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
 
