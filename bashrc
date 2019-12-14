@@ -1,6 +1,9 @@
-exec zsh
+which zsh > /dev/null 2>&1
+if [ $? = 1 ]; then
+  echo "zsh is not installed"
+  [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+else
+  exec zsh
+fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
