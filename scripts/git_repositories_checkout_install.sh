@@ -28,8 +28,6 @@ repos=(
   vimberlin/vimberlinbot
   vimberlin/vimfest
   wikimatze/PadrinoBook
-  wikimatze/angular-fundamentals-app.git
-  wikimatze/angular-testing-app
   wikimatze/awesome
   wikimatze/awesome-fallout
   wikimatze/brokenlifts-vm
@@ -46,7 +44,6 @@ repos=(
   wikimatze/padrino-hello-world-heroku
   wikimatze/padrino-hello-world-heroku-postgres
   wikimatze/padrino-livingstyleguide
-  wikimatze/padrino-observer-example-app
   wikimatze/padrino-sprockets-example
   wikimatze/padrino-vagrant
   wikimatze/padrino-zsh-completion
@@ -54,7 +51,6 @@ repos=(
   padrinobook/padrinobook.com
 
   wikimatze/pumog
-  wikimatze/surveyor
   wikimatze/sweetie
   wikimatze/tocdown
   wikimatze/vim-banshee
