@@ -1,13 +1,15 @@
 # error: "Protocol "https" not supported or disabled in libcurl
 # make sure cmake 3.2.2 is installed  (details under https://github.com/ruslo/hunter/issues/328)
 
+VERSION="v0.3.3"
+
 echo "Install all dependencies for neovim compilation"
 sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl
 
 if [ ! -d "/tmp/neovim" ]; then
-  cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout v0.2.2
+  cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout $VERSION
 else
-  cd /tmp/neovim
+  cd /tmp/neovim && git checkout $VERSION
 fi
 
 make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install
@@ -34,8 +36,8 @@ fi
 
 echo "Updating latest python2 and python3 clients ..."
 
-sudo -H pip2 install --upgrade neovim
-sudo -H pip3 install --upgrade neovim
+sudo -H pip2 install --upgrade pynvim
+sudo -H pip3 install --upgrade pynvim
 
 
 if [ ! -f "/usr/share/vim/vim74/rgb.txt" ]; then
