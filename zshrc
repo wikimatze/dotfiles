@@ -144,6 +144,8 @@ alias edividenden='libreoffice /home/wm/nextcloud/finanzen/dividenden.ods'
 alias efinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/finanzcockpit.ods'
 alias ehaushaltsbuch='libreoffice /home/wm/nextcloud/finanzen/haushaltsbuch.ods'
 
+alias ehanafinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/hanna/finanzcockpit.ods'
+alias ehanadividenden='libreoffice /home/wm/nextcloud/finanzen/hanna/dividenden.ods'
 # zsh-stats: shows the most typed in commands
 # based on https://github.com/robbyrussell/oh-my-zsh/blob/217d8f0540a41b2927caf986561e45634fa1952a/lib/functions.zsh#L2
 function zsh-stats() {
