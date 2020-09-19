@@ -12,7 +12,6 @@ sudo apt-get remove -y onboard
 sudo apt-get remove -y orage
 sudo apt-get remove -y pidgin
 sudo apt-get remove -y parole
-sudo apt-get remove -y rhythmbox
 sudo apt-get remove -y ristretto
 sudo apt-get remove -y simple-scan
 sudo apt-get remove -y transmission-common
@@ -161,6 +160,7 @@ sudo apt-get install -y python-pip # need to install python extensions via pip
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y python3
 sudo apt-get install -y python3-pip
+sudo apt-get install -y rhythmbox
 sudo apt-get install -y rake
 sudo apt-get install -y rar
 sudo apt-get install -y roxterm
