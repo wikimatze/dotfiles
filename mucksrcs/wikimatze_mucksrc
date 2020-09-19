@@ -10,13 +10,7 @@ dir: ~/git/wikimatze.de
 nvim
 
 [rake]
-rvm use ruby-2.5.0 && bundle exec rake
-
-[music]
-nvim
-- sh sleep 0.2
-:Radio
-
+rvm use default && bundle exec rake
 
 [tmp]
 tmux select-window -t 1
