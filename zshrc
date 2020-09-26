@@ -68,6 +68,7 @@ setopt hist_ignore_all_dups   # delete an old recorded event if a new event is a
 setopt hist_save_no_dups      # do not write a duplicate event to the history file
 setopt hist_verify            # do not execute immediately upon history expansion
 setopt share_history          # share history between all sessions
+setopt HIST_IGNORE_SPACE      # space in front of command will not append to history file
 
 
 # }}}
