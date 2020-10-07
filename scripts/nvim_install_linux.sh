@@ -1,7 +1,7 @@
 # error: "Protocol "https" not supported or disabled in libcurl
 # make sure cmake 3.2.2 is installed  (details under https://github.com/ruslo/hunter/issues/328)
 
-VERSION="v0.3.3"
+VERSION="v0.3.5"
 
 echo "Install all dependencies for neovim compilation"
 sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl
