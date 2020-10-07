@@ -18,15 +18,15 @@ fi
 sudo apt-get remove libgirara-dev
 
 # need for girara compilation
-sudo apt-get install libgtk-3-dev
+sudo apt-get install libgtk-3-dev -y
 
 # need for zathura compilation
-sudo apt-get install libmagic-dev xdotool
+sudo apt-get install libmagic-dev xdotool -y
 
 rm -rf /tmp/girara /tmp/zathura /tmp/zathura-pdf-poppler
 
 # need thid for zathura-pdf-poppler compilation
-sudo apt-get install libpoppler-glib-dev
+sudo apt-get install libpoppler-glib-dev -y
 
 
 cd /tmp && git clone https://github.com/pwmt/girara.git && cd girara && git checkout $GIRARA_VERSION && make && sudo make install
