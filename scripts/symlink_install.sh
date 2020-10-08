@@ -58,8 +58,6 @@ sudo unlink /etc/default/apport
 # }}}
 # Mucksrcs {{{
 
-unlink $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
-unlink $HOME/bitbucket/die-lernhelfer-website/.mucksrc
 unlink $HOME/bitbucket/padrinocasts/.mucksrc
 unlink $HOME/bitbucket/presentations/.mucksrc
 unlink $HOME/git/PadrinoBook/.mucksrc
@@ -167,8 +165,6 @@ ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/nextcloud/latex/projekt
 ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/nextcloud/latex/projekte/angular/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/wikimatze_mucksrc $HOME/git/wikimatze.de/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/nextcloud/latex/vorlagen/cv/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_admin_mucksrc $HOME/bitbucket/die-lernhelfer-admin/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/die_lernhelfer_website_mucksrc $HOME/bitbucket/die-lernhelfer-website/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/javascript_mucksrc $HOME/nextcloud/latex/projekte/javascript/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/job_vacancy_mucksrc $HOME/git/job-vacancy/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/kanban_mucksrc $HOME/nextcloud/latex/projekte/kanban/.mucksrc
