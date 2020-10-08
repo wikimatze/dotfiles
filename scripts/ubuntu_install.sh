@@ -122,7 +122,7 @@ sudo apt-get install -y libreoffice-gtk
 sudo apt-get install -y libreoffice-impress
 sudo apt-get install -y libreoffice-writer
 sudo apt-get install -y libsasl2-dev # for memcached gem
-sudo apt-get install -y libsqlite3-dev
+sudo apt-get install -y libsqlite3-dev # need for sqlite3 gem (ruby)
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y libx11-dev
 sudo apt-get install -y libxml2-dev
