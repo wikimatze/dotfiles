@@ -46,9 +46,7 @@ sudo apt-get install -y libtolua-dev  # for vim installation
 sudo apt-get install -y browser-plugin-freshplayer-pepperflash # need for flash chromium + firefox
 sudo apt-get install -y audacity
 sudo apt-get install -y acpi # need for battery status i3 (conky)
-sudo apt-get install -y aircrack-ng
-sudo apt-get install -y arandr
-sudo apt-get install -y banshee
+sudo apt-get install -y arandr # connect monitors for i3
 sudo apt-get install -y build-essential
 sudo apt-get install -y calibre
 sudo apt-get install -y checkbashisms # syntax checker for shell scripts
@@ -70,20 +68,19 @@ sudo apt-get install -y exuberant-tags
 sudo apt-get install -y ffmpeg
 sudo apt-get install -y fig2ps
 sudo apt-get install -y fig2sty
-sudo apt-get install -y fish
 sudo apt-get install -y flac
 sudo apt-get install -y flashplugin-installer
 sudo apt-get install -y ftp
 sudo apt-get install -y handbrake
 sudo apt-get install -y gdebi-core # easier installation of packages and resolves dependencies in a better way
 sudo apt-get install -y gedit
+sudo apt-get install -y gcc
 sudo apt-get install -y gftp
 sudo apt-get install -y ghc
 sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 sudo apt-get install -y gitg
 sudo apt-get install -y gitk
 sudo apt-get install -y gmrun # Small window-prompt for running programs, used by luca
-sudo apt-get install -y golang
 sudo apt-get install -y gparted # better then using fdisk in the terminal
 sudo apt-get install -y graphicsmagick-libmagick-dev-compat
 sudo apt-get install -y gstreamer0.10-lame
@@ -116,7 +113,7 @@ sudo apt-get install -y libmagickand-dev
 sudo apt-get install -y libmagickcore-dev
 sudo apt-get install -y libmagickwand-dev # needed for rmagick ruby gem
 sudo apt-get install -y libmysqlclient-dev
-sudo apt-get install -y libncurses-dev
+sudo apt-get install -y libncurses-dev # need for cmus
 sudo apt-get install -y libpq-dev
 sudo apt-get install -y libreadline-dev # needed to start the rails console
 sudo apt-get install -y libreadline5-dev
@@ -149,13 +146,11 @@ sudo apt-get install -y pandoc
 sudo apt-get install -y pdfchain
 sudo apt-get install -y pdftk
 sudo apt-get install -y pngcrush
-sudo apt-get install -y postgresql postgresql-client pgadmin3
 sudo apt-get install -y powertop
 sudo apt-get install -y preload
 sudo apt-get install -y procps # need for pgrep package
 sudo apt-get install -y pv
 sudo apt-get install -y python-fontforge # need poweline fonts
-sudo apt-get install -y python-gtkspell
 sudo apt-get install -y python-pip # need to install python extensions via pip
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y python3
@@ -164,12 +159,9 @@ sudo apt-get install -y rhythmbox
 sudo apt-get install -y rake
 sudo apt-get install -y rar
 sudo apt-get install -y roxterm
-sudo apt-get install -y scala
 sudo apt-get install -y screenkey
-sudo apt-get install -y seahorse
+sudo apt-get install -y seahorse # key management
 sudo apt-get install -y shntool
-sudo apt-get install -y skype
-sudo apt-get install -y smartmontools
 sudo apt-get install -y soundconverter
 sudo apt-get install -y sox
 sudo apt-get install -y sqlite3
@@ -200,7 +192,7 @@ sudo apt-get install -y libdvd-pkg # encrypted DVD playback
 sudo apt-get install -y libswt-cairo-gtk-3-jni
 
 # install missing codecs, to play all videos and dvd formats
-sudo apt-get install -y libavformat-extra-53 libavcodec-extra-53 xubuntu-restricted-extras libavcodec-extra ubuntu-restricted-extras
+sudo apt-get install -y xubuntu-restricted-extras libavcodec-extra ubuntu-restricted-extras
 
 # qtpass (https://github.com/IJHack/qtpass)
 sudo apt-get install -y qtpass
@@ -211,5 +203,10 @@ sudo apt-get install -y qtpass
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
+
+# }}}
+# Cleanup {{{
+
+sudo apt autoremove
 
 # }}}

@@ -220,3 +220,5 @@ eval `gnome-keyring-daemon --start`
 
 # export gpg key because prezto is not anymore
 export GPG_TTY=$(tty)
+PATH=/home/wm/rclone:$PATH
+PATH=/home/wm/rclone:$PATH
