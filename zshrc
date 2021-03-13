@@ -153,6 +153,9 @@ alias ehannafinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/hanna/finanzc
 alias ehannadividenden='libreoffice /home/wm/nextcloud/finanzen/hanna/dividenden.ods'
 alias efelixfinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/felix_comdirect/finanzcockpit.ods'
 
+alias clear_docker='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker volume ls -qf dangling=true | xargs -r docker volume rm'
+
+
 # zsh-stats: shows the most typed in commands
 # based on https://github.com/robbyrussell/oh-my-zsh/blob/217d8f0540a41b2927caf986561e45634fa1952a/lib/functions.zsh#L2
 function zsh-stats() {
