@@ -19,8 +19,11 @@ export MANPAGER="vim -M +MANPAGER -"
 export BROWSER='/usr/bin/firefox'
 export CMUS_HOME="$HOME/.config/cmus"
 
+# get rid of ruby deprecation warnings (https://stackoverflow.com/questions/59491848/how-to-fix-railss-warning-messages-with-ruby-2-7-0)
+export RUBYOPT='-W0'
 
-# Uncomment following line if you want to disable autosetting terminal title.
+
+ #Uncomment following line if you want to disable autosetting terminal title.
 # solution for tmux problems
 export DISABLE_AUTO_TITLE="true"
 
