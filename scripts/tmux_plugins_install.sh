@@ -6,6 +6,6 @@ git clone https://github.com/tmux-plugins/tmux-yank ~/.tmux/plugins/tmux-yank
 git clone https://github.com/tmux-plugins/tmux-urlview ~/.tmux/plugins/tmux-urlview
 git clone https://github.com/tmux-plugins/tmux-battery ~/.tmux/plugins/tmux-battery
 
-# nedd for tmux-urlview
+# need for tmux-urlview
 sudo apt-get install urlview
 
