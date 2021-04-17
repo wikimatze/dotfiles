@@ -96,6 +96,7 @@ sudo unlink /usr/local/bin/ttl
 sudo unlink /usr/local/bin/tts
 sudo unlink /usr/local/bin/ttscreencast
 sudo unlink /usr/local/bin/zoom_xfce.sh
+sudo unlink /usr/local/bin/nautab.sh
 
 # }}}
 # }}}
@@ -201,6 +202,7 @@ sudo ln -sf $DOTFILES/bin/ttl.sh /usr/local/bin/ttl
 sudo ln -sf $DOTFILES/bin/tts.sh /usr/local/bin/tts
 sudo ln -sf $DOTFILES/bin/ttscreencast.sh /usr/local/bin/ttscreencast
 sudo ln -sf $DOTFILES/bin/zoom_xfce.sh /usr/local/bin/zoom_xfce.sh
+sudo ln -sf $DOTFILES/bin/nautab.sh /usr/local/bin/nautab.sh
 sudo ln -sf $DOTFILES/etc/default/apport /etc/default/apport
 sudo ln -sf $HOME/git/ttygif/concat.sh /usr/local/bin/ttyconcat
 
