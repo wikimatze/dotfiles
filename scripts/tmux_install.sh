@@ -6,6 +6,10 @@ sudo apt-get install -y libevent-dev libncurses-dev pkg-config
 # install xsel (for copy/paste)
 sudo apt-get install -y xsel
 
+# for compilation
+sudo apt-get install -y bison
+sudo apt-get install -y byacc
+
 # actlocal needs those packages
 sudo apt-get install -y automake
 sudo apt-get install -y make
