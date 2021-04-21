@@ -153,7 +153,8 @@ alias ehannafinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/hanna/finanzc
 alias ehannadividenden='libreoffice /home/wm/nextcloud/finanzen/hanna/dividenden.ods'
 alias efelixfinanzcockpit='libreoffice /home/wm/nextcloud/finanzen/felix_comdirect/finanzcockpit.ods'
 
-alias clear_docker='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker volume ls -qf dangling=true | xargs -r docker volume rm'
+# hack with || true which always exits with a status code indicates success
+alias clear_docker='docker rm $(docker ps -a -q) || true && docker rmi $(docker images -q) --force || true && docker volume ls -qf dangling=true | xargs -r docker volume rm'
 
 
 # zsh-stats: shows the most typed in commands
