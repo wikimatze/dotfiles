@@ -36,9 +36,8 @@ if [ ! -d "$HOME/.config/nvim" ]; then
   git clone https://github.com/wikimatze/nvim.git ~/.config/nvim
 fi
 
-echo "Updating latest python2 and python3 clients ..."
+echo "Updating latest python3 client ..."
 
-sudo -H pip2 install --upgrade pynvim
 sudo -H pip3 install --upgrade pynvim
 
 
