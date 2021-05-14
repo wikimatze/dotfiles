@@ -4,7 +4,9 @@
 VERSION="v0.4.4"
 
 echo "Install all dependencies for neovim compilation"
-sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl
+# need ruby-dev for neovim
+# libtool-bin for neovim compilation
+sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl ruby-dev libtool-bin
 
 if [ ! -d "/tmp/neovim" ]; then
   cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout $VERSION
