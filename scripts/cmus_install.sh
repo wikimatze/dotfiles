@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=2.8.0-rc0
+VERSION=2.9.1
 sudo apt-get build-dep cmus
 
 # get version from https://cmus.github.io/#download
