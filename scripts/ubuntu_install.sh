@@ -24,12 +24,7 @@ sudo apt-get remove -y xmag
 
 # Remove games {{{
 
-sudo apt-get remove -y aisleriot
-sudo apt-get remove -y gigolo
-sudo apt-get remove -y checkbox evolution tomboy empathy libsane
-sudo apt-get remove -y gnome-sudoku
-sudo apt-get remove -y gnomine
-sudo apt-get remove -y mahjongg
+sudo apt-get remove -y sgt-puzzles
 
 # }}}
 
@@ -201,12 +196,12 @@ sudo apt-get install -y qtpass
 # }}}
 # Update and upgrade {{{
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
+#sudo apt-get -y update
+#sudo apt-get -y upgrade
 
 # }}}
 # Cleanup {{{
 
-sudo apt autoremove
+#sudo apt autoremove
 
 # }}}
