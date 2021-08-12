@@ -48,10 +48,11 @@ unlink $HOME/.latexmkrc
 unlink $HOME/.conkyrc
 unlink $HOME/.weechat_passphrase
 unlink $HOME/.config/gromit-mpx.cfg
-unlink $HOME/.config/cmus/rc
-unlink $HOME/.config/cmus/album.sh
 unlink $HOME/.config/qutebrowser/autoconfig.yml
 unlink $HOME/.zimrc
+
+unlink /usr/share/cmus/rc
+unlink /usr/share/cmus/album.sh
 
 sudo unlink /etc/default/apport
 
@@ -148,8 +149,8 @@ ln -sf $DOTFILES/profile $HOME/.profile
 ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
 ln -sf $DOTFILES/Xmodmap $HOME/.Xmodmap
-ln -sf $DOTFILES/config/cmus/rc $HOME/.config/cmus/rc
-ln -sf $DOTFILES/config/cmus/album.sh $HOME/.config/cmus/album.sh
+ln -sf $DOTFILES/config/cmus/rc /usr/share/cmus/rc
+ln -sf $DOTFILES/config/cmus/album.sh /usr/share/cmus/album.sh
 ln -sf $DOTFILES/config/qutebrowser/autoconfig.yml $HOME/.config/qutebrowser/autoconfig.yml
 ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
