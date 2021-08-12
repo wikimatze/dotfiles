@@ -35,6 +35,7 @@ repos=(
   wikimatze/hammer.vim
   wikimatze/hello-world-padrino-anynines-mysql
   wikimatze/i3files
+  wikimatze/finanzen
   wikimatze/job-vacancy
   wikimatze/mailclient
   wikimatze/mdbook
