@@ -51,8 +51,16 @@ unlink $HOME/.config/gromit-mpx.cfg
 unlink $HOME/.config/qutebrowser/autoconfig.yml
 unlink $HOME/.zimrc
 
-unlink /usr/share/cmus/rc
-unlink /usr/share/cmus/album.sh
+if [ -f "/usr/share/cmus/rc" ]; then
+  sudo unlink /usr/share/cmus/rc
+fi
+if [ -f "/usr/share/cmus/album.sh" ]; then
+  sudo unlink /usr/share/cmus/album.sh
+fi
+
+if [ -d "$HOME/.config/qutebrowser" ]; then
+  unlink $HOME/.config/qutebrowser/autoconfig.yml
+fi
 
 sudo unlink /etc/default/apport
 
@@ -149,9 +157,13 @@ ln -sf $DOTFILES/profile $HOME/.profile
 ln -sf $DOTFILES/tmux.conf $HOME/.tmux.conf
 ln -sf $DOTFILES/zshrc $HOME/.zshrc
 ln -sf $DOTFILES/Xmodmap $HOME/.Xmodmap
-ln -sf $DOTFILES/config/cmus/rc /usr/share/cmus/rc
-ln -sf $DOTFILES/config/cmus/album.sh /usr/share/cmus/album.sh
-ln -sf $DOTFILES/config/qutebrowser/autoconfig.yml $HOME/.config/qutebrowser/autoconfig.yml
+sudo ln -sf $DOTFILES/config/cmus/rc /usr/share/cmus/rc
+sudo ln -sf $DOTFILES/config/cmus/album.sh /usr/share/cmus/album.sh
+
+if [ -d "$HOME/.config/qutebrowser" ]; then
+  ln -sf $DOTFILES/config/qutebrowser/autoconfig.yml $HOME/.config/qutebrowser/autoconfig.yml
+fi
+
 ln -sf $DIR/zsh_history $HOME/.zsh_history
 ln -sf $DIR/fasd $HOME/.fasd
 ln -sf $DOTFILES/latexmkrc $HOME/.latexmkrc
