@@ -6,7 +6,9 @@ VERSION="v0.4.4"
 echo "Install all dependencies for neovim compilation"
 # need ruby-dev for neovim
 # libtool-bin for neovim compilation
-sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl ruby-dev libtool-bin
+# ranger: file navigation nvim plugin
+# ctags: indexing and searching nvim plugin
+sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl ruby-dev libtool-bin ranger
 
 if [ ! -d "/tmp/neovim" ]; then
   cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout $VERSION
@@ -41,11 +43,12 @@ echo "Updating latest python3 client ..."
 sudo -H pip3 install --upgrade pynvim
 
 
-if [ ! -f "/usr/share/vim/vim74/rgb.txt" ]; then
-  echo "The file /usr/share/vim/vim74/rgb.txt does not exists => so in ranger :e of a new file will not work"
+# TODO how to get latest vimxx in the script
+if [ ! -f "/usr/share/vim/vim81/rgb.txt" ]; then
+  echo "The file /usr/share/vim/vim81/rgb.txt does not exists => so in ranger :e of a new file will not work"
 else
   # see related issue under https://github.com/neovim/neovim/issues/6682
-  sudo cp /usr/share/vim/vim74/rgb.txt /usr/local/share/nvim/runtime
+  sudo cp /usr/share/vim/vim81/rgb.txt /usr/local/share/nvim/runtime
 fi
 
 echo "Please open nvim and run :PlugInstall"
