@@ -48,7 +48,6 @@ unlink $HOME/.latexmkrc
 unlink $HOME/.conkyrc
 unlink $HOME/.weechat_passphrase
 unlink $HOME/.config/gromit-mpx.cfg
-unlink $HOME/.config/qutebrowser/autoconfig.yml
 unlink $HOME/.zimrc
 
 if [ -f "/usr/share/cmus/rc" ]; then
