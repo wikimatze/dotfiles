@@ -57,7 +57,7 @@ if [ -f "/usr/share/cmus/album.sh" ]; then
   sudo unlink /usr/share/cmus/album.sh
 fi
 
-if [ -d "$HOME/.config/qutebrowser" ]; then
+if [ -d "$HOME/.config/qutebrowser" && -f "$HOME/.config/qutebrowser/autoconfig.yml"]; then
   unlink $HOME/.config/qutebrowser/autoconfig.yml
 fi
 
