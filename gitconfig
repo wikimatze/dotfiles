@@ -7,7 +7,6 @@
     editor = vim
     autocrlf = input
     excludesfile = ~/.gitignore
-    pager = diff-so-fancy
     filemode = false
 [alias]
     ca = commit --amend
@@ -63,9 +62,6 @@
     helper = /usr/local/bin/git-credential-netrc -f ~/.netrc -v -d
 [commit]
     gpgsign = true
-[diff-so-fancy]
-   stripLeadingSymbols = true
-   changeHunkIndicators = true
 
 # use separate file credentials
 [include]
