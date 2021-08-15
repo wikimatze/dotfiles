@@ -7,7 +7,13 @@
 #
 
 # Select what modules you would like enabled.
-zmodules=(git-info utility prompt syntax-highlighting completion autosuggestions)
+zmodule git-info
+zmodule utility
+zmodule prompt
+zmodule completion
+
+# Don't check every 30 days for new version
+zstyle ':zim' disable-version-check yes
 
 
 ###################
