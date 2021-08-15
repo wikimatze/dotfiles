@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION='0.15.11-1'
+VERSION='1.5.4-1'
 cd /tmp && rm rofi*
 if [ "$(uname -m)" == "x86_64" ]
 then
