@@ -24,7 +24,7 @@ gem install bcrypt \
   interactive_editor \
   i18n \
   git-smart \
-  ftp-sync \
+  ftp_sync \
   jammit \
   jekyll \
   json \
