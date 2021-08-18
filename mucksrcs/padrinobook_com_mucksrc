@@ -9,7 +9,7 @@ dir: ~/git/padrinobook.com
 nvim
 
 [build]
-rvm use ruby-head && rake
+rvm use ruby-2.7.2 && rake
 
 [tmp]
 tmux select-window -t vim
