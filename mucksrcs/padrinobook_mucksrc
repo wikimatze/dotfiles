@@ -10,7 +10,7 @@ dir: ~/git/PadrinoBook
 nvim chapters/user_profile.md
 
 [softcover]
-rvm use ruby-2.5.0 && bundle install --binstubs && bundle exec softcover server
+rvm use ruby-2.7.2 && bundle binstubs --all && bundle exec softcover server
 
 [cheatsheet]
 nvim ~/git/padrinocheatsheet/latexsheet.tex
