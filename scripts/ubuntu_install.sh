@@ -87,6 +87,7 @@ sudo apt-get install -y gthumb
 sudo apt-get install -y guvcview
 sudo apt-get install -y hpijs
 sudo apt-get install -y htop
+sudo apt-get install -y hugo # need for my finanzen blog
 sudo apt-get install -y imagemagick
 sudo apt-get install -y inkscape
 sudo apt-get install -y intltool
