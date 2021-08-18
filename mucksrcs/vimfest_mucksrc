@@ -10,7 +10,7 @@ dir: ~/git/vimfest
 nvim
 
 [rake]
-rvm use ruby-2.4.2 && bundle exec middleman s
+bundle exec middleman s
 
 [free]
 
