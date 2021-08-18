@@ -77,7 +77,6 @@ unlink $HOME/git/sweetie/.mucksrc
 unlink $HOME/git/vimberlin.de/.mucksrc
 unlink $HOME/git/vimfest/.mucksrc
 unlink $HOME/git/wikimatze.de/.mucksrc
-unlink $HOME/nextcloud/latex/projekte/angular/.mucksrc
 unlink $HOME/nextcloud/latex/projekte/javascript/.mucksrc
 unlink $HOME/nextcloud/latex/projekte/kanban/.mucksrc
 unlink $HOME/nextcloud/latex/projekte/ruby/.mucksrc
@@ -174,8 +173,6 @@ ln -sf $DOTFILES/zimrc $HOME/.zimrc
 # }}}
 # Mucksrcs {{{
 
-ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/nextcloud/latex/projekte/angular/.mucksrc
-ln -sf $HOME/git/dotfiles/mucksrcs/angular_mucksrc $HOME/nextcloud/latex/projekte/angular/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/wikimatze_mucksrc $HOME/git/wikimatze.de/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/cv_mucksrc $HOME/nextcloud/latex/vorlagen/cv/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/javascript_mucksrc $HOME/nextcloud/latex/projekte/javascript/.mucksrc
