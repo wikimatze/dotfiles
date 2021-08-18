@@ -35,7 +35,6 @@ repos=(
   wikimatze/hammer.vim
   wikimatze/hello-world-padrino-anynines-mysql
   wikimatze/i3files
-  wikimatze/finanzen
   wikimatze/job-vacancy
   wikimatze/mailclient
   wikimatze/mdbook
@@ -67,4 +66,7 @@ do
     git clone $SRC:$repo
   fi
 done
+
+
+git clone --recurse-submodules git@github.com:wikimatze/finanzen.git $DES/finanzen
 
