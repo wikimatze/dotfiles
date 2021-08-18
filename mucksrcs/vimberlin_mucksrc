@@ -10,7 +10,7 @@ dir: ~/git/vimberlin.de
 nvim
 
 [build]
-rvm use ruby-2.3.1 && middleman b -e development && middleman s
+rake
 
 [ssh]
 ssh xa6195@xa6.serverdomain.org
