@@ -39,6 +39,7 @@ repos=(
   wikimatze/mailclient
   wikimatze/mdbook
   wikimatze/minimal-vim
+  wikimatze/matomo-middleman
   wikimatze/mucks
   wikimatze/padrino-codeship
   wikimatze/padrino-hello-world-heroku
