@@ -9,8 +9,6 @@ mkdir "$DEST" && cd "$DEST"
 echo "" > out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/Desktop "$DEST/" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/nextcloud "$DEST" 2>> out.txt
-sudo nice -n 19 rsync -rltDvuWz --delete ~/Dropbox "$DEST" 2>> out.txt
-sudo nice -n 19 rsync -rltDvuWz --delete ~/Podcasts "$DEST" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/Downloads "$DEST" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/.thunderbird "$DEST" 2>> out.txt
 sudo nice -n 19 rsync -rltDvuWz --delete ~/.ssh "$DEST" 2>> out.txt
