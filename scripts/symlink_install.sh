@@ -86,7 +86,6 @@ unlink $HOME/nextcloud/latex/vorlagen/cv/.mucksrc
 # }}}
 # Bin files {{{
 
-sudo unlink /usr/local/bin/battery
 sudo unlink /usr/local/bin/cjpgpdf.sh
 sudo unlink /usr/local/bin/cpngpdf.sh
 sudo unlink /usr/local/bin/crushjpg.sh
@@ -195,7 +194,6 @@ ln -sf $HOME/git/dotfiles/mucksrcs/finanzmatze_mucksrc $HOME/git/finanzen/.mucks
 # }}}
 # Bin files {{{
 
-sudo ln -sf $DOTFILES/bin/battery /usr/local/bin/battery
 sudo ln -sf $DOTFILES/bin/cjpgpdf.sh /usr/local/bin/cjpgpdf.sh
 sudo ln -sf $DOTFILES/bin/cpngpdf.sh /usr/local/bin/cpngpdf.sh
 sudo ln -sf $DOTFILES/bin/crushjpg.sh /usr/local/bin/crushjpg.sh
