@@ -176,16 +176,13 @@ sudo apt-get install -y xfig
 sudo apt-get install -y xournal
 sudo apt-get install -y xpdf
 sudo apt-get install -y xsel # needed for tmux buffer copy and paste with clipboard
-sudo apt-get install -y zlibmagickwand-dev
 sudo apt-get install -y zsnes
 
 sudo apt-get install -y icedtea-plugin # Java Applet Browser support
 sudo apt-get install -y icedtea-8-plugin # Java Applet Browser support
 
-sudo apt-get install -y libdvd-pkg # encrypted DVD playback
-
-# add for davmail program
-sudo apt-get install -y libswt-cairo-gtk-3-jni
+# Macht ärger :)
+# sudo apt-get install -y libdvd-pkg # encrypted DVD playback
 
 # install missing codecs, to play all videos and dvd formats
 sudo apt-get install -y xubuntu-restricted-extras libavcodec-extra ubuntu-restricted-extras
