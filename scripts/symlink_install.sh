@@ -32,6 +32,7 @@ unlink $HOME/.program_aliases_mac
 
 unlink $HOME/.Xmodmap
 unlink $HOME/.ackrc
+unlink $HOME/.autorandr
 unlink $HOME/.fasd
 unlink $HOME/.gemrc
 unlink $HOME/.gitconfig
@@ -143,6 +144,7 @@ ln -sf $DOTFILES/program_aliases_mac $HOME/.program_aliases_mac
 # Miscellaneous {{{
 
 ln -sf $DOTFILES/ackrc $HOME/.ackrc
+ln -sf $DOTFILES/autorandr $HOME/.autorandr
 ln -sf $DOTFILES/gemrc $HOME/.gemrc
 ln -sf $DOTFILES/gitconfig $HOME/.gitconfig
 ln -sf $DOTFILES/ptignore $HOME/.ptignore

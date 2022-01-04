@@ -39,6 +39,7 @@ sudo apt-get install -y libtolua-dev  # for vim installation
 # Install of packages {{{
 
 sudo apt-get install -y browser-plugin-freshplayer-pepperflash # need for flash chromium + firefox
+sudo apt-get install -y autorandr # use to automacially switch monitors
 sudo apt-get install -y audacity
 sudo apt-get install -y acpi # need for battery status i3 (conky)
 sudo apt-get install -y arandr # connect monitors for i3
