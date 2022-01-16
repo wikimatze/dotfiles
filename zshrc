@@ -138,6 +138,7 @@ alias mucksdividendenonvista="mucks ~/Downloads/pdf-reader/examples/.mucksrcdivi
 alias mucksdividendencom="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendencom"
 alias mucksdividendentrade="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendentrade"
 alias muckskaufecom="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufecom"
+alias muckskaufedkb="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufedkb"
 
 # }}}
 # aliases {{{

@@ -1,0 +1,37 @@
+#
+# kaufe
+#
+mux: tmux
+name: kaufe-dkb
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe-dkb]
+tmux send-keys -tkaufe-dkb:1.1 'ruby kaufe.rb dkb' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-dkb:1.1 'ruby kaufe.rb dkb blog' Enter
+- sh sleep 3.5
+
+[kaufe-rules]
+nvim kaufe_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/dkb_matze
+- sh sleep 3.5
+
+[finanzcockpit]
+ls -la
+
+[tmp]
+tmux send-keys -tkaufe-dkb:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-dkb:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/kaufe/dkb' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-dkb:5.1 'nautab.sh ~/nextcloud/finanzen/matze' Enter
+- sh sleep 3.5
+tmux send-keys -t kaufe-dkb:5.1 'efinanzcockpit' Enter
+tmux select-window -t kaufe-dkb
+tmux kill-window -t tmp
