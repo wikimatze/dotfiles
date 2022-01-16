@@ -196,6 +196,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_dkb_mucksrc $HOME/Downloads/pdf-re
 ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_onvista_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendenonvista
 ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_com_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendencom
 ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_trade_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendentrade
+ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_com_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufecom
 
 # }}}
 # Bin files {{{

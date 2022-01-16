@@ -1,0 +1,37 @@
+#
+# kaufe
+#
+mux: tmux
+name: kaufe-com
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe-com]
+tmux send-keys -tkaufe-com:1.1 'ruby kaufe.rb com' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-com:1.1 'ruby kaufe.rb com blog' Enter
+- sh sleep 3.5
+
+[kaufe-rules]
+nvim kaufe_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/matze_comdirect
+- sh sleep 3.5
+
+[finanzcockpit]
+ls -la
+
+[tmp]
+tmux send-keys -tkaufe-com:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-com:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/kaufe/com' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-com:5.1 'nautab.sh ~/nextcloud/finanzen/matze' Enter
+- sh sleep 3.5
+tmux send-keys -t kaufe:5.1 'efinanzcockpit' Enter
+tmux select-window -t kaufe-com
+tmux kill-window -t tmp
