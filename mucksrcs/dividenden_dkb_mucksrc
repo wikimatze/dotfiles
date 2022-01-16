@@ -1,0 +1,35 @@
+#
+# dividenden-dkb
+#
+mux: tmux
+name: dividenden-dkb
+dir: ~/Downloads/pdf-reader/examples
+
+
+[dividenden-dkb]
+tmux send-keys -tdividenden-dkb:1.1 'ruby dividenden.rb dkb' Enter
+- sh sleep 3.5
+
+[dividenden-dkb-rules]
+nvim dividenden_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/dkb_matze
+- sh sleep 5.5
+
+[bla]
+
+[tmp]
+tmux send-keys -tdividenden-dkb:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tdividenden-dkb:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/dkb' Enter
+- sh sleep 3.5
+tmux send-keys -tdividenden-dkb:5.1 'nautab.sh ~/nextcloud/finanzen/matze' Enter
+- sh sleep 3.5
+tmux select-window -tdividenden-dkb
+- sh sleep 3.5
+tmux kill-window -t bla
+tmux kill-window -t tmp

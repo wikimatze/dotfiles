@@ -133,6 +133,7 @@ alias muckssweetie="mucks ~/git/sweetie/.mucksrc"
 alias mucksvimberlin="mucks ~/git/vimberlin.de/.mucksrc"
 alias mucksvimfest="mucks ~/git/vimfest/.mucksrc"
 alias muckswikimatze="mucks ~/git/wikimatze.de/.mucksrc"
+alias mucksdividendendkb="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendendkb"
 
 # }}}
 # aliases {{{

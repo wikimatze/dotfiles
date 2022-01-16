@@ -192,6 +192,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/vimberlin_mucksrc $HOME/git/vimberlin.de/.muc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/finanzmatze_mucksrc $HOME/git/finanzen/.mucksrc
+ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_dkb_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendendkb
 
 # }}}
 # Bin files {{{
