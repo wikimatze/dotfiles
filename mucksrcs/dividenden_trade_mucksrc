@@ -1,0 +1,36 @@
+#
+# dividenden-trade
+#
+mux: tmux
+name: dividenden-trade
+dir: ~/Downloads/pdf-reader/examples
+
+
+[dividenden-trade]
+tmux send-keys -tdividenden-trade:1.1 'ruby dividenden.rb trade' Enter
+- sh sleep 3.5
+
+[dividenden-trade rules]
+nvim dividenden_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/trade
+- sh sleep 5.5
+
+[bla]
+
+[tmp]
+tmux send-keys -tdividenden-trade:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tdividenden-trade:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/trade' Enter
+- sh sleep 3.5
+tmux send-keys -tdividenden-trade:5.1 'nautab.sh ~/nextcloud/finanzen/aktien' Enter
+- sh sleep 3.5
+tmux select-window -tdividenden-trade
+- sh sleep 3.5
+tmux kill-window -t bla
+tmux kill-window -t tmp
+

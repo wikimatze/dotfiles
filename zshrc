@@ -136,6 +136,7 @@ alias muckswikimatze="mucks ~/git/wikimatze.de/.mucksrc"
 alias mucksdividendendkb="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendendkb"
 alias mucksdividendenonvista="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendenonvista"
 alias mucksdividendencom="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendencom"
+alias mucksdividendentrade="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendentrade"
 
 # }}}
 # aliases {{{
