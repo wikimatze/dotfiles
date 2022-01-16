@@ -1,0 +1,35 @@
+#
+# dividenden-onvista
+#
+mux: tmux
+name: dividenden-onvista
+dir: ~/Downloads/pdf-reader/examples
+
+
+[dividenden-onvista]
+tmux send-keys -tdividenden-onvista:1.1 'ruby dividenden.rb onvista' Enter
+- sh sleep 3.5
+
+[dividenden-onvista-rules]
+nvim dividenden_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/onvista
+- sh sleep 5.5
+
+[burst]
+pdftk <bla> burst
+
+[tmp]
+tmux send-keys -tdividenden-onvista:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tdividenden-onvista:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/onvista' Enter
+- sh sleep 3.5
+tmux send-keys -tdividenden-onvista:5.1 'nautab.sh ~/nextcloud/finanzen/aktien' Enter
+- sh sleep 3.5
+tmux select-window -tdividenden-onvista
+- sh sleep 3.5
+tmux kill-window -t tmp
