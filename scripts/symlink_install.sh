@@ -194,6 +194,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/vimfest_mucksrc $HOME/git/vimfest/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/finanzmatze_mucksrc $HOME/git/finanzen/.mucksrc
 ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_dkb_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendendkb
 ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_onvista_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendenonvista
+ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_com_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrcdividendencom
 
 # }}}
 # Bin files {{{

@@ -135,6 +135,7 @@ alias mucksvimfest="mucks ~/git/vimfest/.mucksrc"
 alias muckswikimatze="mucks ~/git/wikimatze.de/.mucksrc"
 alias mucksdividendendkb="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendendkb"
 alias mucksdividendenonvista="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendenonvista"
+alias mucksdividendencom="mucks ~/Downloads/pdf-reader/examples/.mucksrcdividendencom"
 
 # }}}
 # aliases {{{
