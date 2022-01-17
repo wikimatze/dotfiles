@@ -32,6 +32,6 @@ tmux send-keys -tkaufe-com:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/kaufe/
 - sh sleep 3.5
 tmux send-keys -tkaufe-com:5.1 'nautab.sh ~/nextcloud/finanzen/matze' Enter
 - sh sleep 3.5
-tmux send-keys -t kaufe:5.1 'efinanzcockpit' Enter
+tmux send-keys -t kaufe-com:5.1 'efinanzcockpit' Enter
 tmux select-window -t kaufe-com
 tmux kill-window -t tmp
