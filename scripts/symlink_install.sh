@@ -202,6 +202,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_trade_mucksrc $HOME/Downloads/pdf-reade
 ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_onvista_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufeonvista
 ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_felix_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufefelix
 ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_hanna_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufehanna
+ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_smart_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufesmart
 
 # }}}
 # Bin files {{{

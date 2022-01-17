@@ -1,0 +1,41 @@
+#
+# kaufe
+#
+mux: tmux
+name: kaufe
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe]
+tmux send-keys -tkaufe:1.1 'ruby kaufe.rb smartbroker' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe:1.1 'ruby kaufe.rb smartbroker blog' Enter
+- sh sleep 3.5
+
+
+[kaufe-rules]
+nvim kaufe_rules.rb
+
+[aktien]
+nvim ~/nextcloud/notes/aktien.txt
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/smartbroker
+- sh sleep 5.5
+
+[finanzcockpit]
+ls -la
+
+[tmp]
+tmux send-keys -tkaufe:6.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe:6.1 'nautab.sh ~/Downloads/pdf-reader/examples/kaufe' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe:6.1 'nautab.sh ~/nextcloud/finanzen/aktien' Enter
+- sh sleep 3.5
+tmux send-keys -t kaufe:6.1 'efinanzcockpit' Enter
+tmux select-window -t kaufe
+tmux kill-window -t tmp

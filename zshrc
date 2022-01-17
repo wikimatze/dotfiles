@@ -143,6 +143,7 @@ alias muckskaufetrade="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufetrade"
 alias muckskaufeonvista="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufeonvista"
 alias muckskaufefelix="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufefelix"
 alias muckskaufehanna="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufehanna"
+alias muckskaufesmart="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufesmart"
 
 # }}}
 # aliases {{{
