@@ -1,0 +1,36 @@
+#
+# kauf-felix
+#
+mux: tmux
+name: kauf-felix
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe]
+tmux send-keys -t kauf-felix:1.1 'ruby kaufe.rb com' Enter
+- sh sleep 3.5
+tmux send-keys -t kauf-felix:1.1 'ruby kaufe.rb com blog' Enter
+- sh sleep 3.5
+
+[kaufe rules]
+nvim kaufe_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/felix-finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/felix_comdirect
+- sh sleep 3.5
+
+[finanzcockpit]
+
+[tmp]
+tmux send-keys -t kauf-felix:1.1 '' Enter
+- sh sleep 2.5
+tmux send-keys -t kauf-felix:1.1 'nautab.sh /home/wm/Downloads/pdf-reader/examples/kaufe/com' Enter
+- sh sleep 2.5
+tmux send-keys -t kauf-felix:1.1 'nautab.sh /home/wm/nextcloud/finanzen/felix_comdirect' Enter
+- sh sleep 2.5
+tmux send-keys -t kauf-felix:5.1 'efelixfinanzcockpit' Enter
+tmux select-window -t kaufe
+tmux kill-window -t tmp
