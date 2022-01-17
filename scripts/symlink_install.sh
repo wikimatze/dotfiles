@@ -199,6 +199,7 @@ ln -sf $HOME/git/dotfiles/mucksrcs/dividenden_trade_mucksrc $HOME/Downloads/pdf-
 ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_com_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufecom
 ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_dkb_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufedkb
 ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_trade_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufetrade
+ln -sf $HOME/git/dotfiles/mucksrcs/kaufe_onvista_mucksrc $HOME/Downloads/pdf-reader/examples/.mucksrckaufeonvista
 
 # }}}
 # Bin files {{{

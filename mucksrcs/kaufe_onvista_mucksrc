@@ -1,0 +1,37 @@
+#
+# kaufe
+#
+mux: tmux
+name: kaufe-onvista
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe-onvista]
+tmux send-keys -tkaufe-onvista:1.1 'ruby kaufe.rb onvista' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-onvista:1.1 'ruby kaufe.rb onvista blog' Enter
+- sh sleep 3.5
+
+[kaufe-rules]
+nvim kaufe_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/aktien.txt
+
+[nautilus]
+nautilus ~/Downloads/onvista
+- sh sleep 3.5
+
+[finanzcockpit]
+ls -la
+
+[tmp]
+tmux send-keys -tkaufe-onvista:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-onvista:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/kaufe/onvista' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-onvista:5.1 'nautab.sh ~/nextcloud/finanzen/aktien' Enter
+- sh sleep 3.5
+tmux send-keys -t kaufe-onvista:5.1 'efinanzcockpit' Enter
+tmux select-window -t kaufe-onvista
+tmux kill-window -t tmp
