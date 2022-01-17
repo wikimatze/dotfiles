@@ -1,0 +1,35 @@
+#
+# kauf-hanna
+#
+mux: tmux
+name: kauf-hanna
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe]
+tmux send-keys -tkauf-hanna:1.1 'ruby kaufe.rb dkb' Enter
+tmux send-keys -tkauf-hanna:1.1 'ruby kaufe.rb dkb blog' Enter
+
+[kaufe rules]
+nvim kaufe_rules.rb
+
+[aktien]
+nvim ~/nextcloud/notes/hanna-finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/dkb_hanna
+- sh sleep 5.5
+
+[finanzcockpit]
+
+[tmp]
+tmux send-keys -tkauf-hanna:1.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tkauf-hanna:1.1 'nautab.sh /home/wm/Downloads/pdf-reader/examples/kaufe/dkb' Enter
+- sh sleep 3.5
+tmux send-keys -tkauf-hanna:1.1 'nautab.sh /home/wm/nextcloud/finanzen/hanna' Enter
+- sh sleep 3.5
+tmux send-keys -tkauf-hanna:5.1 'ehannafinanzcockpit' Enter
+tmux select-window -t kaufe
+tmux kill-window -t tmp
+
