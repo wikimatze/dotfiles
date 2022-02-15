@@ -144,6 +144,7 @@ alias muckskaufeonvista="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufeonvi
 alias muckskaufefelix="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufefelix"
 alias muckskaufehanna="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufehanna"
 alias muckskaufesmart="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufesmart"
+alias muckskaufescalable="mucks ~/Downloads/pdf-reader/examples/.mucksrckaufescalable"
 
 # }}}
 # aliases {{{

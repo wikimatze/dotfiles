@@ -1,0 +1,37 @@
+#
+# kaufe
+#
+mux: tmux
+name: kaufe-scalable
+dir: ~/Downloads/pdf-reader/examples/kaufe
+
+
+[kaufe-scalable]
+tmux send-keys -tkaufe-scalable:1.1 'ruby kaufe.rb scalable' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-scalable:1.1 'ruby kaufe.rb scalable blog' Enter
+- sh sleep 3.5
+
+[kaufe-rules]
+nvim kaufe_rules.rb
+
+[finanzen]
+nvim ~/nextcloud/notes/finanzen.txt
+
+[nautilus]
+nautilus ~/Downloads/scalable
+- sh sleep 3.5
+
+[finanzcockpit]
+ls -la
+
+[tmp]
+tmux send-keys -tkaufe-scalable:5.1 '' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-scalable:5.1 'nautab.sh ~/Downloads/pdf-reader/examples/kaufe/scalable' Enter
+- sh sleep 3.5
+tmux send-keys -tkaufe-scalable:5.1 'nautab.sh ~/nextcloud/finanzen/matze' Enter
+- sh sleep 3.5
+tmux send-keys -t kaufe-scalable:5.1 'efinanzcockpit' Enter
+tmux select-window -t kaufe-scalable
+tmux kill-window -t tmp
