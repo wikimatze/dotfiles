@@ -1,5 +1,7 @@
 #!/bin/bash
 
+VERSION='3.2a'
+
 # install curse dependencies
 sudo apt-get install -y libevent-dev libncurses-dev pkg-config
 
@@ -18,7 +20,7 @@ cd /tmp && curl -OL http://downloads.sourceforge.net/project/levent/libevent/lib
 
 # Compiling tmux
 cd /tmp && git clone https://github.com/tmux/tmux.git tmux
-cd /tmp/tmux && git checkout 3.2
+cd /tmp/tmux && git checkout $VERSION
 bash autogen.sh
 LDFLAGS="-L/opt/lib" CPPFLAGS="-I/opt/include" LIBS="-lresolv" ./configure --prefix=/opt && make && sudo make install
 
