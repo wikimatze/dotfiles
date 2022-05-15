@@ -14,7 +14,7 @@ tmux send-keys -tdividenden-trade:1.1 'ruby dividenden.rb trade' Enter
 nvim dividenden_rules.rb
 
 [finanzen]
-nvim ~/nextcloud/notes/finanzen.txt
+nvim $(echo "${HOME}/git/finanzen/content/post/einnahmen_kaeuefe_$(date +%B)_$(date +%Y).md" | awk '{print tolower($0)}')
 
 [nautilus]
 nautilus ~/Downloads/trade

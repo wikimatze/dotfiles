@@ -6,6 +6,9 @@ name: finanzmatze
 dir: ~/git/finanzen
 
 
+[report]
+nvim $(echo "${HOME}/git/finanzen/content/post/einnahmen_kaeuefe_$(date +%B)_$(date +%Y).md" | awk '{print tolower($0)}')
+
 [section]
 nvim
 
@@ -13,6 +16,6 @@ nvim
 hugo server
 
 [tmp]
-tmux select-window -t section
+tmux select-window -t report
 tmux kill-window -t tmp
 
