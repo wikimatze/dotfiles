@@ -70,3 +70,5 @@
     detachedHead = false
 [gpg]
     program = gpg
+[mergetool]
+    keepBackup = false
