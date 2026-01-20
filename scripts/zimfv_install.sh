@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION='v1.5.0'
+VERSION='v1.20.0'
 rm -rf ~/.zim
 git clone --recursive https://github.com/zimfw/zimfw.git ${ZDOTDIR:-${HOME}}/.zim  && cd ~/.zim && git checkout $VERSION
 
