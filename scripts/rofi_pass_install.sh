@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=2.0.2
+VERSION=37c4c862deb133a85b7d72989acfdbd2ef16b8ad
 
 sudo apt-get install xdotool
 
