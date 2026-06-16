@@ -1,15 +1,11 @@
 #!/bin/bash
 VERSION='1.5.4-1'
-cd /tmp && rm rofi*
 
-sudo apt-get install libxcb-ewmh2
+ARCH=$([ "$(uname -m)" = "x86_64" ] && echo amd64 || echo i386)
 
-if [ "$(uname -m)" == "x86_64" ]
-then
-  wget https://launchpad.net/ubuntu/+archive/primary/+files/rofi_$VERSION\_amd64.deb
-else
-  wget https://launchpad.net/ubuntu/+archive/primary/+files/rofi_$VERSION\_i386.deb
-fi
+URL="https://launchpad.net/ubuntu/+archive/primary/+files/rofi_${VERSION}_${ARCH}.deb"
 
-sudo dpkg -i rofi*.deb
+cd /tmp
+wget -O rofi.deb "$URL"
+sudo apt install -y ./rofi.deb
 
