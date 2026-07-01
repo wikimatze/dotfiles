@@ -224,6 +224,7 @@ sudo ln -sf $DOTFILES/bin/tts.sh /usr/local/bin/tts
 sudo ln -sf $DOTFILES/bin/ttscreencast.sh /usr/local/bin/ttscreencast
 sudo ln -sf $DOTFILES/bin/zoom_xfce.sh /usr/local/bin/zoom_xfce.sh
 sudo ln -sf $DOTFILES/bin/nautab.sh /usr/local/bin/nautab.sh
+sudo ln -sf $DOTFILES/bin/git-credential-netrc /usr/local/bin/git-credential-netrc
 sudo ln -sf $DOTFILES/etc/default/apport /etc/default/apport
 sudo ln -sf $HOME/git/ttygif/concat.sh /usr/local/bin/ttyconcat
 
