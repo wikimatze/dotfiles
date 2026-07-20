@@ -8,7 +8,7 @@ elif [ `acpi | grep -c 'Full, 0%'` -eq 1 ]; then
   NUMBER="AC"
 elif [ `acpi | grep -c Discharging` -eq 1 ]; then
   CHARGE='▼'
-  NUMBER="`acpi | grep -P -o '(\d{1,2}%)'`"
+  NUMBER="`acpi | grep Discharging | grep -P -o '\d+%'`"
 else
   CHARGE="⚡"
   NUMBER="AC"
