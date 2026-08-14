@@ -1,7 +1,7 @@
 # error: "Protocol "https" not supported or disabled in libcurl
 # make sure cmake 3.2.2 is installed  (details under https://github.com/ruslo/hunter/issues/328)
 
-VERSION="v0.11.4"
+VERSION="v0.12.4"
 
 echo "Install all dependencies for neovim compilation"
 # need ruby-dev for neovim
