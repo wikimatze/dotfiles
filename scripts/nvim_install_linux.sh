@@ -1,15 +1,14 @@
 # error: "Protocol "https" not supported or disabled in libcurl
 # make sure cmake 3.2.2 is installed  (details under https://github.com/ruslo/hunter/issues/328)
 
-VERSION="v0.4.4"
+VERSION="v0.11.4"
 
 echo "Install all dependencies for neovim compilation"
 # need ruby-dev for neovim
 # libtool-bin for neovim compilation
 # ranger: file navigation nvim plugin
 # ctags: indexing and searching nvim plugin
-sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl ruby-dev libtool-bin ranger
-
+sudo apt-get install -y libtool autoconf automake cmake g++ pkg-config unzip curl ruby-dev libtool-bin ranger luarocks liblua5.1-0-dev
 if [ ! -d "/tmp/neovim" ]; then
   cd /tmp && git clone https://github.com/neovim/neovim.git && cd neovim && git checkout $VERSION
 else
