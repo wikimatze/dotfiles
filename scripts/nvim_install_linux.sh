@@ -41,14 +41,5 @@ echo "Updating latest python3 client ..."
 
 sudo -H pip3 install --upgrade pynvim
 
-
-# TODO how to get latest vimxx in the script
-if [ ! -f "/usr/share/vim/vim81/rgb.txt" ]; then
-  echo "The file /usr/share/vim/vim81/rgb.txt does not exists => so in ranger :e of a new file will not work"
-else
-  # see related issue under https://github.com/neovim/neovim/issues/6682
-  sudo cp /usr/share/vim/vim81/rgb.txt /usr/local/share/nvim/runtime
-fi
-
 echo "Please open nvim and run :PlugInstall"
 
