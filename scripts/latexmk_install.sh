@@ -1,7 +1,10 @@
 #!/bin/bash
-VERSION=452c
+VERSION=488
 
-cd /tmp && rm -rf latexmk* && wget http://users.phys.psu.edu/%7Ecollins/software/latexmk-jcc/latexmk-$VERSION.zip && unzip latexmk-$VERSION.zip
-sudo cp latexmk/latexmk.pl /usr/local/bin
-sudo mv /usr/local/bin/latexmk.pl /usr/local/bin/latexmk
+cd /tmp
+rm -rf latexmk*
+wget https://www.cantab.net/users/johncollins/latexmk/latexmk-$VERSION.zip
+unzip latexmk-$VERSION.zip
+sudo mv latexmk/latexmk.pl /usr/local/bin/latexmk
+sudo chmod +x /usr/local/bin/latexmk
 
